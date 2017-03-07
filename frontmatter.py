@@ -30,6 +30,8 @@ def filter_body_line(line):
         # Aliases
         ('``` viml', '``` vim'),
         ('``` vimscript', '``` vim'),
+        # New paths
+        ('/static/images/', '/images/'),
     )
     for find, replace in replacements:
         line = line.replace(find, replace)
