@@ -8,7 +8,7 @@ import csv
 
 def meta():
     lookup = {}
-    with open("archive.csv") as f:
+    with open("data/archive.csv") as f:
         reader = csv.reader(f)
         for row in reader:
             lookup[row[1]] = {
@@ -18,6 +18,23 @@ def meta():
     return lookup
 
 lookup = meta()
+
+
+def filter_body_line(line):
+    replacements = (
+        # FTs to strip as no lexer
+        ('``` ssh', '```'),
+        ('``` markdown', '```'),
+        ('``` conf', '```'),
+        ('``` csv', '```'),
+        # Aliases
+        ('``` viml', '``` vim'),
+        ('``` vimscript', '``` vim'),
+    )
+    for find, replace in replacements:
+        line = line.replace(find, replace)
+    return line
+
 
 fm = {}
 for line in fileinput.input():
@@ -44,4 +61,4 @@ for line in fileinput.input():
         print()
     elif index > 6:
         # Just pass-through lines after headers
-        print(line, end="")
+        print(filter_body_line(line), end="")

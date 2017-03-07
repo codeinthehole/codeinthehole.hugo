@@ -6,5 +6,5 @@ INPUT=$1
 cat $INPUT | \
     sed 's/.. sourcecode/.. code/' | \
     pandoc --from=rst --to=markdown | \
-    sed 's/{.sourceCode \.\([a-z]\+\)}/\1/' | \
+    sed 's/{.sourceCode \.\([a-z+]\+\)}/\1/' | \
     ./frontmatter.py
