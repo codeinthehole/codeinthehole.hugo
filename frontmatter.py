@@ -32,6 +32,7 @@ def filter_body_line(line):
         ('``` vimscript', '``` vim'),
         # New paths
         ('/static/images/', '/images/'),
+        ('/static/downloads/', '/downloads/'),
     )
     for find, replace in replacements:
         line = line.replace(find, replace)
