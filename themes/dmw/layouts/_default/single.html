@@ -1,0 +1,91 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Use the .htaccess and remove these lines to avoid edge case issues. More info: h5bp.com/b/378 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>{{ .Title }} | codeinthehole.com by David Winterbottom </title>
+        <meta name="description" content="A modern, high-tech energy supplier">
+        <meta name="author" content="David Winterbottom">
+
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="stylesheet" href="/css/styles.css" type="text/css" />
+        <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
+
+        <link rel="openid.server" href="http://www.myopenid.com/server">
+        <link rel="openid.delegate" href="http://azymuth24.myopenid.com/">
+
+        <link href='http://fonts.googleapis.com/css?family=Signika+Negative:600' rel='stylesheet' type='text/css' />
+
+    </head>
+
+    <body class="article">
+
+        <article class="hentry" id="container">
+            <header>
+                <div id="logo">
+                    <h4><a href="/" title="David Winterbottom">codeinthehole.com</a></h4>
+                    <h5><a href="/writing/">writing</a> | 
+                        <a href="http://twitter.com/codeinthehole" title="Occasionally I say something interesting">twitter</a> | 
+                        <a href="http://github.com/codeinthehole">github</a> |
+                        <a href="/about/">about</a></h5>
+                </div>
+            </header>
+
+            <div id="main" role="main">
+                <div id="content">
+
+                    <h1 id="article_title" class="entry-title">{{ .Title }}</h1>
+
+                    <div class="byline">
+                        by <a href="/about/" class="author vcard">David Winterbottom</a>
+                        on <time class="published" datetime="">{{ .Date.Format "Monday, 2nd January 2006" }}</time>
+                    </div>
+
+                    <div id="article" class="entry-content">
+                        {{ .Content }}
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+
+                &copy; Copyright 2017 <a href="/about/">David Winterbottom</a> <br/>
+                All content is licensed under the <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><strong>CC Attribution-NonCommercial-ShareAlike</strong></a> License.
+
+            </footer>
+        </article>
+
+
+        <!-- JavaScript at the bottom for fast page loading -->
+
+        <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/static/html5boilerplate/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+        <!-- Change UA-XXXXX-X to be your site's ID -->
+        <script>
+window._gaq = [['_setAccount','UA-3494213-5'],['_trackPageview'],['_trackPageLoadTime']];
+Modernizr.load({
+    load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+});
+        </script>
+
+        <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+            chromium.org/developers/how-tos/chrome-frame-getting-started -->
+            <!--[if lt IE 7 ]>
+                <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+                <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+            <![endif]-->
+
+    </body>
+</html>
