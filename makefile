@@ -1,8 +1,8 @@
 run:
-	hugo server --theme=hugo-zen --buildDrafts --watch
+	hugo server --buildDrafts --watch
 
 build:
-	hugo --theme=hugo-zen
+	hugo
 
 migrate:
 	./convert_all.sh
