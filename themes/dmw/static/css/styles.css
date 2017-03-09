@@ -334,7 +334,7 @@ td {
 }
 .title-block {
   font-family: 'Signika Negative', serif;
-  color: #8c0808;
+  color: #8C0808;
   font-weight: normal;
 }
 body {
@@ -376,7 +376,7 @@ a.link,
 a:visited,
 a:hover {
   text-decoration: none;
-  color: #8c0808;
+  color: #8C0808;
 }
 p,
 li,
@@ -410,7 +410,7 @@ header a:hover {
 }
 /* Logo */
 #logo {
-  color: #222222;
+  color: #222;
 }
 #logo h1,
 #logo h2,
@@ -440,14 +440,14 @@ header a:hover {
   text-align: right;
 }
 #logo h4 a {
-  color: #222222;
+  color: #222;
 }
 #logo h5 {
   text-align: right;
   font-size: 1.1em;
 }
 #logo h5 a {
-  color: #222222;
+  color: #222;
 }
 .article #logo {
   float: right;
@@ -456,8 +456,8 @@ header a:hover {
   text-align: center;
 }
 footer {
-  margin: 50px 0 40px 0;
-  color: #aaaaaa;
+  margin: 10px 0 40px 0;
+  color: #aaa;
   font-size: 1.1em;
   line-height: 1.5em;
 }
@@ -465,7 +465,7 @@ footer a:active,
 footer a:link,
 footer a:visited,
 footer a:hover {
-  color: #aaaaaa;
+  color: #aaa;
 }
 footer a:hover {
   text-decoration: underline;
@@ -483,7 +483,7 @@ h1#title {
   font-family: 'Signika Negative', serif;
   font-size: 4em;
   font-weight: normal;
-  color: #222222;
+  color: #222;
   margin: 0;
   padding: 0;
 }
@@ -492,7 +492,7 @@ h1#title {
   font-family: 'Signika Negative', serif;
   font-size: 2.4em;
   font-weight: normal;
-  color: #222222;
+  color: #222;
   margin: 0 0 10px 0;
   padding: 0;
   clear: left;
@@ -583,7 +583,7 @@ div.slidedeck {
 /* Article styles */
 .article h1#article_title {
   font-family: 'Signika Negative', serif;
-  color: #8c0808;
+  color: #8C0808;
   font-weight: normal;
   font-size: 3em;
   margin: 0.3em 0 0.2em 0;
@@ -591,7 +591,7 @@ div.slidedeck {
 }
 .article h1#title {
   font-family: 'Signika Negative', serif;
-  color: #8c0808;
+  color: #8C0808;
   font-weight: normal;
   color: black;
   font-size: 3.4em;
@@ -604,26 +604,26 @@ div.slidedeck {
 }
 .article h1 {
   font-family: 'Signika Negative', serif;
-  color: #8c0808;
+  color: #8C0808;
   font-weight: normal;
   font-size: 2em;
   margin-top: 1em;
 }
 .article h2 {
   font-family: 'Signika Negative', serif;
-  color: #8c0808;
+  color: #8C0808;
   font-weight: normal;
   font-size: 1.8em;
 }
 .article h3 {
   font-family: 'Signika Negative', serif;
-  color: #8c0808;
+  color: #8C0808;
   font-weight: normal;
   font-size: 1.4em;
 }
 .article .byline {
   font-family: 'Signika Negative', serif;
-  color: #8c0808;
+  color: #8C0808;
   font-weight: normal;
   color: #974747;
   font-size: 1.2em;
@@ -649,14 +649,14 @@ div.slidedeck {
   padding: 2px;
   margin: 0 0 2em 1em;
   background-color: white;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #aaa;
 }
 .article img.noborder {
   border: none;
 }
 .article .screenshot {
   background-color: white;
-  border: 1px dashed #aaaaaa;
+  border: 1px dashed #aaa;
   padding: 8px 12px;
 }
 .article table.docutils {
@@ -674,13 +674,13 @@ div.slidedeck {
 }
 .article-meta h2 {
   font-family: 'Signika Negative', serif;
-  color: #8c0808;
+  color: #8C0808;
   font-weight: normal;
   font-size: 1.8em;
 }
 .article-meta h3 {
   font-family: 'Signika Negative', serif;
-  color: #8c0808;
+  color: #8C0808;
   font-weight: normal;
   font-size: 1.6em;
 }
@@ -729,7 +729,7 @@ tt.docutils {
   font-family: 'Inconsolata', monospace, sans-serif;
 }
 div.tip {
-  color: #aaaaaa;
+  color: #aaa;
   font-size: 8pt;
 }
 .admonition-title {
