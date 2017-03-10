@@ -32,7 +32,8 @@ header, footer, p, h2, h3, th, td, li, dt, dd, blockquote {
 li li {
 	font-size: 1em;
 }
-h1, h2, h3, h4 {
+li p {
+	font-size: 1em;
 }
 pre {
     font-size: 1.3em;
@@ -72,7 +73,7 @@ dt {
 	padding: 0px 2em;
 }
 
-// Header
+/* Header */
 header {
     overflow: hidden;
     font-size: 1em;
@@ -129,7 +130,7 @@ header {
 
 // Footer
 footer {
-	margin: 10px 0 40px 0;
+	margin: 100px 0 40px 0;
     color: @light-grey;
 	font-size: 1.1em;
     line-height: 1.5em;
@@ -295,6 +296,10 @@ div.slidedeck {
 	}
 	h3 {
 		.title-block;
+		font-size: 1.6em;
+	}
+	h4 {
+		.title-block;
 		font-size: 1.4em;
 	}
 	.byline {
@@ -316,6 +321,8 @@ div.slidedeck {
 		margin: 0;
 		padding: 0.4em 0 0.4em 0;
 	}
+
+	/* image styles */
 	img.align-right {
 		float: right;
 		padding: 2px;
@@ -331,19 +338,23 @@ div.slidedeck {
 		border: 1px dashed @light-grey;
 		padding: 8px 12px;
 	}
-	table.docutils {
-		border-top: 1px solid #eee;
+
+	div.footnotes {
         margin: 40px 0 40px 0;
 		font-size: 0.8em;
-		td {
-			border: none;
-		}
-		th {
-			border: none;
-			text-align: left;
-			border-bottom: 1px solid black;
-		}
+		ol {
+		    margin: 40px 0 0 0;
+		    li p {
+		        margin: 0 0 4px 0;
+            }
+        }
 	}
+
+	#links {
+	    font-size: 1em;
+	    margin-top: 40px;
+    }
+
 }
 
 .article-meta {
@@ -413,6 +424,7 @@ div.tip {
 .admonition-title {
     display: none;
 }
+
 div.warning {
 	background-color: #eee;
 	border: 1px solid #ddd;
@@ -420,7 +432,7 @@ div.warning {
 	color: #555;
 	padding: 1em;
     margin-top: 20px;
-    font-size: 10px;
+    font-size: 14px;
 	p {
 		margin: 0;
 	}
@@ -432,6 +444,7 @@ div.note {
 	width: 50em;
 	color: #555;
 	padding: 1em;
+	font-size: 1em;
 	p {
 		margin: 0;
 	}

@@ -356,6 +356,9 @@ blockquote {
 li li {
   font-size: 1em;
 }
+li p {
+  font-size: 1em;
+}
 pre {
   font-size: 1.3em;
   font-family: 'Inconsolata', monospace, sans-serif;
@@ -401,6 +404,7 @@ dt {
   overflow: hidden;
   padding: 0px 2em;
 }
+/* Header */
 header {
   overflow: hidden;
   font-size: 1em;
@@ -456,7 +460,7 @@ header a:hover {
   text-align: center;
 }
 footer {
-  margin: 10px 0 40px 0;
+  margin: 100px 0 40px 0;
   color: #aaa;
   font-size: 1.1em;
   line-height: 1.5em;
@@ -581,6 +585,9 @@ div.slidedeck {
   max-width: 45em;
 }
 /* Article styles */
+.article {
+  /* image styles */
+}
 .article h1#article_title {
   font-family: 'Signika Negative', serif;
   color: #8C0808;
@@ -616,6 +623,12 @@ div.slidedeck {
   font-size: 1.8em;
 }
 .article h3 {
+  font-family: 'Signika Negative', serif;
+  color: #8C0808;
+  font-weight: normal;
+  font-size: 1.6em;
+}
+.article h4 {
   font-family: 'Signika Negative', serif;
   color: #8C0808;
   font-weight: normal;
@@ -659,18 +672,19 @@ div.slidedeck {
   border: 1px dashed #aaa;
   padding: 8px 12px;
 }
-.article table.docutils {
-  border-top: 1px solid #eee;
+.article div.footnotes {
   margin: 40px 0 40px 0;
   font-size: 0.8em;
 }
-.article table.docutils td {
-  border: none;
+.article div.footnotes ol {
+  margin: 40px 0 0 0;
 }
-.article table.docutils th {
-  border: none;
-  text-align: left;
-  border-bottom: 1px solid black;
+.article div.footnotes ol li p {
+  margin: 0 0 4px 0;
+}
+.article #links {
+  font-size: 1em;
+  margin-top: 40px;
 }
 .article-meta h2 {
   font-family: 'Signika Negative', serif;
@@ -742,7 +756,7 @@ div.warning {
   color: #555;
   padding: 1em;
   margin-top: 20px;
-  font-size: 10px;
+  font-size: 14px;
 }
 div.warning p {
   margin: 0;
@@ -754,6 +768,7 @@ div.note {
   width: 50em;
   color: #555;
   padding: 1em;
+  font-size: 1em;
 }
 div.note p {
   margin: 0;
