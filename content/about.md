@@ -1,7 +1,7 @@
 +++ 
 title = "About"
 description = ""
-date = ""
+hidefromhome = true
 +++
 
 I'm a software engineer working in London. I work as Director of Engineering at
