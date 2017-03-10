@@ -9,7 +9,7 @@
     "title": "High Performance Web Sites by Steve Souders"
 }
 
-![image](/images/bookcovers/9780596529307.jpg)
+<img src="/images/bookcovers/9780596529307.jpg" class="align-right" />
 
 High Performance Web Sites (HPWS) is essentially a book-length
 exposition of the [YSlow extension to

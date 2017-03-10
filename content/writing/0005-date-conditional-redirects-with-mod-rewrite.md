@@ -1,11 +1,11 @@
 {
-    "description": "Using `mod_rewrite` to redirect based on the date",
+    "description": "Using mod_rewrite to redirect based on the date",
     "date": "2008-11-07",
     "slug": "date-conditional-redirects-with-mod_rewrite",
     "tags": [
         "apache"
     ],
-    "title": "Date conditional redirects with mod\\_rewrite"
+    "title": "Date conditional redirects with mod_rewrite"
 }
 
 The Apache module mod\_rewite is capable of some very cool stuff. One

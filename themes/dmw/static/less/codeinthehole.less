@@ -26,7 +26,7 @@
 body {
 	font-family: @serif;
 }
-header, footer, p, h2, h3, th, td, li, dt, dd, blockquote {
+header, footer, p, h2, h3, th, td, li, dd, dt, blockquote {
     font-size: 1.4em;
 }
 li li {
@@ -55,6 +55,9 @@ a, a:active, a.link, a:visited, a:hover {
 p, li, dd, dt, blockquote {
     max-width: 35em;
 	line-height: 1.5em;
+}
+dl dd p {
+    font-size: 1em;
 }
 li {
 	margin: 5px 0;
@@ -344,8 +347,12 @@ div.slidedeck {
 		font-size: 0.8em;
 		ol {
 		    margin: 40px 0 0 0;
-		    li p {
-		        margin: 0 0 4px 0;
+		    li {
+		        max-width: none;
+		        p {
+                    max-width: none;
+                    margin: 0 0 4px 0;
+                }
             }
         }
 	}
@@ -425,14 +432,16 @@ div.tip {
     display: none;
 }
 
+/* Special blocks in article bodies */
 div.warning {
 	background-color: #eee;
 	border: 1px solid #ddd;
-	width: 50em;
 	color: #555;
 	padding: 1em;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    width: 38em;
 	p {
 		margin: 0;
 	}
@@ -441,10 +450,9 @@ div.note {
     margin-top: 1em;
 	background-color: #eee;
 	border: 1px solid #ddd;
-	width: 50em;
 	color: #555;
 	padding: 1em;
-	font-size: 1em;
+	font-size: 1.3em;
 	p {
 		margin: 0;
 	}

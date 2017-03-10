@@ -37,8 +37,9 @@ Abstract:
 Slides:
 
 <div class="slidedeck">
-<script src="http://speakerdeck.com/embed/4f5127b373c922001f001c60.js?size=preview"></script>
+    <script src="http://speakerdeck.com/embed/4f5127b373c922001f001c60.js?size=preview"></script>
 </div>
+
 ### Writing a Django e-commerce framework
 
 Abstract:
@@ -57,6 +58,6 @@ Abstract:
 Slides:
 
 <div class="slidedeck">
-<script src="http://speakerdeck.com/embed/4f512f128a37d6001f003114.js"></script>
+    <script src="http://speakerdeck.com/embed/4f512f128a37d6001f003114.js"></script>
 </div>
 

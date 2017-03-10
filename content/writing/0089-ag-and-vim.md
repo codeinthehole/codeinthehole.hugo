@@ -1,6 +1,6 @@
 {
     "date": "2014-06-17",
-    "description": "Lightning-fast `:grep` searching in Vim",
+    "description": "Lightning-fast :grep searching in Vim",
     "slug": "using-the-silver-searcher-with-vim",
     "tags": [
         "vim"

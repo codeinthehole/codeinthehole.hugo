@@ -5,7 +5,7 @@
     ],
     "title": "Altering Postgres table columns with South",
     "slug": "altering-postgres-table-columns-with-south",
-    "description": "Using `USING` to cast correctly",
+    "description": "Using 'USING' to cast correctly",
     "date": "2013-02-19"
 }
 
@@ -21,7 +21,7 @@ new type.
 For instance, I recently changed a `CharField` to a `TimeField` but the
 corresponding migration lead to:
 
-``` console
+``` 
 Running migrations for stores:
 - Migrating forwards to 0009_auto__chg_field_openingperiod_start__chg_field_openingperiod_end.
 > stores:0008_auto__del_unique_store_slug

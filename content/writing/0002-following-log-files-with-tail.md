@@ -1,6 +1,6 @@
 {
     "slug": "following-log-files-with-tail-f",
-    "title": "Following log files with `tail -f`",
+    "title": "Following log files with tail -f",
     "date": "2008-10-22",
     "tags": [
         "Bash"

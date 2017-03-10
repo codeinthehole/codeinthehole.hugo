@@ -10,7 +10,7 @@
     "slug": "monitoring-mysql-with-ganglia-and-gmetric"
 }
 
-![image](/images/bookcovers/9780596102357.jpg)
+<img src="/images/bookcovers/9780596102357.jpg" class="align-right" />
 
 Following some server monitoring advice from the excellent 'Building
 Scalable Web Sites' by Cal Henderson, I've recently been experimenting

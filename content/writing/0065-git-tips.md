@@ -9,7 +9,7 @@
     "date": "2012-10-20"
 }
 
-I work at [an agency](http://www.tangentlabs.co.uk) where we pay \$200 a
+I work at [an agency](http://www.tangentlabs.co.uk) where we pay $200 a
 month to Github for their [platinum plan](https://github.com/plans).
 This article is a summary of an internal talk I gave on making the most
 of our subscription.
@@ -154,10 +154,8 @@ pushing to the same branch:
 Iterate this way until the branch is ready to be merged.
 
 <div class="admonition warning">
-
-Github easter egg: add `?w=0` to diff URLs (eg a commit, compare view or
-pull request) to ignore whitespace.
-
+    Github easter egg: add <code>?w=0</code> to diff URLs (eg a commit, compare view or
+    pull request) to ignore whitespace.
 </div>
 
 #### Cleaning your history (optional)
@@ -185,14 +183,12 @@ This replays your commits on top of the new commits from the destination
 branch so that the merge can be a 'fast-forward'.
 
 <div class="admonition warning">
+    Hang on! Aren't you rewriting history that has been pushed?
 
-Hang on! Aren't you rewriting history that has been pushed?
-
-Yes - that's true. However, when the remote branch is *temporary* as for
-a pull request, this is ok (as far as I can tell). The pull request
-branch should be deleted once it has been merged and so it shouldn't
-matter that its history is being rewritten before merging.
-
+    Yes - that's true. However, when the remote branch is <em>temporary</em> as for
+    a pull request, this is ok (as far as I can tell). The pull request
+    branch should be deleted once it has been merged and so it shouldn't
+    matter that its history is being rewritten before merging.
 </div>
 
 Next, it may be desirable to squash your commits into larger cohesive

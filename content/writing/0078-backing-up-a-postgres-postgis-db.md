@@ -63,12 +63,10 @@ definitions of PostGIS types which have already been defined when we
 created the database from "template\_postgis".
 
 <div class="admonition note">
-
-The host is specified in the restore operation (`--host=127.0.0.1`) so
-as to trigger the correct authentication rules from `pg_hba.conf`. I
-usually forget this and am confused about why I can't authenticate. You
-might not need this if your authentication config is different.
-
+    The host is specified in the restore operation (<code>--host=127.0.0.1</code>) so
+    as to trigger the correct authentication rules from <code>pg_hba.conf</code>. I
+    usually forget this and am confused about why I can't authenticate. You
+    might not need this if your authentication config is different.
 </div>
 
 Related reading:

@@ -19,12 +19,10 @@ Use the following Python script to fetch pycon videos from YouTube and
 convert them to M4V format so they can be imported to iTunes.
 
 <script src="https://gist.github.com/2018487.js"> </script>
+
 <div class="admonition warning">
-
-This gist is stale now - the code for downloading videos has been
-expanding into a [Github
-repository](https://github.com/codeinthehole/pyvideo2quicktime).
-
+    This gist is stale now - the code for downloading videos has been
+    expanding into a [Github repository](https://github.com/codeinthehole/pyvideo2quicktime).
 </div>
 
 To run the script:

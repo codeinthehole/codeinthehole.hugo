@@ -1,5 +1,5 @@
 {
-    "description": "A rare sighting of the `reload` function in the wild",
+    "description": "A rare sighting of the 'reload' function in the wild",
     "tags": [
         "django",
         "testing",

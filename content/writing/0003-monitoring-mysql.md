@@ -1,6 +1,6 @@
 {
     "title": "Monitoring MySQL",
-    "description": "`watch` ing `mysqladmin` ftw",
+    "description": "watching mysqladmin ftw",
     "tags": [
         "mysql",
         "commandlinefu"

@@ -3,7 +3,7 @@
         "python"
     ],
     "slug": "bootstrapped-virtualenvs",
-    "description": "Using `postmkvirtualenv` to prime `postactivate`",
+    "description": "Using postmkvirtualenv to prime postactivate",
     "date": "2014-10-24",
     "title": "Bootstrapped virtualenvs"
 }

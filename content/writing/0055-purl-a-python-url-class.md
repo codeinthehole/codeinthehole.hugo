@@ -65,12 +65,9 @@ complicated URLs.
 ### purl
 
 <div class="admonition warning">
-
-Warning - the code examples below are from version 0.2 of purl - please
-consult the [Github
-documentation](https://github.com/codeinthehole/purl) for the latest
-reference.
-
+    Warning - the code examples below are from version 0.2 of purl - please
+    consult the <a href="https://github.com/codeinthehole/purl">Github documentation</a> for the latest
+    reference.
 </div>
 
 So I wrote a utility class to scratch this itch. It's a simple immutable

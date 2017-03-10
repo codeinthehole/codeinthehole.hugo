@@ -1,7 +1,7 @@
 {
     "slug": "checking-all-mysql-tables",
     "title": "Checking all MySQL tables",
-    "description": "Using the commandline to build a string of `CHECK` commands",
+    "description": "Using the commandline to build a string of CHECK commands",
     "date": "2008-11-23",
     "tags": [
         "commandlinefu",

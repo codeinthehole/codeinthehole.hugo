@@ -70,7 +70,7 @@ database.
 
 ### Design
 
-![image](/images/bookcovers/9781119998952.jpg)
+<img src="/images/bookcovers/9781119998952.jpg" class="align-right" />
 
 I recently read the excellent "Design for Hackers" by David Kadavy. Duly
 inspired, I attempted to rework the design to be clean and pleasing on

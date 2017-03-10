@@ -98,10 +98,8 @@ $ vimdiff /tmp/templates-0.{5,6}.txt
 I imagine there's a better way to do this but I couldn't find one.
 
 <div class="admonition note">
-
-This is a Django specific technique, but the general approach is quite
-useful for analysing changes between two codebases.
-
+    This is a Django specific technique, but the general approach is quite
+    useful for analysing changes between two codebases.
 </div>
 
 ### Updating an `AUTHORS` files

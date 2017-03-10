@@ -348,8 +348,8 @@ h3,
 th,
 td,
 li,
-dt,
 dd,
+dt,
 blockquote {
   font-size: 1.4em;
 }
@@ -388,6 +388,9 @@ dt,
 blockquote {
   max-width: 35em;
   line-height: 1.5em;
+}
+dl dd p {
+  font-size: 1em;
 }
 li {
   margin: 5px 0;
@@ -679,7 +682,11 @@ div.slidedeck {
 .article div.footnotes ol {
   margin: 40px 0 0 0;
 }
+.article div.footnotes ol li {
+  max-width: none;
+}
 .article div.footnotes ol li p {
+  max-width: none;
   margin: 0 0 4px 0;
 }
 .article #links {
@@ -749,14 +756,16 @@ div.tip {
 .admonition-title {
   display: none;
 }
+/* Special blocks in article bodies */
 div.warning {
   background-color: #eee;
   border: 1px solid #ddd;
-  width: 50em;
   color: #555;
   padding: 1em;
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  width: 38em;
 }
 div.warning p {
   margin: 0;
@@ -765,10 +774,9 @@ div.note {
   margin-top: 1em;
   background-color: #eee;
   border: 1px solid #ddd;
-  width: 50em;
   color: #555;
   padding: 1em;
-  font-size: 1em;
+  font-size: 1.3em;
 }
 div.note p {
   margin: 0;

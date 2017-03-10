@@ -17,8 +17,8 @@ by the guidelines for submission to the University of Nottingham, but
 can be easily amended to suit any sensible requirements.
 
 Considerable attention has been paid to presenting the final document as
-a PDF file, which keeps the file size managable (compared to postscript)
-and allows groovy addons such as hyperlinks and back-referencing.
+a PDF file, which keeps the file size manageable (compared to postscript)
+and allows groovy add-ons such as hyperlinks and back-referencing.
 However, several hacks are required to attain good functionality from
 your PDF file and these can give the latex code a mysterious (and messy)
 appearance in places. While I highly recommend the inclusion of the
@@ -26,13 +26,10 @@ PDF-related commands, they are not strictly necessary and can be ignored
 - especially if you are new to Latex.
 
 <div class="admonition warning">
-
-I wrote this article after finishing my PhD in 2005. I haven't
-
-:   done any Latex since and am thus very rusty. Ultimately, these days
+    I wrote this article after finishing my PhD in 2005. I haven't
+    done any Latex since and am thus very rusty. Ultimately, these days
     I'm unlikely to be able to answer many questions on this topic.
     Sorry about that.
-
 </div>
 
 ### Note for Windows users
@@ -391,16 +388,3 @@ then the necessary commands are:
 The syntax for `ps2pdf` is slightly different in Windows compared to
 Unix - and note that the output pdf filename MUST be specified, else the
 ps file is overwritten and corrupted.
-
-<div class="admonition tip">
-
-Sponsored links:
-
-:   Become IT expert using latest
-    [braindump](http://www.braindumps.com/). Go through the [350-001
-    dumps](http://www.braindumps.com/350-001.htm) to learn what's new
-    going to happen in industry. We offer up to date [70-680
-    dumps](http://www.braindumps.com/70-680.htm) written by industry's
-    top expert to help you excel in your field.
-
-</div>

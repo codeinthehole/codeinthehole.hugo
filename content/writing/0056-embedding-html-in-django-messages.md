@@ -1,7 +1,7 @@
 {
     "title": "Embedding HTML in Django messages",
     "slug": "embedding-html-in-django-messages",
-    "description": "Using `extra_tags` to flag up HTML-safe messages",
+    "description": "Using 'extra_tags' to flag up HTML-safe messages",
     "tags": [
         "django",
         "python"

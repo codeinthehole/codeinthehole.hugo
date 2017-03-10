@@ -37,7 +37,6 @@ There's a plethora of ways template URLs can be used - see the
 [RFC](http://tools.ietf.org/html/rfc6570) for details.
 
 <div class="admonition warning">
-
     Note, there's 
     <a href="https://github.com/uri-templates/uritemplate-py">already a Python library that provides this functionality</a>. I
     decided not to use that one with purl as I thought I could do better.
@@ -125,10 +124,8 @@ OK
 ```
 
 <div class="admonition note">
-
-I have verbose output turned on by default since my `~/nose.cfg` file
-contains the line `verbosity=2`.
-
+    I have verbose output turned on by default since my <code>~/nose.cfg</code> file
+    contains the line <code>verbosity=2</code>.
 </div>
 
 Here we construct a simple assertion function using the `eq_` equality
@@ -161,13 +158,10 @@ OK
 Much nicer.
 
 <div class="admonition warning">
-
-Updating the description suffers from a known bug where [failure reports
-always use the last description assigned to
-callable](https://code.google.com/p/python-nose/issues/detail?id=244).
-There are a few work-arounds detailed in the bug comments but none play
-nicely with Nose's multiprocess plugin.
-
+    Updating the description suffers from a known bug where 
+    <a href="https://code.google.com/p/python-nose/issues/detail?id=244">failure reports always use the last description assigned to callable</a>.
+    There are a few work-arounds detailed in the bug comments but none play
+    nicely with Nose's multiprocess plugin.
 </div>
 
 #### py.test

@@ -5,7 +5,7 @@
     "tags": [
         "PHP"
     ],
-    "description": "Using PHP's `DomDocument` to create large XML files"
+    "description": "Using PHP's DomDocument to create large XML files"
 }
 
 When creating large XML files with PHP, there are some important
