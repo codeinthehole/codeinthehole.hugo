@@ -54,6 +54,16 @@
                     <div id="article" class="entry-content">
                         {{ .Content }}
                     </div>
+
+                    <div id="links">
+                        <hr/>
+                        <p>
+                            Previous: <a href="{{ .Next.URL }}">{{ .Next.Title }}</a><br/>
+                            {{ if isset $ ".Prev" }}
+                                Next: <a href="{{ .Prev.URL }}">{{ .Prev.Title }}</a>
+                            {{ end }}
+                        </p>
+                    </div>
                 </div>
             </div>
 
