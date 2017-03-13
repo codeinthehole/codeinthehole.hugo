@@ -131,7 +131,7 @@ header {
     text-align: center;
 }
 
-// Footer
+/* Footer */
 footer {
 	margin: 100px 0 40px 0;
     color: @light-grey;
@@ -169,22 +169,28 @@ h1#title {
 }
 
 /* Homepage styles */
-.home h2 {
-    font-family: @san-serif;
-    font-size: 2.4em;
-    font-weight: normal;
-    color: @dark-grey;
-    margin: 0 0 10px 0;
-    padding: 0;
-    clear: left;
+.home {
+    h2 {
+        font-family: @san-serif;
+        font-size: 2.4em;
+        font-weight: normal;
+        color: @dark-grey;
+        margin: 0 0 10px 0;
+        padding: 0;
+        clear: left;
+    }
+    li {
+        margin: 8px 0;
+    }
+    #bio {
+        margin-bottom: 10px;
+        p {
+            width: auto;
+            margin: 5px 0;
+        }
+    }
 }
-.home li {
-	margin: 8px 0;
-}
-.home #bio p {
-	width: auto;
-	margin: 5px 0;
-}
+
 a.read-more {
 	display: block;
 	text-align: right;
@@ -605,7 +611,7 @@ iframe.twitter-share-button {
 	.article h3#article_date {
 		padding-left: 0px;
 	}
-	.article #logo {
+	.article #nav {
 		float: none;
 	}
     .caption {

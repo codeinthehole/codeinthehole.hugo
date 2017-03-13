@@ -462,6 +462,7 @@ header a:hover {
 .home #logo {
   text-align: center;
 }
+/* Footer */
 footer {
   margin: 100px 0 40px 0;
   color: #aaa;
@@ -506,6 +507,9 @@ h1#title {
 }
 .home li {
   margin: 8px 0;
+}
+.home #bio {
+  margin-bottom: 10px;
 }
 .home #bio p {
   width: auto;
@@ -952,7 +956,7 @@ iframe.twitter-share-button {
   .article h3#article_date {
     padding-left: 0px;
   }
-  .article #logo {
+  .article #nav {
     float: none;
   }
   .caption {

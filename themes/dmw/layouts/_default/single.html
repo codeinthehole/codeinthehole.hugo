@@ -1,26 +1,40 @@
 {{ partial "header.html" . }}
 
-<div id="content" class="article">
-    <h1 id="article_title" class="entry-title">{{ .Title }}</h1>
+<header>
+    <div id="logo">
+        <h4><a href="/" title="David Winterbottom">codeinthehole.com</a></h4>
+        <h5><a href="/writing/">writing</a> | 
+            <a href="http://twitter.com/codeinthehole" title="Occasionally I say something interesting">twitter</a> | 
+            <a href="http://github.com/codeinthehole">github</a> |
+            <a href="/about/">about</a></h5>
+    </div>
+</header>
 
-    <div class="byline">
-        by <a href="/about/" class="author vcard">David Winterbottom</a>
-        on <time class="published" datetime="">{{ .Date.Format "Monday, 2nd January 2006" }}</time>
+<div id="main" role="main">
+
+    <div id="content" class="article">
+        <h1 id="article_title" class="entry-title">{{ .Title }}</h1>
+
+        <div class="byline">
+            by <a href="/about/" class="author vcard">David Winterbottom</a>
+            on <time class="published" datetime="">{{ .Date.Format "Monday, 2nd January 2006" }}</time>
+        </div>
+
+        <div id="article" class="entry-content">
+            {{ .Content }}
+        </div>
+
+        <div id="links">
+            <hr/>
+            <p>
+            Previous: <a href="{{ .Next.URL }}">{{ .Next.Title }}</a><br/>
+            {{ if isset $ ".Prev" }}
+            Next: <a href="{{ .Prev.URL }}">{{ .Prev.Title }}</a>
+            {{ end }}
+            </p>
+        </div>
     </div>
 
-    <div id="article" class="entry-content">
-        {{ .Content }}
-    </div>
-
-    <div id="links">
-        <hr/>
-        <p>
-        Previous: <a href="{{ .Next.URL }}">{{ .Next.Title }}</a><br/>
-        {{ if isset $ ".Prev" }}
-        Next: <a href="{{ .Prev.URL }}">{{ .Prev.Title }}</a>
-        {{ end }}
-        </p>
-    </div>
 </div>
 
 {{ partial "footer.html" . }}
