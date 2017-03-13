@@ -5,7 +5,10 @@
         "career"
     ],
     "slug": "octopus-energy",
-    "title": "Octopus Energy"
+    "title": "Octopus Energy",
+    "aliases": [
+        "/writing/octopus-energy/"
+    ]
 }
 
 Last Wednesday was my last day at Yoyo Wallet. Thursday marked my first
