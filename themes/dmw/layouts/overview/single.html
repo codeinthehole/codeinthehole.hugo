@@ -1,0 +1,38 @@
+{{ partial "header.html" . }}
+
+<header>
+    <div id="logo">
+        <h4><a href="/" title="David Winterbottom">codeinthehole.com</a></h4>
+        <h5><a href="/writing/">writing</a> | 
+            <a href="http://twitter.com/codeinthehole" title="Occasionally I say something interesting">twitter</a> | 
+            <a href="http://github.com/codeinthehole">github</a> |
+            <a href="/about/">about</a></h5>
+    </div>
+</header>
+
+<div id="main" role="main">
+    <div id="content" class="articles">
+        <h1 id="title">{{ .Title }}</h1>
+        {{ range .Site.Pages }}
+            {{ if .Section }}
+                <div class="article">
+                    <div class="meta">
+                        {{ .Date.Format "January 02, 2006" }}<br/>
+                        <div class="tags">
+                            {{ if isset .Params "tags" }}
+                                {{ $num_tags := len .Params.Tags }}
+                                {{ range $index, $tag := .Params.Tags }}{{ if ne $index 0 }},{{ end}} <a href="/tags/{{ $tag | urlize }}">{{ . }}</a>{{ end }}
+                            {{ end }}
+                        </div>
+                    </div>
+                    <div class="main">
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        <p>{{ .Description }}</p>
+                    </div>
+                </div>
+            {{ end }}
+        {{ end }}
+    </div>
+</div>
+
+{{ partial "footer.html" . }}

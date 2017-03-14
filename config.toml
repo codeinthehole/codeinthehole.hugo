@@ -7,9 +7,3 @@ author = "David Winterbottom"
 copyright = "David Winterbottom, All rights reserved."
 
 PygmentsCodeFences = true
-
-[params]
-  logo      = "/images/me-high-res.jpg"
-  twitter   = "https://twitter.com/codeinthehole"
-  github    = "https://github.com/codeinthehole/"
-  email     = "david.winterbottom@gmail.com"
