@@ -1,7 +1,6 @@
 baseurl = "http://codeinthehole.com/"
 title = "David Winterbottom"
 languageCode = "en-us"
-theme = "dmw"
 
 author = "David Winterbottom"
 copyright = "David Winterbottom, All rights reserved."
