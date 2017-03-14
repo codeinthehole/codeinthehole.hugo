@@ -1,20 +1,10 @@
 {{ partial "header.html" . }}
-
-<header>
-    <div id="logo">
-        <h4><a href="/" title="David Winterbottom">codeinthehole.com</a></h4>
-        <h5><a href="/writing/">writing</a> | 
-            <a href="http://twitter.com/codeinthehole" title="Occasionally I say something interesting">twitter</a> | 
-            <a href="http://github.com/codeinthehole">github</a> |
-            <a href="/about/">about</a></h5>
-    </div>
-</header>
+{{ partial "nav.html" . }}
 
 <div id="main" role="main">
 
     <div id="content" class="article">
         <h1 id="article_title" class="entry-title">{{ .Title }}</h1>
-
         <div id="article" class="entry-content">
             {{ .Content }}
         </div>
