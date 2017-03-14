@@ -6,21 +6,7 @@
         <h1 id="title">{{ .Title }}</h1>
         {{ range .Site.Pages }}
             {{ if .Section }}
-                <div class="article">
-                    <div class="meta">
-                        {{ .Date.Format "January 02, 2006" }}<br/>
-                        <div class="tags">
-                            {{ if isset .Params "tags" }}
-                                {{ $num_tags := len .Params.Tags }}
-                                {{ range $index, $tag := .Params.Tags }}{{ if ne $index 0 }},{{ end}} <a href="/tags/{{ $tag | urlize }}">{{ . }}</a>{{ end }}
-                            {{ end }}
-                        </div>
-                    </div>
-                    <div class="main">
-                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                        <p>{{ .Description }}</p>
-                    </div>
-                </div>
+                {{ partial "article.html" . }}
             {{ end }}
         {{ end }}
     </div>
