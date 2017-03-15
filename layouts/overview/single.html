@@ -6,7 +6,7 @@
         <h1 id="title">{{ .Title }}</h1>
         {{ range .Site.Pages }}
             {{ if .Section }}
-                {{ partial "article.html" . }}
+                {{ partial "article_summary.html" . }}
             {{ end }}
         {{ end }}
     </div>

@@ -5,7 +5,7 @@
     <div id="content" class="articles">
         <h1 id="title">{{ .Title }}</h1>
         {{ range .Data.Pages }}
-            {{ partial "article.html" . }}
+            {{ partial "article_summary.html" . }}
         {{ end }}
     </div>
 </div>

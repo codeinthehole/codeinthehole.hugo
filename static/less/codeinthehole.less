@@ -66,6 +66,18 @@ dt {
 	margin-top: 10px;
 }
 
+/* 
+
+Structure is:
+
+    body 
+        article.hentry#container
+            div#main
+                div#content.$page
+
+where $page is one of "article", "articles", "home".
+
+
 /* Layout */
 #container {
     margin: 0 auto;
@@ -86,7 +98,7 @@ header {
 	}
 }
 
-/* Logo */
+/* Logo, nav */
 #logo {
     color: @dark-grey;
 
@@ -104,7 +116,7 @@ header {
 		font-size: 1.8em;
 	}
 	h3 {
-		margin: 1em 0;
+		margin: 0.3em 0 1em 0;
 	}
 	h3#mobile_nav {
 		display: none;
@@ -123,12 +135,6 @@ header {
 			color: @dark-grey;
 		}
 	}
-}
-.article #logo {
-    float: right;
-}
-.home #logo {
-    text-align: center;
 }
 
 /* Footer */
@@ -149,30 +155,19 @@ footer {
 	}
 }
 
-img.in_para {
-    float: right;
-    margin: 0 0 10px 10px;
-    border: 1px solid #ccc;
-    padding: 2px;
-	clear: right;
-	width: 140px;
-}
-
-/* Articles */
-h1#title {
-    font-family: @san-serif;
-    font-size: 4em;
-    font-weight: normal;
-    color: @dark-grey;
-    margin: 0;
-    padding: 0;
+/* Mobile */
+.mobile_only {
+    display: none
 }
 
 /* Homepage styles */
 .home {
+    #logo {
+        text-align: center;
+    }
     h2 {
         font-family: @san-serif;
-        font-size: 2.4em;
+        font-size: 2em;
         font-weight: normal;
         color: @dark-grey;
         margin: 0 0 10px 0;
@@ -183,293 +178,44 @@ h1#title {
         margin: 8px 0;
     }
     #bio {
+        font-size: 1.4em;
         margin-bottom: 10px;
         p {
             width: auto;
             margin: 5px 0;
+            font-size: 1em;
         }
     }
-}
-
-a.read-more {
-	display: block;
-	text-align: right;
-	padding: 5px 0;
-	font-size: 10pt;
-}
-#about-photo {
-    float: left;
-    margin: 0 10px 10px 0;
-    border: 1px solid #ccc;
-    padding: 2px;
-}
-
-// Github
-.github {
-	font-size: 1.4em;
-	padding: 0 0 40px 0;
-	.gravatar {
-		display: none;
-	}
-	.event {
-		border-bottom: 1px dotted #ddd;
-		padding: 0.5em 0;
-		li {
-			font-size: 0.9em;
-			overflow: hidden;
-			.message {
-				display: inline;
-			}
-			margin-left: 1.4em;
-		}
-		blockquote {
-			display: inline;
-			font-size: 1em;
-			margin: 0;
-			p {
-				font-size: 1em;
-				padding: 0;
-				margin: 0;
-			}
-		}
-	}
-	.commits {
-		ul {
-			margin: 0 0 0 0;
-		}
-	}
-	.message {
-		font-style: italic;
-	}
-	time {
-		display: none;
-	}
-	.meta {
-		float: right;
-		width: 30%;
-		text-align: right;
-		color: #666;
-		font-size: 0.85em;
-		a {
-			color: #974747;
-		}
-	}
-}
-
-.twtr-widget {
-    font-family: @serif;
-}
-.twtr-widget .twtr-tweet-wrap {
-    color: red;
-    padding: 0.5em 0 !important;
-}
-
-#article,
-.article-meta {
-    line-height: 1.8em;
-}
-
-/* Specialist */
-div.slidedeck {
-	width: 90%;
-	max-width: 45em;
-}
-
-/* Article styles */
-.article {
-	h1#article_title {
-		.title-block;
-		font-size: 3em;
-		margin: 0.3em 0 0.2em 0;
-		text-align: left;
-	}
-	h1#title {
-		.title-block;
-		color: black;
-		font-size: 3.4em;
-		margin: 0 0 0.4em 0;
-		text-align: left;
-	}
-    img.title-image {
-        margin: 20px 0 0 0;
-        width: 100%;
+    a.read-more {
+        display: block;
+        text-align: right;
+        padding: 5px 0;
+        font-size: 10pt;
     }
-	h1 {
-		.title-block;
-		font-size: 2em;
-		margin-top: 1em;
-	}
-	h2 {
-		.title-block;
-		font-size: 1.8em;
-	}
-	h3 {
-		.title-block;
-		font-size: 1.6em;
-	}
-	h4 {
-		.title-block;
-		font-size: 1.4em;
-	}
-	.byline {
-		.title-block;
-		color: #974747;
-		font-size: 1.2em;
-		text-align: left;
-		margin: 0 0 2em 0;
-	}
-	blockquote {
-		background-color: #eee;
-		.rounded-corners; 
-		padding: 0.8em 1em;
-		font-style: italic;
-		margin: 1em 0 0 0;
-	}
-	blockquote p {
-		font-size: 1em;
-		margin: 0;
-		padding: 0.4em 0 0.4em 0;
-	}
-
-	/* image styles */
-	img.align-right {
-		float: right;
-		padding: 2px;
-		margin: 0 0 2em 1em;
-		background-color: white;
-		border: 1px solid @light-grey;
-	}
-    img.noborder {
-        border: none;
-    }
-	.screenshot {
-		background-color: white;
-		border: 1px dashed @light-grey;
-		padding: 8px 12px;
-	}
-
-	div.footnotes {
-        margin: 40px 0 40px 0;
-		font-size: 0.8em;
-		ol {
-		    margin: 40px 0 0 0;
-		    li {
-		        max-width: none;
-		        p {
-                    max-width: none;
-                    margin: 0 0 4px 0;
-                }
-            }
-        }
-	}
-
-	#links {
-	    font-size: 0.8em;
-	    margin-top: 40px;
-    }
-
-}
-
-.article-meta {
-	h2 {
-		.title-block;
-		font-size: 1.8em;
-	}
-	h3 {
-		.title-block;
-		font-size: 1.6em;
-	}
-}
-
-.oscar {
-    img.logo {
-        float: right;
-        padding-left: 20px;
+    #about-photo {
+        float: left;
+        margin: 0 10px 10px 0;
+        border: 1px solid #ccc;
+        padding: 2px;
     }
 }
 
-#further-reading,
-#popular-reading {
-	margin-top: @heading-top-margin;
-}
-#article-about {
-	margin-top: @heading-top-margin;
-	p {
-		width: auto;
-		max-width: none;
-		margin: 5px 0 0 0;
-	}
-}
-#article-comments {
-	margin-top: @heading-top-margin;
-	border-top: 1px dashed #ddd;
-}
-
-// Disqus
-#dsq-content #dsq-global-toolbar {
-    margin: 0;
-}
-#dsq-comments p {
-	font-size: 1em;
-}
-
-// RST
-.highlight {
-    .rounded-corners;
-    width: 95%;
-    max-width: 790px;
-    padding: 10px 10px 10px 20px ;
-	pre {
-		margin: 0px;
-	}
-}
-tt.docutils {
-    background-color: #ddd;
-    padding: 2px 4px;
-    white-space: nowrap;
-    font-size: 0.9em;
-    font-family: @fixed-width;
-}
-div.tip {
-    color: @light-grey;
-    font-size: 8pt;
-}
-.admonition-title {
-    display: none;
-}
-
-/* Special blocks in article bodies */
-div.warning {
-	background-color: #eee;
-	border: 1px solid #ddd;
-	color: #555;
-	padding: 1em;
-    margin-top: 20px;
-    font-size: 1.4em;
-    line-height: 1.5em;
-    width: 38em;
-	p {
-		margin: 0;
-	}
-}
-div.note {
-    margin-top: 1em;
-	background-color: #eee;
-	border: 1px solid #ddd;
-	color: #555;
-	padding: 1em;
-	font-size: 1.3em;
-	p {
-		margin: 0;
-	}
-}
-
-// Article lists
+/* Article list pages */
 .articles {
     padding: 0 0 0 0;
     font-size: 1.4em;
-    margin-top: 20px;
-	.article {
+    margin-bottom: 20px;
+
+    h1#title {
+        font-family: @san-serif;
+        font-size: 3em;
+        font-weight: normal;
+        color: @dark-grey;
+        margin: 0;
+        padding: 0;
+    }
+
+	.article_summary {
 		border-bottom: 1px dotted #ddd;
 		overflow: hidden;
 		padding: 0.5em 0;
@@ -495,37 +241,136 @@ div.note {
 	}
 }
 
-// Tweets
-.tweets {
-    padding: 0 0 40px 0;
-    font-size: 1.4em;
-	.tweet {
-		border-bottom: 1px dotted #ddd;
-		overflow: hidden;
-		padding: 0.5em 0;
-		.meta {
-			float: right;
-			width: 30%;
-			text-align: right;
-			color: #666;
-			font-size: 0.85em;
-			a {
-				color: #974747;
-			}
-		}
-		.main p {
-			font-size: 1em;
-			margin: 0.1em 0 0 0;
-		}
+/* Article styles */
+.article {
+	h1#article_title {
+		.title-block;
+		font-size: 3em;
+		margin: 0.3em 0 0.2em 0;
+		text-align: left;
+		line-height: 1;
 	}
-}
 
-// Twitter widget
-.twtr-hd, .twtr-ft {
-    display: none;
-}
-iframe.twitter-share-button {
-	margin-top: 10px;
+	// Titles on one-off pages 
+    h1#title {
+        font-family: @san-serif;
+        font-size: 4em;
+        font-weight: normal;
+        color: @dark-grey;
+        margin: 0;
+        padding: 0;
+    }
+    img.title-image {
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+	h1 {
+		.title-block;
+		font-size: 2em;
+		margin-top: 1em;
+	}
+	h2 {
+		.title-block;
+		font-size: 1.8em;
+	}
+	h3 {
+		.title-block;
+		font-size: 1.6em;
+	}
+	h4 {
+		.title-block;
+		font-size: 1.4em;
+	}
+	.byline {
+		.title-block;
+		color: #974747;
+		font-size: 1.4em;
+		text-align: left;
+		margin: 0 0 20px 0;
+	}
+	blockquote {
+		background-color: #eee;
+		.rounded-corners; 
+		padding: 0.8em 1em;
+		font-style: italic;
+		margin: 1em 0 0 0;
+	}
+	blockquote p {
+		font-size: 1em;
+		margin: 0;
+		padding: 0.4em 0 0.4em 0;
+	}
+
+    /* Special blocks in article bodies */
+    div.slidedeck {
+        width: 90%;
+        max-width: 45em;
+    }
+    div.warning {
+        background-color: #eee;
+        border: 1px solid #ddd;
+        color: #555;
+        padding: 1em;
+        margin-top: 20px;
+        font-size: 1.4em;
+        line-height: 1.5em;
+        width: 38em;
+        p {
+            margin: 0;
+        }
+    }
+
+	/* Image styles */
+	img.align-right {
+		float: right;
+		padding: 2px;
+		margin: 0 0 2em 1em;
+		background-color: white;
+		border: 1px solid @light-grey;
+	}
+    img.noborder {
+        border: none;
+    }
+	img.screenshot {
+		background-color: white;
+		border: 1px dashed @light-grey;
+		padding: 8px 12px;
+	}
+
+	/* Code blocks */
+    .highlight {
+        .rounded-corners;
+        width: 95%;
+        max-width: 790px;
+        padding: 10px 10px 10px 20px ;
+        pre {
+            margin: 0px;
+        }
+    }
+
+	div.footnotes {
+        margin: 40px 0 40px 0;
+		font-size: 0.8em;
+		ol {
+		    margin: 40px 0 0 0;
+		    li {
+		        max-width: none;
+		        p {
+                    max-width: none;
+                    margin: 0 0 4px 0;
+                }
+            }
+        }
+	}
+
+	#article_meta {
+	    font-size: 0.8em;
+	    margin-top: 80px;
+	    span.hr {
+            color: @light-grey; 
+        }
+    }
+
 }
 
 /* ==|== non-semantic helper classes ========================================
@@ -554,7 +399,6 @@ iframe.twitter-share-button {
 .clearfix { zoom: 1; }
 
 
-
 /* ==|== media queries ======================================================
    PLACEHOLDER Media Queries for Responsive Design.
    These override the primary ('mobile first') styles
@@ -565,102 +409,104 @@ iframe.twitter-share-button {
 	#container {
 		padding: 0px 10px;
 	}
-	#logo h1 {
-		font-size: 2.4em;
-	}
-	#logo h2 {
-		font-size: 1.6em;
-	}
-	.home h2 {
-		font-size: 1.6em;
-	}
-	#about-photo {
-		display: none;
-	}
-	h3#screen_nav {
-		display: none;
-	}
-	h3#mobile_nav {
-		display: block;
-	}
-	.articles .article .meta {
-		width: 100%;
-		text-align: left;
-		padding-bottom: 5px;
-	}
-	.articles .article .meta .tags {
-		display: none;
-	}
-	.tweets .tweet .meta {
-		width: 100%;
-		text-align: left;
-		padding-bottom: 5px;
-	}
-	.projects ul {
-		padding: 0;
-		list-style: none;
-	}
-	.article h1#article_title {
-		font-size: 2em;
-		padding-left: 0px;
-	}
-	.article h1 {
-		font-size: 1.4em;
-		padding-left: 0px;
-	}
-	.article h3#article_date {
-		padding-left: 0px;
-	}
-	.article #nav {
-		float: none;
-	}
-    .caption {
-        margin: 0px;
+
+	.desktop_only {
+	    display: none;
     }
-	.article ul {
-		padding-left: 0px;
-		margin-left: 15px;
+	.mobile_only {
+	    display: block;
+    }
+
+    /* Homepage */
+	.home {
+        #logo {
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.4em;
+        }
+        #about-photo {
+            display: none;
+        }
+    }
+
+	#logo {
+	    h1 {
+            font-size: 2.6em;
+        }
+        h3#screen_nav {
+            display: none;
+        }
+        h3#mobile_nav {
+            margin-top: 0px;
+            display: block;
+        }
+        h4 {
+            text-align: center;
+        }
+        h5 {
+            text-align: center;
+            padding-bottom: 15px;
+        }
+    }
+
+    /* Article list */
+	.articles {
+	    h1#title {
+            font-size: 2em;
+        }
+	    .article_summary {
+	        .meta {
+                width: 100%;
+                text-align: left;
+                padding-bottom: 5px;
+                .tags {
+                    display: none;
+                }
+            }
+        }
 	}
-	#article-nav {
-		display: none;
-	}
-	#logo h4 {
-		text-align: center;
-	}
-	#logo h5 {
-		text-align: center;
-		padding-bottom: 15px;
-	}
-	#article p,
-	.article-meta p,
-	#article dl,
-	.article-meta h2,
-	#article table {
-		margin-left: 0px;
-		padding-left: 0px;
-	}
-	#further-reading .articles {
-		margin-left: 0px;
-	}
-	#article-about p {
-		margin: 5px 0 0 0;
-	}
-	.article img.align-right {
-		display: none;
-	}
+
+    /* Article detail */
+	.article {
+	    h1#article_title {
+            font-size: 2.5em;
+            padding-left: 0px;
+        }
+        h1#title {
+            font-size: 2.8em;
+            padding-left: 0px;
+        }
+        #nav {
+            float: none;
+        }
+        .caption {
+            margin: 0px;
+        }
+        ul {
+            padding-left: 0px;
+            margin-left: 15px;
+        }
+        #article_content {
+            p, dl, table {
+                margin-left: 0px;
+                padding-left: 0px;
+            }
+        }
+        img.align-right {
+            display: none;
+        }
+    }
+
 }
 
 @media only screen and (min-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */
-
 }
 
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports 768px and over go here */
-
 }
-
-
 
 /* ==|== print styles =======================================================
    Print styles.

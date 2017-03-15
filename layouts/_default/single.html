@@ -4,19 +4,24 @@
 <div id="main" role="main">
 
     <div id="content" class="article">
+
         <h1 id="article_title" class="entry-title">{{ .Title }}</h1>
 
-        <div class="byline">
+        <div class="byline desktop_only">
             by <a href="/about/" class="author vcard">David Winterbottom</a>
-            on <time class="published" datetime="">{{ .Date.Format "Monday, 2nd January 2006" }}</time>
+            on <time class="published" datetime="">{{ .Date.Format "Monday, 2 January 2006" }}</time>
+        </div>
+        <div class="byline mobile_only">
+            by <a href="/about/" class="author vcard">David Winterbottom</a><br/>
+            on <time class="published" datetime="">{{ .Date.Format "Monday, 2 January 2006" }}</time>
         </div>
 
-        <div id="article" class="entry-content">
+        <div id="article_content" class="entry-content">
             {{ .Content }}
         </div>
 
-        <div id="links">
-            <hr/>
+        <div id="article_meta">
+            <span class="hr">----</span>
             <p>
             {{ if isset .Params "tags" }}
                 Tagged with:
@@ -35,6 +40,10 @@
             {{ if .Prev }}
                 Next: <a href="{{ .Prev.URL }}">{{ .Prev.Title }}</a>
             {{ end }}
+            </p>
+            <p>
+            Copyright &copy; 2005-{{ .Now.Year }} <a href="/about/">David Winterbottom</a><br/>
+            Content licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
             </p>
         </div>
     </div>

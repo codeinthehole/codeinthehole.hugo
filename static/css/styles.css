@@ -398,6 +398,18 @@ li {
 dt {
   margin-top: 10px;
 }
+/* 
+
+Structure is:
+
+    body 
+        article.hentry#container
+            div#main
+                div#content.$page
+
+where $page is one of "article", "articles", "home".
+
+
 /* Layout */
 #container {
   margin: 0 auto;
@@ -415,7 +427,7 @@ header {
 header a:hover {
   text-decoration: underline;
 }
-/* Logo */
+/* Logo, nav */
 #logo {
   color: #222;
 }
@@ -437,7 +449,7 @@ header a:hover {
   font-size: 1.8em;
 }
 #logo h3 {
-  margin: 1em 0;
+  margin: 0.3em 0 1em 0;
 }
 #logo h3#mobile_nav {
   display: none;
@@ -456,12 +468,6 @@ header a:hover {
 #logo h5 a {
   color: #222;
 }
-.article #logo {
-  float: right;
-}
-.home #logo {
-  text-align: center;
-}
 /* Footer */
 footer {
   margin: 100px 0 40px 0;
@@ -478,27 +484,17 @@ footer a:hover {
 footer a:hover {
   text-decoration: underline;
 }
-img.in_para {
-  float: right;
-  margin: 0 0 10px 10px;
-  border: 1px solid #ccc;
-  padding: 2px;
-  clear: right;
-  width: 140px;
-}
-/* Articles */
-h1#title {
-  font-family: 'Signika Negative', serif;
-  font-size: 4em;
-  font-weight: normal;
-  color: #222;
-  margin: 0;
-  padding: 0;
+/* Mobile */
+.mobile_only {
+  display: none;
 }
 /* Homepage styles */
+.home #logo {
+  text-align: center;
+}
 .home h2 {
   font-family: 'Signika Negative', serif;
-  font-size: 2.4em;
+  font-size: 2em;
   font-weight: normal;
   color: #222;
   margin: 0 0 10px 0;
@@ -509,91 +505,67 @@ h1#title {
   margin: 8px 0;
 }
 .home #bio {
+  font-size: 1.4em;
   margin-bottom: 10px;
 }
 .home #bio p {
   width: auto;
   margin: 5px 0;
+  font-size: 1em;
 }
-a.read-more {
+.home a.read-more {
   display: block;
   text-align: right;
   padding: 5px 0;
   font-size: 10pt;
 }
-#about-photo {
+.home #about-photo {
   float: left;
   margin: 0 10px 10px 0;
   border: 1px solid #ccc;
   padding: 2px;
 }
-.github {
+/* Article list pages */
+.articles {
+  padding: 0 0 0 0;
   font-size: 1.4em;
-  padding: 0 0 40px 0;
+  margin-bottom: 20px;
 }
-.github .gravatar {
-  display: none;
+.articles h1#title {
+  font-family: 'Signika Negative', serif;
+  font-size: 3em;
+  font-weight: normal;
+  color: #222;
+  margin: 0;
+  padding: 0;
 }
-.github .event {
+.articles .article_summary {
   border-bottom: 1px dotted #ddd;
+  overflow: hidden;
   padding: 0.5em 0;
 }
-.github .event li {
-  font-size: 0.9em;
-  overflow: hidden;
-  margin-left: 1.4em;
-}
-.github .event li .message {
-  display: inline;
-}
-.github .event blockquote {
-  display: inline;
-  font-size: 1em;
-  margin: 0;
-}
-.github .event blockquote p {
-  font-size: 1em;
-  padding: 0;
-  margin: 0;
-}
-.github .commits ul {
-  margin: 0 0 0 0;
-}
-.github .message {
-  font-style: italic;
-}
-.github time {
-  display: none;
-}
-.github .meta {
+.articles .article_summary .meta {
   float: right;
   width: 30%;
   text-align: right;
   color: #666;
   font-size: 0.85em;
 }
-.github .meta a {
+.articles .article_summary .meta a {
   color: #974747;
 }
-.twtr-widget {
-  font-family: "Minion Pro", "Palatino", "Hoefler Text", "Times New Roman", serif;
+.articles .article_summary .main a {
+  display: block;
 }
-.twtr-widget .twtr-tweet-wrap {
-  color: red;
-  padding: 0.5em 0 !important;
-}
-#article,
-.article-meta {
-  line-height: 1.8em;
-}
-/* Specialist */
-div.slidedeck {
-  width: 90%;
-  max-width: 45em;
+.articles .article_summary .main p {
+  font-size: 1em;
+  margin: 0.1em 0 0 0;
 }
 /* Article styles */
 .article {
-  /* image styles */
+  /* Special blocks in article bodies */
+  /* Image styles */
+  /* Code blocks */
 }
 .article h1#article_title {
   font-family: 'Signika Negative', serif;
@@ -602,15 +574,15 @@ div.slidedeck {
   font-size: 3em;
   margin: 0.3em 0 0.2em 0;
   text-align: left;
+  line-height: 1;
 }
 .article h1#title {
   font-family: 'Signika Negative', serif;
-  color: #8C0808;
+  font-size: 4em;
   font-weight: normal;
-  color: black;
-  font-size: 3.4em;
-  margin: 0 0 0.4em 0;
-  text-align: left;
+  color: #222;
+  margin: 0;
+  padding: 0;
 }
 .article img.title-image {
   margin: 20px 0 0 0;
@@ -646,9 +618,9 @@ div.slidedeck {
   color: #8C0808;
   font-weight: normal;
   color: #974747;
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-align: left;
-  margin: 0 0 2em 0;
+  margin: 0 0 20px 0;
 }
 .article blockquote {
   background-color: #eee;
@@ -664,6 +636,23 @@ div.slidedeck {
   margin: 0;
   padding: 0.4em 0 0.4em 0;
 }
+.article div.slidedeck {
+  width: 90%;
+  max-width: 45em;
+}
+.article div.warning {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  color: #555;
+  padding: 1em;
+  margin-top: 20px;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  width: 38em;
+}
+.article div.warning p {
+  margin: 0;
+}
 .article img.align-right {
   float: right;
   padding: 2px;
@@ -674,10 +663,21 @@ div.slidedeck {
 .article img.noborder {
   border: none;
 }
-.article .screenshot {
+.article img.screenshot {
   background-color: white;
   border: 1px dashed #aaa;
   padding: 8px 12px;
+}
+.article .highlight {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  width: 95%;
+  max-width: 790px;
+  padding: 10px 10px 10px 20px ;
+}
+.article .highlight pre {
+  margin: 0px;
 }
 .article div.footnotes {
   margin: 40px 0 40px 0;
@@ -693,154 +693,12 @@ div.slidedeck {
   max-width: none;
   margin: 0 0 4px 0;
 }
-.article #links {
+.article #article_meta {
   font-size: 0.8em;
-  margin-top: 40px;
+  margin-top: 80px;
 }
-.article-meta h2 {
-  font-family: 'Signika Negative', serif;
-  color: #8C0808;
-  font-weight: normal;
-  font-size: 1.8em;
-}
-.article-meta h3 {
-  font-family: 'Signika Negative', serif;
-  color: #8C0808;
-  font-weight: normal;
-  font-size: 1.6em;
-}
-.oscar img.logo {
-  float: right;
-  padding-left: 20px;
-}
-#further-reading,
-#popular-reading {
-  margin-top: 20px;
-}
-#article-about {
-  margin-top: 20px;
-}
-#article-about p {
-  width: auto;
-  max-width: none;
-  margin: 5px 0 0 0;
-}
-#article-comments {
-  margin-top: 20px;
-  border-top: 1px dashed #ddd;
-}
-#dsq-content #dsq-global-toolbar {
-  margin: 0;
-}
-#dsq-comments p {
-  font-size: 1em;
-}
-.highlight {
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  width: 95%;
-  max-width: 790px;
-  padding: 10px 10px 10px 20px ;
-}
-.highlight pre {
-  margin: 0px;
-}
-tt.docutils {
-  background-color: #ddd;
-  padding: 2px 4px;
-  white-space: nowrap;
-  font-size: 0.9em;
-  font-family: 'Inconsolata', monospace, sans-serif;
-}
-div.tip {
+.article #article_meta span.hr {
   color: #aaa;
-  font-size: 8pt;
-}
-.admonition-title {
-  display: none;
-}
-/* Special blocks in article bodies */
-div.warning {
-  background-color: #eee;
-  border: 1px solid #ddd;
-  color: #555;
-  padding: 1em;
-  margin-top: 20px;
-  font-size: 1.4em;
-  line-height: 1.5em;
-  width: 38em;
-}
-div.warning p {
-  margin: 0;
-}
-div.note {
-  margin-top: 1em;
-  background-color: #eee;
-  border: 1px solid #ddd;
-  color: #555;
-  padding: 1em;
-  font-size: 1.3em;
-}
-div.note p {
-  margin: 0;
-}
-.articles {
-  padding: 0 0 0 0;
-  font-size: 1.4em;
-  margin-top: 20px;
-}
-.articles .article {
-  border-bottom: 1px dotted #ddd;
-  overflow: hidden;
-  padding: 0.5em 0;
-}
-.articles .article .meta {
-  float: right;
-  width: 30%;
-  text-align: right;
-  color: #666;
-  font-size: 0.85em;
-}
-.articles .article .meta a {
-  color: #974747;
-}
-.articles .article .main a {
-  display: block;
-}
-.articles .article .main p {
-  font-size: 1em;
-  margin: 0.1em 0 0 0;
-}
-.tweets {
-  padding: 0 0 40px 0;
-  font-size: 1.4em;
-}
-.tweets .tweet {
-  border-bottom: 1px dotted #ddd;
-  overflow: hidden;
-  padding: 0.5em 0;
-}
-.tweets .tweet .meta {
-  float: right;
-  width: 30%;
-  text-align: right;
-  color: #666;
-  font-size: 0.85em;
-}
-.tweets .tweet .meta a {
-  color: #974747;
-}
-.tweets .tweet .main p {
-  font-size: 1em;
-  margin: 0.1em 0 0 0;
-}
-.twtr-hd,
-.twtr-ft {
-  display: none;
-}
-iframe.twitter-share-button {
-  margin-top: 10px;
 }
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
@@ -910,64 +768,31 @@ iframe.twitter-share-button {
   #container {
     padding: 0px 10px;
   }
-  #logo h1 {
-    font-size: 2.4em;
-  }
-  #logo h2 {
-    font-size: 1.6em;
-  }
-  .home h2 {
-    font-size: 1.6em;
-  }
-  #about-photo {
+  .desktop_only {
     display: none;
   }
-  h3#screen_nav {
-    display: none;
-  }
-  h3#mobile_nav {
+  .mobile_only {
     display: block;
   }
-  .articles .article .meta {
-    width: 100%;
-    text-align: left;
-    padding-bottom: 5px;
+  /* Homepage */
+  .home #logo {
+    margin-bottom: 20px;
   }
-  .articles .article .meta .tags {
-    display: none;
-  }
-  .tweets .tweet .meta {
-    width: 100%;
-    text-align: left;
-    padding-bottom: 5px;
-  }
-  .projects ul {
-    padding: 0;
-    list-style: none;
-  }
-  .article h1#article_title {
-    font-size: 2em;
-    padding-left: 0px;
-  }
-  .article h1 {
+  .home h2 {
     font-size: 1.4em;
-    padding-left: 0px;
   }
-  .article h3#article_date {
-    padding-left: 0px;
-  }
-  .article #nav {
-    float: none;
-  }
-  .caption {
-    margin: 0px;
-  }
-  .article ul {
-    padding-left: 0px;
-    margin-left: 15px;
-  }
-  #article-nav {
+  .home #about-photo {
     display: none;
+  }
+  #logo h1 {
+    font-size: 2.6em;
+  }
+  #logo h3#screen_nav {
+    display: none;
+  }
+  #logo h3#mobile_nav {
+    margin-top: 0px;
+    display: block;
   }
   #logo h4 {
     text-align: center;
@@ -976,19 +801,42 @@ iframe.twitter-share-button {
     text-align: center;
     padding-bottom: 15px;
   }
-  #article p,
-  .article-meta p,
-  #article dl,
-  .article-meta h2,
-  #article table {
-    margin-left: 0px;
+  /* Article list */
+  .articles h1#title {
+    font-size: 2em;
+  }
+  .articles .article_summary .meta {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 5px;
+  }
+  .articles .article_summary .meta .tags {
+    display: none;
+  }
+  /* Article detail */
+  .article h1#article_title {
+    font-size: 2.5em;
     padding-left: 0px;
   }
-  #further-reading .articles {
-    margin-left: 0px;
+  .article h1#title {
+    font-size: 2.8em;
+    padding-left: 0px;
   }
-  #article-about p {
-    margin: 5px 0 0 0;
+  .article #nav {
+    float: none;
+  }
+  .article .caption {
+    margin: 0px;
+  }
+  .article ul {
+    padding-left: 0px;
+    margin-left: 15px;
+  }
+  .article #article_content p,
+  .article #article_content dl,
+  .article #article_content table {
+    margin-left: 0px;
+    padding-left: 0px;
   }
   .article img.align-right {
     display: none;
