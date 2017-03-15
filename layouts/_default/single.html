@@ -25,8 +25,10 @@
                 <br/>
             {{ end }}
             {{ if .Section }}
-                Filed in: <a href="/{{ .Section }}/">{{ .Section | title }}</a>.<br/>
+                Filed in: <a href="/{{ .Section }}/">{{ .Section | title }}</a>
             {{ end }}
+            </p>
+            <p>
             {{ if .Next }}
                 Previous: <a href="{{ .Next.URL }}">{{ .Next.Title }}</a><br/>
             {{ end }}
