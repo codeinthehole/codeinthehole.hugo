@@ -1,5 +1,6 @@
 +++ 
 title = "About"
+description = "Hello, I'm David, a software engineer working in London" 
 type = "info"
 hidefromhome = true
 +++

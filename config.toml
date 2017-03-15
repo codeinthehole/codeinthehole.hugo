@@ -2,7 +2,8 @@ baseurl = "http://codeinthehole.com/"
 title = "David Winterbottom"
 languageCode = "en-us"
 
-author = "David Winterbottom"
-copyright = "David Winterbottom, All rights reserved."
-
 PygmentsCodeFences = true
+
+[params]
+    author = "David Winterbottom"
+    description = "A software engineer working in London."
