@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/integrating-django-application-metrics-into-zabbix"],
     "description": "A simple how-to for feeding Django metrics into Zabbix",
     "date": "2014-10-22",
     "tags": [

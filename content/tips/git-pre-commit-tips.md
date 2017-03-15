@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/tips-for-using-a-git-pre-commit-hook"],
     "slug": "tips-for-using-a-git-pre-commit-hook",
     "tags": [
         "git"

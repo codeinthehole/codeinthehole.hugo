@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/mysqldump-with-wildcard-table-matching"],
     "description": "Using the fu to enhance mysqldump",
     "date": "2010-11-05",
     "tags": [

@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/a-data-migration-for-every-django-project"],
     "title": "A data migration for every Django project",
     "description": "No more embarassing emails from example.com",
     "tags": [

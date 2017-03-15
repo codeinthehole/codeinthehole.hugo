@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/rewriting-codeintheholecom"],
     "title": "Rewriting codeinthehole.com",
     "tags": [
         "django"

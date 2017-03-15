@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/commandlinefu-presentation-at-confoo-2011"],
     "tags": [
         "commandlinefu",
         "presentations"

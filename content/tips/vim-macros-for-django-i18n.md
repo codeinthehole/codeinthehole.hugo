@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/vim-macros-for-adding-i18n-support-to-django-templates"],
     "date": "2012-07-06",
     "title": "Vim macros for adding i18n support to Django templates",
     "tags": [

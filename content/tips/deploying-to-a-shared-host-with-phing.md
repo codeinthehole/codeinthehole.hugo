@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/deploying-to-a-shared-hosting-environment-using-phing"],
     "tags": [
         "deployment",
         "phing"

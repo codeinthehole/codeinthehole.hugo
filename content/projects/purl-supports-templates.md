@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/purl-uri-templates-and-generated-tests"],
     "description": "Matching the RFC using Nose's test generators",
     "title": "purl, URI templates and generated tests",
     "tags": [

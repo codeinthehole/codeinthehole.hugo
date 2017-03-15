@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/solving-mysql-connection-problems-caused-by-a-dead-name-server"],
     "slug": "solving-mysql-connection-problems-caused-by-a-dead-name-server",
     "title": "Solving MySQL connection problems caused by a dead name server",
     "description": "MySQL's DNS lookups can cause serious problems",

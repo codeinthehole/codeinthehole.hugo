@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/running-django-cronjobs-within-a-virtualenv"],
     "tags": [
         "python",
         "django"

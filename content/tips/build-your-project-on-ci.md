@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/continuously-re-build-your-project"],
     "slug": "continuously-re-build-your-project",
     "description": "Using CI to avoid pain for new team members",
     "tags": [

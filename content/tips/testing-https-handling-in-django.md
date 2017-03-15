@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/testing-https-handling-in-django"],
     "slug": "testing-https-handling-in-django",
     "date": "2012-03-01",
     "description": "Spoofing a HTTPS request using the Django test client",

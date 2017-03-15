@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/using-the-silver-searcher-with-vim"],
     "date": "2014-06-17",
     "description": "Lightning-fast :grep searching in Vim",
     "slug": "using-the-silver-searcher-with-vim",
@@ -7,6 +8,8 @@
     ],
     "title": "Using the silver searcher with Vim"
 }
+
+# Here is my title
 
 If you're not doing this already, then you should use the [Silver
 Searcher](http://geoff.greer.fm/2011/12/27/the-silver-searcher-better-than-ack/)
@@ -45,9 +48,8 @@ I'm using the cursor keys since I normally have them disabled.
 
 See also:
 
--   [Faster Grepping in
-    Vim](http://robots.thoughtbot.com/faster-grepping-in-vim) by Dan
-    Croak - this shows how to use the Silver searcher with the
-    [CtrlP](https://github.com/kien/ctrlp.vim) plugin.
+-   [Faster Grepping in Vim](http://robots.thoughtbot.com/faster-grepping-in-vim) by Dan
+    Croak - this shows how to use the Silver searcher with the [CtrlP](https://github.com/kien/ctrlp.vim) plugin.
+
 -   The Vim plugin [ag.vim](https://github.com/rking/ag.vim).
 

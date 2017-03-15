@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/monitoring-mysql-with-ganglia-and-gmetric"],
     "title": "Monitoring MySQL with Ganglia and gmetric",
     "date": "2008-12-14",
     "tags": [

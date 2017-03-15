@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/a-useful-git-post-checkout-hook-for-python-repos"],
     "tags": [
         "python",
         "git"

@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/prefer-webtest-to-djangos-test-client-for-functional-tests"],
     "title": "Prefer WebTest to Django's test client for functional tests",
     "description": "Superior functional tests for Django",
     "date": "2012-09-09",

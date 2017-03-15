@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/monitoring-mysql"],
     "title": "Monitoring MySQL",
     "description": "watching mysqladmin ftw",
     "tags": [

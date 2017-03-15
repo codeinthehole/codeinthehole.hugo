@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/copying-postgres-output-into-a-spreadsheet"],
     "title": "Copying Postgres output into a spreadsheet",
     "slug": "copying-postgres-output-into-a-spreadsheet",
     "description": "Quick tip on tweaking the output of psql",

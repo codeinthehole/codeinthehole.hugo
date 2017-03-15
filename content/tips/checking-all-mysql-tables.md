@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/checking-all-mysql-tables"],
     "slug": "checking-all-mysql-tables",
     "title": "Checking all MySQL tables",
     "description": "Using the commandline to build a string of CHECK commands",

@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/how-to-sync-a-mysql-table-between-two-remote-databases"],
     "tags": [
         "mysql"
     ],

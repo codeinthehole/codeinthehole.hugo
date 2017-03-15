@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/how-to-chroot-a-user-in-ubuntu-1204"],
     "slug": "how-to-chroot-a-user-in-ubuntu-1204",
     "date": "2012-10-16",
     "title": "How to chroot a user in Ubuntu 12.04",

@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/pull-requests-and-other-good-practices-for-teams-using-github"],
     "description": "Notes from an internal git workshop",
     "tags": [
         "git",

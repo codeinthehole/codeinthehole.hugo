@@ -6,7 +6,8 @@
     ],
     "description": "A short review",
     "slug": "high-performance-web-sites-by-steve-souders",
-    "title": "High Performance Web Sites by Steve Souders"
+    "title": "High Performance Web Sites by Steve Souders",
+    "aliases": ["/writing/high-performance-web-sites-by-steve-souders"]
 }
 
 <img src="/images/bookcovers/9780596529307.jpg" class="align-right" />

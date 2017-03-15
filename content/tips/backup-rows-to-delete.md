@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/backing-up-database-rows-in-postgres-before-deleting-them"],
     "slug": "backing-up-database-rows-in-postgres-before-deleting-them",
     "date": "2015-03-19",
     "tags": [

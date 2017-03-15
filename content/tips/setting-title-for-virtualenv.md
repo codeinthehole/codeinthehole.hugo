@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/auto-setting-terminal-titles-for-python-virtual-environments"],
     "title": "Auto-setting terminal titles for python virtual environments",
     "tags": [
         "python",

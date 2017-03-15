@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/linking-to-github"],
     "title": "Linking to Github",
     "tags": [
         "git",

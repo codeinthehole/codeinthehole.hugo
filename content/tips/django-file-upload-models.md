@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/use-models-for-uploads"],
     "slug": "use-models-for-uploads",
     "tags": [
         "django",

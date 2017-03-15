@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/conditional-logic-in-django-forms"],
     "tags": [
         "django",
         "python"

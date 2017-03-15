@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/converting-github-issues-into-pull-requests"],
     "description": "A better workflow using Hub",
     "title": "Converting Github issues into pull requests",
     "slug": "converting-github-issues-into-pull-requests",

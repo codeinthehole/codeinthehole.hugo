@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/deploying-cron-jobs-using-phing"],
     "description": "A phing pattern for deploying cron scripts",
     "tags": [
         "phing",

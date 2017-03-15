@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/using-pip-and-requirementstxt-to-install-from-the-head-of-a-github-branch"],
     "slug": "using-pip-and-requirementstxt-to-install-from-the-head-of-a-github-branch",
     "description": "Always get the latest version",
     "title": "Using pip and requirements.txt to install from the HEAD of a Github branch",

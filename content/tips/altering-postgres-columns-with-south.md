@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/altering-postgres-table-columns-with-south"],
     "tags": [
         "postgres",
         "django"

@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/a-pseudo-code-job-advert-and-its-discontents"],
     "date": "2009-07-09",
     "slug": "a-pseudo-code-job-advert-and-its-discontents",
     "tags": [

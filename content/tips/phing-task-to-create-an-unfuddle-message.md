@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/phing-task-to-create-an-unfuddle-message"],
     "tags": [
         "phing"
     ],

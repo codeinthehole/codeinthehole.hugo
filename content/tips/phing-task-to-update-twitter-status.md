@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/phing-task-to-update-twitter-status"],
     "date": "2009-01-10",
     "slug": "phing-task-to-update-twitter-status",
     "tags": [

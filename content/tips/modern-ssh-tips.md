@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/an-ssh-tip-for-modern-aws-patrons"],
     "description": "Slightly useful tip for SSHing onto EC2 instances",
     "tags": [
         "aws"

@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/phing-xinc-and-nabaztags"],
     "tags": [
         "phing"
     ],

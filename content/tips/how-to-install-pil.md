@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/how-to-install-pil-on-64-bit-ubuntu-1204"],
     "date": "2013-04-18",
     "tags": [
         "python",

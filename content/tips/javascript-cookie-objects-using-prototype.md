@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/javascript-cookie-objects-using-prototype-and-json"],
     "tags": [
         "javascript",
         "prototype"

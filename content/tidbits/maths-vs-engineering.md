@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/mathematics-and-engineering"],
     "title": "Mathematics and engineering",
     "tags": [
         "quotes"

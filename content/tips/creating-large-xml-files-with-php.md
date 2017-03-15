@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/creating-large-xml-files-with-php"],
     "slug": "creating-large-xml-files-with-php",
     "date": "2008-10-31",
     "title": "Creating large XML files with PHP",

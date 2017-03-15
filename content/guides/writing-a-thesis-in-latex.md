@@ -5,10 +5,11 @@
     "title": "Writing a Thesis in LaTeX",
     "tags": [
         "latex"
-    ]
+    ],
+    "aliases": ["/writing/writing-a-thesis-in-latex"]
 }
 
-### Overview
+## Overview
 
 This article is a guide to constructing a decent parent file for a
 thesis or dissertation compiled in Latex. The specific details

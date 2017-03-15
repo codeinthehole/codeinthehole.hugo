@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/prefer-data-migrations-to-initial-data"],
     "description": "South provides a better way",
     "tags": [
         "django",

@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/inspecting-javascript-objects"],
     "title": "Inspecting Javascript objects",
     "description": "Simple introspection methods",
     "slug": "inspecting-javascript-objects",

@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/cacheback-asynchronous-cache-refreshing-for-django"],
     "description": "A simple caching library that uses Celery to refresh stage cache items",
     "date": "2012-09-02",
     "title": "Cacheback - asynchronous cache refreshing for Django",
@@ -10,8 +11,7 @@
 }
 
 Inspired by [Jacob Kaplan-Moss](http://jacobian.org/)'s excellent talk
-"[Django doesn't
-scale](http://www.oscon.com/oscon2012/public/schedule/detail/24030)" at
+"[Django doesn't scale](http://www.oscon.com/oscon2012/public/schedule/detail/24030)" at
 this year's OSCon, I've put together a Django package for re-populating
 caches asynchronously.
 

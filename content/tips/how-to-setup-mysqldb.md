@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/how-to-set-up-mysql-for-python-on-ubuntu"],
     "slug": "how-to-set-up-mysql-for-python-on-ubuntu",
     "tags": [
         "python",

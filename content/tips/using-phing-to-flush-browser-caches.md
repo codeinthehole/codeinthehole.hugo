@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/using-a-phing-filter-to-flush-browser-caches"],
     "tags": [
         "phing"
     ],

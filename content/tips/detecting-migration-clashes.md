@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/avoiding-clashing-django-migrations"],
     "tags": [
         "django",
         "testing"

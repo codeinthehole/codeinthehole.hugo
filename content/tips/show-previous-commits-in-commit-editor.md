@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/enhancing-your-git-commit-editor"],
     "slug": "enhancing-your-git-commit-editor",
     "title": "Enhancing your git commit editor",
     "description": "Commit message pedantry taken to a new level",

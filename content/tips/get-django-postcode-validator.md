@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/validating-international-postcodes-in-django"],
     "slug": "validating-international-postcodes-in-django",
     "tags": [
         "django",

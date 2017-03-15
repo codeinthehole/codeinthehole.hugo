@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/multi-scp-copying-a-file-to-all-hosts-in-your-ssh-config"],
     "date": "2011-05-22",
     "description": "Using node.js to copy a file to multiple remote hosts",
     "tags": [

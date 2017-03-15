@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/how-to-reload-djangos-url-config"],
     "description": "A rare sighting of the 'reload' function in the wild",
     "tags": [
         "django",

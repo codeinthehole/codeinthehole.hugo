@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/date-conditional-redirects-with-mod_rewrite"],
     "description": "Using mod_rewrite to redirect based on the date",
     "date": "2008-11-07",
     "slug": "date-conditional-redirects-with-mod_rewrite",

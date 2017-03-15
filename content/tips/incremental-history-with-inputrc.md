@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/the-most-important-command-line-tip-incremental-history-searching-with-inputrc"],
     "slug": "the-most-important-command-line-tip-incremental-history-searching-with-inputrc",
     "tags": [
         "commandlinefu"

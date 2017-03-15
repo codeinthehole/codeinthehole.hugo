@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/commandlinefucom-is-in-new-hands"],
     "date": "2015-04-04",
     "slug": "commandlinefucom-is-in-new-hands",
     "description": "A new owner",

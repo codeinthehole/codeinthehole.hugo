@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/purl-immutable-url-objects-for-python"],
     "slug": "purl-immutable-url-objects-for-python",
     "description": "An immutable URL class designed for easy inspection and manipulation",
     "tags": [

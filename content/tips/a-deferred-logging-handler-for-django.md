@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/a-deferred-logging-file-handler-for-django"],
     "tags": [
         "django",
         "python"

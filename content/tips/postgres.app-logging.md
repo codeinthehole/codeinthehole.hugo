@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/configuring-logging-for-postgresapp"],
     "tags": [
         "postgres"
     ],

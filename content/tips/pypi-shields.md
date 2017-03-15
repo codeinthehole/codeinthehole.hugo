@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/pypi-readme-badges"],
     "description": "Shiny badges using crate.io",
     "slug": "pypi-readme-badges",
     "title": "PyPI README badges",

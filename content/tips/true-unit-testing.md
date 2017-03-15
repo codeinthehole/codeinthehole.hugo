@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/disable-database-access-when-writing-unit-tests-in-django"],
     "date": "2013-04-22",
     "description": "A decorator for the testing puritan",
     "tags": [

@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/console-logging-to-stdout-in-django"],
     "tags": [
         "django",
         "python"

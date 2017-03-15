@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/the-british-way-of-dealing-with-foreign-apis"],
     "slug": "the-british-way-of-dealing-with-foreign-apis",
     "date": "2011-02-04",
     "tags": [

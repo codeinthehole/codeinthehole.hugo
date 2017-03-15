@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/auto-generating-an-faq-with-prototype"],
     "date": "2009-05-25",
     "tags": [
         "javascript"

@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/introducing-unittest-xml-testing-xml-in-python"],
     "slug": "introducing-unittest-xml-testing-xml-in-python",
     "title": "Introducing unittest-xml: testing XML in Python",
     "description": "A simple module for making XPath assertions",

@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/domain-model-mapper-a-php-data-mapper-implementation"],
     "tags": [
         "php",
         "design patterns"

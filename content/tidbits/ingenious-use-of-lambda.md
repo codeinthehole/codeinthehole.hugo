@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/ingenious-use-of-an-anonymous-function"],
     "slug": "ingenious-use-of-an-anonymous-function",
     "title": "Ingenious use of an anonymous function",
     "tags": [

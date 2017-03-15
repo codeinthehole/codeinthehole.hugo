@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/bootstrapped-virtualenvs"],
     "tags": [
         "python"
     ],

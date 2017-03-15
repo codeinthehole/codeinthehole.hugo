@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/coloured-output-while-doing-tdd-with-django-and-fabric"],
     "title": "Coloured output while doing TDD with Django and Fabric",
     "description": "Providing simple coloured feedback",
     "tags": [

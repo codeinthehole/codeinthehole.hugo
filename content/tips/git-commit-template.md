@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/a-useful-template-for-commit-messages"],
     "slug": "a-useful-template-for-commit-messages",
     "tags": [
         "git"

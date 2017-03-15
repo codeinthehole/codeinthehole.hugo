@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/return-false-with-prudence"],
     "description": "Returning false to indicate an error is wrong",
     "title": "Return false with prudence",
     "tags": [

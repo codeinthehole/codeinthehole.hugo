@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/dumping-and-restoring-a-postgis-database"],
     "slug": "dumping-and-restoring-a-postgis-database",
     "title": "Dumping and restoring a PostGIS database",
     "date": "2013-07-28",

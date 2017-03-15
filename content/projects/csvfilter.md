@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/csvfilter-a-python-command-line-tool-for-manipulating-csv-data"],
     "description": "Scratching a CSV itch",
     "date": "2012-04-01",
     "tags": [

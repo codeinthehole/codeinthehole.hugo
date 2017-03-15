@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/a-fabric-function-for-git-tagging"],
     "title": "A Fabric function for git tagging",
     "slug": "a-fabric-function-for-git-tagging",
     "tags": [

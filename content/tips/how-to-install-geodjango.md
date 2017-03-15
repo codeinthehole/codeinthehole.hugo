@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/how-to-install-postgis-and-geodjango-on-ubuntu"],
     "title": "How to install PostGIS and GeoDjango on Ubuntu",
     "date": "2013-10-04",
     "slug": "how-to-install-postgis-and-geodjango-on-ubuntu",

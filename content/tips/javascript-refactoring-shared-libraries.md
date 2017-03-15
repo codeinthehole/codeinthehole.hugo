@@ -1,4 +1,5 @@
 {
+    "aliases": ["/writing/javascript-refactoring-for-customising-shared-libraries"],
     "slug": "javascript-refactoring-for-customising-shared-libraries",
     "tags": [
         "javascript"
