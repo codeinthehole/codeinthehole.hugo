@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:codeinthehole/codeinthehole.github.io.git
+	branch = master
