@@ -1,9 +1,6 @@
 run:
 	hugo server --buildDrafts --watch
 
-site: css
-	hugo
-
 css:
 	lessc static/less/styles.less > static/css/styles.css
 
