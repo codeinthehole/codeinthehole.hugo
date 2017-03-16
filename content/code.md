@@ -12,7 +12,7 @@ exhaustive list.
 
 ### Oscar
 
-Oscar and related packages:
+Oscar is an open-source e-commerce framework for Django.
 
 - [django-oscar](https://github.com/tangentlabs/django-oscar) - domain-driven e-commerce for Django
 - [django-oscar-accounts](https://github.com/tangentlabs/django-oscar-accounts) - managed accounts using double-entry bookkeeping
