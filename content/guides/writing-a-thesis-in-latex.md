@@ -42,7 +42,7 @@ Windows box, a number of problems may arise when using the below code:
 -   First off, not all the packages used will be present and will need
     to be installed. Probably the easiest way to do this is to google
     the package name with the extension `.sty` and save this file in the
-    `C:\VTEX\l2e\` directory of your machine. Note that for the `natbib`
+    `C:\VTEX\l2e\\` directory of your machine. Note that for the `natbib`
     package, you will also need to download the relevant `.bst` file,
     which in this case is `unsrtnat.bst`.
 -   Also, many of the packages that are installed locally may need
