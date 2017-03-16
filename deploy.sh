@@ -2,9 +2,6 @@
 
 set -e
 
-# Remove old public folder
-rm -rf public/
-
 # Check working tree is clean
 if ! git diff-index --quiet HEAD --
 then
