@@ -131,7 +131,7 @@ $ THRESHOLD=15
 $ git shortlog -sn master | awk '$1 >= $THRESHOLD {$1="";print $0}' | cut -d" " -f2-
 ```
 
-Note, `git shortlog` uses a `.mailmap` file to aggregate commmits from
+Note, `git shortlog` uses a `.mailmap` file to aggregate commits from
 the same committer where their name or email were different in the
 commit history.
 

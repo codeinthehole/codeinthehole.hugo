@@ -5,7 +5,7 @@
     "description": "A new owner",
     "title": "commandlinefu.com is in new hands",
     "tags": [
-        "commmandlinefu"
+        "commandlinefu"
     ]
 }
 

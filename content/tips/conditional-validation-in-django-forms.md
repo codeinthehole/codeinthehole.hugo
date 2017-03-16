@@ -115,7 +115,7 @@ class ScheduleForm(forms.Form):
 Here, we override `__init__` and inspect the raw submitted data so that
 we can set `required=True` on the `send_date` field appropriately. This
 is the conventional way of adding conditional logic to form validation,
-although it's more commmon to use an additional argument to `__init__`
+although it's more common to use an additional argument to `__init__`
 to determine the field adjustments.
 
 ### Discussion
