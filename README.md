@@ -26,7 +26,7 @@ where `news` is the "section" of the article.
 
 With:
 
-    $ ./deploy.sh
+    $ make deploy
 
 This builds and commits the HTML files into `public/` which is part of a separate
 repository.

@@ -7,3 +7,7 @@ css:
 tree:
 	-rm -rf public
 	tree
+
+deploy:
+	./deploy.sh
+	git push
