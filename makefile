@@ -1,7 +1,7 @@
 run:
 	hugo server --buildDrafts --watch
 
-site:
+site: css
 	hugo
 
 css:
