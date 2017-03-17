@@ -30,8 +30,9 @@
                 <br/>
             {{ end }}
             {{ if .Section }}
-                Filed in: <a href="/{{ .Section }}/">{{ .Section | title }}</a>
+                Filed in: <a href="/{{ .Section }}/">{{ .Section }}</a><br/>
             {{ end }}
+            <a href="https://github.com/codeinthehole/codeinthehole.hugo/commits/master/content/{{ .File.Path }}">Revision history</a>
             </p>
             <p>
             {{ if .Next }}
