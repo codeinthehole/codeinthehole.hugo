@@ -584,6 +584,9 @@ footer a:hover {
   margin: 0;
   padding: 0;
 }
+.article p {
+  margin: 10px 0;
+}
 .article img.title-image {
   margin: 20px 0 0 0;
   width: 100%;
@@ -600,18 +603,21 @@ footer a:hover {
   color: #8C0808;
   font-weight: normal;
   font-size: 1.8em;
+  margin: 10px 0px;
 }
 .article h3 {
   font-family: 'Signika Negative', serif;
   color: #8C0808;
   font-weight: normal;
   font-size: 1.6em;
+  margin: 10px 0px;
 }
 .article h4 {
   font-family: 'Signika Negative', serif;
   color: #8C0808;
   font-weight: normal;
   font-size: 1.4em;
+  margin: 10px 0px;
 }
 .article .byline {
   font-family: 'Signika Negative', serif;
@@ -767,6 +773,7 @@ footer a:hover {
 @media screen and (min-width: 10px) and (max-width: 480px) {
   #container {
     padding: 0px 10px;
+    margin-bottom: 100px;
   }
   .desktop_only {
     display: none;
@@ -822,6 +829,9 @@ footer a:hover {
     font-size: 2.8em;
     padding-left: 0px;
   }
+  .article .article_date {
+    font-size: 0.8em;
+  }
   .article #nav {
     float: none;
   }
@@ -840,6 +850,9 @@ footer a:hover {
   }
   .article img.align-right {
     display: none;
+  }
+  .article .highlight {
+    width: auto;
   }
 }
 @media only screen and (min-width: 480px) {
