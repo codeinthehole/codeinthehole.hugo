@@ -690,7 +690,7 @@ footer a:hover {
   font-size: 0.8em;
 }
 .article div.footnotes ol {
-  margin: 40px 0 0 0;
+  margin: 40px 0 0 15px;
 }
 .article div.footnotes ol li {
   max-width: none;
@@ -773,7 +773,7 @@ footer a:hover {
 @media screen and (min-width: 10px) and (max-width: 480px) {
   #container {
     padding: 0px 10px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
   }
   .desktop_only {
     display: none;
