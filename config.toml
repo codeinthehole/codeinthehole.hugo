@@ -4,6 +4,8 @@ languageCode = "en-us"
 
 PygmentsCodeFences = true
 
+googleAnalytics = "UA-3494213-5"
+
 [params]
     author = "David Winterbottom"
     description = "A software engineer working in London."
