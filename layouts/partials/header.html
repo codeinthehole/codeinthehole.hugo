@@ -11,7 +11,7 @@
         {{ template "_internal/google_analytics.html" . }}
 
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="/css/styles.css" type="text/css" />
+        <link rel="stylesheet" href="/css/styles.css?{{ .Now.Unix }}" type="text/css" />
         <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
 
         <!-- RSS -->
