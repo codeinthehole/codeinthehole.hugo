@@ -19,11 +19,16 @@ COMMIT_URL="https://github.com/codeinthehole/codeinthehole.hugo/commit/$SHA"
 COMMIT_MSG="Built from $COMMIT_URL"
 
 # Build source into public
+echo "Building public HTML pages"
 hugo
+echo
 
 # Commit and push
+echo "Committing changes"
 cd public
 git add -A
 git commit -m "$COMMIT_MSG"
-git push origin master
+echo
 
+echo "Pushing changes to Github"
+git push origin master 
