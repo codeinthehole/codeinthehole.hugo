@@ -1,5 +1,8 @@
 {
-    "aliases": ["/writing/following-log-files-with-tail-f"],
+    "aliases": [
+        "/writing/following-log-files-with-tt-classdocutils-literaltail-span-classpre-fspantt/",
+        "/writing/following-log-files-with-tail-f"
+    ],
     "slug": "following-log-files-with-tail-f",
     "title": "Following log files with tail -f",
     "date": "2008-10-22",
