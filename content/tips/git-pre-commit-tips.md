@@ -35,12 +35,16 @@ scripts but is easily acheived with `git stash`:
 
 ``` bash
 # pre-commit.sh
-git stash -q --keep-index
+STASH_NAME="pre-commit-$(date +%s)"
+git stash save -q --keep-index $STASH_NAME
 
 # Test prospective commit
 ...
 
-git stash pop -q
+STASHES=$(git stash list)
+if [[ $STASHES == "$STASH_NAME" ]]; then
+  git stash pop -q
+fi
 ```
 
 The `-q` flags specify quiet mode.
