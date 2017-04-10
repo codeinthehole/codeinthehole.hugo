@@ -23,6 +23,10 @@
         <div id="article_meta">
             <span class="hr">----</span>
             <p>
+            Something wrong? 
+            <a href="https://github.com/codeinthehole/codeinthehole.hugo/edit/master/content/{{ .File.Path }}">Suggest an improvement</a>
+            (see <a href="https://github.com/codeinthehole/codeinthehole.hugo/commits/master/content/{{ .File.Path }}">previous changes</a>)<br/>
+
             {{ if isset .Params "tags" }}
                 Tagged with:
                 {{ $num_tags := len .Params.Tags }}
@@ -30,10 +34,10 @@
                 <br/>
             {{ end }}
             {{ if .Section }}
-                Filed in: <a href="/{{ .Section }}/">{{ .Section }}</a><br/>
+                Filed in: <a href="/{{ .Section }}/">{{ .Section }}</a>
             {{ end }}
-            <a href="https://github.com/codeinthehole/codeinthehole.hugo/commits/master/content/{{ .File.Path }}">Revision history</a>
             </p>
+
             <p>
             {{ if .Next }}
                 Previous: <a href="{{ .Next.URL }}">{{ .Next.Title }}</a><br/>
@@ -42,6 +46,7 @@
                 Next: <a href="{{ .Prev.URL }}">{{ .Prev.Title }}</a>
             {{ end }}
             </p>
+
             <p>
             Copyright &copy; 2005-{{ .Now.Year }} <a href="/about/">David Winterbottom</a><br/>
             Content licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
