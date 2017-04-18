@@ -30,7 +30,7 @@ and loyalty start-up;
 - [Writing a Django e-Commerce framework](https://speakerdeck.com/codeinthehole/writing-a-django-e-commerce-framework), ConFoo 2012, Montreal, Canada
 - Commandlinefu for web developers, ConFoo 2011, Montreal, Canada
 
-Plus several talks for local Python/Django user groups. Assorted slidedecks are availble [on Speakerdeck](https://speakerdeck.com/codeinthehole).
+Plus several talks for local Python/Django user groups. Assorted slidedecks are available [on Speakerdeck](https://speakerdeck.com/codeinthehole).
 
 # Education
 
