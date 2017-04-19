@@ -4,10 +4,12 @@ type = "info"
 hidefromhome = true
 +++
 
+I am a software engineer.
+
 ## Open-source
 
-I occasionally write open-source software. See my [Github
-profile](https://github.com/codeinthehole) for a more
+I occasionally write open-source software - a selection of projects are listed
+below. See my [Github profile](https://github.com/codeinthehole) for a more
 exhaustive list.
 
 ### Oscar
