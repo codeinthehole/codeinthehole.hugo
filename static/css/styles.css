@@ -709,6 +709,9 @@ footer a:hover {
 .article #article_meta span.hr {
   color: #aaa;
 }
+.article #article_meta p {
+  max-width: none;
+}
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
    ========================================================================== */
