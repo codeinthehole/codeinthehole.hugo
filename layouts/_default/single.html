@@ -25,7 +25,9 @@
             <p>
             Something wrong? 
             <a href="https://github.com/codeinthehole/codeinthehole.hugo/edit/master/content/{{ .File.Path }}">Suggest an improvement</a>
-            (see <a href="https://github.com/codeinthehole/codeinthehole.hugo/commits/master/content/{{ .File.Path }}">previous changes</a>)<br/>
+            or 
+            <a href="https://github.com/codeinthehole/codeinthehole.hugo/issues/new?title=Comment%20on%20%22{{ .Title }}%22&body=Article:%20{{ .Title }}%0AURL:%20{{ .Permalink }}">add a comment</a>
+            (see <a href="https://github.com/codeinthehole/codeinthehole.hugo/commits/master/content/{{ .File.Path }}">article history</a>)<br/>
 
             {{ if isset .Params "tags" }}
                 Tagged with:
