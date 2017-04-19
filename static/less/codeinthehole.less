@@ -80,7 +80,7 @@ where $page is one of "article", "articles", "home".
 
 /* Layout */
 #container {
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     position: relative;
 	width: 90%;
     max-width: 820px;
@@ -127,6 +127,26 @@ header {
 		a {
 			color: @dark-grey;
 		}
+	}
+	h5 {
+		text-align: right;
+		font-size: 1.1em;
+		a {
+			color: @dark-grey;
+		}
+	}
+}
+
+#article_nav {
+    color: @dark-grey;
+    margin: 5px 0 30px 0;
+    padding-right: 10px;
+
+	h5 {
+		font-family: @fixed-width;
+		font-weight: normal;
+		margin: 0;
+		padding: 0;
 	}
 	h5 {
 		text-align: right;
@@ -245,10 +265,10 @@ footer {
 .article {
 	h1#article_title {
 		.title-block;
-		font-size: 3em;
+		font-size: 3.7em;
 		margin: 0.3em 0 0.2em 0;
 		text-align: left;
-		line-height: 1;
+		line-height: 1.1;
 	}
 
 	// Titles on one-off pages 
