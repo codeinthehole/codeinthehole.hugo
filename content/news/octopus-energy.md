@@ -2,7 +2,8 @@
     "date": "2015-11-23",
     "description": "A modern, high-tech energy supplier",
     "tags": [
-        "career"
+        "career",
+        "octopus energy"
     ],
     "slug": "octopus-energy",
     "title": "Octopus Energy",
