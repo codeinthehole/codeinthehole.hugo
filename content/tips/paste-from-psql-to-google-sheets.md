@@ -21,10 +21,16 @@ At a psql prompt, switch to unaligned output
 => \a
 ```
 
-and set the field separator to a tab character:
+set the field separator to a tab character:
 
 ``` psql
 => \f '\t'
+```
+
+and turn the pager off:
+
+``` psql
+=> \pset pager off
 ```
 
 then the output from subsequent `SELECT ...` statements can be cleanly
