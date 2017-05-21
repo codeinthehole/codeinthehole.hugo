@@ -7,7 +7,7 @@ hidefromhome = true
 
 Hello, I'm **David**, a software engineer working in London. 
 
-## Jobs
+## Employment
 
 I'm **Head of Engineering** at [Octopus Energy](https://octopus.energy), a UK energy
 supplier. 
@@ -16,8 +16,18 @@ Previously I've worked as:
 
 - **Director of Engineering** at [Yoyo Wallet](http://yoyowallet.com/), a payments 
 and loyalty start-up; 
-- a **Technical Director** at [Tangent Snowball](http://www.tangent.co.uk/), a digital agency;
+- a **Technical Director** (and various other roles) at [Tangent Snowball](http://www.tangent.co.uk/), a digital agency;
 - an **Operational Researcher** at [HM Revenue and Customs](https://www.gov.uk/government/organisations/hm-revenue-customs).
+
+## Interests
+
+_Everything_ to do with software; but especially:
+
+- Software design, patterns and architecture.
+- Tests, testing and TDD.
+- Unix, Bash and working at the command-line.
+- Python, Javascript, Golang, Vim, Git.
+- AWS, the "Hashistack", infrastructure-as-code. 
 
 ## Conference talks
 
@@ -32,9 +42,9 @@ and loyalty start-up;
 
 Plus several talks for local Python/Django user groups. Assorted slidedecks are available [on Speakerdeck](https://speakerdeck.com/codeinthehole).
 
-# Education
+## Education
 
-I also have a <strong>PhD in Applied Mathematics</strong> from the University of Nottingham and a
+I have a <strong>PhD in Applied Mathematics</strong> from the University of Nottingham and a
 few published papers:
 
 <ul>
@@ -52,8 +62,10 @@ few published papers:
     </li>
 </ul>
 
+## Misc
 
-
+I play chess as "cookedegg" on [gameknot.com](http://gameknot.com) (challenges
+welcome).
 
 
 
