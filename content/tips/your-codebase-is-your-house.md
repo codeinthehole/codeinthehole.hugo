@@ -16,7 +16,7 @@ easily-visualised analogues from construction and house maintenance.
 
 For instance, I'm sure you've seen these pull requests before[^1]:
 
-<img src="/images/bricks.png" class="photo" />
+<img src="/images/bricks.jpg" class="photo" />
 <img src="/images/fan.jpg" class="photo" />
 
 Furthermore, the episode ["Hurrican Neddy"](https://en.wikipedia.org/wiki/Hurricane_Neddy) from season 8 
