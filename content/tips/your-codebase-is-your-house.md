@@ -24,7 +24,7 @@ of The Simpsons is a parable of a failed software project, where feature deliver
 at the expense of maintainability. 
 
 <img src="/images/hurricane-neddy1.jpg" class="photo" />
-<img src="/images/hurricane-neddy2.png" class="photo" />
+<img src="/images/hurricane-neddy2.jpg" class="photo" />
 <img src="/images/hurricane-neddy3.jpg" class="photo" />
 
 > Homer: Your beautiful kitchen, Ned, just as you remember it.
@@ -37,7 +37,7 @@ issue is addressed by shoving code into a place where it really doesn't belong.
 It's a useful metaphor - it will serve you well in the struggle to keep a large
 codebase maintainable[^2].
 
-<img src="/images/this-is-fine.png" style="width:100%"/>
+<img src="/images/this-is-fine.jpg" style="width:100%"/>
 
 
 
