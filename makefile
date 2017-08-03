@@ -6,4 +6,3 @@ css:
 
 deploy:
 	./deploy.sh
-	git push

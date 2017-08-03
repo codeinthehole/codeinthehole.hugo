@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 # 
 # Deployment script
+#
+# Deploying involves:
+#
+# - Building a fresh set of static pages.
+# - Committing the modified files to the git submodule with a useful
+#   commit message that links back to the commit of the parent repo.
+# - Pushing all changes up to Github.
 
 set -e
 
