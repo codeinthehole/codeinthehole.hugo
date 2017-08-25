@@ -1,6 +1,6 @@
 +++
-title: "{{ replace .TranslationBaseName "-" " " }}"
-date: {{ .Date }}
+title = "{{ replace .TranslationBaseName "-" " " }}"
+date = {{ .Date }}
 description = ""
 tags = []
 +++
