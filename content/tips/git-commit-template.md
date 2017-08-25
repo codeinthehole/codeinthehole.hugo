@@ -15,7 +15,11 @@ commit message template to:
 ``` text
 # If applied, this commit will...
 
-# Explain why this change is being made
+# Why is this change needed?
+Prior to this change, 
+
+# How does it address the issue?
+This change
 
 # Provide links to any relevant tickets, articles or other resources
 ```
