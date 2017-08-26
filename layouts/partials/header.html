@@ -22,7 +22,7 @@
 
         <!-- Site title and metadata -->
         {{ $isHomePage := eq .Title .Site.Title }}
-        <title>{{ .Title }}{{ if eq $isHomePage false }}{{ if .Section }} - by {{ .Site.Params.author }}{{ end }}{{ end }}</title>
+        <title>{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Params.author }}{{ end }}</title>
         <meta name="author" content="{{ .Site.Params.author }}">
         <meta name="description" content="{{ if eq $isHomePage true }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}">
 
