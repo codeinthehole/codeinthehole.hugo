@@ -9,8 +9,9 @@ Hello, I'm **David**, a software engineer working in London.
 
 ## Employment
 
-I'm **Head of Engineering** at [Octopus Energy](https://octopus.energy), a UK energy
-supplier. 
+I'm **Head of Engineering** at [Octopus Energy](https://octopus.energy), a tech-focussed UK energy
+supplier. I help run a team of engineers writing the software that underpins the
+business. If you'd like to work with me, get in touch via [talent@octopus.energy](mailto:talent@octopus.energy)
 
 Previously I've worked as:
 
@@ -19,18 +20,26 @@ and loyalty start-up;
 - a **Technical Director** (and various other roles) at [Tangent Snowball](http://www.tangent.co.uk/), a digital agency;
 - an **Operational Researcher** at [HM Revenue and Customs](https://www.gov.uk/government/organisations/hm-revenue-customs).
 
+One of my strengths is building and running teams that write high-quality, maintainable software.
+
 ## Interests
 
 _Everything_ to do with software; but especially:
 
 - Software design, patterns and architecture.
-- Tests, testing and TDD.
-- Unix, Bash and working at the command-line.
+- Tests, testing and TDD (I'm a keen advocate of [London-school TDD](https://github.com/testdouble/contributing-tests/wiki/London-school-TDD) 
+ and [Discovery testing](https://github.com/testdouble/contributing-tests/wiki/Discovery-Testing)).
+- Unix, Bash and working at the command-line (I originally wrote the site
+    [commandlinefu.com](http://www.commandlinefu.com)).
 - Python, Javascript, Golang, Vim, Git.
 - AWS, the "Hashistack", infrastructure-as-code. 
+- The practices of effective teams: code review, continuous deployment, pairing
+    etc
 
 ## Conference talks
 
+- [Discovery testing](https://drive.google.com/open?id=142N9hev79SAwfSoAbknTNaciF__g0T-IKXZgmTe4VLM), PyLadies June 2017, London
+- [How to write a view](https://speakerdeck.com/codeinthehole/how-to-write-a-view), DjangoCon EU June 2015, Cardiff
 - [Oscar and the art of Django applications](http://pl.pycon.org/2014/en/aktualnosci,David-Winterbottom-will-give-a-presentation-on-PyCon-PL-2014,28), PyCon PL 2014, Szczyrk, Poland
 - "Beware of the box", eCommerce Expo 2014, London
 - [An introduction to django-oscar](https://www.youtube.com/watch?v=o4ol6EzGDSw), DjangoCon EU 2014, Ille De Embiez, France
@@ -44,7 +53,7 @@ Plus several talks for local Python/Django user groups. Assorted slidedecks are 
 
 ## Education
 
-I have a <strong>PhD in Applied Mathematics</strong> from the University of Nottingham and a
+I have a <strong>PhD in Applied Mathematics</strong> as well as a 1st class <strong>MMath Mathematics degree</strong> from the University of Nottingham and a
 few published papers:
 
 <ul>
