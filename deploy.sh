@@ -30,7 +30,7 @@ echo "Building public HTML pages"
 hugo
 echo
 
-# Commit and push
+# Commit and push submodule
 echo "Committing changes"
 cd public
 git add -A
@@ -39,3 +39,7 @@ echo
 
 echo "Pushing changes to Github"
 git push origin master 
+
+# Push to main repo
+cd -
+git push origin master
