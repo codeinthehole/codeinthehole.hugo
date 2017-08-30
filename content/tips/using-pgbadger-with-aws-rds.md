@@ -12,14 +12,14 @@ RDS.
 First, set:
 
 ```ini
-    log_statement = None 
+log_statement = None 
 ```
 
 Don't set this to _all_ as the [AWS docs](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.Concepts.PostgreSQL.html) suggest.
 
 Further, don't waste your time trying to add a DB parameter to set `log_line_prefix`
-to pgbadger's recommended value: it's not possible[^1]. Instead pass
-the custom format when calling pgbadger:
+to pgbadger's recommended value: it's not possible[^1]. Instead tell
+pgbadger about the log format that RDS insists on:
 
 ```bash
 $ pgbadger -p '%t:%r:%u@%d:[%p]:' postgres.log
