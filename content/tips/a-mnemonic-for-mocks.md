@@ -66,3 +66,13 @@ So the correct arrangement above is:
 def test_something_in_module(collaborator_1, collaborator_2, some_pytest_fixture):
     pass
 ```
+
+--
+
+
+<div class="admonition warning">
+    <strong>Postscript:</strong> The <a
+    href="https://pypi.python.org/pypi/pytest-mock">pytest-mock</a> plugin can
+    mitigate the confusion described above by providing the mock module as a
+    pytest fixture - thanks to Floris Bruynooghe for <a href="https://twitter.com/flubdevork/status/901507766262648832">pointing this out</a>.
+</div>
