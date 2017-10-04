@@ -1,8 +1,8 @@
 +++
-date = "2017-09-30T20:30:02Z"
+date = "2017-10-04T10:30:02Z"
 title = "Why your Django models are fat"
-tags = ["software"]
-description = "So many reasons"
+tags = ["django"]
+description = "A tongue-in-cheek list"
 
 +++
 
@@ -34,13 +34,18 @@ Because:
     - [Django Best Practices: Make 'em Fat](http://django-best-practices.readthedocs.io/en/latest/applications.html#make-em-fat)
     - [Ultimate Django: Adding Business Logic to Models](https://ultimatedjango.com/learn-django/lessons/adding-business-logic-to-models/)
 
-    However, in practice, they're a bad idea.
+    However, in practice, they're a bad idea (although this sometimes takes a
+    few months to become apparent).
 
-[^scared]: A legitimate problem with a liberal language like Python.
+[^scared]: A legitimate problem with a liberal language like Python where it's
+    hard to enforce calling conventions as nothing is truly private.
 
-[^srp]: Requires a poor-quality test suite and ignorance of the [Single
+[^srp]: Requires a poor-quality test suite and diligent ignorance of the [Single
     Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle).
 
-[^permission]: You are: your web framework is not your boss. As a rule-of-thumb
-    in Django, your application logic should live in modules that aren't
+[^permission]: You are: your web framework is not your boss. 
+
+    As a rule-of-thumb, your application logic should live in modules that aren't
     Django-specific modules (eg not in `views.py`, `models.py` or `forms.py`).
+    If I had my way, Django would create an empty `business_logic.py` in each
+    new app to encourage this.
