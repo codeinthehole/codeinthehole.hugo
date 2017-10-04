@@ -398,6 +398,10 @@ li {
 dt {
   margin-top: 10px;
 }
+sup {
+  padding: 0 0 0 4px;
+  font-weight: bold;
+}
 /* 
 
 Structure is:
@@ -725,6 +729,9 @@ footer a:hover {
 }
 .article div.footnotes ul {
   margin: 0px 0px 0px 14px;
+}
+.article div.footnotes a.footnote-return {
+  display: none;
 }
 .article #article_meta {
   font-size: 0.8em;
