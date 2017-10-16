@@ -28,7 +28,7 @@ class Command(BaseCommand):
         if not args:
             print self.usage()
             return
-        method_name = 'fetch_%s' % args[0]
+        method_name = 'fetch__%s' % args[0]
         if not hasattr(self, method_name):
             raise CommandError("No method found with name '%s'" % method_name)
         print getattr(self, method_name)(*args[1:])
@@ -40,7 +40,7 @@ class Command(BaseCommand):
             method = getattr(self, fetcher)
             docstring = method.__doc__.strip() if method.__doc__ else "<no description>"
             descriptions.append(" - %s : %s" % (
-                fetcher.split("_")[1], docstring))
+                fetcher.split("__")[1], docstring))
         return "Available fetchers:\n%s" % "\n".join(descriptions)
 ```
 
@@ -70,7 +70,7 @@ Available fetchers:
  - num_users : Fetch number of users
 ```
 
-It's trivial to add more `fetch_*` methods to emit additional metrics.
+It's trivial to add more `fetch__*` methods to emit additional metrics.
 
 ### Zabbix plugin
 
