@@ -1,5 +1,5 @@
 +++
-description = ""
+description = "A curated collection of words-of-the-day"
 date = "2017-11-07T22:41:21+01:00"
 title = "Little-known words relevant to software development"
 tags = ["words"]
