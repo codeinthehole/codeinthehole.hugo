@@ -8,13 +8,15 @@ I am a software engineer.
 
 ## Open-source
 
-I occasionally write open-source software - a selection of projects are listed
-below. See my [Github profile](https://github.com/codeinthehole) for a more
+I occasionally write open-source software. A selection of projects are listed
+below but see my [Github profile](https://github.com/codeinthehole) for a more
 exhaustive list.
 
 ### Oscar
 
-Oscar is an open-source e-commerce framework for Django.
+Oscar is an open-source e-commerce framework for Django. I was the original
+author and a maintainer for several years. Sadly, I no longer have the time and
+am no longer involved in the project.
 
 - [django-oscar](https://github.com/tangentlabs/django-oscar) - domain-driven e-commerce for Django
 - [django-oscar-accounts](https://github.com/tangentlabs/django-oscar-accounts) - managed accounts using double-entry bookkeeping
@@ -47,4 +49,4 @@ Oscar is an open-source e-commerce framework for Django.
 
 - [commandlinefu.com](http://www.commandlinefu.com) - A repository site for
   sharing commandline snippets. 
-  [No longer maintained by me]({{< relref "news/clf-sale.md" >}})
+  [No longer maintained by me]({{< relref "news/clf-sale.md" >}}).
