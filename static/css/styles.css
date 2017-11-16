@@ -402,6 +402,7 @@ sup {
   padding: 0 0 0 4px;
   font-weight: bold;
 }
+/* Custom styles */
 /* 
 
 Structure is:
@@ -541,9 +542,9 @@ footer a:hover {
   padding: 5px 0;
   font-size: 10pt;
 }
-.home #about-photo {
-  float: left;
-  margin: 0 10px 10px 0;
+#about-photo {
+  float: right;
+  margin: 0 0 10px 10px;
   border: 2px solid #ccc;
   padding: 2px;
 }
