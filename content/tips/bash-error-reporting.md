@@ -97,7 +97,7 @@ this is a concise, simple option to have to hand.
 [^pgdump]: Without this `pg_dump ... | gzip` would not be treated as an error even if `pg_dump` exited with a non-zero exiexited with a non-zero exit code.
 [^othertools]: See the [Bash infinity framework](https://invent.life/project/bash-infinity-framework) for example.
 
-{{<comment >}}
+{{<comment>}}
 Background reading:
 - https://stelfox.net/blog/2013/11/fail-fast-in-bash-scripts/
 - https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/

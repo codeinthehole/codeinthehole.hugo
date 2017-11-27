@@ -589,6 +589,7 @@ footer a:hover {
   /* Special blocks in article bodies */
   /* Image styles */
   /* Code blocks */
+  /* Keyboard shortcuts */
 }
 .article h1#article_title {
   font-family: 'Signika Negative', serif;
@@ -703,6 +704,15 @@ footer a:hover {
   margin: 0 0 1em 0;
   border: 2px solid #aaa;
 }
+.article figure img {
+  width: 70%;
+}
+.article figure figcaption h4 {
+  text-align: left;
+  color: #aaa;
+  font-family: "Minion Pro", "Palatino", "Hoefler Text", "Times New Roman", serif;
+  font-style: italic;
+}
 .article .highlight {
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -713,6 +723,15 @@ footer a:hover {
 }
 .article .highlight pre {
   margin: 0px;
+}
+.article .keys {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-color: #ddd;
+  color: black;
+  padding: 5px;
+  font-family: monospace;
 }
 .article div.footnotes {
   margin: 80px 0 40px 0;

@@ -377,6 +377,19 @@ footer {
 		margin: 0 0 1em 0;
 		border: 2px solid @light-grey;
     }
+    figure {
+        img {
+            width: 70%;
+        }
+        figcaption {
+            h4 {
+                text-align: left;
+                color: #aaa;
+                font-family: @serif;
+                font-style: italic;
+            }
+        }
+    }
 
 	/* Code blocks */
     .highlight {
@@ -387,6 +400,15 @@ footer {
         pre {
             margin: 0px;
         }
+    }
+
+    /* Keyboard shortcuts */
+    .keys {
+        .rounded-corners;
+        background-color: #ddd;
+        color: black;
+        padding: 5px;
+        font-family: monospace;
     }
 
 	div.footnotes {
