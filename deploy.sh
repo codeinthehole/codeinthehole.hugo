@@ -9,7 +9,7 @@
 #   commit message that links back to the commit of the parent repo.
 # - Pushing all changes up to Github.
 
-set -e
+set -eu -o pipefail
 
 # Remove old public folder contents
 rm -rf public/*
