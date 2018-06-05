@@ -1,8 +1,9 @@
 +++
 date = "2018-06-03T12:30:05+01:00"
-title = "The perfect pull request"
+title = "Advanced pull-request crafting"
 tags = ["github", "git"]
 description = "Working notes based on reviewing several thousand pull requests."
+aliases = ["/tips/the-perfect-pull-request/"]
 +++
 
 <!-- Abstract -->
@@ -10,20 +11,21 @@ description = "Working notes based on reviewing several thousand pull requests."
 I spend most of my day reviewing pull requests in Github. These are my working
 notes on what makes a good PR.
 
-### Explain why you did what you did
+### Purpose?
 
 <!-- Title/description -->
 
 It should be clear to the reviewer what change is being made and, crucially,
-why. So choose a good PR title and use the description to detail the motivation for a change.
+why. So ensure your title and description convey the purpose of the PR.
 Consider including:
 
-- Screenshots, such as snaps of a new UI or graphs of the devastating performance improvement your PR delivers.
+- Screenshots --- such as snaps or gifs of a new UI, or graphs of the devastating performance improvement your PR delivers.
 
-- Deployment notes. For example, flagging up database schema changes or new
-  configuration that need careful handling when rolling out to production.
+- Deployment notes --- flag up database schema changes or when new
+  configuration is needed. No surprises.
 
-- Links to relevant resources like a ticket in an issue tracker or influential blog post.
+This is basic stuff so we won't dwell: consult [How to write the perfect pull request](https://blog.github.com/2015-01-21-how-to-write-the-perfect-pull-request/)
+from the Github blog for more on good descriptions and titles.
 
 <!-- Commits -->
 
@@ -48,29 +50,33 @@ Also, don't push small "fix" commits with messages like:
 - "Linting"
 - "Address PR comments"
 
-It's sloppy. Use interactive rebasing to squash these into your history and to
-generally massage your commits into shape before submitting for review.
-It's fine to force-push if you're the only one working on a branch.
+Squash these into your history as if they never happened. Future maintainers
+aren't interested in the back-and-forth iterations of a PR.
 
 Obviously, write descriptive commit messages - adopt [Tim Pope's advice](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) if you
 haven't already. Remember, future maintainers (probably you)  will always want to know _why_ a
 change was made. Don't leave them in the dark.
 
+It's rare to compose such a clean git history in your first go, so before
+submitting a PR, get into the habit of reviewing your commits and using git
+rebase to massage it into a cogent story.
+
 Atomic, descriptive commits mean the PR can be reviewed chronologically, _commit-by-commit_.
-This is the ideal.
+This is the ideal and a key sign of a developer on top of their game.
 
 ### Follow the boy-scout rule
 
 > "Leave things BETTER than you found them." -- Robert Baden Powell
 
 Codebases degrade over time; entropy increases. Thoughtful developers will look
-for opportunities to refactor or restructure components as they work, keeping
-the codebase clean.
+for opportunities to refactor or restructure components as they work on other
+things, keeping the codebase clean.
 
-A useful practice for this is to _begin_ your PR by refactoring or restructuring
-the codebase to make it _easy_ to add the core functionality of your PR. For
-example, start by reviewing the tests for a component you're about to extend,
-adjusting them to be as readable as possible.
+A useful practice for this is to _begin_ your PR by cleaning up 
+the codebase to make it _easy_ to address the core purpose of your PR. 
+
+For example, start by reviewing the tests for a component you're about to extend,
+reworking them to be as readable as possible.
 
 ### Make the reviewer's life easy
 
@@ -82,13 +88,10 @@ Don't waste the reviewer's time: before marking a PR for review:
 Consider adding "reviewing notes". These might highlight:
 
 - New functionality that the rest of the team should be aware of.
-- Critical business logic that needs vigilant review by several pairs
-  of eyeballs.
+- Critical business logic that needs vigilant review by several pairs of eyeballs.
 
-Beware of adding reviewing notes that should be code comments or in commit
-messages.
+Just beware of adding notes that should be code comments or within commit messages.
 
 ### Summary
 
-I hope the above advice is useful, the "cogent story" part is the most
-pertinent. Notes on what makes a good PR _reviewer_ to come later.
+Be diligent about what you submit.
