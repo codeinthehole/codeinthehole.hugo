@@ -35,6 +35,7 @@ echo "Committing changes"
 cd public
 git add -A
 git commit -m "$COMMIT_MSG"
+git pull --rebase  # just in case a change has been made remotely (like a custom domain tweak)
 echo
 
 echo "Pushing changes to Github"
