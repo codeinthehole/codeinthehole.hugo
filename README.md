@@ -20,7 +20,29 @@ Use something like:
 
     $ hugo new news/some-article-name.md
 
-where `news` is the "section" of the article.
+where `news` is the "section" of the article. The possible sections are:
+
+- `books`
+- `guides`
+- `lists`
+- `news`
+- `projects`
+- `talks`
+- `tidbits`
+- `tips`
+
+## Write a new static page
+
+Create, say, `content/newpage.md` with header:
+
+```
++++ 
+title = "My new page"
+type = "info"
+hidefromhome = true
++++
+```
+
 
 ## Deploy
 
