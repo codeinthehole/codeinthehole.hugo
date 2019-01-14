@@ -41,11 +41,11 @@
             </p>
 
             <p>
-            {{ if .Next }}
-                Previous: <a href="{{ .Next.URL }}">{{ .Next.Title }}</a><br/>
+            {{ if .PrevPage }}
+                Previous: <a href="{{ .PrevPage.URL }}">{{ .PrevPage.Title }}</a><br/>
             {{ end }}
-            {{ if .Prev }}
-                Next: <a href="{{ .Prev.URL }}">{{ .Prev.Title }}</a>
+            {{ if .NextPage }}
+                Next: <a href="{{ .NextPage.URL }}">{{ .NextPage.Title }}</a>
             {{ end }}
             </p>
 
