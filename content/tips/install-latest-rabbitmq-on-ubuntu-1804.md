@@ -2,6 +2,7 @@
 title: "Installing the latest RabbitMQ on Ubuntu 18.04"
 date: 2019-02-21T12:51:47Z
 description: "Quite write-up of a painful morning"
+tags: ["puppet", "rabbitmq", "ubuntu"]
 ---
 
 I wasted a morning trying to install RabbitMQ v3.7.12 (the latest version as of Feb
