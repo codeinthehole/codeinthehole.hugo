@@ -4,7 +4,7 @@
 <div id="main" role="main">
     <div id="content" class="articles">
         <h1 id="title">{{ .Title }}</h1>
-        {{ range .Site.Pages }}
+        {{ range .Site.RegularPages }}
             {{ if .Section }}
                 {{ partial "article_summary.html" . }}
             {{ end }}
