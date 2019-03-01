@@ -14,7 +14,6 @@ there's an error (that is, if any command exits with a non-zero exit code) using
 
 ```bash
 #!/usr/bin/env bash
-
 set -e
 ```
 
@@ -94,7 +93,7 @@ There are more sophisticated ways to handle errors in Bash scripts[^othertools] 
 this is a concise, simple option to have to hand.
 
 
-[^pgdump]: Without this `pg_dump ... | gzip` would not be treated as an error even if `pg_dump` exited with a non-zero exiexited with a non-zero exit code.
+[^pgdump]: Without this `pg_dump ... | gzip` would not be treated as an error even if `pg_dump` exited with a non-zero exit code.
 [^othertools]: See the [Bash infinity framework](https://invent.life/project/bash-infinity-framework) for example.
 
 {{<comment>}}
