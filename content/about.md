@@ -6,13 +6,13 @@ hidefromhome = true
 +++
 
 <img id="about-photo" src="https://gravatar.com/avatar/52d39c7b27386ca98bc016119d95b8b8?s=180" />
-Hello, I'm **David**, a software engineer working in London. 
+Hello, I'm **David**, a software engineer.
 
 ## Employment
 
 I'm **Head of Engineering** at [Octopus Energy](https://octopus.energy), a tech-focussed UK energy
-supplier. I help run a team of engineers writing the software that underpins the
-business. If you'd like to work with me, get in touch via [talent@octopus.energy](mailto:talent@octopus.energy)
+supplier. I help run a [team of engineers](https://tech.octopus.energy) building the software platform that underpins the
+business. 
 
 Previously I've worked as:
 
@@ -27,15 +27,15 @@ One of my strengths is building and running teams that write high-quality, maint
 
 _Everything_ to do with software; but especially:
 
-- Software design, patterns and architecture.
+- Design, patterns and architecture.
 - Tests, testing and TDD (I'm a keen advocate of [London-school TDD](https://github.com/testdouble/contributing-tests/wiki/London-school-TDD) 
  and [Discovery testing](https://github.com/testdouble/contributing-tests/wiki/Discovery-Testing)).
 - Unix, Bash and working at the command-line (I originally wrote the site
     [commandlinefu.com](http://www.commandlinefu.com)).
-- Python, Javascript, Golang, Vim, Git.
-- AWS, the "Hashistack", infrastructure-as-code. 
-- The practices of effective teams: code review, continuous deployment, pairing
-    etc
+- [Python](/tags/python/), [Javascript](/tags/javascript/), Golang.
+- [Vim](/tags/vim/), [Git](/tags/git/).
+- [AWS](/tags/aws/), the "Hashistack", infrastructure-as-code. 
+- The practices of effective teams: code review, continuous deployment, pairing etc
 
 ## Conference talks
 
@@ -72,10 +72,6 @@ few published papers:
     </li>
 </ul>
 
-## Misc
-
-I play chess as "cookedegg" on [gameknot.com](http://gameknot.com) (challenges
-welcome).
 
 
 
