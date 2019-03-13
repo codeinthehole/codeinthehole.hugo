@@ -611,6 +611,14 @@ footer a:hover {
 .article p {
   margin: 10px 0;
 }
+.article p code {
+  background-color: #eee;
+  padding: 2px 3px;
+}
+.article li code {
+  background-color: #eee;
+  padding: 2px 3px;
+}
 .article img.title-image {
   margin: 20px 0 0 0;
   width: 100%;
