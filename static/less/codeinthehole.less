@@ -88,7 +88,7 @@ where $page is one of "article", "articles", "home".
 
 /* Layout */
 #container {
-    margin: 0 auto 40px auto;
+    margin: 0 auto 100px auto;
     position: relative;
 	width: 90%;
     max-width: 820px;
@@ -297,10 +297,20 @@ footer {
             padding: 2px 3px;
         }
     }
+
+    /* Ensure code blocks have a grey background */
     li {
         code {
             background-color: #eee;
             padding: 2px 3px;
+        }
+    }
+    li {
+        /* Hack: return the background color to that set by pre */
+        div.highlight {
+            code {
+                background-color: #272822;
+            }
         }
     }
     img.title-image {
@@ -437,6 +447,9 @@ footer {
         }
         ul {
             margin: 0px 0px 0px 14px;
+        }
+        div.highlight {
+            margin: 0 0 6px 0;
         }
         a.footnote-return {
             display: none
