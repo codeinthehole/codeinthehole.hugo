@@ -768,9 +768,6 @@ footer a:hover {
 .article div.footnotes div.highlight {
   margin: 0 0 6px 0;
 }
-.article div.footnotes a.footnote-return {
-  display: none;
-}
 .article #article_meta {
   font-size: 0.8em;
   margin-top: 80px;
