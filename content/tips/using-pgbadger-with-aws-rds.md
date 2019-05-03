@@ -22,10 +22,12 @@ to pgbadger's recommended value: it's not possible[^1]. Instead tell
 pgbadger about the log format that RDS insists on:
 
 ```bash
-$ pgbadger -p '%t:%r:%u@%d:[%p]:' postgres.log
+$ pgbadger -f stderr -p '%t:%r:%u@%d:[%p]:' postgres.log
 ```
 
-Hope that saves you some time.
+Hope that saves you some time. Note that the `-f stderr` is required for
+pgbadger v10 and above[^2]:
 
 [^1]: See https://forums.aws.amazon.com/thread.jspa?threadID=145342
+[^2]: See https://github.com/darold/pgbadger/issues/443
 
