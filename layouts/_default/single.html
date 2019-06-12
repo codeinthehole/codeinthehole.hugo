@@ -42,10 +42,10 @@
 
             <p>
             {{ if .PrevPage }}
-                Previous: <a href="{{ .PrevPage.URL }}">{{ .PrevPage.Title }}</a><br/>
+                Previous: <a href="{{ .PrevPage.RelPermalink }}">{{ .PrevPage.Title }}</a><br/>
             {{ end }}
             {{ if .NextPage }}
-                Next: <a href="{{ .NextPage.URL }}">{{ .NextPage.Title }}</a>
+                Next: <a href="{{ .NextPage.RelPermalink }}">{{ .NextPage.Title }}</a>
             {{ end }}
             </p>
 
