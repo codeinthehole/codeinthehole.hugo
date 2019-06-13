@@ -3,7 +3,7 @@
 @dark-grey: #222;
 @light-grey: #aaa;
 
-@fixed-width: 'Inconsolata', monospace, sans-serif;
+@fixed-width: 'Monaco', monospace, sans-serif;
 @serif: "Minion Pro", "Palatino", "Hoefler Text", "Times New Roman", serif;
 @san-serif: 'Signika Negative', serif;
 
@@ -39,6 +39,9 @@ pre {
     font-size: 1.3em;
     font-family: @fixed-width;
     line-height: 1.2em;
+}
+code {
+    font-family: @fixed-width;
 }
 dt {
     font-weight: bold;
@@ -295,6 +298,7 @@ footer {
         code {
             background-color: #eee;
             padding: 2px 3px;
+            font-size: 0.85em;
         }
     }
 
@@ -303,6 +307,7 @@ footer {
         code {
             background-color: #eee;
             padding: 2px 3px;
+            font-size: 0.85em;
         }
     }
     li {
@@ -428,8 +433,10 @@ footer {
         .rounded-corners;
         background-color: #ddd;
         color: black;
-        padding: 5px;
-        font-family: monospace;
+        padding: 3px 7px;
+        font-family: @fixed-width;
+        border: 1px solid #ccc;
+        font-size: 0.9em;
     }
 
 	div.footnotes {

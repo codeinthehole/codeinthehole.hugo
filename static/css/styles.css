@@ -361,8 +361,11 @@ li p {
 }
 pre {
   font-size: 1.3em;
-  font-family: 'Inconsolata', monospace, sans-serif;
+  font-family: 'Monaco', monospace, sans-serif;
   line-height: 1.2em;
+}
+code {
+  font-family: 'Monaco', monospace, sans-serif;
 }
 dt {
   font-weight: bold;
@@ -441,7 +444,7 @@ header a:hover {
 #logo h3,
 #logo h4,
 #logo h5 {
-  font-family: 'Inconsolata', monospace, sans-serif;
+  font-family: 'Monaco', monospace, sans-serif;
   font-weight: normal;
   margin: 0;
   padding: 0;
@@ -479,7 +482,7 @@ header a:hover {
   padding-right: 10px;
 }
 #article_nav h5 {
-  font-family: 'Inconsolata', monospace, sans-serif;
+  font-family: 'Monaco', monospace, sans-serif;
   font-weight: normal;
   margin: 0;
   padding: 0;
@@ -615,10 +618,12 @@ footer a:hover {
 .article p code {
   background-color: #eee;
   padding: 2px 3px;
+  font-size: 0.85em;
 }
 .article li code {
   background-color: #eee;
   padding: 2px 3px;
+  font-size: 0.85em;
 }
 .article li {
   /* Hack: return the background color to that set by pre */
@@ -745,8 +750,10 @@ footer a:hover {
   -moz-border-radius: 5px;
   background-color: #ddd;
   color: black;
-  padding: 5px;
-  font-family: monospace;
+  padding: 3px 7px;
+  font-family: 'Monaco', monospace, sans-serif;
+  border: 1px solid #ccc;
+  font-size: 0.9em;
 }
 .article div.footnotes {
   margin: 80px 0 40px 0;
