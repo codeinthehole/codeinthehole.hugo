@@ -6,15 +6,14 @@ description = "The nouns of your Vim thought stream."
 
 +++
 
-[Text objects](http://vimdoc.sourceforge.net/htmldoc/motion.html#text-objects),
-as in the <span class="keys">w</span> from <span class="keys">ciw</span>, are the nouns of your Vim mentalese[^verbs].
-This post details those that I find most useful for Python and Django
+[Text objects](http://vimdoc.sourceforge.net/htmldoc/motion.html#text-objects), as in the <span class="keys">iw</span> from <span class="keys">ciw</span> 
+("change inner word"), form an important part of your Vim mentalese[^verbs]. This post details those that I find most useful for Python and Django
 development.
 
+[^verbs]: In the sense that you combine them with [operators](http://vimdoc.sourceforge.net/htmldoc/motion.html#operator)
+    (eg <span class="keys">c</span>, <span class="keys">d</span>, <span class="keys">gU</span>) to build describe what you want to do.
 
-[^verbs]: Along with [movements](http://vimdoc.sourceforge.net/htmldoc/motion.html#left-right-motions),
-    which act from the cursor location. In this metaphor, [operators](http://vimdoc.sourceforge.net/htmldoc/motion.html#operator)
-    (like <span class="keys">c</span>, <span class="keys">d</span>, <span class="keys">gU</span> etc) are the verbs.
+For brevity, the leading <span class="keys">a</span> (neumonic: "a"n) or <span class="keys">i</span> (neumonic: "inner"), that you combine with the following commands to form the full text-object, are omitted.
 
 From core Vim:
 
