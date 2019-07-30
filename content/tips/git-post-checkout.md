@@ -1,16 +1,12 @@
 {
     "aliases": ["/writing/a-useful-git-post-checkout-hook-for-python-repos"],
-    "tags": [
-        "python",
-        "git"
-    ],
-    "description": "Cleaing up after yourself",
+    "description": "Cleaning up after yourself",
     "slug": "a-useful-git-post-checkout-hook-for-python-repos",
     "date": "2013-04-23",
     "title": "A useful Git post-checkout hook for Python repos"
 }
 
-Every now and again, an innocent python developer checks out a new Git
+Every now and again, an innocent python developer checks out a new git
 branch then proceeds to bang their head against a bug caused by an
 orphaned `.pyc` file from the previous branch. Since `*.pyc` files are
 typically in the repo's `.gitignore` file, they are not removed when
@@ -49,15 +45,15 @@ Sample output:
 
 Inspiration:
 
-<blockquote class="twitter-tweet"><p>Finally automated. Stop being bitten by
-residual .pyc files when switching branches in git. <a
+<blockquote class="twitter-tweet"><p>Finally automated. Stop being bitten by residual .pyc files when switching branches in git. 
+<a
 href="http://t.co/JWZOst25Jy"
 title="http://stackoverflow.com/questions/1504724/a-git-hook-for-whenever-i-change-branches">stackoverflow.com/questions/1504…</a></p>&mdash;
 Maik Hoepfel (@maikhoepfel) <a
 href="https://twitter.com/maikhoepfel/status/318437021221806080">March 31,
 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"></script>
-The above version is a extension of the snippets in the referenced
-[Stack Overflow
-question](http://stackoverflow.com/questions/1504724/a-git-hook-for-whenever-i-change-branches).
+
+The above version is an extension of the snippets in the referenced
+[Stack Overflow question](http://stackoverflow.com/questions/1504724/a-git-hook-for-whenever-i-change-branches).
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
