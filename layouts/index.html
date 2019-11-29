@@ -38,7 +38,7 @@
     <!-- Re-use articles styles from list page -->
     <div id="content" class="articles">
         <h2>Recent writing</h2>
-        {{ range first 10 .Data.Pages }}
+        {{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
             <div class="article_summary">
                 <div class="meta">
                     {{ .Date.Format "January 02, 2006" }}<br/>
