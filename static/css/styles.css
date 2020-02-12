@@ -645,12 +645,18 @@ footer a:hover {
   font-size: 2em;
   margin-top: 1em;
 }
+.article h1 code {
+  font-size: 0.85em;
+}
 .article h2 {
   font-family: 'Signika Negative', serif;
   color: #8C0808;
   font-weight: normal;
   font-size: 1.8em;
   margin: 20px 0px 10px 0px;
+}
+.article h2 code {
+  font-size: 0.85em;
 }
 .article h3 {
   font-family: 'Signika Negative', serif;
@@ -659,12 +665,18 @@ footer a:hover {
   font-size: 1.6em;
   margin: 10px 0px;
 }
+.article h3 code {
+  font-size: 0.85em;
+}
 .article h4 {
   font-family: 'Signika Negative', serif;
   color: #8C0808;
   font-weight: normal;
   font-size: 1.4em;
   margin: 10px 0px;
+}
+.article h4 code {
+  font-size: 0.85em;
 }
 .article .byline {
   font-family: 'Signika Negative', serif;
