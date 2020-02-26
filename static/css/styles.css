@@ -360,7 +360,7 @@ li p {
   font-size: 1em;
 }
 pre {
-  font-size: 1.3em;
+  font-size: 1rem;
   font-family: 'Monaco', monospace, sans-serif;
   line-height: 1.2em;
 }
@@ -626,7 +626,7 @@ footer a:hover {
 .article li code {
   background-color: #eee;
   padding: 2px 3px;
-  font-size: 0.85em;
+  font-size: 1rem;
 }
 .article li {
   /* Hack: return the background color to that set by pre */
