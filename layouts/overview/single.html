@@ -4,11 +4,15 @@
 <div id="main" role="main">
     <div id="content" class="articles">
         <h1 id="title">{{ .Title }}</h1>
+
+        {{ .Content }}
+
         {{ range .Site.RegularPages }}
             {{ if .Section }}
                 {{ partial "article_summary.html" . }}
             {{ end }}
         {{ end }}
+
     </div>
 </div>
 

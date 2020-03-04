@@ -3,10 +3,14 @@
 
 <div id="main" role="main">
     <div id="content" class="articles">
-        <h1 id="title">{{ .Title }}</h1>
+        <h1 id="title">{{ .Title | title }}</h1>
+
+        {{ .Content }}
+
         {{ range .Data.Pages }}
             {{ partial "article_summary.html" . }}
         {{ end }}
+
     </div>
 </div>
 

@@ -565,6 +565,9 @@ footer a:hover {
   margin: 0;
   padding: 0;
 }
+.articles p {
+  font-size: 1em;
+}
 .articles .article_summary {
   border-bottom: 1px dotted #ddd;
   overflow: hidden;
