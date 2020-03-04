@@ -8,7 +8,7 @@ Install Hugo from Brew:
 
     $ brew install hugo
 
-This site is developed using Hugo v0.25.1.
+This site is developed using Hugo v0.62.2.
 
 The `makefile` contains targets for running a local server, building the
 deployable `public/` folder, building the CSS and viewing the file tree
@@ -42,7 +42,6 @@ type = "info"
 hidefromhome = true
 +++
 ```
-
 
 ## Deploy
 
