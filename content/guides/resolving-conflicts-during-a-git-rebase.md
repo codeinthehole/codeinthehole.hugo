@@ -84,7 +84,7 @@ Conflicts? Conflicts!
 
 Often the conflicts are simple and easily resolved by eye-balling the
 files in question. If that's true, good for you: resolve the
-commits using your favourite editor and move on via:
+conflicts using your favourite editor and move on via:
 ```bash
 $ git rebase --continue
 ```
@@ -95,7 +95,7 @@ However, if the conflicts are not trivially resolved, start by asking yourself t
 
 We can identify the conflicting commit in several ways:
 
-- Look for the `Patch failed at XXXX` line in the rebase output. This prints the
+- Look for the `Patch failed at $NUMBER $SUBJECT` line in the rebase output. This prints the
   subject of the commit that couldn't be applied. In the above example, the offending commit has
   subject `Group tests into class for Account data-import serializer`.
 
@@ -158,7 +158,7 @@ Sometimes hard to determine if a rename is involved.
 We understand what _we_ were trying to do, but we need to understand what
 changes were made in the target branch that conflict. Two tips:
 
-### Use the `diff3` format to see common ancestor code in diff blocks
+### Use the `diff3` format to see common ancestor code in conflict blocks
 
 Globally enable this with:
 
@@ -202,7 +202,7 @@ deeper.
 ### Examine the target branch changes in detail
 
 Sometimes the conflicted blocks are large and you can't understand at a glance
-what changes have been made in the target branch.
+what changes have been made in the target branch and why they were made.
 In this situation, we may need to examine the individual changes made to each conflicted
 `$FILEPATH` in order to understand how to resolve safely.
 
@@ -370,18 +370,9 @@ Here's some additional resources on the topic:
 - [`git-rebase` docs](https://git-scm.com/docs/git-rebase)
 
 - [Fix conflicts once with git rerere](https://medium.com/@porteneuve/fix-conflicts-only-once-with-git-rerere-7d116b2cec67)
-  _by Christophe Porteneuve_. Good detailed examination of how to use `git rerere`.
+  by _Christophe Porteneuve_ (2014). Good detailed examination of how to use `git rerere`.
 
 <!-- General reserach on rebase conflicts
-
-`git rerere`
-
-`git mergetool`
-https://git-scm.com/docs/git-mergetool
-https://git-scm.com/docs/git-rebase
-
-https://stackoverflow.com/questions/11709885/git-rebase-merge-conflict
-mentions mergetool
 
 Note on rebase options:
 
@@ -394,21 +385,6 @@ Quite hard to generate a GH diff view for a single file
 https://stackoverflow.com/questions/14500240/how-can-i-generate-a-diff-for-a-single-file-between-two-branches-in-github
 
 Sometimes diff block and hard to see what difference is:
-
--> use merge tool??
-
-Easy case: updated in both branches -> markers
-
-Things are fiddlier when one branch has moved/deleted a file.
-
-    Unmerged paths:
-    (use "git restore --staged <file>..." to unstage)
-    (use "git add/rm <file>..." as appropriate to mark resolution)
-        deleted by us:   octoenergy/domain/accounts/affexit.py
-
-Delete in master! (not by us)
-
-No conflict markers in file.
 
 What changes happened to that file on master?
 
