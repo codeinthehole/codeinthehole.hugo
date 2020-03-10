@@ -211,6 +211,12 @@ We can examine the overall diff:
 $ git diff REBASE_HEAD...origin/master $FILEPATH
 ```
 
+<!-- 
+
+We can determine the "onto" value dynamically from .git/rebase-apply/onto
+
+-->
+
 or list the commits from the target branch that updated `$FILEPATH`:
 
 ```bash
