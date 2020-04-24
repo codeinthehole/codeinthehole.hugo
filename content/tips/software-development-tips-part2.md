@@ -1,7 +1,7 @@
 +++
-title = "Software development tips - part 2"
+title = "Software development tips – part 2"
 date = 2020-04-24T10:04:16Z
-description = "Miscellaneous thoughts and ideas that I find useful."
+description = "Topics: code smells, pop-culture, blogging and work habits."
 tags = ["productivity", "teams", "writing"]
 +++
 

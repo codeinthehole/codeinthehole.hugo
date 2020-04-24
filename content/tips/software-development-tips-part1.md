@@ -1,7 +1,7 @@
 +++
-title = "Software development tips - part 1"
+title = "Software development tips – part 1"
 date = 2020-02-26T10:04:16Z
-description = "Miscellaneous thoughts and ideas that I find useful."
+description = "Topics: development, tools and effective teams."
 tags = ["productivity", "vim", "teams", "tools"]
 +++
 
