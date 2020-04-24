@@ -2,7 +2,7 @@
 title = "Software development tips - part 2"
 date = 2020-04-24T10:04:16Z
 description = "Miscellaneous thoughts and ideas that I find useful."
-tags = ["productivity", "teams", "tools", "writing"]
+tags = ["productivity", "teams", "writing"]
 +++
 
 On code smells:
