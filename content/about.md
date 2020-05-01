@@ -11,8 +11,9 @@ Hello, I'm **David**, a software engineer.
 ## Employment
 
 I'm **Head of Engineering** at [Octopus Energy](https://octopus.energy), a tech-focussed UK energy
-supplier. I help run a [team of engineers](https://tech.octopus.energy) building the software platform that underpins the
-business. 
+supplier. I help run a [team of engineers](https://tech.octopus.energy) building the "Kraken" software platform that underpins the
+business. Octopus Energy became the 15th UK tech ["unicorn"](https://en.wikipedia.org/wiki/Unicorn_(finance)) in May 2020, 
+after [investment from Origin Energy](https://octopus.energy/blog/octopus-energy-achieves-unicorn-status-investment-origin-energy/).
 
 Previously I've worked as:
 
