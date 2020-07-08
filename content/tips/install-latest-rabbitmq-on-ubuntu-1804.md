@@ -1,7 +1,7 @@
 ---
 title: "Installing the latest RabbitMQ on Ubuntu 18.04"
 date: 2019-02-21T12:51:47Z
-description: "Quite write-up of a painful morning"
+description: "Write-up of a painful morning"
 tags: ["puppet", "rabbitmq", "ubuntu"]
 ---
 
