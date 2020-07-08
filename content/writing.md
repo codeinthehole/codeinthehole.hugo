@@ -1,6 +1,6 @@
 +++
 title = "Writing"
-description = "All posts from the site"
+description = "All posts from the site."
 type = "overview"
 +++
 

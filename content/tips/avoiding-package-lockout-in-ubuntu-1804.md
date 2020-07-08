@@ -1,7 +1,7 @@
 +++
 title = "Avoiding package lock-out when provisioning Ubuntu 18.04 machines"
 date = 2019-03-06T15:49:53Z
-description = "A common, frustrating problem"
+description = "A common, frustrating problem."
 tags = ["ubuntu", "puppet", "packer"]
 +++
 

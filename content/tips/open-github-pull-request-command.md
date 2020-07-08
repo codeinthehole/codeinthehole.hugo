@@ -2,7 +2,7 @@
 date = "2017-06-06T21:30:36+01:00"
 title = "Git tips for working with pull requests"
 tags = ['git', 'jq']
-description = "Using the Github API to quickly jump to a PR detail page"
+description = "Using the Github API to quickly jump to a PR detail page."
 +++
 
 I spend at least 50% of each day reviewing, amended (and occasionally merging) pull requests, adding

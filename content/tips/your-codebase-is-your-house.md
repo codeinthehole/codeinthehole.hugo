@@ -2,7 +2,7 @@
 date = "2017-06-30T11:26:39+01:00"
 title = "Your codebase is your house"
 tags = []
-description = "A useful metaphor for the maintainability of a codebase"
+description = "A useful metaphor for the maintainability of a codebase."
 slug = "your-codebase-is-your-🏠"
 
 +++

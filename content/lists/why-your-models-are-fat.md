@@ -2,7 +2,7 @@
 date = "2017-10-04T10:30:02Z"
 title = "Why your Django models are fat"
 tags = ["django"]
-description = "A tongue-in-cheek list"
+description = "A tongue-in-cheek list."
 
 +++
 

@@ -1,7 +1,7 @@
 +++
 title = "Shortcuts of the old and minimalist"
 date = 2017-11-27T12:27:45+01:00
-description = "Some quick ways to hide the clutter"
+description = "Some quick ways to hide the clutter."
 tags = ["productivity"]
 +++
 

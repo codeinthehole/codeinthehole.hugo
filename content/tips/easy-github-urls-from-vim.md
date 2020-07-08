@@ -1,7 +1,7 @@
 +++
 title = "Easy Github URLs from Vim"
 date = 2020-06-23T15:49:58+01:00
-description = "A super-useful Vim mapping for grabbing Github URLs"
+description = "A super-useful Vim mapping for grabbing Github URLs."
 tags = ["github", "vim"]
 +++
 

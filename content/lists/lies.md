@@ -1,6 +1,6 @@
 +++
 title = "Lies you're told on a software project"
-description = "Programmers lie constantly"
+description = "Programmers lie constantly."
 date = "2017-03-21T11:54:01Z"
 
 +++

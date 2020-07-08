@@ -1,7 +1,7 @@
 +++
 title = "Listing groups in G-Suite"
 date = 2018-10-27T12:53:24+01:00
-description = "Using the API to pull simple reports"
+description = "Using the API to pull simple reports."
 tags = ["gsuite"]
 +++
 

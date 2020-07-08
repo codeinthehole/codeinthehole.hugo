@@ -1,7 +1,7 @@
 +++
 title = "Easy to change"
 date = 2018-12-24T11:51:36Z
-description = "The overarching principle for writing maintainable code"
+description = "The overarching principle for writing maintainable code."
 tags = ["software"]
 +++
 

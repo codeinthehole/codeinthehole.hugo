@@ -1,7 +1,7 @@
 +++
 title = "Using a custom Sentry client"
 date = 2017-10-16T16:33:45+01:00
-description = "A Sentry tip from the Octopus Energy tech blog"
+description = "A Sentry tip from the Octopus Energy tech blog."
 tags = ["django", "octopus energy"]
 +++
 

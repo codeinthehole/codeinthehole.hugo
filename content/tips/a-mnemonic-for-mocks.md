@@ -2,7 +2,7 @@
 date = "2017-08-26"
 title = "A mnemonic for mock decorators"
 tags = ["python", "testing"]
-description = "An easy way to remember the order arguments get injected"
+description = "An easy way to remember the order arguments get injected."
 
 +++
 

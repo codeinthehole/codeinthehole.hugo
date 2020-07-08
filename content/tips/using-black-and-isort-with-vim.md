@@ -1,7 +1,7 @@
 +++
 title = "Using black and isort with Vim"
 date = 2019-03-08T09:22:04Z
-description = "The simplest way to run both in a project"
+description = "The simplest way to run both in a project."
 tags = ["vim"]
 +++
 

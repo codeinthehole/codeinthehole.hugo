@@ -1,7 +1,7 @@
 +++
 title = "Resolving conflicts during a Git rebase"
 date = 2020-03-05
-description = "Some collected tips from over the years"
+description = "Some collected tips from over the years."
 tags = ["git"]
 +++
 

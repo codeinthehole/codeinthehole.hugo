@@ -1,7 +1,7 @@
 +++
 title = "Using pgbadger with AWS RDS"
 date = 2017-08-29T14:08:08+01:00
-description = "Two gotchas that I wasted time on"
+description = "Two gotchas that I wasted time on."
 tags = ["AWS", "postgres"]
 +++
 

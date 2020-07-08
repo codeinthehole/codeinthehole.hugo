@@ -2,7 +2,7 @@
 date = "2017-03-16T10:30:02Z"
 title = "Hugo"
 tags = ["hugo"]
-description = "Migrating a Django site to Hugo"
+description = "Migrating a Django site to Hugo."
 
 +++
 

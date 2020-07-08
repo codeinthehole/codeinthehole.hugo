@@ -1,7 +1,7 @@
 +++
 title = "Bash error reporting"
 date = 2017-09-30T22:44:03+01:00
-description = "Two tips for better debugging of Bash scripts"
+description = "Two tips for better debugging of Bash scripts."
 tags = ["bash"]
 +++
 

@@ -2,7 +2,7 @@
 date = "2017-03-27T15:25:05+01:00"
 title = "Reorganising a Consul key-value store"
 tags = ["consul", "bash", "jq"]
-description = "This is really just a reference on how to combine JQ's select filters"
+description = "This is really just a reference on how to combine JQ's select filters."
 
 +++
 

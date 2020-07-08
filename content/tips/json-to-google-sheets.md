@@ -2,7 +2,7 @@
 date = "2017-05-16T21:52:21+01:00"
 title = "Converting JSON into CSV data for Google Sheets"
 tags = ["jq", "loggly"]
-description = "Another note-to-self on how to use JQ"
+description = "Another note-to-self on how to use JQ."
 
 +++
 

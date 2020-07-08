@@ -1,7 +1,7 @@
 +++
 title = "Joining between date and timestamp fields in Postgres"
 date = 2017-11-16T15:50:04Z
-description = "A note-to-self on avoiding DST issues when joining between tables"
+description = "A note-to-self on avoiding DST issues when joining between tables."
 tags = ["postgres"]
 +++
 
