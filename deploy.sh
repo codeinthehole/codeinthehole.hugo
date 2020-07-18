@@ -11,36 +11,64 @@
 
 set -eu -o pipefail
 
-# Remove old public folder contents
-rm -rf public/*
+function main() {
+    verify_preconditions
 
-# Check working tree is clean
-if ! git diff-index --quiet HEAD --
-then
-    echo "Dirty tree - aborting!"
-    exit 1
-fi
+    echo "Building site"
+    build_site
 
-SHA=`git log --pretty=format:'%h' -n 1`
-COMMIT_URL="https://github.com/codeinthehole/codeinthehole.hugo/commit/$SHA"
-COMMIT_MSG="Built from $COMMIT_URL"
+    echo "Deploying site"
+    deploy_site
 
-# Build source into public
-echo "Building public HTML pages"
-hugo
-echo
+    echo "Pushing commits"
+    git push origin master
+}
 
-# Commit and push submodule
-echo "Committing changes"
-cd public
-git add -A
-git commit -m "$COMMIT_MSG"
-git pull --rebase  # just in case a change has been made remotely (like a custom domain tweak)
-echo
+function verify_preconditions() {
+    # Check we're on master 
+    if [ "$(git rev-parse --abbrev-ref HEAD)" != "master" ]
+    then
+        echo "Wrong branch - deploys can only happen on master"
+        exit 1
+    fi
+    
+    # Check working tree is clean
+    if ! git diff-index --quiet HEAD --
+    then
+        echo "Dirty tree - ensure all changes are committed before deploying"
+        exit 1
+    fi
+}
 
-echo "Pushing changes to Github"
-git push origin master 
+function build_site() {
+    # Remove existing site contents to ensure it's a clean build.
+    rm -rf public/*
 
-# Push to main repo
-cd -
-git push origin master
+    # Build source into public.
+    hugo
+}
+
+function deploy_site() {
+    # Change dir into embedded repo
+    cd public
+
+    # Commit changes to embedded repo.
+    git add -A
+    git commit -m "$(commit_message)"
+
+    # Pull just in case there are any upstream changes
+    git pull --rebase
+
+    # Push up to Github which will trigger an update to the Github Pages site.
+    git push origin master 
+
+    cd ..
+}
+
+function commit_message() {
+    SHA=`git log --pretty=format:'%h' -n 1`
+    COMMIT_URL="https://github.com/codeinthehole/codeinthehole.hugo/commit/$SHA"
+    echo "Built from $COMMIT_URL"
+}
+
+main
