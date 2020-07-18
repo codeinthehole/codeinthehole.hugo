@@ -20,7 +20,7 @@ On good things I always tell team members about:
 
 - Have you seen [Tim Pope](https://twitter.com/tpope)'s [superb launch video](https://vimeo.com/63116209) for vim-dispatch (must be watched with sound)?
 
-- Jack Diderich's ["Stop Writing Classes"](https://www.youtube.com/watch?v=o9pEzgHorH0) PyCon 2020 talk.
+- Jack Diderich's ["Stop Writing Classes"](https://www.youtube.com/watch?v=o9pEzgHorH0) PyCon 2012 talk.
 
 - The [DestroyAllSoftware screencasts](https://www.destroyallsoftware.com/screencasts), especially ["Functional core, imperative shell"](https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell).
 
