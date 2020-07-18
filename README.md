@@ -1,20 +1,29 @@
 # codeinthehole.com
 
-This repo contains the source for http://codeinthehole.com, a Hugo-powered blog.
+This repo contains the source for https://codeinthehole.com, a Hugo-powered blog.
 
-## Installation
+## Local development
 
-Install Hugo from Brew:
+### Install
+
+Clone the repo then clone the Github Pages repo that contains compiled static files:
+
+    $ git clone https://github.com/codeinthehole/codeinthehole.hugo.git blog
+    $ cd blog
+    $ git clone https://github.com/codeinthehole/codeinthehole.github.io public
+
+Install Hugo via HomeBrew:
 
     $ brew install hugo
 
-This site is developed using Hugo v0.62.2.
+Last time I checked, I was using Hugo v0.72.
 
-The `makefile` contains targets for running a local server, building the
-deployable `public/` folder, building the CSS and viewing the file tree
-structure.
+Run the local HTTP server with `make run`.
 
-## Write a new article
+The `makefile` contains targets for running a local server (`make run`).
+compiling CSS (`make css`) and deploying (`make deploy`).
+
+### Create a blog post
 
 Use something like:
 
@@ -31,7 +40,7 @@ where `news` is the "section" of the article. The possible sections are:
 - `tidbits`
 - `tips`
 
-## Write a new static page
+### Create a static page
 
 Create, say, `content/newpage.md` with header:
 
@@ -43,9 +52,15 @@ hidefromhome = true
 +++
 ```
 
+### Update the CSS
+
+CSS is compiled from LESS files. Compile with:
+
+    $ make css
+
 ## Deploy
 
-With:
+From `master`, run:
 
     $ make deploy
 
