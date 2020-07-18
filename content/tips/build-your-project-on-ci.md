@@ -122,10 +122,6 @@ team but fail when run on a blank database. For instance:
     between migrations. Often you'll need to rewrite migrations to
     create models in the migrations of their own apps.
 
-[Andrew Ingram](https://twitter.com/andrewingram) has written up an
-excellent summary of [common South
-pitfalls](http://andrewingram.net/2012/dec/common-pitfalls-django-south/#check-your-migrations-run-from-scratch).
-
 [^1]: For instance, it's not trivial to share folders with a Docker
     container on OSX. See
     <https://gist.github.com/codeinthehole/7ea69f8a21c67cc07293>
