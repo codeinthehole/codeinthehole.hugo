@@ -14,11 +14,14 @@ set -eu -o pipefail
 function main() {
     verify_preconditions
 
+    # Get SHA of current commit.
+    SHA=`git log --pretty=format:'%h' -n 1`
+
     echo "Building site"
     build_site
 
     echo "Deploying site"
-    deploy_site
+    deploy_site "$SHA"
 
     echo "Pushing commits"
     git push origin master
@@ -49,12 +52,16 @@ function build_site() {
 }
 
 function deploy_site() {
+    local commit_sha="$1"
+
     # Change dir into embedded repo
     cd public
 
     # Commit changes to embedded repo.
     git add -A
-    git commit -m "$(commit_message)"
+
+    local msg=$(commit_message "$commit_sha")
+    git commit -m "$msg"
 
     # Pull just in case there are any upstream changes
     git pull --rebase
@@ -66,9 +73,9 @@ function deploy_site() {
 }
 
 function commit_message() {
-    SHA=`git log --pretty=format:'%h' -n 1`
-    COMMIT_URL="https://github.com/codeinthehole/codeinthehole.hugo/commit/$SHA"
-    echo "Built from $COMMIT_URL"
+    local commit_sha="$1"
+    local commit_url="https://github.com/codeinthehole/codeinthehole.hugo/commit/$commit_sha"
+    echo "Built from $commit_url"
 }
 
 main
