@@ -10,10 +10,8 @@
 
         {{ template "_internal/google_analytics.html" . }}
 
-        <!-- Stylesheets -->
         {{ $style := resources.Get "css/main.scss" | resources.ToCSS | resources.Minify }}
         <link rel="stylesheet" href="{{ $style.Permalink }}">
-        <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
 
         <!-- RSS -->
         <link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
