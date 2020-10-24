@@ -16,12 +16,11 @@ Install Hugo via HomeBrew:
 
     $ brew install hugo
 
-Last time I checked, I was using Hugo v0.72.
+Last time I checked, I was using Hugo v0.75.1.
 
 Run the local HTTP server with `make run`.
 
 The `makefile` contains targets for running a local server (`make run`).
-compiling CSS (`make css`) and deploying (`make deploy`).
 
 ### Create a blog post
 
@@ -51,12 +50,6 @@ type = "info"
 hidefromhome = true
 +++
 ```
-
-### Update the CSS
-
-CSS is compiled from LESS files. Compile with:
-
-    $ make css
 
 ## Deploy
 
