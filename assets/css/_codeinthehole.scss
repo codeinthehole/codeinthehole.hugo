@@ -299,7 +299,9 @@ footer {
     p {
         margin: 10px 0;
 
+        // In-paragraph code blocks
         code {
+            @include rounded-corners; 
             background-color: #eee;
             padding: 2px 3px;
             font-size: 0.85em;
@@ -309,6 +311,7 @@ footer {
     /* Ensure code blocks have a grey background */
     li {
         code {
+            @include rounded-corners; 
             background-color: #eee;
             padding: 2px 3px;
             font-size: 1rem;
@@ -319,6 +322,7 @@ footer {
         div.highlight {
             code {
                 background-color: #272822;
+                padding: 0px;
             }
         }
     }
@@ -439,7 +443,8 @@ footer {
 
 	/* Code blocks */
     .highlight {
-        @includerounded-corners;
+        @include rounded-corners;
+
         width: 95%;
         max-width: 790px;
         padding: 10px 10px 10px 20px ;
@@ -481,6 +486,9 @@ footer {
         a.footnote-return {
             sup {
             }
+        }
+        code {
+            font-size: 0.8em;
         }
 	}
 
