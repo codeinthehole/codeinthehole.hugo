@@ -73,10 +73,7 @@ sup {
     font-weight: bold;
 }
 
-
-
 /* Custom styles */
-
 /* 
 
 Structure is:
@@ -109,7 +106,7 @@ header {
 	}
 }
 
-/* Logo, nav */
+/* Logo */
 #logo {
     color: $dark-grey;
 
@@ -148,6 +145,7 @@ header {
 	}
 }
 
+/* Nav */
 #article_nav {
     color: $dark-grey;
     margin: 5px 0 30px 0;
@@ -464,6 +462,26 @@ footer {
         font-size: 0.9em;
     }
 
+    /* Table of contents */
+    nav#TableOfContents {
+        ul {
+            list-style: none;
+            padding-left: 0;
+
+            ul {
+                list-style: disc inside;
+                padding-left: 20px;
+
+                ul {
+                    list-style: circle inside;
+                    li {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+    }
+
 	div.footnotes {
         margin: 80px 0 40px 0;
 		font-size: 0.8em;
@@ -506,7 +524,6 @@ footer {
 
 }
 
-
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
    ========================================================================== */
@@ -531,7 +548,6 @@ footer {
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
-
 
 /* ==|== media queries ======================================================
    PLACEHOLDER Media Queries for Responsive Design.
