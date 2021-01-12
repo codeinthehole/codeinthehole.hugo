@@ -1,0 +1,881 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combine/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/Users/davidwinterbottom/Dropbox/workspace/projects/blog/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/caca347/
+"Why is Vim slow to start up?"	content/tips/debugging-vim-by-example.md	/^## "Why is Vim slow to start up?"$/;"	s
+"Why is {ACTION} slow?"	content/tips/debugging-vim-by-example.md	/^## "Why is {ACTION} slow?"$/;"	s
+"Why isn't it working?"	content/tips/debugging-vim-by-example.md	/^## "Why isn't it working?"$/;"	s
+"Why isn't my option working?"	content/tips/debugging-vim-by-example.md	/^## "Why isn't my option working?"$/;"	s
+"Why isn't syntax highlighting working as I want?"	content/tips/debugging-vim-by-example.md	/^## "Why isn't syntax highlighting working as I want?"$/;"	s
+#about-photo	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	i
+#article_nav	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	i
+#article_nav h5	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+#article_nav h5 a	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+#container	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	i
+#logo	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	i
+#logo h1	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+#logo h2	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+#logo h3	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+#logo h3#mobile_nav	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	i
+#logo h3#screen_nav	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	i
+#logo h4	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+#logo h4 a	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+#logo h5	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+#logo h5 a	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+*	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+*** LITTLECMS support not available	content/tips/how-to-install-pil.md	/^*** LITTLECMS support not available$/;"	s
+.address	public/tutorial/tutorial-styles.css	/^.address {$/;"	c
+.address	static/tutorial/tutorial-styles.css	/^.address {$/;"	c
+.align-right	assets/css/_codeinthehole.scss	/^	img.align-right {$/;"	c
+.align-right	assets/css/_codeinthehole.scss	/^        img.align-right {$/;"	c
+.article	assets/css/_codeinthehole.scss	/^	.article {$/;"	c
+.article	assets/css/_codeinthehole.scss	/^.article {$/;"	c
+.article	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.article #article_content dl	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article #article_content p	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article #article_content table	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article #article_meta	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	i
+.article #article_meta p	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article #article_meta span.hr	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.article #nav	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	i
+.article .article_date	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.article .byline	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.article .caption	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.article .highlight	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.article .highlight pre	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article .keys	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.article blockquote	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article blockquote p	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article div.footnotes	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.article div.footnotes div.highlight	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.article div.footnotes ol	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article div.footnotes ol li	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article div.footnotes ol li p	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article div.footnotes ul	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article div.slidedeck	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.article div.warning	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.article div.warning p	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article figure figcaption h4	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article figure img	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article h1	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article h1 code	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article h1#article_title	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	i
+.article h1#title	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	i
+.article h2	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article h2 code	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article h3	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article h3 code	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article h4	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article h4 code	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article img.align-right	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.article img.noborder	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.article img.photo	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.article img.screenshot	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.article img.title-image	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.article li	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article li code	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article li div.highlight code	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article p	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article p code	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article ul	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.article_date	assets/css/_codeinthehole.scss	/^        .article_date {$/;"	c
+.article_summary	assets/css/_codeinthehole.scss	/^	    .article_summary {$/;"	c
+.article_summary	assets/css/_codeinthehole.scss	/^	.article_summary {$/;"	c
+.articles	assets/css/_codeinthehole.scss	/^	.articles {$/;"	c
+.articles	assets/css/_codeinthehole.scss	/^.articles {$/;"	c
+.articles	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.articles .article_summary	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.articles .article_summary .main a	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.articles .article_summary .main p	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.articles .article_summary .meta	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.articles .article_summary .meta .tags	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.articles .article_summary .meta a	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.articles h1#title	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	i
+.articles p	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.bib	public/tutorial/tutorial-styles.css	/^.bib {$/;"	c
+.bib	static/tutorial/tutorial-styles.css	/^.bib {$/;"	c
+.bp	assets/css/_pygments.scss	/^.highlight .bp { color: #f8f8f2 } \/* Name.Builtin.Pseudo *\/$/;"	c
+.byline	assets/css/_codeinthehole.scss	/^	.byline {$/;"	c
+.c	assets/css/_pygments.scss	/^.highlight .c { color: #75715e } \/* Comment *\/$/;"	c
+.c1	assets/css/_pygments.scss	/^.highlight .c1 { color: #75715e } \/* Comment.Single *\/$/;"	c
+.candy	public/tutorial/tutorial-styles.css	/^.candy {$/;"	c
+.candy	static/tutorial/tutorial-styles.css	/^.candy {$/;"	c
+.caption	assets/css/_codeinthehole.scss	/^        .caption {$/;"	c
+.caption	public/tutorial/tutorial-styles.css	/^.caption {$/;"	c
+.caption	static/tutorial/tutorial-styles.css	/^.caption {$/;"	c
+.centerlink	public/tutorial/tutorial-styles.css	/^.centerlink {$/;"	c
+.centerlink	static/tutorial/tutorial-styles.css	/^.centerlink {$/;"	c
+.clearfix	assets/css/_codeinthehole.scss	/^.clearfix { zoom: 1; }$/;"	c
+.clearfix	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.clearfix:after	assets/css/_codeinthehole.scss	/^.clearfix:after { clear: both; }$/;"	c
+.clearfix:after	assets/css/_codeinthehole.scss	/^.clearfix:before, .clearfix:after { content: ""; display: table; }$/;"	c
+.clearfix:after	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.clearfix:before	assets/css/_codeinthehole.scss	/^.clearfix:before, .clearfix:after { content: ""; display: table; }$/;"	c
+.clearfix:before	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.cm	assets/css/_pygments.scss	/^.highlight .cm { color: #75715e } \/* Comment.Multiline *\/$/;"	c
+.cp	assets/css/_pygments.scss	/^.highlight .cp { color: #75715e } \/* Comment.Preproc *\/$/;"	c
+.cs	assets/css/_pygments.scss	/^.highlight .cs { color: #75715e } \/* Comment.Special *\/$/;"	c
+.desktop_only	assets/css/_codeinthehole.scss	/^	.desktop_only {$/;"	c
+.desktop_only	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.email:active	public/tutorial/tutorial-styles.css	/^.email:link, .email:visited, .email:active {$/;"	c
+.email:active	static/tutorial/tutorial-styles.css	/^.email:link, .email:visited, .email:active {$/;"	c
+.email:link	public/tutorial/tutorial-styles.css	/^.email:link, .email:visited, .email:active {$/;"	c
+.email:link	static/tutorial/tutorial-styles.css	/^.email:link, .email:visited, .email:active {$/;"	c
+.email:visited	public/tutorial/tutorial-styles.css	/^.email:link, .email:visited, .email:active {$/;"	c
+.email:visited	static/tutorial/tutorial-styles.css	/^.email:link, .email:visited, .email:active {$/;"	c
+.eq	public/tutorial/tutorial-styles.css	/^.eq {$/;"	c
+.eq	static/tutorial/tutorial-styles.css	/^.eq {$/;"	c
+.err	assets/css/_pygments.scss	/^.highlight .err { color: #960050; background-color: #1e0010 } \/* Error *\/$/;"	c
+.figure	public/tutorial/tutorial-styles.css	/^.figure {$/;"	c
+.figure	static/tutorial/tutorial-styles.css	/^.figure {$/;"	c
+.focusable:active	assets/css/_codeinthehole.scss	/^.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; ma/;"	c
+.focusable:focus	assets/css/_codeinthehole.scss	/^.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; ma/;"	c
+.footnote-return	assets/css/_codeinthehole.scss	/^        a.footnote-return {$/;"	c
+.footnotes	assets/css/_codeinthehole.scss	/^	div.footnotes {$/;"	c
+.ge	assets/css/_pygments.scss	/^.highlight .ge { font-style: italic } \/* Generic.Emph *\/$/;"	c
+.gs	assets/css/_pygments.scss	/^.highlight .gs { font-weight: bold } \/* Generic.Strong *\/$/;"	c
+.hidden	assets/css/_codeinthehole.scss	/^.hidden { display: none !important; visibility: hidden; }$/;"	c
+.hidden	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.high	public/tutorial/tutorial-styles.css	/^.high {$/;"	c
+.high	static/tutorial/tutorial-styles.css	/^.high {$/;"	c
+.highlight	assets/css/_codeinthehole.scss	/^        .highlight {$/;"	c
+.highlight	assets/css/_codeinthehole.scss	/^        div.highlight {$/;"	c
+.highlight	assets/css/_codeinthehole.scss	/^    .highlight {$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight  { background: #272822; color: #f8f8f2 }$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .bp { color: #f8f8f2 } \/* Name.Builtin.Pseudo *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .c { color: #75715e } \/* Comment *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .c1 { color: #75715e } \/* Comment.Single *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .cm { color: #75715e } \/* Comment.Multiline *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .cp { color: #75715e } \/* Comment.Preproc *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .cs { color: #75715e } \/* Comment.Special *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .err { color: #960050; background-color: #1e0010 } \/* Error *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .ge { font-style: italic } \/* Generic.Emph *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .gs { font-weight: bold } \/* Generic.Strong *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .hll { background-color: #49483e }$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .il { color: #ae81ff } \/* Literal.Number.Integer.Long *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .k { color: #66d9ef } \/* Keyword *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .kc { color: #66d9ef } \/* Keyword.Constant *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .kd { color: #66d9ef } \/* Keyword.Declaration *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .kn { color: #f92672 } \/* Keyword.Namespace *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .kp { color: #66d9ef } \/* Keyword.Pseudo *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .kr { color: #66d9ef } \/* Keyword.Reserved *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .kt { color: #66d9ef } \/* Keyword.Type *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .l { color: #ae81ff } \/* Literal *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .ld { color: #e6db74 } \/* Literal.Date *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .m { color: #ae81ff } \/* Literal.Number *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .mf { color: #ae81ff } \/* Literal.Number.Float *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .mh { color: #ae81ff } \/* Literal.Number.Hex *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .mi { color: #ae81ff } \/* Literal.Number.Integer *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .mo { color: #ae81ff } \/* Literal.Number.Oct *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .n { color: #f8f8f2 } \/* Name *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .na { color: #a6e22e } \/* Name.Attribute *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .nb { color: #f8f8f2 } \/* Name.Builtin *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .nc { color: #a6e22e } \/* Name.Class *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .nd { color: #a6e22e } \/* Name.Decorator *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .ne { color: #a6e22e } \/* Name.Exception *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .nf { color: #a6e22e } \/* Name.Function *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .ni { color: #f8f8f2 } \/* Name.Entity *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .nl { color: #f8f8f2 } \/* Name.Label *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .nn { color: #f8f8f2 } \/* Name.Namespace *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .no { color: #66d9ef } \/* Name.Constant *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .nt { color: #f92672 } \/* Name.Tag *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .nv { color: #f8f8f2 } \/* Name.Variable *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .nx { color: #a6e22e } \/* Name.Other *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .o { color: #f92672 } \/* Operator *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .ow { color: #f92672 } \/* Operator.Word *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .p { color: #f8f8f2 } \/* Punctuation *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .py { color: #f8f8f2 } \/* Name.Property *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .s { color: #e6db74 } \/* Literal.String *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .s1 { color: #e6db74 } \/* Literal.String.Single *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .s2 { color: #e6db74 } \/* Literal.String.Double *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .sb { color: #e6db74 } \/* Literal.String.Backtick *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .sc { color: #e6db74 } \/* Literal.String.Char *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .sd { color: #e6db74 } \/* Literal.String.Doc *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .se { color: #ae81ff } \/* Literal.String.Escape *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .sh { color: #e6db74 } \/* Literal.String.Heredoc *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .si { color: #e6db74 } \/* Literal.String.Interpol *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .sr { color: #e6db74 } \/* Literal.String.Regex *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .ss { color: #e6db74 } \/* Literal.String.Symbol *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .sx { color: #e6db74 } \/* Literal.String.Other *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .vc { color: #f8f8f2 } \/* Name.Variable.Class *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .vg { color: #f8f8f2 } \/* Name.Variable.Global *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .vi { color: #f8f8f2 } \/* Name.Variable.Instance *\/$/;"	c
+.highlight	assets/css/_pygments.scss	/^.highlight .w { color: #f8f8f2 } \/* Text.Whitespace *\/$/;"	c
+.highlight	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .bp	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .c	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .c1	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .cm	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .cp	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .cs	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .err	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .ge	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .gs	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .hll	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .il	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .k	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .kc	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .kd	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .kn	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .kp	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .kr	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .kt	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .l	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .ld	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .m	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .mf	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .mh	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .mi	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .mo	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .n	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .na	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .nb	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .nc	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .nd	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .ne	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .nf	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .ni	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .nl	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .nn	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .no	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .nt	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .nv	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .nx	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .o	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .ow	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .p	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .py	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .s	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .s1	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .s2	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .sb	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .sc	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .sd	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .se	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .sh	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .si	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .sr	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .ss	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .sx	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .vc	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .vg	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .vi	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.highlight .w	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.hll	assets/css/_pygments.scss	/^.highlight .hll { background-color: #49483e }$/;"	c
+.home	assets/css/_codeinthehole.scss	/^	.home {$/;"	c
+.home	assets/css/_codeinthehole.scss	/^.home {$/;"	c
+.home #about-photo	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	i
+.home #bio	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	i
+.home #bio p	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.home #logo	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	i
+.home a.read-more	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.home h2	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.home li	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.hr	assets/css/_codeinthehole.scss	/^	    span.hr {$/;"	c
+.icon	public/tutorial/tutorial-styles.css	/^.icon {$/;"	c
+.icon	static/tutorial/tutorial-styles.css	/^.icon {$/;"	c
+.iconlist	public/tutorial/tutorial-styles.css	/^.iconlist {$/;"	c
+.iconlist	static/tutorial/tutorial-styles.css	/^.iconlist {$/;"	c
+.iconnote	public/tutorial/tutorial-styles.css	/^.iconnote {$/;"	c
+.iconnote	static/tutorial/tutorial-styles.css	/^.iconnote {$/;"	c
+.il	assets/css/_pygments.scss	/^.highlight .il { color: #ae81ff } \/* Literal.Number.Integer.Long *\/$/;"	c
+.invisible	assets/css/_codeinthehole.scss	/^.invisible { visibility: hidden; }$/;"	c
+.invisible	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.ir	assets/css/_codeinthehole.scss	/^  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  \/* Don't show/;"	c
+.ir	assets/css/_codeinthehole.scss	/^.ir br { display: none; }$/;"	c
+.ir	assets/css/_codeinthehole.scss	/^.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transp/;"	c
+.ir	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.ir a:after	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.ir br	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+.k	assets/css/_pygments.scss	/^.highlight .k { color: #66d9ef } \/* Keyword *\/$/;"	c
+.kc	assets/css/_pygments.scss	/^.highlight .kc { color: #66d9ef } \/* Keyword.Constant *\/$/;"	c
+.kd	assets/css/_pygments.scss	/^.highlight .kd { color: #66d9ef } \/* Keyword.Declaration *\/$/;"	c
+.keys	assets/css/_codeinthehole.scss	/^    .keys {$/;"	c
+.kn	assets/css/_pygments.scss	/^.highlight .kn { color: #f92672 } \/* Keyword.Namespace *\/$/;"	c
+.kp	assets/css/_pygments.scss	/^.highlight .kp { color: #66d9ef } \/* Keyword.Pseudo *\/$/;"	c
+.kr	assets/css/_pygments.scss	/^.highlight .kr { color: #66d9ef } \/* Keyword.Reserved *\/$/;"	c
+.kt	assets/css/_pygments.scss	/^.highlight .kt { color: #66d9ef } \/* Keyword.Type *\/$/;"	c
+.l	assets/css/_pygments.scss	/^.highlight .l { color: #ae81ff } \/* Literal *\/$/;"	c
+.ld	assets/css/_pygments.scss	/^.highlight .ld { color: #e6db74 } \/* Literal.Date *\/$/;"	c
+.leftlink	public/tutorial/tutorial-styles.css	/^.leftlink {$/;"	c
+.leftlink	static/tutorial/tutorial-styles.css	/^.leftlink {$/;"	c
+.m	assets/css/_pygments.scss	/^.highlight .m { color: #ae81ff } \/* Literal.Number *\/$/;"	c
+.main	assets/css/_codeinthehole.scss	/^		.main {$/;"	c
+.meta	assets/css/_codeinthehole.scss	/^		.meta {$/;"	c
+.meta	assets/css/_codeinthehole.scss	/^	        .meta {$/;"	c
+.mf	assets/css/_pygments.scss	/^.highlight .mf { color: #ae81ff } \/* Literal.Number.Float *\/$/;"	c
+.mh	assets/css/_pygments.scss	/^.highlight .mh { color: #ae81ff } \/* Literal.Number.Hex *\/$/;"	c
+.mi	assets/css/_pygments.scss	/^.highlight .mi { color: #ae81ff } \/* Literal.Number.Integer *\/$/;"	c
+.mo	assets/css/_pygments.scss	/^.highlight .mo { color: #ae81ff } \/* Literal.Number.Oct *\/$/;"	c
+.mobile_only	assets/css/_codeinthehole.scss	/^	.mobile_only {$/;"	c
+.mobile_only	assets/css/_codeinthehole.scss	/^.mobile_only {$/;"	c
+.mobile_only	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.n	assets/css/_pygments.scss	/^.highlight .n { color: #f8f8f2 } \/* Name *\/$/;"	c
+.na	assets/css/_pygments.scss	/^.highlight .na { color: #a6e22e } \/* Name.Attribute *\/$/;"	c
+.navheader	public/tutorial/tutorial-styles.css	/^.navheader {$/;"	c
+.navheader	static/tutorial/tutorial-styles.css	/^.navheader {$/;"	c
+.nb	assets/css/_pygments.scss	/^.highlight .nb { color: #f8f8f2 } \/* Name.Builtin *\/$/;"	c
+.nc	assets/css/_pygments.scss	/^.highlight .nc { color: #a6e22e } \/* Name.Class *\/$/;"	c
+.nd	assets/css/_pygments.scss	/^.highlight .nd { color: #a6e22e } \/* Name.Decorator *\/$/;"	c
+.ne	assets/css/_pygments.scss	/^.highlight .ne { color: #a6e22e } \/* Name.Exception *\/$/;"	c
+.nf	assets/css/_pygments.scss	/^.highlight .nf { color: #a6e22e } \/* Name.Function *\/$/;"	c
+.ni	assets/css/_pygments.scss	/^.highlight .ni { color: #f8f8f2 } \/* Name.Entity *\/$/;"	c
+.nl	assets/css/_pygments.scss	/^.highlight .nl { color: #f8f8f2 } \/* Name.Label *\/$/;"	c
+.nn	assets/css/_pygments.scss	/^.highlight .nn { color: #f8f8f2 } \/* Name.Namespace *\/$/;"	c
+.no	assets/css/_pygments.scss	/^.highlight .no { color: #66d9ef } \/* Name.Constant *\/$/;"	c
+.noborder	assets/css/_codeinthehole.scss	/^    img.noborder {$/;"	c
+.nohover:hover	public/tutorial/tutorial-styles.css	/^.nohover:hover {$/;"	c
+.nohover:hover	static/tutorial/tutorial-styles.css	/^.nohover:hover {$/;"	c
+.nt	assets/css/_pygments.scss	/^.highlight .nt { color: #f92672 } \/* Name.Tag *\/$/;"	c
+.nv	assets/css/_pygments.scss	/^.highlight .nv { color: #f8f8f2 } \/* Name.Variable *\/$/;"	c
+.nx	assets/css/_pygments.scss	/^.highlight .nx { color: #a6e22e } \/* Name.Other *\/$/;"	c
+.o	assets/css/_pygments.scss	/^.highlight .o { color: #f92672 } \/* Operator *\/$/;"	c
+.ow	assets/css/_pygments.scss	/^.highlight .ow { color: #f92672 } \/* Operator.Word *\/$/;"	c
+.p	assets/css/_pygments.scss	/^.highlight .p { color: #f8f8f2 } \/* Punctuation *\/$/;"	c
+.photo	assets/css/_codeinthehole.scss	/^	img.photo {$/;"	c
+.py	assets/css/_pygments.scss	/^.highlight .py { color: #f8f8f2 } \/* Name.Property *\/$/;"	c
+.read-more	assets/css/_codeinthehole.scss	/^    a.read-more {$/;"	c
+.ref:active	public/tutorial/tutorial-styles.css	/^.ref:link, .ref:visited, .ref:active {$/;"	c
+.ref:active	static/tutorial/tutorial-styles.css	/^.ref:link, .ref:visited, .ref:active {$/;"	c
+.ref:hover	public/tutorial/tutorial-styles.css	/^.ref:hover {$/;"	c
+.ref:hover	static/tutorial/tutorial-styles.css	/^.ref:hover {$/;"	c
+.ref:link	public/tutorial/tutorial-styles.css	/^.ref:link, .ref:visited, .ref:active {$/;"	c
+.ref:link	static/tutorial/tutorial-styles.css	/^.ref:link, .ref:visited, .ref:active {$/;"	c
+.ref:visited	public/tutorial/tutorial-styles.css	/^.ref:link, .ref:visited, .ref:active {$/;"	c
+.ref:visited	static/tutorial/tutorial-styles.css	/^.ref:link, .ref:visited, .ref:active {$/;"	c
+.rightlink	public/tutorial/tutorial-styles.css	/^.rightlink {$/;"	c
+.rightlink	static/tutorial/tutorial-styles.css	/^.rightlink {$/;"	c
+.s	assets/css/_pygments.scss	/^.highlight .s { color: #e6db74 } \/* Literal.String *\/$/;"	c
+.s1	assets/css/_pygments.scss	/^.highlight .s1 { color: #e6db74 } \/* Literal.String.Single *\/$/;"	c
+.s2	assets/css/_pygments.scss	/^.highlight .s2 { color: #e6db74 } \/* Literal.String.Double *\/$/;"	c
+.sb	assets/css/_pygments.scss	/^.highlight .sb { color: #e6db74 } \/* Literal.String.Backtick *\/$/;"	c
+.sc	assets/css/_pygments.scss	/^.highlight .sc { color: #e6db74 } \/* Literal.String.Char *\/$/;"	c
+.screenshot	assets/css/_codeinthehole.scss	/^	img.screenshot {$/;"	c
+.sd	assets/css/_pygments.scss	/^.highlight .sd { color: #e6db74 } \/* Literal.String.Doc *\/$/;"	c
+.se	assets/css/_pygments.scss	/^.highlight .se { color: #ae81ff } \/* Literal.String.Escape *\/$/;"	c
+.sh	assets/css/_pygments.scss	/^.highlight .sh { color: #e6db74 } \/* Literal.String.Heredoc *\/$/;"	c
+.si	assets/css/_pygments.scss	/^.highlight .si { color: #e6db74 } \/* Literal.String.Interpol *\/$/;"	c
+.simrow	public/tutorial/tutorial-styles.css	/^.simrow {$/;"	c
+.simrow	static/tutorial/tutorial-styles.css	/^.simrow {$/;"	c
+.sims	public/tutorial/tutorial-styles.css	/^.sims {$/;"	c
+.sims	static/tutorial/tutorial-styles.css	/^.sims {$/;"	c
+.slidedeck	assets/css/_codeinthehole.scss	/^    div.slidedeck {$/;"	c
+.sr	assets/css/_pygments.scss	/^.highlight .sr { color: #e6db74 } \/* Literal.String.Regex *\/$/;"	c
+.ss	assets/css/_pygments.scss	/^.highlight .ss { color: #e6db74 } \/* Literal.String.Symbol *\/$/;"	c
+.stress	public/tutorial/tutorial-styles.css	/^.stress {$/;"	c
+.stress	static/tutorial/tutorial-styles.css	/^.stress {$/;"	c
+.sx	assets/css/_pygments.scss	/^.highlight .sx { color: #e6db74 } \/* Literal.String.Other *\/$/;"	c
+.tags	assets/css/_codeinthehole.scss	/^                .tags {$/;"	c
+.title-image	assets/css/_codeinthehole.scss	/^    img.title-image {$/;"	c
+.vc	assets/css/_pygments.scss	/^.highlight .vc { color: #f8f8f2 } \/* Name.Variable.Class *\/$/;"	c
+.vg	assets/css/_pygments.scss	/^.highlight .vg { color: #f8f8f2 } \/* Name.Variable.Global *\/$/;"	c
+.vi	assets/css/_pygments.scss	/^.highlight .vi { color: #f8f8f2 } \/* Name.Variable.Instance *\/$/;"	c
+.visuallyhidden	assets/css/_codeinthehole.scss	/^.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; p/;"	c
+.visuallyhidden	assets/css/_codeinthehole.scss	/^.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; ma/;"	c
+.visuallyhidden	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.visuallyhidden.focusable:active	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.visuallyhidden.focusable:focus	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+.w	assets/css/_pygments.scss	/^.highlight .w { color: #f8f8f2 } \/* Text.Whitespace *\/$/;"	c
+.warning	assets/css/_codeinthehole.scss	/^    div.warning {$/;"	c
+::-moz-selection	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+::selection	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+A blank desktop	content/tips/shortcuts-of-the-old-and-minimalist.md	/^## A blank desktop$/;"	s
+A conflict happens	content/guides/resolving-conflicts-during-a-git-rebase.md	/^## A conflict happens$/;"	s
+A history of error lists	content/tips/vim-lists.md	/^### A history of error lists$/;"	S	section:Quickfix list
+A problem	content/tips/a-deferred-logging-handler-for-django.md	/^### A problem$/;"	S
+A solution	content/tips/conditional-validation-in-django-forms.md	/^### A solution$/;"	S
+A warning	content/tips/easy-to-change.md	/^### A warning$/;"	S
+A:active	public/tutorial/tutorial-styles.css	/^A:link, A:visited, A:active {$/;"	s
+A:active	static/tutorial/tutorial-styles.css	/^A:link, A:visited, A:active {$/;"	s
+A:hover	public/tutorial/tutorial-styles.css	/^A:hover {$/;"	s
+A:hover	static/tutorial/tutorial-styles.css	/^A:hover {$/;"	s
+A:link	public/tutorial/tutorial-styles.css	/^A:link, A:visited, A:active {$/;"	s
+A:link	static/tutorial/tutorial-styles.css	/^A:link, A:visited, A:active {$/;"	s
+A:visited	public/tutorial/tutorial-styles.css	/^A:link, A:visited, A:active {$/;"	s
+A:visited	static/tutorial/tutorial-styles.css	/^A:link, A:visited, A:active {$/;"	s
+Abstract	public/downloads/thesis_with_pdfcode.tex	/^	\\chapter*{Abstract}$/;"	c
+Abstract	public/downloads/thesis_without_pdfcode.tex	/^	\\chapter*{Abstract}$/;"	c
+Abstract	static/downloads/thesis_with_pdfcode.tex	/^	\\chapter*{Abstract}$/;"	c
+Abstract	static/downloads/thesis_without_pdfcode.tex	/^	\\chapter*{Abstract}$/;"	c
+Acknowledgements	public/downloads/thesis_with_pdfcode.tex	/^ 	\\chapter*{Acknowledgements}$/;"	c
+Acknowledgements	public/downloads/thesis_without_pdfcode.tex	/^ 	\\chapter*{Acknowledgements}$/;"	c
+Acknowledgements	static/downloads/thesis_with_pdfcode.tex	/^ 	\\chapter*{Acknowledgements}$/;"	c
+Acknowledgements	static/downloads/thesis_without_pdfcode.tex	/^ 	\\chapter*{Acknowledgements}$/;"	c
+Acting on the error list	content/tips/vim-lists.md	/^### Acting on the error list$/;"	S	section:Quickfix list
+Alternatives	content/projects/purl-a-python-url-class.md	/^### Alternatives$/;"	S
+An e-commerce example	content/tips/django-file-upload-models.md	/^### An e-commerce example$/;"	S
+Analysing codebase changes since a tag	content/tips/better-release-announcements.md	/^### Analysing codebase changes since a tag$/;"	S
+Another solution	content/tips/a-deferred-logging-handler-for-django.md	/^### Another solution$/;"	S
+Applications	content/guides/settings-up-a-2020-macbook-for-python-development.md	/^## Applications$/;"	s
+Apply your changes to the target branch code	content/guides/resolving-conflicts-during-a-git-rebase.md	/^### Apply your changes to the target branch code$/;"	S	section:Resolve conflicts safely
+Aren't you supposed to stop using SSH with AWS?	content/tips/modern-ssh-tips.md	/^### Aren't you supposed to stop using SSH with AWS?$/;"	S
+Argument list	content/tips/vim-lists.md	/^## Argument list$/;"	s
+Ask for feedback	content/tips/git-tips.md	/^#### Ask for feedback$/;"	t	subsection:Use pull requests""Sample workflow
+BODY	public/tutorial/tutorial-styles.css	/^BODY, P, LI, DT, TD {$/;"	s
+BODY	static/tutorial/tutorial-styles.css	/^BODY, P, LI, DT, TD {$/;"	s
+Basic caching	content/projects/django-cacheback.md	/^#### Basic caching$/;"	t	subsection:Example
+Buffer list	content/tips/vim-lists.md	/^## Buffer list$/;"	s
+Build an audit trail	content/tips/git-tips.md	/^### Build an audit trail$/;"	S	section:Other good practices
+Building to stage and production	content/tips/a-git-tagging-strategy-using-fabric.md	/^### Building to stage and production$/;"	S
+Building to test	content/tips/a-git-tagging-strategy-using-fabric.md	/^### Building to test$/;"	S
+Care about your history	content/tips/git-tips.md	/^### Care about your history$/;"	S	section:Other good practices
+Change list	content/tips/vim-lists.md	/^## Change list$/;"	s
+Cleaning your history (optional)	content/tips/git-tips.md	/^#### Cleaning your history (optional)$/;"	t	subsection:Use pull requests""Sample workflow
+Code review	content/tips/git-tips.md	/^#### Code review$/;"	t	subsection:Use pull requests""Sample workflow
+Common errors	content/tips/how-to-install-geodjango.md	/^#### Common errors$/;"	t	subsection:Installation on Ubuntu 12.04
+Compiling to PDF	content/guides/writing-a-thesis-in-latex.md	/^#### Compiling to PDF$/;"	t	subsection:Overview""Document structure
+Conference talks	content/about.md	/^## Conference talks$/;"	s
+Constructing a build name	content/tips/a-git-tagging-strategy-using-fabric.md	/^#### Constructing a build name$/;"	t	subsection:Interesting bits
+Create a blog post	README.md	/^### Create a blog post$/;"	S	section:codeinthehole.com""Local development
+Create a static page	README.md	/^### Create a static page$/;"	S	section:codeinthehole.com""Local development
+Credits	content/tips/dns-problems-for-mysql.md	/^### Credits$/;"	S
+DT	public/tutorial/tutorial-styles.css	/^BODY, P, LI, DT, TD {$/;"	s
+DT	static/tutorial/tutorial-styles.css	/^BODY, P, LI, DT, TD {$/;"	s
+Data	resources/_gen/assets/scss/css/main.scss_b95b077eb505d5c0aff8055eaced30ad.json	/^{"Target":"css\/main.min.css","MediaType":"text\/css","Data":{}}/;"	o
+Debug mode	content/tips/debugging-vim-by-example.md	/^### Debug mode$/;"	S	section:"Why isn't it working?"
+Deploy	README.md	/^## Deploy$/;"	s	chapter:codeinthehole.com
+Design	content/news/restructured-blog.md	/^### Design$/;"	S
+Determine changes template block names	content/tips/better-release-announcements.md	/^### Determine changes template block names$/;"	S
+Discuss	content/tips/a-github-workflow.md	/^#### Discuss$/;"	t	subsection:Workflow
+Discussion	content/projects/csvfilter.md	/^### Discussion$/;"	S
+Discussion	content/projects/purl-a-python-url-class.md	/^### Discussion$/;"	S
+Discussion	content/projects/xml-support-for-unittest.md	/^### Discussion$/;"	S
+Discussion	content/tips/conditional-validation-in-django-forms.md	/^### Discussion$/;"	S
+Discussion	content/tips/console-logging-to-stdout.md	/^### Discussion$/;"	S
+Discussion	content/tips/django-file-upload-models.md	/^### Discussion$/;"	S
+Discussion	content/tips/dns-problems-for-mysql.md	/^### Discussion$/;"	S
+Discussion	content/tips/embedding-html-in-django-messages.md	/^### Discussion$/;"	S
+Discussion	content/tips/encoded-slashes-in-nginx-django-apache.md	/^#### Discussion$/;"	t	subsection:Problem
+Discussion	content/tips/get-django-postcode-validator.md	/^### Discussion$/;"	S
+Discussion	content/tips/how-to-install-pil.md	/^### Discussion$/;"	S	section:*** LITTLECMS support not available
+Discussion	content/tips/postgres.app-logging.md	/^### Discussion$/;"	S
+Discussion	content/tips/reloading-django-url-config.md	/^### Discussion$/;"	S
+Discussion	content/tips/sync-pycon-to-iphone.md	/^### Discussion$/;"	S
+Discussion	content/tips/testing-https-handling-in-django.md	/^### Discussion$/;"	S
+Discussion	content/tips/using-pip-to-install-from-github.md	/^### Discussion$/;"	S
+Django-specific issues	content/tips/build-your-project-on-ci.md	/^### Django-specific issues$/;"	S
+Document structure	content/guides/writing-a-thesis-in-latex.md	/^### Document structure$/;"	S	section:Overview
+Downloaded and dragged into `/Applications`	content/guides/settings-up-a-2020-macbook-for-python-development.md	/^## Downloaded and dragged into `\/Applications`$/;"	s
+Education	content/about.md	/^## Education$/;"	s
+Employment	content/about.md	/^## Employment$/;"	s
+Examine the target branch changes in detail	content/guides/resolving-conflicts-during-a-git-rebase.md	/^### Examine the target branch changes in detail$/;"	S	section:What changes were made in the target branch that conflict with my commit?
+Example	content/projects/django-cacheback.md	/^### Example$/;"	S
+Example	content/projects/purl-supports-templates.md	/^#### Example$/;"	t	subsection:Parameterised tests
+Example functional test	content/tips/django-webtest-is-awesome.md	/^### Example functional test$/;"	S
+Fabric function	content/tips/a-git-tagging-strategy-using-fabric.md	/^### Fabric function$/;"	S
+Faceted browsing everywhere	content/projects/oscar-roadmap.md	/^#### Faceted browsing everywhere$/;"	t	subsection:v1.0
+Fail fast	content/tips/bash-error-reporting.md	/^## Fail fast$/;"	s
+Fail noisy	content/tips/bash-error-reporting.md	/^## Fail noisy$/;"	s
+Follow the boy-scout rule	content/tips/advanced-pull-request-crafting.md	/^### Follow the boy-scout rule$/;"	S
+From the App Store	content/guides/settings-up-a-2020-macbook-for-python-development.md	/^## From the App Store$/;"	s
+Further reading	content/guides/resolving-conflicts-during-a-git-rebase.md	/^## Further reading$/;"	s
+Further reading	content/guides/settings-up-a-2020-macbook-for-python-development.md	/^### Further reading $/;"	S	section:MacOS configuration
+Further reading	content/guides/settings-up-a-2020-macbook-for-python-development.md	/^### Further reading $/;"	S	section:Python
+Further reading	content/tips/chroot-user-in-ubuntu.md	/^### Further reading$/;"	S
+Further reading	content/tips/encoded-slashes-in-nginx-django-apache.md	/^#### Further reading$/;"	t	subsection:Problem
+Here is my title	content/tips/ag-and-vim.md	/^# Here is my title$/;"	c
+Hide everything	content/tips/shortcuts-of-the-old-and-minimalist.md	/^## Hide everything$/;"	s
+Homebrew formulae	content/guides/settings-up-a-2020-macbook-for-python-development.md	/^## Homebrew formulae$/;"	s
+IMG	public/tutorial/tutorial-styles.css	/^IMG {$/;"	s
+IMG	static/tutorial/tutorial-styles.css	/^IMG {$/;"	s
+Include file searches	content/tips/vim-lists.md	/^## Include file searches$/;"	s
+Install	README.md	/^### Install$/;"	S	section:codeinthehole.com""Local development
+Installation	content/projects/xml-support-for-unittest.md	/^### Installation$/;"	S
+Installation	content/tips/how-to-setup-mysqldb.md	/^### Installation$/;"	S
+Installation on Ubuntu 12.04	content/tips/how-to-install-geodjango.md	/^### Installation on Ubuntu 12.04$/;"	S
+Interested?	content/projects/django-cacheback.md	/^### Interested?$/;"	S
+Interesting bits	content/tips/a-git-tagging-strategy-using-fabric.md	/^### Interesting bits$/;"	S
+Interests	content/about.md	/^## Interests$/;"	s
+Iterate	content/tips/a-github-workflow.md	/^#### Iterate$/;"	t	subsection:Workflow
+Join rows where a timestamp value is _within_ the date	content/tips/joining-between-date-and-datetime-fields-in-postgres.md	/^## Join rows where a timestamp value is _within_ the date$/;"	s
+Join rows where a timestamp value is equal to midnight of the date	content/tips/joining-between-date-and-datetime-fields-in-postgres.md	/^## Join rows where a timestamp value is equal to midnight of the date$/;"	s
+Jump list	content/tips/vim-lists.md	/^## Jump list$/;"	s
+Keep your hook script in source control	content/tips/git-pre-commit-tips.md	/^### Keep your hook script in source control$/;"	S
+Keeping everyone in sync	content/tips/a-git-tagging-strategy-using-fabric.md	/^#### Keeping everyone in sync$/;"	t	subsection:Interesting bits
+LI	public/tutorial/tutorial-styles.css	/^BODY, P, LI, DT, TD {$/;"	s
+LI	public/tutorial/tutorial-styles.css	/^LI {$/;"	s
+LI	static/tutorial/tutorial-styles.css	/^BODY, P, LI, DT, TD {$/;"	s
+LI	static/tutorial/tutorial-styles.css	/^LI {$/;"	s
+LIT REVIEW	content/guides/resolving-conflicts-during-a-git-rebase.md	/^LIT REVIEW$/;"	s
+Literature	content/tips/vim-lists.md	/^## Literature$/;"	s
+Local development	README.md	/^## Local development$/;"	s	chapter:codeinthehole.com
+Location list	content/tips/vim-lists.md	/^## Location list$/;"	s
+MacOS configuration	content/guides/settings-up-a-2020-macbook-for-python-development.md	/^## MacOS configuration$/;"	s
+Macro 1 - Convert tag text	content/tips/vim-macros-for-django-i18n.md	/^#### Macro 1 - Convert tag text$/;"	t	subsection:Solution
+Macro 2 - Convert selected text	content/tips/vim-macros-for-django-i18n.md	/^#### Macro 2 - Convert selected text$/;"	t	subsection:Solution
+Main matter	content/guides/writing-a-thesis-in-latex.md	/^#### Main matter$/;"	t	subsection:Overview""Document structure
+Maintenance mode	content/tips/conditional-nested-blocks-in-terraform.md	/^## Maintenance mode$/;"	s
+Make the reviewer's life easy	content/tips/advanced-pull-request-crafting.md	/^### Make the reviewer's life easy$/;"	S
+Management command	content/tips/zabbix-and-django-integration.md	/^### Management command$/;"	S
+Marshalling tabs	content/tips/shortcuts-of-the-old-and-minimalist.md	/^## Marshalling tabs$/;"	s
+Marshalling windows	content/tips/shortcuts-of-the-old-and-minimalist.md	/^## Marshalling windows$/;"	s
+MediaType	resources/_gen/assets/scss/css/main.scss_b95b077eb505d5c0aff8055eaced30ad.json	/^{"Target":"css\/main.min.css","MediaType":"text\/css","Data":{}}/;"	s
+Merging	content/tips/git-tips.md	/^#### Merging$/;"	t	subsection:Use pull requests""Sample workflow
+Migrating from PHP to Python and Django	content/talks/confoo-presentations.md	/^### Migrating from PHP to Python and Django$/;"	S
+Misc	content/tips/vim-lists.md	/^## Misc$/;"	s
+Missing python headers	content/tips/how-to-install-pil.md	/^#### Missing python headers$/;"	t	section:*** LITTLECMS support not available
+Multi-tenancy	content/projects/oscar-roadmap.md	/^#### Multi-tenancy$/;"	t	subsection:v1.0
+Node JS	content/code.md	/^### Node JS$/;"	S	section:Open-source
+Non-breaking spaces	content/guides/settings-up-a-2020-macbook-for-python-development.md	/^### Non-breaking spaces$/;"	S	section:MacOS configuration
+Nose	content/projects/purl-supports-templates.md	/^#### Nose$/;"	t	subsection:Parameterised tests
+Note for Windows users	content/guides/writing-a-thesis-in-latex.md	/^### Note for Windows users$/;"	S	section:Overview
+Notes	content/tips/a-github-workflow.md	/^### Notes$/;"	S
+Notifying contributors	content/tips/better-release-announcements.md	/^### Notifying contributors$/;"	S
+November 2020	content/now.md	/^## November 2020$/;"	s
+One solution	content/tips/a-deferred-logging-handler-for-django.md	/^### One solution$/;"	S
+Open-source	content/code.md	/^## Open-source$/;"	s
+Opening quickfix without shelling out	content/tips/vim-lists.md	/^### Opening quickfix without shelling out$/;"	S	section:Quickfix list
+Oscar	content/code.md	/^### Oscar$/;"	S	section:Open-source
+Other good practices	content/tips/git-tips.md	/^## Other good practices$/;"	s
+Other useful testing libraries	content/tips/django-webtest-is-awesome.md	/^#### Other useful testing libraries$/;"	t	subsection:Example functional test
+Overall	content/news/restructured-blog.md	/^### Overall$/;"	S
+Overview	content/guides/writing-a-thesis-in-latex.md	/^## Overview$/;"	s
+P	public/tutorial/tutorial-styles.css	/^BODY, P, LI, DT, TD {$/;"	s
+P	static/tutorial/tutorial-styles.css	/^BODY, P, LI, DT, TD {$/;"	s
+PHPUnit	content/projects/purl-supports-templates.md	/^#### PHPUnit$/;"	t	subsection:Parameterised tests
+PIL 1.1.7 SETUP SUMMARY	content/tips/how-to-install-pil.md	/^PIL 1.1.7 SETUP SUMMARY$/;"	s
+Parameterised tests	content/projects/purl-supports-templates.md	/^### Parameterised tests$/;"	S
+Preamble: custom captions (optional)	content/guides/writing-a-thesis-in-latex.md	/^#### Preamble: custom captions (optional)$/;"	t	subsection:Overview""Document structure
+Preamble: custom fonts (optional)	content/guides/writing-a-thesis-in-latex.md	/^#### Preamble: custom fonts (optional)$/;"	t	subsection:Overview""Document structure
+Preamble: customised chapter/section headings (optional)	content/guides/writing-a-thesis-in-latex.md	/^#### Preamble: customised chapter\/section headings (optional)$/;"	t	subsection:Overview""Document structure
+Preamble: essential packages	content/guides/writing-a-thesis-in-latex.md	/^#### Preamble: essential packages$/;"	t	subsection:Overview""Document structure
+Preamble: fancy headers (optional)	content/guides/writing-a-thesis-in-latex.md	/^#### Preamble: fancy headers (optional)$/;"	t	subsection:Overview""Document structure
+Preamble: page layout	content/guides/writing-a-thesis-in-latex.md	/^#### Preamble: page layout$/;"	t	subsection:Overview""Document structure
+Preamble: pdf options (optional)	content/guides/writing-a-thesis-in-latex.md	/^#### Preamble: pdf options (optional)$/;"	t	subsection:Overview""Document structure
+Preview	content/news/restructured-blog.md	/^#### Preview$/;"	t	subsection:Writing a post
+Print statements	content/tips/debugging-vim-by-example.md	/^### Print statements$/;"	S	section:"Why isn't it working?"
+Problem	content/projects/csvfilter.md	/^### Problem$/;"	S
+Problem	content/tips/altering-postgres-columns-with-south.md	/^### Problem$/;"	S
+Problem	content/tips/backing-up-a-postgres-postgis-db.md	/^### Problem$/;"	S
+Problem	content/tips/console-logging-to-stdout.md	/^### Problem$/;"	S
+Problem	content/tips/data-migration-for-domain-names.md	/^### Problem$/;"	S
+Problem	content/tips/dns-problems-for-mysql.md	/^### Problem$/;"	S
+Problem	content/tips/embedding-html-in-django-messages.md	/^### Problem$/;"	S
+Problem	content/tips/encoded-slashes-in-nginx-django-apache.md	/^### Problem$/;"	S
+Problem	content/tips/get-django-postcode-validator.md	/^### Problem$/;"	S
+Problem	content/tips/how-to-install-pil.md	/^### Problem$/;"	S
+Problem	content/tips/postgres.app-logging.md	/^### Problem$/;"	S
+Problem	content/tips/reloading-django-url-config.md	/^### Problem$/;"	S
+Problem	content/tips/setting-title-for-virtualenv.md	/^### Problem$/;"	S
+Problem	content/tips/sync-pycon-to-iphone.md	/^### Problem$/;"	S
+Problem	content/tips/terraform-cidrs.md	/^## Problem$/;"	s
+Problem	content/tips/testing-https-handling-in-django.md	/^### Problem$/;"	S
+Problem	content/tips/using-pip-to-install-from-github.md	/^### Problem$/;"	S
+Problem	content/tips/vim-macros-for-django-i18n.md	/^### Problem$/;"	S
+Process of elimination	content/tips/debugging-vim-by-example.md	/^### Process of elimination$/;"	S	section:"Why isn't it working?"
+Procrastinate instead	content/projects/django-cacheback.md	/^#### Procrastinate instead$/;"	t	subsection:Example
+Product dashboard	content/projects/oscar-roadmap.md	/^#### Product dashboard$/;"	t	subsection:v1.0
+Profile anything that is slow	content/tips/debugging-vim-by-example.md	/^### Profile anything that is slow$/;"	S	section:"Why is {ACTION} slow?"
+Profile start-up	content/tips/debugging-vim-by-example.md	/^### Profile start-up$/;"	S	section:"Why is Vim slow to start up?"
+ProxyCommand and a wildcard SSH alias	content/tips/modern-ssh-tips.md	/^### ProxyCommand and a wildcard SSH alias$/;"	S
+Publish	content/news/restructured-blog.md	/^#### Publish$/;"	t	subsection:Writing a post
+Purpose?	content/tips/advanced-pull-request-crafting.md	/^### Purpose?$/;"	S
+Python	content/code.md	/^### Python$/;"	S	section:Open-source
+Python	content/guides/settings-up-a-2020-macbook-for-python-development.md	/^## Python$/;"	s
+Python command-line apps	content/guides/settings-up-a-2020-macbook-for-python-development.md	/^### Python command-line apps$/;"	S	section:Python
+Python projects	content/guides/settings-up-a-2020-macbook-for-python-development.md	/^### Python projects$/;"	S	section:Python
+Python versions	content/guides/settings-up-a-2020-macbook-for-python-development.md	/^### Python versions$/;"	S	section:Python
+Quickfix list	content/tips/vim-lists.md	/^## Quickfix list$/;"	s
+Re-use recorded resolutions (aka `rerere`)	content/guides/resolving-conflicts-during-a-git-rebase.md	/^### Re-use recorded resolutions (aka `rerere`)$/;"	S	section:Resolve conflicts safely
+Recap	content/tips/easy-to-change.md	/^### Recap$/;"	S
+Relevant literature:	content/tips/vim-lists.md	/^Relevant literature:$/;"	s
+Requirements	content/guides/writing-a-thesis-in-latex.md	/^### Requirements$/;"	S	section:Overview
+Research topics	content/projects/oscar-roadmap.md	/^#### Research topics$/;"	t	subsection:v1.0
+Resolve conflicts safely	content/guides/resolving-conflicts-during-a-git-rebase.md	/^## Resolve conflicts safely$/;"	s
+Return `null`, Null object or an empty collection	content/tips/return-false-with-prudence.md	/^### Return `null`, Null object or an empty collection$/;"	S
+Review	content/tips/a-github-workflow.md	/^#### Review$/;"	t	subsection:Workflow
+Run your test suite before each commit	content/tips/git-pre-commit-tips.md	/^### Run your test suite before each commit$/;"	S
+Running a command on a list of files or locations	content/tips/vim-lists.md	/^### Running a command on a list of files or locations$/;"	S	section:Summary
+SSH config	content/tips/chroot-user-in-ubuntu.md	/^### SSH config$/;"	S
+Sample Usage	content/projects/xml-support-for-unittest.md	/^### Sample Usage$/;"	S
+Sample workflow	content/tips/git-tips.md	/^### Sample workflow$/;"	S	section:Use pull requests
+Search yo.. code for debugging code	content/tips/git-pre-commit-tips.md	/^### Search yo.. code for debugging code$/;"	S
+Set-up	content/tips/a-git-tagging-strategy-using-fabric.md	/^### Set-up$/;"	S
+Simple example	content/tips/avoid-initial-data.md	/^### Simple example$/;"	S
+Sites	content/code.md	/^## Sites$/;"	s
+Skip the pre-commit hook sometimes	content/tips/git-pre-commit-tips.md	/^### Skip the pre-commit hook sometimes$/;"	S
+Solution	content/projects/csvfilter.md	/^### Solution$/;"	S
+Solution	content/tips/altering-postgres-columns-with-south.md	/^### Solution$/;"	S
+Solution	content/tips/avoiding-package-lockout-in-ubuntu-1804.md	/^## Solution$/;"	s
+Solution	content/tips/backing-up-a-postgres-postgis-db.md	/^### Solution$/;"	S
+Solution	content/tips/console-logging-to-stdout.md	/^### Solution$/;"	S
+Solution	content/tips/data-migration-for-domain-names.md	/^### Solution$/;"	S
+Solution	content/tips/dns-problems-for-mysql.md	/^### Solution$/;"	S
+Solution	content/tips/embedding-html-in-django-messages.md	/^### Solution$/;"	S
+Solution	content/tips/encoded-slashes-in-nginx-django-apache.md	/^#### Solution$/;"	t	subsection:Problem
+Solution	content/tips/get-django-postcode-validator.md	/^### Solution$/;"	S
+Solution	content/tips/how-to-install-pil.md	/^### Solution$/;"	S
+Solution	content/tips/install-latest-rabbitmq-on-ubuntu-1804.md	/^## Solution$/;"	s
+Solution	content/tips/postgres.app-logging.md	/^### Solution$/;"	S
+Solution	content/tips/reloading-django-url-config.md	/^### Solution$/;"	S
+Solution	content/tips/setting-title-for-virtualenv.md	/^### Solution$/;"	S
+Solution	content/tips/sync-pycon-to-iphone.md	/^### Solution$/;"	S
+Solution	content/tips/terraform-cidrs.md	/^## Solution$/;"	s
+Solution	content/tips/testing-https-handling-in-django.md	/^### Solution$/;"	S
+Solution	content/tips/using-pip-to-install-from-github.md	/^### Solution$/;"	S
+Solution	content/tips/vim-macros-for-django-i18n.md	/^### Solution$/;"	S
+South data migrations	content/tips/avoid-initial-data.md	/^### South data migrations$/;"	S
+Specify	content/tips/a-github-workflow.md	/^#### Specify$/;"	t	subsection:Workflow
+Stash unstaged changes before running tests	content/tips/git-pre-commit-tips.md	/^### Stash unstaged changes before running tests$/;"	S
+Submit pull request	content/tips/git-tips.md	/^#### Submit pull request$/;"	t	subsection:Use pull requests""Sample workflow
+Summarising changes	content/tips/better-release-announcements.md	/^### Summarising changes$/;"	S
+Summary	content/guides/resolving-conflicts-during-a-git-rebase.md	/^## Summary$/;"	s
+Summary	content/projects/purl-supports-templates.md	/^### Summary$/;"	S
+Summary	content/tips/advanced-pull-request-crafting.md	/^### Summary$/;"	S
+Summary	content/tips/debugging-vim-by-example.md	/^## Summary$/;"	s
+Summary	content/tips/django-webtest-is-awesome.md	/^### Summary$/;"	S
+Summary	content/tips/vim-lists.md	/^## Summary$/;"	s
+Symptoms	content/tips/dns-problems-for-mysql.md	/^### Symptoms$/;"	S
+Symptoms of missing headers	content/tips/how-to-setup-mysqldb.md	/^### Symptoms of missing headers$/;"	S
+System preferences	content/guides/settings-up-a-2020-macbook-for-python-development.md	/^### System preferences $/;"	S	section:MacOS configuration
+TD	public/tutorial/tutorial-styles.css	/^BODY, P, LI, DT, TD {$/;"	s
+TD	static/tutorial/tutorial-styles.css	/^BODY, P, LI, DT, TD {$/;"	s
+Tag match list	content/tips/vim-lists.md	/^## Tag match list$/;"	s
+Target	resources/_gen/assets/scss/css/main.scss_b95b077eb505d5c0aff8055eaced30ad.json	/^{"Target":"css\/main.min.css","MediaType":"text\/css","Data":{}}/;"	s
+Technology	content/news/restructured-blog.md	/^### Technology$/;"	S
+Tell a cogent story	content/tips/advanced-pull-request-crafting.md	/^### Tell a cogent story$/;"	S
+Template files	content/guides/writing-a-thesis-in-latex.md	/^### Template files$/;"	S	section:Overview
+Thanks	content/projects/oscar-roadmap.md	/^### Thanks$/;"	S
+The problem	content/tips/conditional-validation-in-django-forms.md	/^### The problem$/;"	S
+The tag stack and the tag match list	content/tips/vim-lists.md	/^### The tag stack and the tag match list$/;"	S	section:Tag match list
+Throw an exception	content/tips/return-false-with-prudence.md	/^### Throw an exception$/;"	S
+Tips	content/tips/build-your-project-on-ci.md	/^### Tips$/;"	S
+Tips	content/tips/vim-lists.md	/^### Tips$/;"	S	section:Quickfix list
+Traversing nested lists	content/tips/vim-lists.md	/^### Traversing nested lists$/;"	S	section:Summary
+URI templates in purl	content/projects/purl-supports-templates.md	/^### URI templates in purl$/;"	S
+Updating an `AUTHORS` files	content/tips/better-release-announcements.md	/^### Updating an `AUTHORS` files$/;"	S
+Use aliases for speed	content/tips/git-tips.md	/^### Use aliases for speed$/;"	S	section:Other good practices
+Use pull requests	content/tips/git-tips.md	/^## Use pull requests$/;"	s
+Use the `diff3` format to see common ancestor code in conflict blocks	content/guides/resolving-conflicts-during-a-git-rebase.md	/^### Use the `diff3` format to see common ancestor code in conflict blocks$/;"	S	section:What changes were made in the target branch that conflict with my commit?
+Use your prompt	content/tips/git-tips.md	/^### Use your prompt$/;"	S	section:Other good practices
+User set-up	content/tips/chroot-user-in-ubuntu.md	/^### User set-up$/;"	S
+Using Cacheback	content/projects/django-cacheback.md	/^#### Using Cacheback$/;"	t	subsection:Example
+Using Celery	content/projects/django-cacheback.md	/^#### Using Celery$/;"	t	subsection:Example
+Using fixture files	content/tips/avoid-initial-data.md	/^### Using fixture files$/;"	S
+Verbose mode	content/tips/debugging-vim-by-example.md	/^### Verbose mode$/;"	S	section:"Why isn't it working?"
+What changes were made in the target branch that conflict with my commit?	content/guides/resolving-conflicts-during-a-git-rebase.md	/^## What changes were made in the target branch that conflict with my commit?$/;"	s
+What's the next tag?	content/tips/a-git-tagging-strategy-using-fabric.md	/^#### What's the next tag?$/;"	t	subsection:Interesting bits
+What?	content/tips/easy-to-change.md	/^### What?$/;"	S
+Which commit of mine is conflicting?	content/guides/resolving-conflicts-during-a-git-rebase.md	/^## Which commit of mine is conflicting?$/;"	s
+Wholesale accept changes	content/guides/resolving-conflicts-during-a-git-rebase.md	/^### Wholesale accept changes$/;"	S	section:Resolve conflicts safely
+Why?	content/tips/django-webtest-is-awesome.md	/^### Why?$/;"	S
+Work	content/tips/a-github-workflow.md	/^#### Work$/;"	t	subsection:Workflow
+Work on a story	content/tips/git-tips.md	/^#### Work on a story$/;"	t	subsection:Use pull requests""Sample workflow
+Workflow	content/tips/a-github-workflow.md	/^### Workflow$/;"	S
+Write	content/news/restructured-blog.md	/^#### Write$/;"	t	subsection:Writing a post
+Writing a Django e-commerce framework	content/talks/confoo-presentations.md	/^### Writing a Django e-commerce framework$/;"	S
+Writing a post	content/news/restructured-blog.md	/^### Writing a post$/;"	S
+Zabbix dashboard	content/tips/zabbix-and-django-integration.md	/^### Zabbix dashboard$/;"	S
+Zabbix plugin	content/tips/zabbix-and-django-integration.md	/^### Zabbix plugin$/;"	S
+[GCC 4.6.3]	content/tips/how-to-install-pil.md	/^              [GCC 4.6.3]$/;"	s
+``` bash	content/tips/how-to-install-pil.md	/^``` bash$/;"	s
+a	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+a.link	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	c
+a:active	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+a:focus	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+a:hover	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+a:visited	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+a[href] :after	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+a[href^="#"] :after	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+a[href^="javascript:"] :after	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+abbr[title]	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+abbr[title] :after	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+about-photo	assets/css/_codeinthehole.scss	/^        #about-photo {$/;"	i
+about-photo	assets/css/_codeinthehole.scss	/^#about-photo {$/;"	i
+article	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+article_content	assets/css/_codeinthehole.scss	/^        #article_content {$/;"	i
+article_meta	assets/css/_codeinthehole.scss	/^	#article_meta {$/;"	i
+article_nav	assets/css/_codeinthehole.scss	/^#article_nav {$/;"	i
+article_title	assets/css/_codeinthehole.scss	/^	    h1#article_title {$/;"	i
+article_title	assets/css/_codeinthehole.scss	/^	h1#article_title {$/;"	i
+aside	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+atom	public/books/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/categories/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/guides/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/lists/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/news/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/projects/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/apache/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/aws/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/bash/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/books/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/career/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/commandlinefu/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/consul/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/deployment/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/design-patterns/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/django-oscar/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/django/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/fabric/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/ganglia/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/geodjango/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/git/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/github/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/gsuite/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/hugo/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/javascript/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/jq/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/latex/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/loggly/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/macos/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/maths/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/monitoring/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/mysql/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/nginx/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/node/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/octopus-energy/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/packer/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/phing/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/php/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/pil/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/postgres/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/presentations/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/productivity/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/prototype/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/puppet/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/python/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/quotes/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/rabbitmq/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/recruitment/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/software/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/talks/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/teams/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/terraform/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/testing/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/tools/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/ubuntu/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/vim/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/words/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/writing/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/talks/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tidbits/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tips/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+audio	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+audio:not([controls] )	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+autocommand events	content/tips/vim-lists.md	/^### autocommand events$/;"	S	section:Quickfix list
+b	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+bio	assets/css/_codeinthehole.scss	/^    #bio {$/;"	i
+blockquote	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+body	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+build_site	deploy.sh	/^function build_site() {$/;"	f
+button	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+button::-moz-focus-inner	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+canvas	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+code	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+codeinthehole.com	README.md	/^# codeinthehole.com$/;"	c
+commit_message	deploy.sh	/^function commit_message() {$/;"	f
+container	assets/css/_codeinthehole.scss	/^	#container {$/;"	i
+container	assets/css/_codeinthehole.scss	/^#container {$/;"	i
+dark-grey	assets/css/_codeinthehole.scss	/^$dark-grey: #222;$/;"	v
+dark-red	assets/css/_codeinthehole.scss	/^$dark-red: #8C0808;$/;"	v
+dd	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+deploy	makefile	/^deploy:$/;"	t
+deploy_site	deploy.sh	/^function deploy_site() {$/;"	f
+details	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+dfn	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+dl dd p	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+dt	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+fieldset	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+figcaption	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+figure	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+fixed-width	assets/css/_codeinthehole.scss	/^$fixed-width: 'Monaco', monospace, sans-serif;$/;"	v
+footer	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+footer a:active	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+footer a:hover	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+footer a:link	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+footer a:visited	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+form	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+h2	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+h3	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+header	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+header a:hover	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+heading-top-margin	assets/css/_codeinthehole.scss	/^$heading-top-margin: 20px;$/;"	v
+hgroup	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+hidden	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+hr	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+html	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+img	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+input	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+input::-moz-focus-inner	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+input:invalid	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+input[type=button]	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+input[type=checkbox]	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+input[type=radio]	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+input[type=reset]	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+input[type=search]	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+input[type=search] ::-webkit-search-decoration	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+input[type=submit]	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+ins	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+kbd	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+label	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+legend	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+li	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+li li	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+li p	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+light-grey	assets/css/_codeinthehole.scss	/^$light-grey: #aaa;$/;"	v
+logo	assets/css/_codeinthehole.scss	/^	#logo {$/;"	i
+logo	assets/css/_codeinthehole.scss	/^        #logo {$/;"	i
+logo	assets/css/_codeinthehole.scss	/^    #logo {$/;"	i
+logo	assets/css/_codeinthehole.scss	/^#logo {$/;"	i
+main	deploy.sh	/^function main() {$/;"	f
+mark	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+mobile_nav	assets/css/_codeinthehole.scss	/^	h3#mobile_nav {$/;"	i
+mobile_nav	assets/css/_codeinthehole.scss	/^        h3#mobile_nav {$/;"	i
+nav	assets/css/_codeinthehole.scss	/^        #nav {$/;"	i
+nav	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+nav ol	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+nav ul	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+ns705935650101	public/sitemap.xml	/^  xmlns:xhtml="http:\/\/www.w3.org\/1999\/xhtml">$/;"	n	uri:http://www.sitemaps.org/schemas/sitemap/0.9
+ol	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+p	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+pre	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+purl	content/projects/purl-a-python-url-class.md	/^### purl$/;"	S
+py.test	content/projects/purl-supports-templates.md	/^#### py.test$/;"	t	subsection:Parameterised tests
+q	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+q:after	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+q:before	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+record_value	public/downloads/gmetric-mysql.sh	/^function record_value$/;"	f
+record_value	static/downloads/gmetric-mysql.sh	/^function record_value$/;"	f
+record_value_rate	public/downloads/gmetric-mysql.sh	/^function record_value_rate$/;"	f
+record_value_rate	static/downloads/gmetric-mysql.sh	/^function record_value_rate$/;"	f
+rounded-corners	assets/css/_codeinthehole.scss	/^@mixin rounded-corners {$/;"	m
+run	makefile	/^run:$/;"	t
+samp	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+san-serif	assets/css/_codeinthehole.scss	/^$san-serif: 'Signika Negative', serif;$/;"	v
+screen_nav	assets/css/_codeinthehole.scss	/^        h3#screen_nav {$/;"	i
+section	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+select	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+serif	assets/css/_codeinthehole.scss	/^$serif: "Minion Pro", "Palatino", "Hoefler Text", "Times New Roman", serif;$/;"	v
+small	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+strong	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+sub	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+sup	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+svg:not(:root)	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+table	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+table button	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+table input	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+tags: ["puppet", "rabbitmq", "ubuntu"]	content/tips/install-latest-rabbitmq-on-ubuntu-1804.md	/^tags: ["puppet", "rabbitmq", "ubuntu"]$/;"	s
+td	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+textarea	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+textarea:invalid	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+th	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+thead	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+title	assets/css/_codeinthehole.scss	/^	    h1#title {$/;"	i
+title	assets/css/_codeinthehole.scss	/^        h1#title {$/;"	i
+title	assets/css/_codeinthehole.scss	/^    h1#title {$/;"	i
+title-block	assets/css/_codeinthehole.scss	/^@mixin title-block {$/;"	m
+tr	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+ul	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+v1.0	content/projects/oscar-roadmap.md	/^### v1.0$/;"	S
+verify_preconditions	deploy.sh	/^function verify_preconditions() {$/;"	f
+video	public/css/main.min.css	/^@charset "UTF-8";article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{displa/;"	s
+xhtml	public/sitemap.xml	/^  xmlns:xhtml="http:\/\/www.w3.org\/1999\/xhtml">$/;"	n	uri:http://www.w3.org/1999/xhtml

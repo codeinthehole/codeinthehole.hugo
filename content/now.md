@@ -1,8 +1,25 @@
-+++ 
++++
 title = "Now"
 type = "info"
 hidefromhome = true
 +++
+
+## January 2021
+
+Culture:
+
+- Reading Zadie Smith's [_White Teeth_](http://www.librarything.com/work/5183)
+  as part of an attempt to avoid exclusively reading books by white men.
+
+- Haven't finished any of the series mentioned in November update but have also
+  started _Mindhunter season 2_ and _The Queen's Gambit_.
+
+- Speaking of chess, I highly recommend [Daniel Naroditsky's "speed run" YouTube series](https://www.youtube.com/watch?v=Ytkf3qZTj74&list=PLT1F2nOxLHOcmi_qi1BbY6axf5xLFEcit&ab_channel=DanielNaroditsky), which I'm working my way through.
+
+Life:
+
+- Doing a lot of lockdown runs; am trying to get my running time below 4:30 per km — [am getting closer](https://www.strava.com/athletes/31709197).
+
 
 ## November 2020
 

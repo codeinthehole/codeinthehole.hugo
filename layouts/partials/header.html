@@ -21,7 +21,7 @@
 
         <!-- Site title and metadata -->
         {{ $isHomePage := eq .Title .Site.Title }}
-        <title>{{ if eq .IsNode true }}{{ .Title | title }}{{ else }}{{ .Title }}{{ end }}{{ if eq $isHomePage false }} - {{ .Site.Params.author }}{{ end }}</title>
+        <title>{{ if eq .IsNode true }}{{ .Title | title }}{{ else }}{{ .Title }}{{ end }}{{ if eq $isHomePage false }} — {{ .Site.Params.author }}{{ end }}</title>
 
         <meta name="author" content="{{ .Site.Params.author }}">
         <meta name="description" content="{{ if eq $isHomePage true }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}">
