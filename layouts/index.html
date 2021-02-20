@@ -61,7 +61,7 @@
                 </div>
                 <div class="main">
                     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    <p>{{ .Description }}</p>
+                    <p>{{ .Description|markdownify }}</p>
                 </div>
             </div>
         {{ end }}

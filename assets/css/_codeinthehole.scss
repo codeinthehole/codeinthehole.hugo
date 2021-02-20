@@ -247,12 +247,21 @@ footer {
 
     p {
         font-size: 1em;
+        code {
+            font-size: 0.85em;
+        }
     }
 
 	.article_summary {
 		border-bottom: 1px dotted #ddd;
 		overflow: hidden;
 		padding: 0.5em 0;
+        p {
+            font-size: 1em;
+            code {
+                font-size: 0.85em;
+            }
+        }
 		.meta {
 			float: right;
 			width: 30%;
@@ -476,6 +485,9 @@ footer {
                     list-style: circle inside;
                     li {
                         font-size: 0.9em;
+                        code {
+                            font-size: 0.9em;
+                        }
                     }
                 }
             }
