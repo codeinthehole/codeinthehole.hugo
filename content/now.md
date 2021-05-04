@@ -4,6 +4,27 @@ type = "info"
 hidefromhome = true
 +++
 
+## May 2021
+
+Culture:
+
+- Reading William Gibson's [_Pattern Recognition_](https://www.librarything.com/work/610). Have recently
+  finished two excellent books: Douglas Stuart's [_Shuggie Bain_](https://www.librarything.com/work/23737379) and
+  Grace Dent's [_Hungry_](https://www.librarything.com/work/25666405).
+
+- Still plodding through _Band of Brothers_. Recently enjoyed [_The Terror_](https://www.bbc.co.uk/iplayer/episodes/p0954ks6/the-terror) and
+  Netflix's [_Suburra_](https://www.netflix.com/gb/title/80081537).
+
+- Am playing _Watchdogs: Legion_ and _Assassin's Creed: Valhalla_ when I get the
+  chance.
+
+Life:
+
+- Starting getting back into bouldering.
+
+- Am hoping to start playing cricket again at Enfield Cricket Club.
+
+
 ## January 2021
 
 Culture:
