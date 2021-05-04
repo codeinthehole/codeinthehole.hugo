@@ -154,12 +154,10 @@ header {
 	h5 {
 		font-family: $fixed-width;
 		font-weight: normal;
+		font-size: 1.1em;
 		margin: 0;
 		padding: 0;
-	}
-	h5 {
 		text-align: right;
-		font-size: 1.1em;
 		a {
 			color: $dark-grey;
 		}
@@ -631,6 +629,13 @@ footer {
 	}
 
     /* Article detail */
+    #article_nav {
+        padding: 0px;
+        h5 {
+            text-align: center;
+        }
+    }
+
 	.article {
 	    h1#article_title {
             font-size: 2.5em;
