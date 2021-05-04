@@ -316,8 +316,33 @@ More at:
 
 - [`:help jumplist`](https://vimhelp.org/motion.txt.html#jumplist)
 
-Like the jump list, the change list is persisted for each file if your `viminfo`
-setting value contains a `'`.
+### Tip: Use jump commands to navigate
+
+The motions `j`, `k`, `CTRL-U`, `CTRL-D` are not counted as jumps and so don't
+create an entry in the jump list. Hence it's preferable to navigate
+within a buffer using the above jump commands as this builds a history that you
+can walk back through (see [this Reddit
+comment](https://www.reddit.com/r/vim/comments/72481y/learning_vim_what_i_wish_i_knew/dnfyahf/)).
+
+---
+
+## Change list
+
+A _buffer-local_ list of the last one hundred _undo-able_ changes:
+
+- `g;`, `g,`  --- Jump to the previous/next change. These can be prefixed with a
+  count to determine which change to jump back/forward to.
+
+- `:changes` --- View the change list. The output enumerates each change making
+  it easy to determine the `count` value to use with `g;` or `g,`.
+
+Like the `jumplist`, the `changelist` is persisted for each file if your `viminfo`
+setting contains a `'`.
+
+More at:
+
+- [`:help changelist`](http://vimdoc.sourceforge.net/htmldoc/motion.html#changelist)
+- [Vim tips wiki: List changes to the current file](https://vim.fandom.com/wiki/List_changes_to_the_current_file)
 
 ### Tip: Jump to the previous location where insert mode was used
 
@@ -326,11 +351,6 @@ It will enter insert mode in the current buffer in the last insert mode
 location. If you made a change when last in insert mode, this will be
 equivalent to `g;` but will also put you into
 insert mode. The same effect can be achieved with marks via `'^`.
-
-More at:
-
-- [`:help changelist`](https://vimhelp.org/motion.html#changelist)
-- [Vim tips wiki: List changes to the current file](https://vim.fandom.com/wiki/List_changes_to_the_current_file)
 
 ---
 
