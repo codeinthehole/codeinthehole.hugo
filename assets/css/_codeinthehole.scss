@@ -645,6 +645,24 @@ footer {
             font-size: 2.8em;
             padding-left: 0px;
         }
+
+        /* Table of contents */
+        nav#TableOfContents {
+            ul {
+                padding: 0;
+                margin: 0;
+
+                ul {
+                    padding: 0;
+                    margin: 0;
+
+                    ul {
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+
         .article_date {
             font-size: 0.8em;
         }
