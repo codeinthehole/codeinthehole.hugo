@@ -543,10 +543,6 @@ More at:
 supports a wider array of languages. It's worth installing to build tags files
 for your projects.
 
-There are various ways of ensuring your tag files are kept up-to-date.
-Since it takes a few seconds to generate the tags file in some projects I work
-on, I do it manually with a `,ct` mapping.
-
 ### Tip: Use `:tjump` as your default "jump to tag" command
 
 If it's common for your codebase to have multiple matches for identifiers (which
@@ -639,7 +635,7 @@ The above is intended as a reference for myself, but hopefully it will be useful
 to others. The act of compiling this post has been incredibly useful; I've
 learnt many new things[^tils] just fleshing out each section.
 
-[^tils]: Here the _some_ of the things learnt while researching this post:
+[^tils]: Here are _some_ of the things learnt while researching this post:
 
     - [TIL how to use custom functions with `:cdo`](https://til.codeinthehole.com/posts/how-to-use-custom-functions-with-cdo/)
     - [TIL how to add project-specific Vim settings](https://til.codeinthehole.com/posts/how-to-add-project-specific-vim-settings/)
@@ -665,10 +661,13 @@ When editing code, you often need to jump to another location.
 
 - To jump to _where you last made a change_, use the change list via `g;`.
 
+- To jump to _where you were last in insert mode_, use `gi`.
+
 ### I need to apply the same transformation in lots of places...
 
 A powerful editing pattern comprises building a list of files or locations
-then applying the same editing operation to each entry.
+then applying the same editing operation to each entry. This is great for
+applying refactorings across a large codebase.
 
 The best approach depends on how you want to build your list of files or
 locations:
@@ -682,7 +681,7 @@ locations:
 
 - If you want to select _files manually_, use `:argadd` and `:argdelete` to
   populate the argument list then use `:argdo` (this is generally preferable to using
-  the buffer list and `:bufdo` although that might suffice in some situations).
+  the buffer list and `:bufdo`, although that might suffice in some situations).
 
 The editing operation could be an Ex command (e.g. `%s/foo/bar/g | update`),
 applying a macro (e.g. `normal @q`) or calling a bespoke Vimscript function
