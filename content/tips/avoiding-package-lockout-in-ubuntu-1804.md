@@ -40,6 +40,11 @@ function killService() {
     sudo systemctl stop $service
     sudo systemctl kill --kill-who=all $service
 
+    # If the service has never ran, we don't need to wait for it to die
+    if ! systemctl status "$service" | grep -q "Main PID:.*"; then
+        return 0
+    fi
+
     # Wait until the status of the service is either exited or killed.
     while ! (sudo systemctl status "$service" | grep -q "Main.*code=\(exited\|killed\)")
     do
