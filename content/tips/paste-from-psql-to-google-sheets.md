@@ -17,19 +17,19 @@ configure psql's output to get it.
 
 At a psql prompt, switch to unaligned output
 
-``` psql
+```postgres
 => \a
 ```
 
 set the field separator to a tab character:
 
-``` psql
+```postgres
 => \f '\t'
 ```
 
 and turn the pager off:
 
-``` psql
+```postgres
 => \pset pager off
 ```
 
