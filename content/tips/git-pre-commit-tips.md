@@ -31,7 +31,7 @@ committing and updates are picked up automatically.
 
 Ensure that code that isn't part of the prospective commit isn't tested
 within your pre-commit script. This is missed by many sample pre-commit
-scripts but is easily acheived with `git stash`:
+scripts but is easily achieved with `git stash`:
 
 ``` bash
 # pre-commit.sh

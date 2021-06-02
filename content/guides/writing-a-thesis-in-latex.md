@@ -149,7 +149,7 @@ ignored.
 #### Preamble: custom fonts (optional)
 
 You can also choose an alternative font for both the text and the
-mathematical characters. This can be acheived by:
+mathematical characters. This can be achieved by:
 
 ``` latex
 \usepackage{mathpazo}
@@ -161,7 +161,7 @@ Aside from `mathpazo`, there are several other fonts available, such as
 #### Preamble: fancy headers (optional)
 
 Feeling a little devil-may-care? If so, you'll probably want to install
-some elegant headers along each page. This is easily acheived through
+some elegant headers along each page. This is easily achieved through
 the `fancyhdr` package:
 
 ``` latex

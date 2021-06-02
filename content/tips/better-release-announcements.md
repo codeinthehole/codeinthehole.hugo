@@ -176,7 +176,7 @@ $ comm -13 <(git log 0.5 --format='%aE' | sort | uniq) \
 ```
 
 Note the first input is all contributors up to release 0.5, while the
-second is contibutors to the 0.6 release only.
+second is contributors to the 0.6 release only.
 
 `comm` is an extremely useful command for selecting lines common between
 two files, or exclusive to one. The `-13` options indicate to exclude
@@ -203,7 +203,7 @@ David Winterbottom (661):
 You can even use `--format` to provide links to Github commits:
 
 ``` bash
-$ git shortlog 0.3.4..0.4 --no-merges --format="%s (https://github.com/tangentlabs/django-oscar-stores/commit/%h)" 
+$ git shortlog 0.3.4..0.4 --no-merges --format="%s (https://github.com/tangentlabs/django-oscar-stores/commit/%h)"
 ```
 
 This won't always be appropriate if your release if there are thousands

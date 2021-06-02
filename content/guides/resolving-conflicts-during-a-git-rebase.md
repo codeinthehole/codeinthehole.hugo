@@ -179,12 +179,12 @@ content from your working branch
 ```
 
 where the default conflict block has been extended with a new section, delimited
-by `||||||||` and `========`, which reveals the _common ancester code_.
+by `||||||||` and `========`, which reveals the _common ancestor code_.
 
 Comparing the `HEAD` block to the common ancestor block will often reveal the
 nature of the target-branch changes, allowing a straight-forward resolution.
 
-For instance, breath easy if the common ancester block is empty:
+For instance, breath easy if the common ancestor block is empty:
 ```diff
 <<<<<<<< HEAD:path/to/file
 content from target branch
@@ -211,7 +211,7 @@ We can examine the overall diff:
 $ git diff REBASE_HEAD...origin/master $FILEPATH
 ```
 
-<!-- 
+<!--
 
 We can determine the "onto" value dynamically from .git/rebase-apply/onto
 
@@ -249,7 +249,7 @@ less likely to inadvertently break something.
 For example: in the following diff:
 ```diff
 <<<<<<<< HEAD
-I like apples and pears 
+I like apples and pears
 |||||||| merged common ancestors
 I like apples
 ========
@@ -259,7 +259,7 @@ I love apples
 Apply your change (replacing "like" with "love") to the `HEAD` block to give:
 ```diff
 <<<<<<<< HEAD
-I love apples and pears 
+I love apples and pears
 |||||||| merged common ancestors
 I like apples
 ========
@@ -268,7 +268,7 @@ I love apples
 ```
 then remove the superceded lines and merge conflict markers to give:
 ```diff
-I love apples and pears 
+I love apples and pears
 ```
 
 ### Wholesale accept changes
@@ -331,7 +331,7 @@ $ git config --global rerere.enabled 1
 ```
 then Git will record how you resolve conflicts and, if it sees the same conflict
 during a future rebase (eg if you `--abort` then retry), it will automatically
-resolve the conflict for you. 
+resolve the conflict for you.
 
 You can see evidence of `rerere` in action in the `git rebase` output. You'll see:
 ```bash
@@ -354,7 +354,7 @@ You should enable this -- there's no downside.
 Hopefully the above is useful.
 
 Resolving rebase conflicts is much easier if commits are "atomic", with each
-change motivated by a single reason (similar to the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)). 
+change motivated by a single reason (similar to the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)).
 For instance, never mix file-system changes (ie moving files
 around) with core logic changes. Such commits are likely to attract conflicts
 and are hard to resolve.

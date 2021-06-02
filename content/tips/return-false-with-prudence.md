@@ -87,7 +87,7 @@ try {
         ->saveOrder($orderNumber);
 } catch (OrderCreationException $e) {
     // Rollback transaction, return friendly error message
-} 
+}
 ```
 
 instead of
@@ -110,7 +110,7 @@ this separation).
 
 ### Return `null`, Null object or an empty collection
 
-Many objects will emply "finder" or factory methods responsible for
+Many objects will employ "finder" or factory methods responsible for
 looking up and then constructing an object:
 
 ``` php

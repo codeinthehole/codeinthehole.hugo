@@ -105,12 +105,12 @@ JsonCookies.addMethods({
         switch (typeof value) {
             case 'undefined':
             case 'function':
-            case 'unknown': 
+            case 'unknown':
                 throw "Invalid value type";
                 break;
-            case 'boolean': 
-            case 'string': 
-            case 'number': 
+            case 'boolean':
+            case 'string':
+            case 'number':
                 value = String(value.toString());
             break;
         }
@@ -193,7 +193,7 @@ function testObjectInJsonCookies() {
 
 One minor shortcoming of the present version of JSUnit is that it is
 difficult to test equality of arrays and objects. The simple work-around
-used above is to test equality of their JSON encodings, which acheives
+used above is to test equality of their JSON encodings, which achieves
 the same end without resorting to looping through comparing property by
 property.
 
