@@ -4,6 +4,33 @@ type = "info"
 hidefromhome = true
 +++
 
+## September 2021
+
+Culture:
+
+- Reading Iain Banks' [_The Crow Road_](https://www.librarything.com/work/40571)
+  as part of my mission to read more of his non-sci-fi work.
+
+- Recently read Colson Whitehead's [_The Nickel Boys_](https://www.librarything.com/work/22589660) and Margaret Atwood's
+  [_The Testaments_](https://www.librarything.com/work/22568688); both of which are excellent.
+
+- Haven't watched much TV in recent months. Haven't even finished _Band of Brothers_ yet but am also part way
+  through _Fargo: Season 4_ and _White Lotus_.
+
+- Haven't been to the cinema this year.
+
+- Gaming: still only about 40% through _Assassin's Creed: Valhalla_.
+
+Life:
+
+- Am training for the [Triffic Trail 10k run](https://www.triffictrail.com/)
+  later this month.
+
+New (good) recipes discovered:
+
+-
+
+
 ## May 2021
 
 Culture:
