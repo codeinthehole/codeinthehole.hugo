@@ -11,4 +11,4 @@ googleAnalytics = "UA-3494213-5"
     description = "A software engineer working in London."
 
 [markup]
-    defaultMarkdownHandler = "blackfriday"
+    defaultMarkdownHandler = "goldmark"
