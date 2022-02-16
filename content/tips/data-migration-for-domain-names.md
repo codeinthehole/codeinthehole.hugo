@@ -104,5 +104,4 @@ class Migration(DataMigration):
 
 Then your next deployment to each environment will perform the update.
 
-[^1]: See
-    <https://docs.djangoproject.com/en/1.4/ref/contrib/sites/#getting-the-current-domain-for-display>
+[^1]: See <https://docs.djangoproject.com/en/1.4/ref/contrib/sites/#getting-the-current-domain-for-display>

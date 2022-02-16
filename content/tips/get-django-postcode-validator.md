@@ -64,8 +64,8 @@ def is_postcode_valid(postcode, country_code):
 
 As you can see, this is a touch messy as:
 
--   Django 1.3 uses the incorrect code for the UK (it should be 'GB')
--   There are a variety of different class names used for the
+- Django 1.3 uses the incorrect code for the UK (it should be 'GB')
+- There are a variety of different class names used for the
     appropriate field. We simply iterate over the possibilities and test
     to see if the class exists in the forms module.
 

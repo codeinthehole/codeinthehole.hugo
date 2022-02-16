@@ -93,13 +93,13 @@ master soon.
 
 Some things to look into:
 
--   Oscar ships with a set of translation message files but doesn't
+- Oscar ships with a set of translation message files but doesn't
     currently provide built-in support for translating model content
     into multiple languages. There are [various Django
     libraries](https://www.djangopackages.com/grids/g/model-translation/)
     that address this issue already. We need to research the best
     approach (or approaches) and document how to use them with Oscar.
--   Since Oscar is just a set of apps, it works with all existing
+- Since Oscar is just a set of apps, it works with all existing
     [Django CMS
     packages](https://www.djangopackages.com/grids/g/model-translation://www.djangopackages.com/grids/g/cms/).
     However, more research is required to find the right way to

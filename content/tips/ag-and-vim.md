@@ -9,8 +9,6 @@
     "title": "Using the silver searcher with Vim"
 }
 
-# Here is my title
-
 If you're not doing this already, then you should use the [Silver
 Searcher](http://geoff.greer.fm/2011/12/27/the-silver-searcher-better-than-ack/)
 within Vim for rapid, convenient file searching. In a nutshell, `ag`
@@ -19,7 +17,7 @@ offers similar functionality to `ack` but with much better performance.
 It's easily installed - on OSX, run:
 
 ``` bash
-$ brew install the_silver_searcher
+brew install the_silver_searcher
 ```
 
 Urge Vim to use it for `:grep` commands by adding the following to
@@ -48,8 +46,7 @@ I'm using the cursor keys since I normally have them disabled.
 
 See also:
 
--   [Faster Grepping in Vim](http://robots.thoughtbot.com/faster-grepping-in-vim) by Dan
+- [Faster Grepping in Vim](http://robots.thoughtbot.com/faster-grepping-in-vim) by Dan
     Croak - this shows how to use the Silver searcher with the [CtrlP](https://github.com/kien/ctrlp.vim) plugin.
 
--   The Vim plugin [ag.vim](https://github.com/rking/ag.vim).
-
+- The Vim plugin [ag.vim](https://github.com/rking/ag.vim).

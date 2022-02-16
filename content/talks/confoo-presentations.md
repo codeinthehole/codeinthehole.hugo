@@ -61,4 +61,3 @@ Slides:
 <div class="slidedeck">
     <script src="http://speakerdeck.com/embed/4f512f128a37d6001f003114.js"></script>
 </div>
-

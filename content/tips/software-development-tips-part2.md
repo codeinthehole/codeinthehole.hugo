@@ -15,7 +15,7 @@ On code smells:
 
 On good things I always tell team members about:
 
-- The writing and conference talks by James Mickens are great - start with ["Computers are a sadness, I am the cure"](https://vimeo.com/95066828) 
+- The writing and conference talks by James Mickens are great - start with ["Computers are a sadness, I am the cure"](https://vimeo.com/95066828)
   from Monitorama 2014.
 
 - Have you seen [Tim Pope](https://twitter.com/tpope)'s [superb launch video](https://vimeo.com/63116209) for vim-dispatch (must be watched with sound)?
@@ -42,6 +42,3 @@ On working habits to try:
 <!--
 Look there's one here!
 -->
-
-
-

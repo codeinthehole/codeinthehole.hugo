@@ -52,12 +52,12 @@ various attributes mirror those from the API docs.
   message             String    Message.                                            n/a       No
   messageId           Integer   Message id.                                         n/a       No
   voice               Integer   Voice to use (use the API to fetch the full list)   n/a       No
-  choreography        String    A string which prescribes the choreography                    
+  choreography        String    A string which prescribes the choreography
                                 to use (see API docs)                               n/a       No
   choreographyTitle   Boolean   Choreography title                                  n/a       No
-  urlList             Boolean   List of URLs to pass to the Nabaztag (can be                  
+  urlList             Boolean   List of URLs to pass to the Nabaztag (can be
                                 used for playing audio files)                       n/a       No
-  checkReturn         Boolean   Whether to check the return code of the request,              
+  checkReturn         Boolean   Whether to check the return code of the request,
                                 throws a BuildException if the update fails         false     No
 
 The code for this task can be found in my github repo - to install

@@ -45,7 +45,7 @@ Sample output:
 
 Inspiration:
 
-<blockquote class="twitter-tweet"><p>Finally automated. Stop being bitten by residual .pyc files when switching branches in git. 
+<blockquote class="twitter-tweet"><p>Finally automated. Stop being bitten by residual .pyc files when switching branches in git.
 <a
 href="http://t.co/JWZOst25Jy"
 title="http://stackoverflow.com/questions/1504724/a-git-hook-for-whenever-i-change-branches">stackoverflow.com/questions/1504…</a></p>&mdash;

@@ -15,7 +15,7 @@ The python package installer pip can be used to install directly from
 Github, like so:
 
 ``` bash
-$ pip install git+git://github.com/tangentlabs/django-oscar.git#egg=django-oscar
+pip install git+git://github.com/tangentlabs/django-oscar.git#egg=django-oscar
 ```
 
 This will install from the HEAD of the master branch. However, when you
@@ -58,7 +58,7 @@ pip freeze > requirements.txt
 to create your requirements file, or by using sed:
 
 ``` bash
-$ pip freeze | sed 's/@[a-z0-9]\+//' > requirements.txt
+pip freeze | sed 's/@[a-z0-9]\+//' > requirements.txt
 ```
 
 ### Discussion

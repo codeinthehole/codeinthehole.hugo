@@ -29,11 +29,11 @@ mysql -D database_name -e "SELECT ... " > /path/to/file.txt
 
 This works but has two downsides:
 
-1.  First, running a shell command forces you to step outside the MySQL
+1. First, running a shell command forces you to step outside the MySQL
     adapter of your progamming language which means it is a new place
     where the database credentials need to be passed. Shelling out
     commands always feels like you've failed.
-2.  Further, as far as I can tell, you can't control the field separator
+2. Further, as far as I can tell, you can't control the field separator
     or line endings using this technique (in the same way as you can
     with `SELECT ... INTO OUTFILE ...`) and so the file includes an
     unwanted line with the field names and tab-separates the fields.

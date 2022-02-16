@@ -40,6 +40,7 @@ right one, type in a few more characters to refine the search.
 As indicated above, this functionality is available in all applications
 that use Readline including MySQL, Python, IRB (interactive Ruby shell)
 and others. Once you're used to this feature, it's hard to live without
+
 - the first thing I do once I've been set up as a user on a new server
 is update my .inputrc file to contain these settings. The one place
 where I sorely wish this functionality existed is the Firebug Javascript
@@ -55,6 +56,7 @@ history search described above, I don't often use it as: (a) the
 incremental search generally lets me jump to the desired command in
 fewer key-presses and (b) I find "ssh", CTRL+R, CTRL+R slightly awkward
 to type and less intuitive than "ssh", UP, UP. Horses for courses really
+
 - you could probably be just as efficient with either one.
 
 » Hat-tip to the place where I first learnt this: [Power Shell

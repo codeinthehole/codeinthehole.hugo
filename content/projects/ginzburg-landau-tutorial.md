@@ -7,5 +7,3 @@ tags = ["maths"]
 
 I wrote a [tutorial on the complex Ginzburg-Landau equation](/tutorial/index.html) as a
 set of simple HTML pages.  
-
-

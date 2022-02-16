@@ -32,7 +32,7 @@ This is done by editing
 `~/Library/Application Support/Postgres/var/postgresql.conf` and
 setting:
 
-```
+```ini
 logging_collector = on
 log_directory = 'pg_log'
 ```
@@ -41,7 +41,7 @@ then restarting Postgres to pick up the new settings. You can then watch
 the log files to find out which queries are failing:
 
 ``` bash
-$ tail -f ~/Library/Application\ Support/Postgres/var/pg_log/*
+tail -f ~/Library/Application\ Support/Postgres/var/pg_log/*
 ```
 
 ### Discussion

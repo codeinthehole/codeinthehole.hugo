@@ -32,14 +32,14 @@ user "myproject\_stage\_role".
 First, dump your production database:
 
 ``` bash
-$ pg_dump --no-acl --no-owner $DATABASE > dump.sql
+pg_dump --no-acl --no-owner $DATABASE > dump.sql
 ```
 
 where:
 
--   access control is ignored (`--no-acl`) as your production database
+- access control is ignored (`--no-acl`) as your production database
     may have additional users that you're not interested in;
--   ownership is ignored (`--no-owner`) as you will be restoring as a
+- ownership is ignored (`--no-owner`) as you will be restoring as a
     different user.
 
 Now, copy the SQL file across to the appropriate server and create the
@@ -53,7 +53,7 @@ postgres=# CREATE DATABASE myproject_stage TEMPLATE template_postgis OWNER mypro
 and restore the database using the stage user:
 
 ``` bash
-$ psql --host=127.0.0.1 --username=myproject_role_stage myproject_stage < dump.sql
+psql --host=127.0.0.1 --username=myproject_role_stage myproject_stage < dump.sql
 ```
 
 Be warned: this command will generated a lot of warnings (which can be
@@ -72,7 +72,6 @@ created the database from "template\_postgis".
 
 Related reading:
 
--   [Backup and Restore of a PostGis
+- [Backup and Restore of a PostGis
     database](http://postgis.17.x6.nabble.com/Backup-and-Restore-of-a-PostGis-database-td3565498.html) -
     a relevant thread from the PostGIS mailing list.
-

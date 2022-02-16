@@ -44,12 +44,12 @@ Apache directives to add Expires headers to the HTTP:
 
 Additional areas where I found out something new include:
 
--   The performance hit that using @import directives within CSS files
+- The performance hit that using @import directives within CSS files
     has.
--   How the "Cache control" and "Etags" HTTP headers are often
+- How the "Cache control" and "Etags" HTTP headers are often
     interpreted together by browsers to determine whether to make a
     request.
--   How the choice of domains to use for serving content must be
+- How the choice of domains to use for serving content must be
     balanced against the extra DNS look-up costs that each new domain
     incurs.
 

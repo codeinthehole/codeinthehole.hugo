@@ -7,7 +7,7 @@ tags = ["terraform"]
 
 ## Problem
 
-Your Terraform config requires managing many CIDRs that control firewall ingress rules. 
+Your Terraform config requires managing many CIDRs that control firewall ingress rules.
 You've been storing these in a CSV string:
 
 ```terraform
@@ -18,7 +18,7 @@ variable "client_cidrs" {
 
 which is fed to a `aws_security_group` somewhere in your configuration.
 
-The CIDRs change frequently and maintaining this variable is difficult 
+The CIDRs change frequently and maintaining this variable is difficult
 as it's hard to track where each individual CIDR came from.
 
 ## Solution
@@ -38,9 +38,11 @@ variable "client_cidrs" {
 
 If you need to pass these values around as a CSV string, use `locals` to join
 the list entries:
+
 ```hcl
 locals {
     ingress_cidrs = "${join(",", var.client_cidrs)}"
 }
 ```
+
 but prefer to pass `list`-type variables around instead.

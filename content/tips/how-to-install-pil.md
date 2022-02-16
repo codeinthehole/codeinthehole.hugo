@@ -20,15 +20,15 @@ You want to install PIL on 64-bit Ubuntu 12.04 (Precise Pangolin).
 With pip already installed, install the required development packages:
 
 ``` bash
-$ sudo apt-get install python-dev libjpeg-dev libfreetype6-dev zlib1g-dev
+sudo apt-get install python-dev libjpeg-dev libfreetype6-dev zlib1g-dev
 ```
 
 and symlink the three image libraries into `/usr/lib`:
 
 ``` bash
-$ sudo ln -s /usr/lib/`uname -i`-linux-gnu/libfreetype.so /usr/lib/
-$ sudo ln -s /usr/lib/`uname -i`-linux-gnu/libjpeg.so /usr/lib/
-$ sudo ln -s /usr/lib/`uname -i`-linux-gnu/libz.so /usr/lib/
+sudo ln -s /usr/lib/`uname -i`-linux-gnu/libfreetype.so /usr/lib/
+sudo ln -s /usr/lib/`uname -i`-linux-gnu/libjpeg.so /usr/lib/
+sudo ln -s /usr/lib/`uname -i`-linux-gnu/libz.so /usr/lib/
 ```
 
 PIL should now install with support for JPEGs, PNGs and FreeType, as
@@ -106,10 +106,9 @@ Yes, this has been written about before. This is just my note-to-self
 that I can refer others to - I also wanted to include the common error
 messages that people will search for.
 
--   [Installing PIL in a virtualenv on Ubuntu 12.04 Precise
+- [Installing PIL in a virtualenv on Ubuntu 12.04 Precise
     Pangolin](http://www.sandersnewmedia.com/why/2012/04/16/installing-pil-virtualenv-ubuntu-1204-precise-pangolin/)
--   [Install PIL with JPEG support on Ubuntu Oneric
+- [Install PIL with JPEG support on Ubuntu Oneric
     64bit](http://jj.isgeek.net/2011/09/install-pil-with-jpeg-support-on-ubuntu-oneiric-64bits/)
--   [How to install PIL on
+- [How to install PIL on
     Ubuntu](http://www.saltycrane.com/blog/2010/10/how-install-pil-ubuntu/)
-

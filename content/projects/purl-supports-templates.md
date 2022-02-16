@@ -38,7 +38,7 @@ There's a plethora of ways template URLs can be used - see the
 [RFC](http://tools.ietf.org/html/rfc6570) for details.
 
 <div class="admonition warning">
-    Note, there's 
+    Note, there's
     <a href="https://github.com/uri-templates/uritemplate-py">already a Python library that provides this functionality</a>. I
     decided not to use that one with purl as I thought I could do better.
     Plus, it looked like fun and I wanted to learn more about Python's
@@ -159,7 +159,7 @@ OK
 Much nicer.
 
 <div class="admonition warning">
-    Updating the description suffers from a known bug where 
+    Updating the description suffers from a known bug where
     <a href="https://code.google.com/p/python-nose/issues/detail?id=244">failure reports always use the last description assigned to callable</a>.
     There are a few work-arounds detailed in the bug comments but none play
     nicely with Nose's multiprocess plugin.
@@ -204,27 +204,26 @@ Test generators are a useful addition to your testing toolkit.
 There's a couple of things to be aware of when using Nose's generated
 tests:
 
--   It's not possible to run just one of the examples from the
+- It's not possible to run just one of the examples from the
     commandline.
--   It's tempting to create the assertion function inline within the
+- It's tempting to create the assertion function inline within the
     `test_*` function. However this doesn't work if you run your tests
     across multiple processes using Nose's `--processes` option.
 
 Here's a few examples of using this functionality:
 
--   The [expanded version of the above example from the Purl
+- The [expanded version of the above example from the Purl
     library](https://github.com/codeinthehole/purl/blob/master/tests/expansion_tests.py)
--   [A set of tests from
+- [A set of tests from
     django-oscar](https://github.com/tangentlabs/django-oscar/blob/master/tests/unit/payment/bankcard_tests.py#L26-52)
     for testing validation of the Luhn algorithm.
 
 Related articles:
 
--   [Introduction to Functional Web Testing with Twill and
+- [Introduction to Functional Web Testing with Twill and
     Selenium](http://swordstyle.com/func_test_tutorial/part_one/extra_generative_tests.html) -
     Using test generators to drive functional tests.
--   [Nosetests, Generators and
+- [Nosetests, Generators and
     Descriptions](http://achinghead.com/nosetests-generators-descriptions.html) -
     A detailed description of the bug with using a custom description
     for Nose's generated tests.
-

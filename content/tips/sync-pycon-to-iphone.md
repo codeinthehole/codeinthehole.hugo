@@ -28,12 +28,12 @@ convert them to M4V format so they can be imported to iTunes.
 
 To run the script:
 
-1.  Ensure you have
+1. Ensure you have
     [requests](http://docs.python-requests.org/en/v0.10.7/index.html)
     and [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/)
     installed in your Python environment;
-2.  Ensure you have `ffmpeg` available on your path;
-3.  Download [youtube-dl](http://rg3.github.com/youtube-dl/) to the same
+2. Ensure you have `ffmpeg` available on your path;
+3. Download [youtube-dl](http://rg3.github.com/youtube-dl/) to the same
     directory as this script
 
 Run this script using:
@@ -52,10 +52,9 @@ into iTunes and sync them onto your Apple device.
 
 As is plain to see, the script is a hacky bit of Python plumbing that:
 
--   Scrapes the PyCon category and video pages of
+- Scrapes the PyCon category and video pages of
     [pyvideo.org](http://pyvideo.org/);
--   Prompts the user to choose which videos to download;
--   Fetches the Flash content from YouTube using the `youtube-dl`
+- Prompts the user to choose which videos to download;
+- Fetches the Flash content from YouTube using the `youtube-dl`
     utility;
--   Converts the `.flv` files to the M4V QuickTime format.
-
+- Converts the `.flv` files to the M4V QuickTime format.

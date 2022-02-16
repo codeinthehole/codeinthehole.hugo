@@ -34,8 +34,8 @@ source $VIRTUAL_ENV/bin/postactivate
 
 This ensures that a new virtualenv has a `postactivate` script which:
 
-1.  Sets the terminal title to that of the virtualenv
-2.  Changes directory to the root of the project
+1. Sets the terminal title to that of the virtualenv
+2. Changes directory to the root of the project
 
 By convention, such a script lives in `~/.virtualenvs/postmkvirtualenv`.
 

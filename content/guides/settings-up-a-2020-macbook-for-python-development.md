@@ -33,14 +33,14 @@ There's only a few of these that I use:
 
 In rough order of usefulness:
 
-- [Alfred](https://www.alfredapp.com/) --- install this [Bear workflow](https://github.com/drgrib/alfred-bear) and ensure it's configured to 
+- [Alfred](https://www.alfredapp.com/) --- install this [Bear workflow](https://github.com/drgrib/alfred-bear) and ensure it's configured to
   search Chrome bookmarks.
 - [MacVim](https://github.com/macvim-dev/macvim/releases/) --- install from Github to get the latest version.
 - [iTerm2](https://www.iterm2.com/)
-- [Chrome](https://www.google.co.uk/chrome/) 
+- [Chrome](https://www.google.co.uk/chrome/)
 - [1Password](https://1password.com/) (deliberately not from the App Store as such versions don't support the QR code reader
   functionality)
-- [Spectacle](https://www.spectacleapp.com/) 
+- [Spectacle](https://www.spectacleapp.com/)
 - [Spotify](https://www.spotify.com/uk/download/other/)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 - [Postgres.app](https://postgresapp.com/downloads.html)
@@ -57,8 +57,9 @@ dependencies which require pinned versions --- Docker is a better for
 that.
 
 Start by installing Xcode's command-line tools:
+
 ```bash
-$ sudo xcode-select --install
+sudo xcode-select --install
 ```
 
 then [install Homebrew](https://brew.sh/) and a core set of formulae. The
@@ -91,7 +92,9 @@ function install_homebrew_core_packages() {
     brew install ${packages[@]}
 }
 ```
+
 plus some packages that require a separate `tap`:
+
 ```bash
 function install_homebrew_tap_packages() {
     brew tap heroku/brew && brew install heroku
@@ -118,14 +121,16 @@ It's too dull to go through everything. Here are few notable changes:
 
 Unbind <span class="keys">⌥</span> + <span class="keys">SPACE</span> from inserting a non-breaking space by setting the contents
 of `~/Library/KeyBindings/DefaultKeyBinding.dict` to:
+
 ```pl
 {
     "~ " = ("insertText:", " ");
 }
 ```
+
 This avoids a common annoyance when editing headers in markdown files (eg in Bear).
 
-### System preferences 
+### System preferences
 
 Here's a `configurure_system_preferences.sh` script I use:
 
@@ -168,11 +173,11 @@ function configure_touchpad() {
 configure_all
 ```
 
-### Further reading 
+### Further reading
 
-- [How to set up a new Mac for development](https://twitter.com/searls/status/1264547049032187910) - A 90 minute video walking through setting up a MacBook Pro. 
+- [How to set up a new Mac for development](https://twitter.com/searls/status/1264547049032187910) - A 90 minute video walking through setting up a MacBook Pro.
 - [`osx-for-hackers.sh`](https://gist.github.com/brandonb927/3195465) --- A
-  large shell script with a lot of configuration options. This is the Yosemite/El Capitan edition -- not everything works in Catalina. It's worth browsing though 
+  large shell script with a lot of configuration options. This is the Yosemite/El Capitan edition -- not everything works in Catalina. It's worth browsing though
   to see if anything takes your fancy.
 
 ## Python
@@ -198,7 +203,7 @@ General principles:
 Install `pyenv` and `pyenv-virtualenvwrapper`:
 
 ```sh
-$ brew install pyenv pyenv-virtualenvwrapper
+brew install pyenv pyenv-virtualenvwrapper
 ```
 
 and ensure these libraries are initialised by adding:
@@ -214,13 +219,14 @@ then
     pyenv virtualenvwrapper
 fi
 ```
+
 to `~/.bash_profile`.
 
 Install a modern Python as the global default:
 
 ```sh
-$ pyenv install 3.8.3
-$ pyenv global 3.8.3
+pyenv install 3.8.3
+pyenv global 3.8.3
 ```
 
 plus any other Python versions that projects require.
@@ -231,36 +237,41 @@ For each Python project, create a virtualenv by selecting the appropriate
 Python version using `pyenv` then using `mkvirtualenv`:
 
 ```sh
-$ cd $PATH_TO_PROJECT
-$ pyenv local 3.7.7  # for example  
-$ mkvirtualenv $PROJECT_NAME
+cd $PATH_TO_PROJECT
+pyenv local 3.7.7  # for example  
+mkvirtualenv $PROJECT_NAME
 ```
 
 To avoid accidentally installing packages outside of a virtualenv, set:
+
 ```bash
 # Always require a virtualenv to use pip
 export PIP_REQUIRE_VIRTUALENV=true
 ```
+
 in `~/.bash_profile`. If you do want to run `pip` outside of a virtualenv, use something like:
 
 ```sh
-$ PIP_REQUIRE_VIRTUALENV=false pip list
+PIP_REQUIRE_VIRTUALENV=false pip list
 ```
 
 ### Python command-line apps
 
 Install `pipx` with:
+
 ```bash
-$ brew install pipx
+brew install pipx
 ```
+
 and ensure `~/.local/bin` is on your `$PATH`.
 
 Install CLI apps:
+
 ```bash
-$ pipx install awscli
+pipx install awscli
 ```
 
-### Further reading 
+### Further reading
 
 - [My Python Development Environment, 2020 Edition](https://jacobian.org/2019/nov/11/python-environment-2020/) by
   Jacob Kaplan-Moss (2019).

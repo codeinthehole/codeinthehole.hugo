@@ -21,16 +21,16 @@ First, ensure your system locale is UTF8 as PostgreSQL uses it to
 determine its default encoding during installation:
 
 ``` bash
-$ export LANGUAGE="en_US.UTF-8"
-$ export LANG="en_US.UTF-8"
-$ export LC_ALL="en_US.UTF-8"
+export LANGUAGE="en_US.UTF-8"
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
 ```
 
 Now install dependencies:
 
 ``` bash
-$ sudo apt-get update
-$ sudo apt-get install postgresql-server-dev-9.1 postgresql-9.1-postgis 
+sudo apt-get update
+sudo apt-get install postgresql-server-dev-9.1 postgresql-9.1-postgis 
 ```
 
 PostgreSQL should now be installed and running with UTF8 encodings.
@@ -55,14 +55,14 @@ we need to download and install a shell script that executes the
 appropriate commands:
 
 ``` bash
-$ wget https://docs.djangoproject.com/en/dev/_downloads/create_template_postgis-1.5.sh
-$ chmod +x create_template_postgis-1.5.sh
+wget https://docs.djangoproject.com/en/dev/_downloads/create_template_postgis-1.5.sh
+chmod +x create_template_postgis-1.5.sh
 ```
 
 and run it as a privileged user:
 
 ``` bash
-$ sudo -u postgres ./create_template_postgis-1.5.sh
+sudo -u postgres ./create_template_postgis-1.5.sh
 ```
 
 If this is successful, a deluge of SQL output will echo to the console.

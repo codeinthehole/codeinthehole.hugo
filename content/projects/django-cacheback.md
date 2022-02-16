@@ -69,9 +69,9 @@ Now tweets are cached for 15 minutes after they are first fetched, using
 the twitter username as a key. This is obviously a performance
 improvement but the shortcomings of this approach are:
 
--   For a cache miss, the tweets are fetched synchronously, blocking
+- For a cache miss, the tweets are fetched synchronously, blocking
     code execution and leading to a slow response time.
--   This in turn exposes exposes the view to a '[cache
+- This in turn exposes exposes the view to a '[cache
     stampede](http://en.wikipedia.org/wiki/Cache_stampede)' where
     multiple expensive reads run simultaneously when the cached item
     expires. Under heavy load, this can bring your site down.
@@ -131,17 +131,17 @@ def update_tweets(username, ttl):
 
 Some things to note:
 
--   Items are stored in the cache as tuples `(data, expiry_timestamp)`
+- Items are stored in the cache as tuples `(data, expiry_timestamp)`
     using Memcache's maximum expiry setting (2592000 seconds). By using
     this value, we are effectively bypassing memcache's replacement
     policy in favour of our own.
--   As the comments indicate, there are two replacements scenarios to
+- As the comments indicate, there are two replacements scenarios to
     consider:
-    1.  Cache miss. In this case, we don't have any data (stale or
+    1. Cache miss. In this case, we don't have any data (stale or
         otherwise) to return. In the example above, we trigger an
         asynchronous refresh and return an empty result set. In other
         scenarios, it may make sense to perform a synchronous refresh.
-    2.  Cache hit but with stale data. Here we return the stale data but
+    2. Cache hit but with stale data. Here we return the stale data but
         trigger a Celery task to refresh the cached item.
 
 This pattern of re-populating the cache asynchronously works well.

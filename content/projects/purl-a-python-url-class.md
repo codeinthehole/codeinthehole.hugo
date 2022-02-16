@@ -158,11 +158,11 @@ Github](https://github.com/codeinthehole/purl).
 There are a couple of URL classes already for python - however neither
 had the exact API I was looking for.
 
--   [mxURL](http://www.egenix.com/products/python/mxBase/mxURL/) - Part
+- [mxURL](http://www.egenix.com/products/python/mxBase/mxURL/) - Part
     of the 'eGenix.com mx Base Distribution', this has quite a
     comprehensie API. It comes bundles with other utility modules with
     the 'egenix-mx-base' package.
--   [URLObject](https://github.com/zacharyvoase/urlobject/) - There's
+- [URLObject](https://github.com/zacharyvoase/urlobject/) - There's
     nothing wrong with this implementation - it's very similar to my one
     above. The API's not quite to my tastes but that's purely subjective
     thing.

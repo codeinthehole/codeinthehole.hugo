@@ -16,5 +16,4 @@ In approximate chronological order:
 - _"We'll clean this up later"_ [^1]
 - _"Lessons have been learnt"_
 
-
 [^1]: Remember: {{< tweet 843943743841583107 >}}

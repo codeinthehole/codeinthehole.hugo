@@ -34,9 +34,9 @@ Starting sync of '~/.bashrc' to all hosts in /home/david/.ssh/config
 Using node.js seems an odd choice as this could trivially be done in
 another scripting language. However, I wanted to use node as:
 
--   it allows the copy operation to run asynchronously in a child
+- it allows the copy operation to run asynchronously in a child
     process with a callback to handle completion and error;
--   it's fashionable.
+- it's fashionable.
 
 The [code is on Github](https://github.com/codeinthehole/node-multi-scp)
 as usual.

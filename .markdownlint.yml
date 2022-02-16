@@ -1,0 +1,17 @@
+default: true
+
+# Allow inline HTML
+MD033: false
+
+# Ignore line length rules (as Prettier will format for these).
+MD013: false
+
+# Allow duplicate headings (e.g. "Further reading")
+MD024: false
+
+# Require code blocks to be fenced.
+MD046:
+  indented: fenced
+
+# Skip rule around space inside code spans which doesn't work with fenced code blocks in footnotes.
+MD038: false

@@ -36,9 +36,9 @@ following attributes:
 
   Unfuddle Name   Message   Description                                           Default   Required
   --------------- --------- ----------------------------------------------------- --------- ----------
-  subdomain       String    Subdomain of Unfuddle account                                   
+  subdomain       String    Subdomain of Unfuddle account
                             (eg. 'example' from <http://example.unfuddle.com>).   n/a       Yes
-  projectid       Integer   Project id (eg. 123                                             
+  projectid       Integer   Project id (eg. 123
                             from <http://example.unfuddle.com/projects/123/>).    n/a       Yes
   username        String    Username.                                             n/a       Yes
   password        String    Password.                                             n/a       Yes
@@ -46,7 +46,7 @@ following attributes:
   body            String    Message body.                                         ''        No
   categoryid      Integer   The category id of the message.                       ''        No
   categoryids     String    A comma-separated list of category ids (eg. 1,2,3).   ''        No
-  checkreturn     Boolean   Whether to check the return code of the request,                
+  checkreturn     Boolean   Whether to check the return code of the request,
                             throws a BuildException the update files.             false     No
 
 The only thing to note here is that you can choose whether you specify a

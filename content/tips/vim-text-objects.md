@@ -44,7 +44,6 @@ From other language-agnostic, third-party text objects:
   within an indented block -- still worth having to hand.
 - <span class="keys">c</span> → a comment block (via [`glts/vim-textobj-comment`](https://github.com/glts/vim-textobj-comment)).
 
-
 [`jeetsukumaran/vim-pythonsense`](https://github.com/jeetsukumaran/vim-pythonsense) provides some Python text objects:
 
 - <span class="keys">f</span> → a Python function

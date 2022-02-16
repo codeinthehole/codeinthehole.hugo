@@ -24,12 +24,12 @@ submitted form data.
 Such requirements are slightly tricky to capture in Django as they tread
 slightly outside the normal path of form validation. Specifically:
 
--   It's not documented how to render radio buttons separately. The
+- It's not documented how to render radio buttons separately. The
     default behaviour is to render an unordered list. The [guidance on
     fine-grained template
     control](https://docs.djangoproject.com/en/dev/ref/forms/widgets/#radioselect)
     only covers looping over the choices.
--   It's not obvious how to change the validation properties of a form
+- It's not obvious how to change the validation properties of a form
     field dynamically, depending on the submitted data.
 
 ### A solution
@@ -81,10 +81,10 @@ We can render this as follows:
 
 Note:
 
--   The radio buttons are rendered individually by
+- The radio buttons are rendered individually by
     referring to the index of each option (this works in Django 1.4+).
 
--   We don't render the errors for the `schedule` next to one particular
+- We don't render the errors for the `schedule` next to one particular
     radio button, but above the container elements.
 
 Next we add conditional validation to the form class:
@@ -126,8 +126,7 @@ until their parent radio button has been checked.
 
 Related links:
 
--   [Advanced Django Form
+- [Advanced Django Form
     Usage](http://www.slideshare.net/pydanny/advanced-django-forms-usage) -
     A decent overview of various issues around forms from
     DjangoCon 2011.
-

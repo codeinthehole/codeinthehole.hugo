@@ -26,7 +26,6 @@ am no longer involved in the project.
 - [django-oscar-stores](https://github.com/tangentlabs/django-oscar-stores) - Stores functionality for Oscar
 - [django-oscar-api](https://github.com/tangentlabs/django-oscar-api) - REST APIs for Oscar
 
-
 ### Python
 
 - [purl](https://github.com/codeinthehole/purl) - an immutable URL class for python.
@@ -44,9 +43,8 @@ am no longer involved in the project.
 
 - [nurl](https://github.com/codeinthehole/nurl) - a simple URL library for node.js
 
-
 ## Sites
 
 - [commandlinefu.com](http://www.commandlinefu.com) - A repository site for
-  sharing commandline snippets. 
+  sharing commandline snippets.
   [No longer maintained by me]({{< relref "news/clf-sale.md" >}}).

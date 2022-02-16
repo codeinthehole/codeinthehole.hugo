@@ -22,9 +22,9 @@ development model.
 
 Assume there is a test environment where:
 
--   the QA team to assess release candidates
--   developers to run integration tests
--   developers can deploy 'debug' builds from a specific (untagged)
+- the QA team to assess release candidates
+- developers to run integration tests
+- developers can deploy 'debug' builds from a specific (untagged)
     commit
 
 There will also be stage and production environments.
@@ -69,12 +69,12 @@ def determine_refspec_to_deploy_from(is_test=False)
 
 When building to test, the script allows you to:
 
-1.  Tag a release. This is for creating release candidates for the QA
+1. Tag a release. This is for creating release candidates for the QA
     team.
-2.  Build without tagging. In this case, we generate a build name using
+2. Build without tagging. In this case, we generate a build name using
     `git describe`. This is for developers who want to update the test
     build to run integration tests.
-3.  Build from a specific commit. This is mainly used to dig yourself
+3. Build from a specific commit. This is mainly used to dig yourself
     out of circular reference hell: when your test build emits spurious
     error messages that can't be re-created locally. A simple bisection
     approach works well here, building from specific commits to find the

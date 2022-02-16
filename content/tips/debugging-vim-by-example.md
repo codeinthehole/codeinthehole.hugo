@@ -15,11 +15,11 @@ things that itch.
 This post illustrates a range of debugging and profiling approaches for Vim by walking
 through real issues I've recently investigated, diagnosed and resolved. There's very
 little to copy into your `~/.vimrc` but hopefully some useful techniques that
-you can use. 
+you can use.
 
 If you take anything from this post, let it be that Vim has excellent support
 for debugging and profiling and, with a little knowledge, it's easy
-to resolve most annoyances. 
+to resolve most annoyances.
 
 Contents:
 
@@ -28,8 +28,6 @@ Contents:
 - ["Why isn't syntax highlighting working as I want?"](#why-isnt-syntax-highlighting-working-as-i-want)
 - ["Why is Vim slow to start up?"](#why-is-vim-slow-to-start-up)
 - ["Why is {ACTION} slow?"](#why-is-action-slow)
-
-
 
 ## "Why isn't it working?"
 
@@ -54,14 +52,19 @@ then sprinkled a few:
 ```vim
 echom "Got here"
 ```
+
 statements into that file, opened a new Terraform file-type buffer:
+
 ```vim
 :edit sample.tf
 ```
+
 and ran:
+
 ```vim
 :messages
 ```
+
 to see the results. This showed that the plugin was prematurely `finish`ing
 on this guard:
 
@@ -72,6 +75,7 @@ endif
 ```
 
 I then `:echo`ed each predicate at the command prompt to identify the culprit:
+
 ```vim
 :echo executable('terraform')
 0
@@ -143,34 +147,40 @@ Breakpoint in "~/.vim/bundle/vim-polyglot/ftplugin/terraform.vim" line 1
 line 1: if !exists('g:polyglot_disabled') || index(g:polyglot_disabled, 'terraform') == -1
 >
 ```
+
 you can run each Ex expression individually to pinpoint the problem:
+
 ```vim
 >echo exists('terraform')
 0
 ```
 
 It's also possible to simply insert:
+
 ```vim
 breakadd here
 ```
+
 to set a breakpoint in a file.
 
 Further reading:
 
 - [`:help debug-scripts`](http://vimdoc.sourceforge.net/htmldoc/repeat.html#debug-scripts)
 
-
 ### Verbose mode
 
 Another approach is to use "verbose mode" to find out what Vim is doing. You can start Vim in verbose mode with:
+
 ```bash
-$ vim -V9 some-file
+vim -V9 some-file
 ```
+
 which `echo`s out what Vim is doing (the `9` indicates the level of verbosity).
 
 You can inspect with output with `:messages` (or `:Messages`) but
 it's often useful to write the output to file using the
 `verbosefile` option. Here's an example of doing that for a single action:
+
 ```vim
 :set verbose=9
 :set verbosefile=/tmp/output.txt
@@ -185,7 +195,6 @@ Further reading:
 - [Debugging Vim](http://inlehmansterms.net/2014/10/31/debugging-vim/) by _Jonathan Lehman_ (2014) --- A more thorough overview of Vim's
   debug and verbose modes.
 
-
 ### Process of elimination
 
 Finally, you can try and locate the source of a problem through stripping away
@@ -194,9 +203,11 @@ symptoms reappear.
 
 Start by verifying the problem is not present when Vim is loaded without custom
 configuration (`-N` means `nocompatible` mode):
+
 ```bash
-$ vim -u NONE -U NONE -N
+vim -u NONE -U NONE -N
 ```
+
 then comment out everything in your `~/.vimrc` files and slowly uncomment blocks
 until the problem appears.
 
@@ -207,11 +218,13 @@ for your current buffer. Like `:messages`, this has a superior counterpart,
 Alternatively, you can capture the output of `:scriptnames`
 (or any other Ex command) in a buffer for further interrogation. Do this
 by redirecting messages to a register of your choice:
+
 ```vim
 :redir @a
 :scriptnames
 :redir END
 ```
+
 which you can then paste into a buffer and examine in detail.
 
 Further reading:
@@ -223,15 +236,15 @@ Further reading:
 <br/>
 Now a few more specific scenarios:
 
-
 ## "Why isn't my option working?"
 
 <!-- Problem description -->
 I noticed the other day that the `textwidth`
 option I had carefully suggested in `~/.vim/ftplugin/gitcommit.vim` wasn't in effect when
-editing a git commit message. 
+editing a git commit message.
 
 You can check an option's value with:
+
 ```vim
 set textwidth?
 ```
@@ -239,14 +252,18 @@ set textwidth?
 <!-- Problem resolution -->
 To investigate, I looked up which Vim file had last set the option by prepending
 `:verbose`:
+
 ```vim
 :verbose set textwidth?
 ```
+
 revealing:
+
 ```text
 textwidth=72
       Last set from ~/.vim/bundle/vim-polyglot/ftplugin/gitcommit.vim line 17
 ```
+
 So the `ftplugin` file from [`sheerun/vim-polyglot`](https://github.com/sheerun/vim-polyglot) was to blame.
 
 When you set options from files in `~/.vim/ftplugin/`, there's always a danger they will be
@@ -257,6 +274,7 @@ sourced _after_ other matching filepaths on Vim's `$RUNTIMEPATH`.
 
 Note that you can prepend `:verbose` to `map` (and several other) commands to see where particular
 mappings are defined. Eg:
+
 ```viml
 :verbose imap <leader>
 ```
@@ -267,18 +285,19 @@ Further reading:
 
 - [`:help 'rtp'`](https://vimhelp.org/options.txt.html#%27rtp%27)
 
-- [Enhanced runtime powers](https://vimways.org/2018/runtime-hackery/) by _Tom Ryder_ (2018) --- 
+- [Enhanced runtime powers](https://vimways.org/2018/runtime-hackery/) by _Tom Ryder_ (2018) ---
   An excellent post on how to work with Vim's `'runtimepath'`.
-
 
 ## "Why isn't syntax highlighting working as I want?"
 
 <!-- Problem description -->
 I recently enabled spell-checking for all file-types:
+
 ```vim
 " ~/.vimrc
 set spell
 ```
+
 but found that this also includes spell-checking strings in Python, which I
 can't imagine anyone wanting.
 
@@ -286,6 +305,7 @@ can't imagine anyone wanting.
 To resolve, I used the `zS` command from [`tpope/scriptease`](https://github.com/tpope/vim-scriptease) to identify the syntax
 region name for Python strings: `pythonString`. Then used `:verbose` to
 determine where this was last set:
+
 ```vim
 :verbose hi pythonString
 pythonString   xxx links to String
@@ -304,8 +324,6 @@ Further reading:
 
 - [`:help syntax`](https://vimhelp.org/syntax.txt.html)
 
-
-
 ## "Why is Vim slow to start up?"
 
 <!-- Problem description -->
@@ -315,9 +333,11 @@ taking noticeably longer to start-up. Why?
 ### Profile start-up
 
 I started Vim in profiling mode:
+
 ```bash
-$ vim --startuptime startup.txt startup.txt
+vim --startuptime startup.txt startup.txt
 ```
+
 where each executed expression is timed and listed in the specified file (which
 is also opened):
 
@@ -342,10 +362,13 @@ At the bottom of the file, you can see the start-up time was around 280 ms in to
 
 For reference, your baseline start-up time can be found by starting
 Vim with no custom config:
+
 ```bash
-$ vim +q -u NONE -U NONE -N --startuptime startup-no-config.txt
+vim +q -u NONE -U NONE -N --startuptime startup-no-config.txt
 ```
+
 which, on my 2015 MacBook Pro, gives:
+
 ```viml
 000.007  000.007: --- VIM STARTING ---
 000.108  000.101: Allocated generic buffers
@@ -366,7 +389,9 @@ Anyway, I sorted the `startup.txt` buffer numerically by the second column to se
 ```vim
 :%!sort -rnk2 | head -2
 ```
+
 yielding:
+
 ```viml
 times in msec
 254.008  187.506  187.506: sourcing ~/.vim/bundle/black/plugin/black.vim
@@ -386,14 +411,14 @@ opened (the above example doesn't open a file). For instance, if opening Python 
 `filetype` set:
 
 ```bash
-$ vim --startuptime python-startup.txt -c ":set ft=python" python-startup.txt
+vim --startuptime python-startup.txt -c ":set ft=python" python-startup.txt
 ```
 
 Further reading:
 
 - [`:help startup`](http://vimdoc.sourceforge.net/htmldoc/starting.html#startup)
 - [`:help slow-start`](http://vimdoc.sourceforge.net/htmldoc/starting.html#slow-start)
-- [Vim plugins and startup time](https://junegunn.kr/2014/07/vim-plugins-and-startup-time) by _Junegunn Choi_ (2014) --- 
+- [Vim plugins and startup time](https://junegunn.kr/2014/07/vim-plugins-and-startup-time) by _Junegunn Choi_ (2014) ---
   Interesting article by the author of [`junegunn/vim-plug`](https://github.com/junegunn/vim-plug) comparing start-up speeds of
   various Vim plugin managers and highlighting the performance boost of using
   lazy-loading to load plugins on demand.
@@ -403,8 +428,6 @@ Further reading:
 - There's a
   [vim-plugins-profile](https://github.com/hyiltiz/vim-plugins-profile) project
   which provides scripts for profiling the start-up time of each plugin.
-
-
 
 ## "Why is {ACTION} slow?"
 
@@ -416,6 +439,7 @@ causing it?
 ### Profile anything that is slow
 
 The generic pattern to remember for profiling is:
+
 ```viml
 :profile start profile.log
 :profile func *
@@ -426,6 +450,7 @@ The generic pattern to remember for profiling is:
 :profile pause
 :wqall  " Quit Vim (required)
 ```
+
 which profiles all files and functions[^profile-args] executed during the slow actions.
 
 [^profile-args]: Your can profile selected files or functions by passing
@@ -434,16 +459,17 @@ which profiles all files and functions[^profile-args] executed during the slow a
 
 It pays to pipe together the three set-up commands so it's easier to
 recall from command history[^command-history]:
+
 ```viml
 :profile start profile.log | :profile func * | :profile file *
 ```
 
-[^command-history]: Just type a few characters, eg `:pro`, and hit `<UP>` a few
+[^command-history]: Just type a few characters, e.g. `:pro`, and hit `<UP>` a few
     times. Even better, add this to your `~/.vimrc`:
     ```viml
     cmap <C-P> <UP>
     ```
-    then you can use `CTRL-P` and your fingers don't have to leave the home keys. 
+    then you can use `CTRL-P` and your fingers don't have to leave the home keys.
 
 Back to the problem at hand, my `{SLOW ACTIONS}` were to type a
 simple sentence into a markdown-filetype buffer. I did this and collected the
@@ -473,18 +499,22 @@ count  total (s)   self (s)  function
     1              0.000008  <SNR>111_StopCursorTimer()
 
 ```
+
 This showed that `Foldexpr_markdown` was a bottleneck.
 
 A quick `:grep` shows that the `Foldexpr_markdown` function lives in
 `~/.vim/bundle/vim-markdown/after/ftplugin/markdown.vim` and a glance at
 the docs showed that folding can be disabled with a global plugin
 setting[^markdown]:
+
 ```viml
 let g:vim_markdown_folding_disabled = 1
 ```
+
 [^markdown]: It's a [known issue](https://github.com/plasticboy/vim-markdown/issues/162).
 
 Profiling the same actions including this change gave a great improvement:
+
 ```viml
 FUNCTIONS SORTED ON SELF TIME
 count  total (s)   self (s)  function
@@ -507,9 +537,9 @@ Of course, there's no one-size-fits-all solution to addressing performance
 bottlenecks. There are a few things to try:
 
 - If the offending code is in a plugin, start by reading the docs and
-  checking the issue tracker. Is this a known issue? 
+  checking the issue tracker. Is this a known issue?
 
-- If the code is within Vim's runtime files, read the source of the slow file. There's often 
+- If the code is within Vim's runtime files, read the source of the slow file. There's often
   settings that can be used to tune or disable the behaviour.
 
 Further reading:
@@ -531,8 +561,6 @@ Further reading:
   by _Mauro Morales_ --- Mentions you can cross-reference the `<SNR>` tag in the
   profile output with the numbers in `:scriptnames` to identify the source file.
 
-
-
 ## Summary
 
 Other than the advice above, here's a couple of final thoughts:
@@ -546,7 +574,6 @@ Other than the advice above, here's a couple of final thoughts:
 
 Above all, it's not difficult to debug or profile Vim. Get into the habit of
 investigating and resolving annoying niggles when they appear.
-
 
 Finally, here are some other articles and resources on the same topic as this
 post:

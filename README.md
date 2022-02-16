@@ -1,6 +1,6 @@
 # codeinthehole.com
 
-This repo contains the source for https://codeinthehole.com, a Hugo-powered blog.
+This repo contains the source for <https://codeinthehole.com>, a Hugo-powered blog.
 
 ## Local development
 
@@ -9,15 +9,15 @@ This repo contains the source for https://codeinthehole.com, a Hugo-powered blog
 Clone the repo then clone the Github Pages repo that contains compiled static files:
 
 ```sh
-$ git clone https://github.com/codeinthehole/codeinthehole.hugo.git blog
-$ cd blog
-$ git clone https://github.com/codeinthehole/codeinthehole.github.io public
+git clone https://github.com/codeinthehole/codeinthehole.hugo.git blog
+cd blog
+git clone https://github.com/codeinthehole/codeinthehole.github.io public
 ```
 
 Install Hugo via HomeBrew:
 
 ```sh
-$ brew install hugo
+brew install hugo
 ```
 
 Last time I checked, I was using Hugo v0.75.1.
@@ -31,7 +31,7 @@ The `makefile` contains targets for running a local server (`make run`).
 Use something like:
 
 ```sh
-$ hugo new news/some-article-name.md
+hugo new news/some-article-name.md
 ```
 
 where `news` is the "section" of the article. The possible sections are:
@@ -62,7 +62,7 @@ hidefromhome = true
 From `master`, run:
 
 ```sh
-$ make deploy
+make deploy
 ```
 
 This builds and commits the HTML files into `public/` which is part of a

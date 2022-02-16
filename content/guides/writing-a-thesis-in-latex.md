@@ -24,6 +24,7 @@ However, several hacks are required to attain good functionality from
 your PDF file and these can give the latex code a mysterious (and messy)
 appearance in places. While I highly recommend the inclusion of the
 PDF-related commands, they are not strictly necessary and can be ignored
+
 - especially if you are new to Latex.
 
 <div class="admonition warning">
@@ -39,13 +40,13 @@ The code outlined below was designed and implemented on the unix system
 at Nottingham. For those of you unfortunate enough to be running a
 Windows box, a number of problems may arise when using the below code:
 
--   First off, not all the packages used will be present and will need
+- First off, not all the packages used will be present and will need
     to be installed. Probably the easiest way to do this is to google
     the package name with the extension `.sty` and save this file in the
     `C:\VTEX\l2e\\` directory of your machine. Note that for the `natbib`
     package, you will also need to download the relevant `.bst` file,
     which in this case is `unsrtnat.bst`.
--   Also, many of the packages that are installed locally may need
+- Also, many of the packages that are installed locally may need
     updating. For instance, the computers I have tested on both have old
     versions of the `geometry` and `caption` packages, which cause Latex
     to return errors. To resolve these problems, either download the
@@ -61,11 +62,11 @@ code.
 The guidelines for theses to be submitted to the University of
 Nottingham specify that:
 
-1.  the document should be presented on single-sided a4 paper and
+1. the document should be presented on single-sided a4 paper and
     typeset in a double-spaced size 10-12 font;
-2.  the left-hand margin should be at least 1.5 inches (4cm) to allow
+2. the left-hand margin should be at least 1.5 inches (4cm) to allow
     for binding;
-3.  the other three margins should be at least 1 inch (2.5cm).
+3. the other three margins should be at least 1 inch (2.5cm).
 
 Other settings such as the way chapter headings are formatted, and
 whether headers are included, are not specified and are up to the user.
@@ -76,16 +77,16 @@ formatting.
 
 Here are the template files which this page explains:
 
--   [thesis\_without\_pdfcode.tex](/downloads/thesis_without_pdfcode.tex)
--   [thesis\_with\_pdfcode.tex](/downloads/thesis_with_pdfcode.tex)
+- [thesis\_without\_pdfcode.tex](/downloads/thesis_without_pdfcode.tex)
+- [thesis\_with\_pdfcode.tex](/downloads/thesis_with_pdfcode.tex)
 
 The appearance of both these files on the printed page will be
 identical; however after compilation into PDF (see the section below)
 and opening in Adobe Acrobat (or a similar PDF reader), the advantages
 that come with the PDF format will be apparent.
 
--   [thesis\_without\_pdfcode.pdf](/downloads/thesis_without_pdfcode.pdf)
--   [thesis\_with\_pdfcode.pdf](/downloads/thesis_with_pdfcode.pdf)
+- [thesis\_without\_pdfcode.pdf](/downloads/thesis_without_pdfcode.pdf)
+- [thesis\_with\_pdfcode.pdf](/downloads/thesis_with_pdfcode.pdf)
 
 The rest of this page is devoted to explaining the code in these files.
 
@@ -367,9 +368,9 @@ Whether you've included all the red PDF commands or not, you can convert
 your TEX file to PDF by running (in unix):
 
 ``` bash
-$ latex thesis_with_pdfcode.tex
-$ dvips thesis_with_pdfcode.dvi
-$ ps2pdf -sPAPERSIZE=a4 thesis_with_pdfcode.ps
+latex thesis_with_pdfcode.tex
+dvips thesis_with_pdfcode.dvi
+ps2pdf -sPAPERSIZE=a4 thesis_with_pdfcode.ps
 ```
 
 The additional argument to `ps2pdf` is required as the default paper

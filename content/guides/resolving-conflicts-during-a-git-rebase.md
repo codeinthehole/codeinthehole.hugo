@@ -52,9 +52,11 @@ Let's walk through the process.
 ## A conflict happens
 
 On your working branch, you run:
+
 ```bash
-$ git rebase origin/master
+git rebase origin/master
 ```
+
 and are faced with a wall-of-text:
 
 ```txt
@@ -62,12 +64,12 @@ Applying: Improve naming around create-import-process end-point
 Recorded resolution for 'src/octoenergy/interfaces/apisite/data_import/views.py'.
 Applying: Extract serializer creation into own method
 Using index info to reconstruct a base tree...
-M	src/octoenergy/interfaces/apisite/data_import/views.py
+M src/octoenergy/interfaces/apisite/data_import/views.py
 Falling back to patching base and 3-way merge...
 Auto-merging src/octoenergy/interfaces/apisite/data_import/views.py
 Applying: Group tests into classes for Account data-import serializer
 Using index info to reconstruct a base tree...
-M	src/tests/unit/common/domain/data_import/validation/test_accounts.py
+M src/tests/unit/common/domain/data_import/validation/test_accounts.py
 Falling back to patching base and 3-way merge...
 Auto-merging src/tests/unit/common/domain/data_import/validation/test_accounts.py
 CONFLICT (content): Merge conflict in src/tests/unit/common/domain/data_import/validation/test_accounts.py
@@ -80,13 +82,15 @@ Resolve all conflicts manually, mark them as resolved with
 You can instead skip this commit: run "git rebase --skip".
 To abort and get back to the state before "git rebase", run "git rebase --abort".
 ```
+
 Conflicts? Conflicts!
 
 Often the conflicts are simple and easily resolved by eye-balling the
 files in question. If that's true, good for you: resolve the
 conflicts using your favourite editor and move on via:
+
 ```bash
-$ git rebase --continue
+git rebase --continue
 ```
 
 However, if the conflicts are not trivially resolved, start by asking yourself this:
@@ -100,38 +104,49 @@ We can identify the conflicting commit in several ways:
   subject `Group tests into class for Account data-import serializer`.
 
 - Alternatively, follow the advice in the rebase output and run:
+
   ```bash
-  $ git am --show-current-patch
+  git am --show-current-patch
   ```
+
   which is equivalent to running `git show` on the conflicting commit.
 
 - As of Git v2.17, this option can be used with `git rebase` too:
+
   ```bash
-  $ git rebase --show-current-patch
+  git rebase --show-current-patch
   ```
 
 - Best of all, there is a `REBASE_HEAD` pseudo-ref that points to the conflicting commit,
   so you can do:
+
   ```bash
-  $ git show REBASE_HEAD
+  git show REBASE_HEAD
   ```
+
   to view the commit, or:
+
   ```bash
-  $ git rev-parse REBASE_HEAD
+  git rev-parse REBASE_HEAD
   ```
+
   to see the commit SHA.
 
 It can be useful to open the Github detail page for the offending commit to
 allow a quick glance at the diff in another window. If you use `hub` (and
 Github), this can done with:
+
 ```bash
-$ hub browse -- commit/$(git rev-parse REBASE_HEAD)
+hub browse -- commit/$(git rev-parse REBASE_HEAD)
 ```
+
 which, if you find it useful, could be alised as:
+
 ```ini
 [alias]
 openconflict = "!f() { hub browse -- commit/$(git rev-parse REBASE_HEAD); }; f"
 ```
+
 in `~/.gitconfig`.
 
 Now for the trickier question.
@@ -163,7 +178,7 @@ changes were made in the target branch that conflict. Two tips:
 Globally enable this with:
 
 ```bash
-$ git config --global merge.conflictstyle diff3
+git config --global merge.conflictstyle diff3
 ```
 
 and then conflict blocks will be formatted like:
@@ -185,6 +200,7 @@ Comparing the `HEAD` block to the common ancestor block will often reveal the
 nature of the target-branch changes, allowing a straight-forward resolution.
 
 For instance, breath easy if the common ancestor block is empty:
+
 ```diff
 <<<<<<<< HEAD:path/to/file
 content from target branch
@@ -193,6 +209,7 @@ content from target branch
 content from your working branch
 >>>>>>> Commit message:path/to/file
 ```
+
 as this means both branches have added lines; they haven't tried to update the
 same lines. You can simply delete the merge conflict markers to resolve.
 
@@ -207,8 +224,9 @@ In this situation, we may need to examine the individual changes made to each co
 `$FILEPATH` in order to understand how to resolve safely.
 
 We can examine the overall diff:
+
 ```bash
-$ git diff REBASE_HEAD...origin/master $FILEPATH
+git diff REBASE_HEAD...origin/master $FILEPATH
 ```
 
 <!--
@@ -220,11 +238,13 @@ We can determine the "onto" value dynamically from .git/rebase-apply/onto
 or list the commits from the target branch that updated `$FILEPATH`:
 
 ```bash
-$ git log REBASE_HEAD..origin/master $FILEPATH
+git log REBASE_HEAD..origin/master $FILEPATH
 ```
+
 and review how each modified `$FILEPATH` with:
+
 ```bash
-$ git show $COMMIT_SHA -- $FILEPATH
+git show $COMMIT_SHA -- $FILEPATH
 ```
 
 Note the `git diff` command uses three dots while the `git log` command uses two.
@@ -247,6 +267,7 @@ changes to the target branch block (labelled `HEAD`) as you understand your chan
 less likely to inadvertently break something.
 
 For example: in the following diff:
+
 ```diff
 <<<<<<<< HEAD
 I like apples and pears
@@ -256,7 +277,9 @@ I like apples
 I love apples
 >>>>>>> branch-a
 ```
+
 Apply your change (replacing "like" with "love") to the `HEAD` block to give:
+
 ```diff
 <<<<<<<< HEAD
 I love apples and pears
@@ -266,7 +289,9 @@ I like apples
 I love apples
 >>>>>>> working-branch
 ```
+
 then remove the superceded lines and merge conflict markers to give:
+
 ```diff
 I love apples and pears
 ```
@@ -290,13 +315,13 @@ accepted. This can be done using `git checkout` with a merge
 To accept the changes from the _target branch_, use:
 
 ```bash
-$ git checkout --ours -- $FILEPATH
+git checkout --ours -- $FILEPATH
 ```
 
 To accept the changes made on your _working branch_, use:
 
 ```bash
-$ git checkout --theirs -- $FILEPATH
+git checkout --theirs -- $FILEPATH
 ```
 
 As a rebase involves replaying your commits to the tip of the target branch, each
@@ -307,7 +332,7 @@ Even more sweepingly, you can auto-resolve conflicts using a specified strategy
 when doing the rebase. Eg:
 
 ```bash
-$ git rebase -Xtheirs origin/master
+git rebase -Xtheirs origin/master
 ```
 
 I've never used this much in practice though.
@@ -326,25 +351,33 @@ Record resolution
 -->
 
 If you set:
+
 ```bash
-$ git config --global rerere.enabled 1
+git config --global rerere.enabled 1
 ```
+
 then Git will record how you resolve conflicts and, if it sees the same conflict
 during a future rebase (eg if you `--abort` then retry), it will automatically
 resolve the conflict for you.
 
 You can see evidence of `rerere` in action in the `git rebase` output. You'll see:
+
 ```bash
 Recorded preimage for '...'
 ```
+
 when Git detects a conflicted file, then:
+
 ```bash
 Recorded resolution for '...'
 ```
+
 when Git records the resolution (to `.git/rr-cache/`), and finally:
+
 ```bash
 Resolved '...' using previous resolution.
 ```
+
 when Git re-uses the saved resolution.
 
 You should enable this -- there's no downside.
@@ -360,9 +393,11 @@ around) with core logic changes. Such commits are likely to attract conflicts
 and are hard to resolve.
 
 Don't worry if the rebase gets away from you; you can always abort with:
+
 ```bash
-$ git rebase --abort
+git rebase --abort
 ```
+
 if things become too hairy.
 
 ## Further reading

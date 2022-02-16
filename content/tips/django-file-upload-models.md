@@ -21,24 +21,26 @@ Suppose your e-commerce application allows admins to upload CSV files to
 update product stock levels (a common requirement). A typical file may
 comprise a SKU and a stock level:
 
+```txt
     9781231231999,0
     9781231231999,4
     9781231231999,2
     ...
+```
 
 [Django's
 docs](https://docs.djangoproject.com/en/dev/topics/http/file-uploads/?from=olddocs)
 detail a common pattern for dealing with file uploads such as this. The
 steps are generally:
 
-1.  Validate the form submission;
-2.  Write upload data to permanent storage;
-3.  Process the file;
-4.  Delete the file (optional)
+1. Validate the form submission;
+2. Write upload data to permanent storage;
+3. Process the file;
+4. Delete the file (optional)
 
 For example:
 
-``` python
+```python
 def handle_upload(request):
     if request.method == 'POST':
         form = UploadFileForm(request.POST, request.FILES)
@@ -68,7 +70,7 @@ them. Of course, this can be addressed by logging but a more elegant
 solution to use a simple audit model as well. Consider an alternative
 implementation of `handle_uploaded_file`:
 
-``` python
+```python
 def handle_uploaded_file(user, f):
     filepath = '/tmp/somefile.txt'
     with open(filepath, 'wb+') as dest:
@@ -85,7 +87,7 @@ where we're now passing the logged-in user too.
 
 The model definition for `StockUpload` may look like:
 
-``` python
+```python
 import datetime
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
@@ -143,7 +145,7 @@ class StockUpload(models.Model):
 You can go further and push the file creation into a manager method so
 the filepath generation is removed from the view:
 
-``` python
+```python
 def handle_uploaded_file(f):
     upload = StockUpload.objects.create_from_stream(user, f)
     upload.process()
@@ -151,7 +153,7 @@ def handle_uploaded_file(f):
 
 where `create_from_stream` could be implemented as:
 
-``` python
+```python
 class StockUploadManager(models.Manager):
 
     def create_from_stream(self, user, f):
@@ -167,7 +169,7 @@ class StockUploadManager(models.Manager):
 
 and, if processing takes a while, push the work into Celery:
 
-``` python
+```python
 @task()
 def process_upload(upload_id):
     upload = StockUpload.objects.get(id=upload_id)
@@ -182,7 +184,7 @@ Here's a more complete implementation that uses a library of mine,
 [django-async-messages](https://github.com/codeinthehole/django-async-messages/),
 to send a message back to the user who uploaded the file:
 
-``` python
+```python
 # tasks.py
 
 @task()
@@ -223,13 +225,13 @@ def handle_upload(request):
 
 The advantages of using a model are:
 
--   It keeps your view simple - all processing logic is extracted away.
--   The file processing logic is re-usable. You could use a management
+- It keeps your view simple - all processing logic is extracted away.
+- The file processing logic is re-usable. You could use a management
     command to process files specified at the commandline.
--   It's easy to defer processing to a Celery worker.
--   You can gather metrics on processing speed and keep audit
+- It's easy to defer processing to a Celery worker.
+- You can gather metrics on processing speed and keep audit
     information on who is uploading what.
--   You can write a simple `ListView` to show the audit information of
+- You can write a simple `ListView` to show the audit information of
     uploaded files to admins.
 
 The above is just a toy example - there are lots of variations that can

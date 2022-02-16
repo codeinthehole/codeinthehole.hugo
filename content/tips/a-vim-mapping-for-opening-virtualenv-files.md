@@ -30,9 +30,11 @@ In command-mode, `%v` will expand to the path of your virtualenv's
 module.
 
 For example, you type:
+
 ```txt
 :e %v
 ```
+
 and it expands to:
 
 ```txt
@@ -40,4 +42,3 @@ and it expands to:
 ```
 
 from which it's easy to open the third-party module you're interested in.
-

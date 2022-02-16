@@ -50,12 +50,12 @@ Create a new branch for the current story you are working on:
 It's important to use a new branch for pull requests for several
 reasons:
 
--   It allows you to submit multiple pull requests without confusion.
+- It allows you to submit multiple pull requests without confusion.
     The classical Github gotcha is to continue committing to a pull
     request branch after making the initial request. When these commits
     are pushed to the remote, they will become part of the original pull
     request which often ends up conflating unrelated functionality.
--   When your pull request is merged into the target branch, the
+- When your pull request is merged into the target branch, the
     maintainer may decide to rebase your commits to avoid a merge
     commit, or to squash the commits into a single coherent commit. If
     your pull request was from your 'master' branch, you will encounter
@@ -121,10 +121,10 @@ When the story is complete, push your new commits to the remote:
 and use the Github site to create a pull request. A couple of things to
 be aware of:
 
--   Make sure the destination branch is correct, it may not always be
+- Make sure the destination branch is correct, it may not always be
     'master'. If you're using git-flow or similar, the appropriate
     destination branch may be 'develop' or a release branch.
--   Use Github's preview facilties to ensure the pull request is well
+- Use Github's preview facilties to ensure the pull request is well
     structured and clear. The description should explain what the pull
     request contains as well as the thinking behind it. For reference,
     have a look at this [excellent pull
@@ -185,7 +185,6 @@ branch so that the merge can be a 'fast-forward'.
 
 <div class="admonition warning">
     Hang on! Aren't you rewriting history that has been pushed?
-
     Yes - that's true. However, when the remote branch is <em>temporary</em> as for
     a pull request, this is ok (as far as I can tell). The pull request
     branch should be deleted once it has been merged and so it shouldn't
@@ -213,12 +212,12 @@ branch to close the pull request automatically. Simply add 'Fixes \#123'
 
 Further reading:
 
--   [Github issues 2.0: The Next
+- [Github issues 2.0: The Next
     Generation](https://github.com/blog/831-issues-2-0-the-next-generation) -
     An overview of Github issues with an explanation of how to close,
     reopen and reference pull requests from within commit messages.
--   [Github help: Rebasing](http://learn.github.com/p/rebasing.html)
--   [Github help: Interactive
+- [Github help: Rebasing](http://learn.github.com/p/rebasing.html)
+- [Github help: Interactive
     rebasing](https://help.github.com/articles/interactive-rebase)
 
 #### Merging
@@ -251,7 +250,7 @@ Now delete the local and remote feature branches:
 
 Further reading:
 
--   [Using pull
+- [Using pull
     requests](https://help.github.com/articles/using-pull-requests)
 
 ## Other good practices
@@ -266,10 +265,10 @@ unneccessary merge commits as they clutter up your history.
 As we saw above, if you haven't pushed your branch to a stable remote
 branch, you can rewrite it:
 
--   Use `git rebase` to rebase your feature branch against the branch
+- Use `git rebase` to rebase your feature branch against the branch
     you intend to merge into. This means that when you merge, it will be
     a so-called 'fast forward' merge which avoids a merge commit.
--   Use `git rebase -i` to rewrite your branch history, squashing
+- Use `git rebase -i` to rewrite your branch history, squashing
     related commits, rewording commit messages.
 
 ### Build an audit trail
@@ -278,11 +277,11 @@ Try and build a good audit trail - your future self will be grateful.
 Where possible cross-reference other resources in your commit messages.
 These could be:
 
--   Github pull requests or issues (eg "Related to \#123")
--   Mailing-list threads that discuss the work in question (try and use
+- Github pull requests or issues (eg "Related to \#123")
+- Mailing-list threads that discuss the work in question (try and use
     mailing list software that lets you link to a discussion). If you
     use Basecamp or something similar, link to the relevant discussion.
--   Articles or blog posts relevant to your work
+- Articles or blog posts relevant to your work
 
 Basically anything that might be useful 12 months later when you're
 trying to work out the reasoning behind some component.
@@ -292,11 +291,11 @@ One thing, I try to do with
 of mine) is to maintain an audit trail from a commit all the way back to
 the mailing list discussion that instigated it. This works as follows:
 
--   If you're puzzled by a particular line within a file, use
+- If you're puzzled by a particular line within a file, use
     `git blame` to find the commit that introduced it.
--   The commit message should explain the change that led to this line
+- The commit message should explain the change that led to this line
     and link back to a pull request.
--   The pull request should be a set of related commits that together
+- The pull request should be a set of related commits that together
     implement a new feature. The pull request description should be a
     functional spec for the feature in question, together with a link to
     the mailing list thread where this feature was discussed.
@@ -327,10 +326,10 @@ means minimising key strokes.
 With git, you can define both git- and bash-aliases to make your life
 easier. I have lots (listed below). Two are worth highlighting:
 
-1.  I alias `git status -sb` to `g` so I can quickly check git status.
+1. I alias `git status -sb` to `g` so I can quickly check git status.
     This is my most frequently typed command so it makes sense to make
     it easy.
-2.  Like many others, I use a customised version of `git log` that lists
+2. Like many others, I use a customised version of `git log` that lists
     one commit per line, but annotated with other useful information
     such as which commits other branches point to. See the definition of
     `git hist` below.

@@ -100,11 +100,10 @@ possible to use it to ensure encoded slashes make it through to Django.
 
 #### Further reading
 
--   This [StackOverflow
+- This [StackOverflow
     answer](http://stackoverflow.com/questions/3040659/how-can-i-receive-percent-encoded-slashes-with-django-on-app-engine)
     describes a similar technique to solve this problem for Google App
     Engine.
--   A [Google Groups
+- A [Google Groups
     discussion](https://groups.google.com/forum/?fromgroups#!topic/django-users/31oV1WhuAZ4)
     of the issue.
-

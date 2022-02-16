@@ -28,7 +28,7 @@ are a few command-line tricks for analysing your git history.
 Basics: browse commits since the last tagged release
 
 ``` bash
-$ git log 0.5..0.6
+git log 0.5..0.6
 ```
 
 The `--name-status` option for `git diff` is useful for analysing
@@ -36,7 +36,7 @@ codebase changes between two commits. For instance, you can view changes
 to a particular directory:
 
 ``` bash
-$ git diff --name-status 0.5..0.6 oscar/apps/address
+git diff --name-status 0.5..0.6 oscar/apps/address
 ```
 
 which can be useful if thousands of files have changed and you want to
@@ -45,13 +45,13 @@ review each package individually.
 Extensions include finding deleted files:
 
 ``` bash
-$ git diff --name-status 0.5..0.6 | grep "^D"
+git diff --name-status 0.5..0.6 | grep "^D"
 ```
 
 or all new migration files:
 
 ``` bash
-$ git diff --name-status 0.5..0.6 | grep "^A.*migrations/[0-9]"
+git diff --name-status 0.5..0.6 | grep "^A.*migrations/[0-9]"
 ```
 
 which is important for projects like Oscar which ship with database
@@ -71,7 +71,7 @@ $ grep -or "{% block .* %}" oscar/templates/oscar | \
 
 This writes out each pairs of filename and template block name:
 
-```
+```txt
 oscar/templates/oscar/403.html title
 oscar/templates/oscar/403.html error_heading
 oscar/templates/oscar/403.html error_message
@@ -127,8 +127,8 @@ and extend this to find authors with more than a certain number of
 commits
 
 ``` bash
-$ THRESHOLD=15
-$ git shortlog -sn master | awk '$1 >= $THRESHOLD {$1="";print $0}' | cut -d" " -f2-
+THRESHOLD=15
+git shortlog -sn master | awk '$1 >= $THRESHOLD {$1="";print $0}' | cut -d" " -f2-
 ```
 
 Note, `git shortlog` uses a `.mailmap` file to aggregate commits from
@@ -159,7 +159,7 @@ To do this, extract the email addresses of committers whose patches are
 in the new release:
 
 ``` bash
-$ git log 0.5..0.6 --format='%aE' | sort | uniq
+git log 0.5..0.6 --format='%aE' | sort | uniq
 ```
 
 and CC these addresses in your mailing list release announcement.
@@ -203,7 +203,7 @@ David Winterbottom (661):
 You can even use `--format` to provide links to Github commits:
 
 ``` bash
-$ git shortlog 0.3.4..0.4 --no-merges --format="%s (https://github.com/tangentlabs/django-oscar-stores/commit/%h)"
+git shortlog 0.3.4..0.4 --no-merges --format="%s (https://github.com/tangentlabs/django-oscar-stores/commit/%h)"
 ```
 
 This won't always be appropriate if your release if there are thousands

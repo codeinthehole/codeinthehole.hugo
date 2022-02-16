@@ -35,7 +35,7 @@ for common tasks. Setting up a working version of the project is as
 simple as:
 
 ``` bash
-$ make 
+make 
 ```
 
 It's helpful if you can template new projects to embed good practices
@@ -107,16 +107,16 @@ Django projects (both internal and external) Most stem from South
 migrations, which worked fine when applied piecemeal by the incumbent
 team but fail when run on a blank database. For instance:
 
--   Migrations fail to apply as there are dependencies between
+- Migrations fail to apply as there are dependencies between
     migrations which haven't been captured. This is easily solved by
     employing South's support for dependent migrations (eg adding
     `depends_on` to the relevant migration class).
--   Migrations fail as they import models directly rather than using the
+- Migrations fail as they import models directly rather than using the
     reconstituted models that South provides. This is a beginner mistake
     really but still quite common. Fortunately, it's trivial to fix.
--   Migrations import and call functions that are no longer defined (but
+- Migrations import and call functions that are no longer defined (but
     did exist when the migration was originally written).
--   Migrations create instances of models from *other* apps where
+- Migrations create instances of models from *other* apps where
     South's serialised version is out of sync with the database schema.
     This can be tricky to fix as you can get circular dependencies
     between migrations. Often you'll need to rewrite migrations to

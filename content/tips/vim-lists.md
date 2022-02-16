@@ -68,20 +68,24 @@ cursor. This makes it trivial to answer the question "where else is this
 function used?"
 
 I use:
+
 ```vim
 nnoremap gw :grep <cword> . <cr>
 ```
+
 although this does clobber a built-in formatting operator.
 
 ### Tip: Custom `grepprg` programs
 
 Use [`ripgrep`](https://github.com/BurntSushi/ripgrep) as your default search program:
+
 ```viml
 if executable('rg')
     set grepprg=rg\ --vimgrep
     set grepformat=%f:%l:%c:%m
 endif
 ```
+
 Keep your `ripgrep` configuration in a global `~/.ripgreprc` file so
 `:grep` behaves the same as `rg` at the command-line. Recommended settings:
 
@@ -119,18 +123,21 @@ Here are some examples where we populate the quickfix list using `:grep` (using
 `ripgrep` options) then perform a batch edit using `:cdo` or `:cfdo`.
 
 Replace "foo" with "bar" in all Python files containing the string "baz":
+
 ```vim
 :grep baz -t py
 :cfdo %s/foo/bar/g | update
 ```
 
 Delete lines containing "foo" from all files called `urls.py`:
+
 ```vim
 :grep foo -g urls.py
 :cfdo g/foo/d | update
 ```
 
 Run macro `q` on all lines containing "foo":
+
 ```vim
 :grep foo
 :cdo normal @q
@@ -156,7 +163,9 @@ function! FixQuickfixEntry()
     endif
 endfunction
 ```
+
 then use:
+
 ```vim
 :cdo call FixQuickfixEntry()
 ```
@@ -192,15 +201,15 @@ cnoreabbrev <expr> grep (getcmdtype() ==# ':' && getcmdline() ==# 'grep') ? 'Gre
 ```
 
 and an autocommand to open the quickfix window when there are results:
+
 ```vim
 augroup quickfix
-	autocmd!
-	autocmd QuickFixCmdPost cexpr cwindow
+ autocmd!
+ autocmd QuickFixCmdPost cexpr cwindow
 augroup END
 ```
 
 This is life changing.
-
 
 <!--
 Other quickfix tips
@@ -426,33 +435,44 @@ order of increasing usefulness:
    `:arga[dd]` and `:argd[elete]`.
 
 2. Pass files as arguments when opening Vim:
+
    ```bash
-   $ vim file1 file2
+   vim file1 file2
    ```
+
    or using a file finder like [`fd`](https://github.com/sharkdp/fd):
+
    ```bash
-   $ vim $(fd -e py)  # open files with .py extension
+   vim $(fd -e py)  # open files with .py extension
    ```
 
 3. Pipe a list of files to `xargs` to provide an initial argument list:
+
    ```bash
-   $ fd -e py | xargs -o vim
+   fd -e py | xargs -o vim
    ```
+
    The `-o` option for `xargs` re-opens `stdin` for the Vim process
    — without this, Vim can [break your terminal](https://superuser.com/questions/336016/invoking-vi-through-find-xargs-breaks-my-terminal-why).
 
 4. Within a Vim session, use the `:args` command:
+
    ```vim
    :args file1 file2
    ```
+
    This approach is powerful as not only does wildcard expansion work:
+
    ```vim
    :args *.c
    ```
+
    but so does shelling out:
+
    ```vim
    :args `fd -e py`
    ```
+
    [`fd`](https://github.com/sharkdp/fd) is a particularly good tool to use to populate the argument list.
 
 <!-- Navigating the argument list -->
@@ -473,11 +493,13 @@ It's now possible to apply batch operations on each file in the argument list
 using `:argdo {cmd}`. An example workflow is:
 
 1. Select all HTML files beneath current directory:
+
    ```vim
    :args `fd -e html`
    ```
 
 2. Run a search-and-replace-then-save operation on each file:
+
    ```vim
    :argdo %s/foo/bar/g | update
    ```
@@ -501,13 +523,16 @@ locations in your codebase.
 <!-- How Vim finds your tag files -->
 
 Use the `tags` setting to tell Vim where to find tag files. A common value is:
+
 ```vim
 set tags=./tags;,tags
 ```
+
 which tells Vim to look for tags file in the directory of the current file, in
 the working directory and in every parent directory, recursively.
 
 You can check which tag files have been loaded with:
+
 ```vim
 :echo tagfiles()
 ```
@@ -570,6 +595,7 @@ is true of Python), consider using `:tjump` (`g CTRL-]`) instead of `CTRL-]` as 
 default "jump to tag" command".
 
 I swap the meanings of `CTRL-]` and `g CTRL-]`:
+
 ```vim
 nnoremap <c-]> g<c-]>
 vnoremap <c-]> g<c-]>
@@ -577,7 +603,7 @@ nnoremap g<c-]> <c-]>
 vnoremap g<c-]> <c-]>
 ```
 
-### Tip: FZF also has a tag searching functionality...
+### Tip: FZF also has a tag searching functionality
 
 The [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim) plugin provides two
 commands for quickly finding tags using the [`fzf`](https://github.com/junegunn/fzf) fuzzy file finder:
@@ -633,7 +659,6 @@ focussed tag search when working in languages that use filepath includes.
 
 More at [`:help include-search`](https://vimhelp.org/tagsrch.txt.html#include-search)
 
-
 <!-- Research on other lists
 
 - `:ol[dfiles]` --- List the files that have marks stored in the `viminfo` file
@@ -656,7 +681,6 @@ to others. The act of compiling this post has been incredibly useful; I've
 learnt many new things[^tils] just fleshing out each section.
 
 [^tils]: Here are _some_ of the things learnt while researching this post:
-
     - [TIL how to use custom functions with `:cdo`](https://til.codeinthehole.com/posts/how-to-use-custom-functions-with-cdo/)
     - [TIL how to add project-specific Vim settings](https://til.codeinthehole.com/posts/how-to-add-project-specific-vim-settings/)
     - [TIL Universal Ctags can index more things than I realised](https://til.codeinthehole.com/posts/universal-ctags-can-index-more-things-than-i-realised/)
@@ -667,7 +691,7 @@ learnt many new things[^tils] just fleshing out each section.
 
 There's a couple of key usage patterns that are worth calling out:
 
-### I need to jump somewhere...
+### I need to jump somewhere
 
 When editing code, you often need to jump to another location.
 
@@ -683,7 +707,7 @@ When editing code, you often need to jump to another location.
 
 - To jump to _where you were last in insert mode_, use `gi`.
 
-### I need to apply the same transformation in lots of places...
+### I need to apply the same transformation in lots of places
 
 A powerful editing pattern comprises building a list of files or locations
 then applying the same editing operation to each entry. This is great for
@@ -733,4 +757,3 @@ Related articles:
 - https://stackoverflow.com/questions/1747091/how-do-you-use-vims-quickfix-feature - useful guide to quickfix commands
 
 -->
-

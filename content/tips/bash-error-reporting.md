@@ -32,7 +32,7 @@ so that the script:
 You can learn more about these built-ins with:
 
 ```bash
-$ help set
+help set
 ```
 
 ## Fail noisy
@@ -92,17 +92,13 @@ false
 There are more sophisticated ways to handle errors in Bash scripts[^othertools] but
 this is a concise, simple option to have to hand.
 
-
 [^pgdump]: Without this `pg_dump ... | gzip` would not be treated as an error even if `pg_dump` exited with a non-zero exit code.
 [^othertools]: See the [Bash infinity framework](https://invent.life/project/bash-infinity-framework) for example.
 
 {{<comment>}}
 Background reading:
-- https://stelfox.net/blog/2013/11/fail-fast-in-bash-scripts/
-- https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+
+- <https://stelfox.net/blog/2013/11/fail-fast-in-bash-scripts/>
+- <https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/>
 - [Relevant Stack Overflow question](https://stackoverflow.com/questions/64786/error-handling-in-bash)
 {{</comment>}}
-
-
-
-

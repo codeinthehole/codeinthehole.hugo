@@ -62,7 +62,7 @@ def fetch_num_users(self):
 is called via:
 
 ``` bash
-$ ./manage.py application_metric num_users
+./manage.py application_metric num_users
 ```
 
 Without arguments, a list of fetchers is shown:
@@ -103,7 +103,7 @@ management command.
 Now restart Zabbix to pick up the new conf file:
 
 ``` bash
-$ /etc/init.d/zabbix-agent restart
+/etc/init.d/zabbix-agent restart
 ```
 
 ### Zabbix dashboard

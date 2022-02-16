@@ -110,8 +110,8 @@ characters - hence the motivation for this tool.
 I'm not the first to write such a utility - there are several others out
 there (although none had quite the API I was looking for):
 
--   [csvfix](https://bitbucket.org/neilb/csvfix/src)
--   [dropcols](http://pypi.python.org/pypi/dropcols)
--   [csvkit](https://github.com/onyxfish/csvkit)
+- [csvfix](https://bitbucket.org/neilb/csvfix/src)
+- [dropcols](http://pypi.python.org/pypi/dropcols)
+- [csvkit](https://github.com/onyxfish/csvkit)
 
 [Source available on Github](http://github.com/codeinthehole/csvfilter).

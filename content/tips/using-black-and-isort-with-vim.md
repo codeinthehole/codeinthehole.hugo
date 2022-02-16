@@ -31,7 +31,6 @@ Further, if you don't want these fixers applied on save, set
 
 ```vim
 let b:ale_fix_on_save = 0
-``` 
+```
 
 and use `:ALEFix` to run the fixers manually.
-

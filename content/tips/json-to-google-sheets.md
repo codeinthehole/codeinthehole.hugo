@@ -7,7 +7,7 @@ description = "Another note-to-self on how to use JQ."
 +++
 
 Like many people, I use Google Sheets to quickly create and share tabular data. As well as
-[creating spreadsheets by pasting results generated in `psql`](/tips/copying-postgres-output-into-a-spreadsheet/), 
+[creating spreadsheets by pasting results generated in `psql`](/tips/copying-postgres-output-into-a-spreadsheet/),
 I often create reports from JSON files using
 [JQ](https://stedolan.github.io/jq/). This post is a note-to-self on how to do
 this.

@@ -8,7 +8,7 @@ tags = ["postgres"]
 Joining tables on `date` and `timestamp with timezone` fields in Postgres[^django] needs careful handling
 because of time zones and daylight-saving time.
 
-To illustrate, assume we have two tables: 
+To illustrate, assume we have two tables:
 
 - `t1` which has a field of type `date` and a foreign-key `t2_id` to
 - `t2` which has a field of `timestamp with timezone`.
@@ -17,7 +17,6 @@ We want to build SQL queries that join between these two tables with additional 
 constraints on the join.
 
 Assume the date values in `t1` correspond to the `Europe/London` time zone.
-
 
 ## Join rows where a timestamp value is _within_ the date
 

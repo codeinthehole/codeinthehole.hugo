@@ -76,14 +76,9 @@ migrate_to_webserver_namespace() {
 migrate_to_webserver_namespace
 ```
 
-This script uses [Consul's REST API](https://www.consul.io/docs/agent/http/kv.html) and filters the results using 
+This script uses [Consul's REST API](https://www.consul.io/docs/agent/http/kv.html) and filters the results using
 [`jq`](https://stedolan.github.io/jq/)[^1]. It's easily
 adapted to migrate key-value pairs between different namespaces.
 
 [^1]: I can never remember jq's `select` syntax so this post is intended largely
       as a personal reference on how to do this.
-
-
-
-
-

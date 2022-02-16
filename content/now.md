@@ -30,7 +30,6 @@ New (good) recipes discovered:
 
 -
 
-
 ## May 2021
 
 Culture:
@@ -51,7 +50,6 @@ Life:
 
 - Am hoping to start playing cricket again at Enfield Cricket Club.
 
-
 ## January 2021
 
 Culture:
@@ -67,7 +65,6 @@ Culture:
 Life:
 
 - Doing a lot of lockdown runs; am trying to get my running time below 4:30 per km — [am getting closer](https://www.strava.com/athletes/31709197).
-
 
 ## November 2020
 

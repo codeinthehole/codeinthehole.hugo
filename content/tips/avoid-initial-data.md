@@ -46,9 +46,9 @@ library [South](http://south.aeracode.org/docs/index.html) to create
 [data migrations](http://south.aeracode.org/docs/tutorial/part3.html).
 The advantages are:
 
--   Data migrations will only run once and so they won't clobber any
+- Data migrations will only run once and so they won't clobber any
     data.
--   They will run automatically in all environments - no manual
+- They will run automatically in all environments - no manual
     deployment steps required.
 
 The only disadvantage is that you need to use South, which most sensible

@@ -141,5 +141,5 @@ projects. The package is called
 and can be installed from PyPI using:
 
 ``` bash
-$ pip install django-deferred-filelogger
+pip install django-deferred-filelogger
 ```

@@ -44,10 +44,10 @@ vitc{% trans "" %}<ESC>4hp
 
 which breaks down as:
 
--   `vit` - select content inside the tag;
--   `c{% trans "" %}` - change tag content to be `{% trans "" %}` while
+- `vit` - select content inside the tag;
+- `c{% trans "" %}` - change tag content to be `{% trans "" %}` while
     saving the original tag content to the anonymous register;
--   `<ESC>4hp` - move the cursor to the first speech mark and paste the
+- `<ESC>4hp` - move the cursor to the first speech mark and paste the
     original tag contents. Note that `<ESC>` is one key-stroke, not
     five.
 

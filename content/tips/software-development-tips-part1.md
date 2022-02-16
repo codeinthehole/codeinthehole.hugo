@@ -30,5 +30,4 @@ On effective development teams:
   You'll need this a lot when onboarding new starters. Octopus Energy's [open-source coding conventions](https://github.com/octoenergy/conventions/blob/master/python.md)
   have been a great recruiting tool.
 
-
 More to come.

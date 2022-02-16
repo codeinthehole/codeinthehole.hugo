@@ -7,13 +7,14 @@ tags = ["ubuntu", "puppet", "packer"]
 
 When provisioning a virtual machine running Ubuntu 16.04 or later, a common problem
 if being unable to install packages since another process is holding a lock (eg
-on `/var/lib/dpkg/lock-frontend`). 
+on `/var/lib/dpkg/lock-frontend`).
 
-This happens as Ubuntu VMs typically start several package-management programs --- [unattended-upgrades](https://help.ubuntu.com/lts/serverguide/automatic-updates.html.en) 
+This happens as Ubuntu VMs typically start several package-management programs --- [unattended-upgrades](https://help.ubuntu.com/lts/serverguide/automatic-updates.html.en)
 and its associated `apt.daily` service --- on boot, and these will block
-your provisioning scripts. 
+your provisioning scripts.
 
 You'll see an error like this:
+
 ```text
 E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
 ```
@@ -27,7 +28,7 @@ To help others suffering in this situation, here's a solution.
 
 ## Solution
 
-Before you start provisioning, you need to stop and disable all services that use 
+Before you start provisioning, you need to stop and disable all services that use
 package management. You can do that with a shell script like this:
 
 ```bash
@@ -70,7 +71,7 @@ Here we first disable the `systemd` timers, then stop the services themselves.
 
 Once this has run, you can run your provisioning software without fear of
 locking problems. But once your provisioning is complete, the `apt-daily` timers should be
-re-enabled. 
+re-enabled.
 
 Here's a snippet from a Packer JSON configuration template:
 

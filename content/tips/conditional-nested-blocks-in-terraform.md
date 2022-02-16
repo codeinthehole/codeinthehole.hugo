@@ -8,7 +8,7 @@ tags = ["terraform"]
 <!-- INTRODUCTION -->
 
 Here's a useful technique for using Terraform's [`dynamic` blocks](https://www.terraform.io/docs/configuration/expressions.html#dynamic-blocks) to create
-conditional nested blocks. 
+conditional nested blocks.
 
 <!-- CONTENT -->
 
@@ -16,12 +16,13 @@ conditional nested blocks.
 
 As an example, let's create a "maintenance mode" for a service which allows a
 "under maintenance" holding page to be served when a Terraform variable
-is set. 
+is set.
 
 This is useful if you need to stop all traffic to a RDS database server so it
 can be upgraded.
 
 Define a boolean `maintenance_mode` variable:
+
 ```terraform
 # variables.tf
 
@@ -30,8 +31,10 @@ variable "maintenance_mode" {
   default = false
 }
 ```
+
 and use it to create conditional `default_action` blocks in an `aws_lb_listener`
 resource.  
+
 ```terraform
 # main.tf
 
@@ -61,7 +64,8 @@ resource "aws_lb_listener" "this" {
     }
   }
 }
-```         
+```
+
 If `maintenance_mode` is `false`, the load balancer will forward traffic to the
 target group as normal. But if `true`, a HTTP 503 response will be returned with
 a simple HTML payload.

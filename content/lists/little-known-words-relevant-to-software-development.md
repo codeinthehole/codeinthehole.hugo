@@ -27,5 +27,4 @@ A curated[^curated] collection of words-of-the-day from [@qikipedia](https://twi
 
 There are many more.
 
-
 [^curated]: Using this [Python script](https://gist.github.com/codeinthehole/0e7430d79f3dcd1235c89f9367a49a1b).

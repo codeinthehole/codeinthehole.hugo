@@ -23,22 +23,22 @@ This is mainly for my own reference.
 Create user with a dummy shell:
 
 ``` bash
-$ adduser --shell=/bin/false barry
+adduser --shell=/bin/false barry
 ```
 
 and alter the ownership and permissions of their home folder:
 
 ``` bash
-$ chown root:barry /home/barry
-$ chmod 755 /home/barry
+chown root:barry /home/barry
+chmod 755 /home/barry
 ```
 
 Now create a folder to upload to:
 
 ``` bash
-$ mkdir /home/barry/uploads
-$ chown barry:barry /home/barry/uploads
-$ chmod 755 /home/barry/uploads
+mkdir /home/barry/uploads
+chown barry:barry /home/barry/uploads
+chmod 755 /home/barry/uploads
 ```
 
 ### SSH config
@@ -63,13 +63,12 @@ Match User barry
 then restart SSH:
 
 ``` bash
-$ /etc/init.d/ssh restart
+/etc/init.d/ssh restart
 ```
 
 The new user should now be able to sFTP.
 
 ### Further reading
 
--   [How to set up and chroot SFTP users with OpenSSH 5.1p1 in Ubuntu
+- [How to set up and chroot SFTP users with OpenSSH 5.1p1 in Ubuntu
     8.10](http://www.ericstockwell.com/?p=54)
-

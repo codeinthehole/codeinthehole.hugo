@@ -69,7 +69,6 @@ def test_something_in_module(collaborator_1, collaborator_2, some_pytest_fixture
 
 --
 
-
 <div class="admonition warning">
     <strong>Postscript:</strong> The <a
     href="https://pypi.python.org/pypi/pytest-mock">pytest-mock</a> plugin can

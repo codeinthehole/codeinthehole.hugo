@@ -83,24 +83,26 @@ Hub's `pull-request` command is useful yet relatively unknown. The `-i`
 flag indicates the Github issue number while `-h` specifies the source
 branch for the pull request. Here's the relevant help snippet:
 
-    git pull-request [-f] [TITLE|-i ISSUE|ISSUE-URL] [-b BASE] [-h HEAD]
-           Opens a pull request on GitHub for the project that the "origin"
-           remote points to. The default head of the pull  request  is  the
-           current  branch.  Both  base and head of the pull request can be
-           explicitly given in one  of  the  following  formats:  "branch",
-           "owner:branch",  "owner/repo:branch".  This  command  will abort
-           operation if it detects that the current topic branch has  local
-           commits  that  are  not yet pushed to its upstream branch on the
-           remote. To skip this check, use -f.
+```txt
+git pull-request [-f] [TITLE|-i ISSUE|ISSUE-URL] [-b BASE] [-h HEAD]
+        Opens a pull request on GitHub for the project that the "origin"
+        remote points to. The default head of the pull  request  is  the
+        current  branch.  Both  base and head of the pull request can be
+        explicitly given in one  of  the  following  formats:  "branch",
+        "owner:branch",  "owner/repo:branch".  This  command  will abort
+        operation if it detects that the current topic branch has  local
+        commits  that  are  not yet pushed to its upstream branch on the
+        remote. To skip this check, use -f.
 
-           If TITLE is omitted, a text editor will open in which title  and
-           body  of  the  pull request can be entered in the same manner as
-           git commit message.
+        If TITLE is omitted, a text editor will open in which title  and
+        body  of  the  pull request can be entered in the same manner as
+        git commit message.
 
-           If instead of normal TITLE an issue number is given with -i, the
-           pull  request  will  be  attached  to  an existing GitHub issue.
-           Alternatively, instead of title you can paste a full URL  to  an
-           issue on GitHub.
+        If instead of normal TITLE an issue number is given with -i, the
+        pull  request  will  be  attached  to  an existing GitHub issue.
+        Alternatively, instead of title you can paste a full URL  to  an
+        issue on GitHub.
+```
 
 Without this command, you would end up creating a separate pull-request
 and issue for the same piece of work.

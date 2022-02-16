@@ -13,7 +13,7 @@ Cloud computing and immutable infrastructure deployments have changed
 the way I use SSH. I miss the days when I could run:
 
 ``` bash
-$ ssh app1-prod
+ssh app1-prod
 ```
 
 to jump onto a machine and investigate an issue. This would work as,
@@ -21,7 +21,7 @@ back in the days of yore, your web servers didn't change IP address
 several times a week so I could create a helpful alias in
 `~/.ssh/config`:
 
-```
+```txt
 Host app1-prod
     User example_user
     HostName 74.207.251.29
@@ -32,10 +32,10 @@ username and IP address when SSHing around town.
 
 I can no longer do this as:
 
--   Immutable infrastructure deployments mean EC2 instances are replaced
+- Immutable infrastructure deployments mean EC2 instances are replaced
     for every update so the IP addresses keep changing. Life is too
     short to keep updating `~/.ssh/config` with their details.
--   Plus, aside from your load balancers, servers should be unreachable
+- Plus, aside from your load balancers, servers should be unreachable
     from the outside world. Now all access is via a bastion machine: the
     only machine in the VPC that exposes its SSH port to the network
     your laptop is using.
@@ -58,7 +58,7 @@ an regrettable practice and I need to raise my automation game.)
 In such circumstances, I want to be able to run:
 
 ``` bash
-$ ssh ip-10-5-8-179.eu-west-1.compute.internal
+ssh ip-10-5-8-179.eu-west-1.compute.internal
 ```
 
 jumping straight onto an AWS EC2 instance using only its internal DNS
@@ -70,7 +70,7 @@ Here's how.
 
 Add an alias to `~/.ssh/config` for your bastion server. Something like:
 
-```
+```txt
 Host bastion-prod
     User example_user
     Hostname bastion.example.com
@@ -81,7 +81,7 @@ Host bastion-prod
 then you can route SSH traffic through the bastion server using
 `ProxyCommand`:
 
-```
+```txt
 Host *.compute.internal
     User ubuntu
     IdentityFile ~/.ssh/aws-prod.key
@@ -92,7 +92,7 @@ Host *.compute.internal
 and that's sufficient for commands like:
 
 ``` bash
-$ ssh ip-10-5-8-179.eu-west-1.compute.internal
+ssh ip-10-5-8-179.eu-west-1.compute.internal
 ```
 
 to work.
@@ -103,10 +103,9 @@ whether this is a dreadful security misstep.
 
 Some vaguely related articles:
 
--   [Using a ProxyCommand to Leap Frog Your
+- [Using a ProxyCommand to Leap Frog Your
     Bastions](http://edgeofsanity.net/article/2012/10/15/ssh-leap-frog.html)
--   A [Github repo](https://github.com/gianlucaborello/aws-ssh-config)
+- A [Github repo](https://github.com/gianlucaborello/aws-ssh-config)
     for dynamically building `~/.ssh/config` using boto.
--   [Easily SSH into Amazon EC2 instances using the Name
+- [Easily SSH into Amazon EC2 instances using the Name
     tag](http://blog.ryanparman.com/2014/01/29/easily-ssh-into-amazon-ec2-instances-using-the-name-tag/)
-

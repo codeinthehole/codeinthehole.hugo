@@ -11,9 +11,9 @@
 
 I rewrote this blog recently with the following aims:
 
--   to make it as easy as possible to create a new article, using
+- to make it as easy as possible to create a new article, using
     [reStructuredText](http://docutils.sourceforge.net/rst.html) (RST);
--   to clean up and simplify the design, focussing on the readability of
+- to clean up and simplify the design, focussing on the readability of
     articles that include code snippets.
 
 I knew that there were various static blogs out there, with many
@@ -35,9 +35,9 @@ codebase.
 
 My ideal for writing a blog post is:
 
-1.  Use vim to create a `.rst` file for the article;
-2.  Preview the article locally;
-3.  Publish to the remote server
+1. Use vim to create a `.rst` file for the article;
+2. Preview the article locally;
+3. Publish to the remote server
 
 This translates to:
 
@@ -88,11 +88,11 @@ Losh](http://stevelosh.com/), [Zach Holman](http://zachholman.com/) and
 
 I'm pleased that:
 
--   The site isn't painfully ugly like the old;
--   I can write articles easily and using my favourite tools (vim +
+- The site isn't painfully ugly like the old;
+- I can write articles easily and using my favourite tools (vim +
     RST);
--   I can write articles on the tube on the way home;
--   Github is now my backup of both code and content. For instance, you
+- I can write articles on the tube on the way home;
+- Github is now my backup of both code and content. For instance, you
     can [view the source of this
     article](https://raw.github.com/codeinthehole/codeinthehole.com/master/www/posts/0038-restructured-blog.rst).
 

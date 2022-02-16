@@ -19,9 +19,9 @@ For instance, I'm sure you've seen these pull requests before[^1]:
 <img src="/images/bricks.jpg" class="photo" />
 <img src="/images/fan.jpg" class="photo" />
 
-Furthermore, the episode ["Hurrican Neddy"](https://en.wikipedia.org/wiki/Hurricane_Neddy) from season 8 
+Furthermore, the episode ["Hurrican Neddy"](https://en.wikipedia.org/wiki/Hurricane_Neddy) from season 8
 of The Simpsons is a parable of a failed software project, where feature delivery is prioritised
-at the expense of maintainability. 
+at the expense of maintainability.
 
 <img src="/images/hurricane-neddy1.jpg" class="photo" />
 <img src="/images/hurricane-neddy2.jpg" class="photo" />
@@ -39,14 +39,8 @@ codebase maintainable[^2].
 
 <img src="/images/this-is-fine.jpg" style="width:100%"/>
 
-
-
-[^1]: I first saw the fan image in a [tweet by @isoiphone](https://twitter.com/isoiphone/status/824771226585296896). 
+[^1]: I first saw the fan image in a [tweet by @isoiphone](https://twitter.com/isoiphone/status/824771226585296896).
       I can't find the tweet I saw the bricks image in - please let me know if you
       know it.
 
 [^2]: Anthropomorphic dog image from a [_Gunshow_ strip called "On Fire"](https://en.wikipedia.org/wiki/Gunshow_(webcomic)#.22This_is_Fine.22)
- 
-
-
-

@@ -24,16 +24,16 @@ client.
 
 Several reasons - here's a few:
 
--   WebTest allows you to model a user's experience much more closely as
+- WebTest allows you to model a user's experience much more closely as
     it is smart about mark-up. Instead of hand-crafting GET and POST
     requests, you can use the WebTest API to follow links and submit
     forms - this is what users actually do. As a result, your tests
     accurately capture user stories.
--   A corollary to the last point is that writing functional tests with
+- A corollary to the last point is that writing functional tests with
     WebTest is both easier and quicker than using Django's test client.
     It's much simpler to fill in forms that construct complicated arrays
     of POST data - this is particularly noticable with formsets.
--   The WebTest response object supports [several ways of parsing the
+- The WebTest response object supports [several ways of parsing the
     response
     HTML](http://webtest.pythonpaste.org/en/latest/index.html#parsing-the-body),
     making it easy to make complicated assertions about the response.

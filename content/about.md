@@ -12,13 +12,13 @@ Hello, I'm **David**, a software engineer.
 
 I'm **Head of Engineering** at [Octopus Energy](https://octopus.energy), a tech-focussed UK energy
 supplier. I help run a [team of engineers](https://tech.octopus.energy) building the "Kraken" software platform that underpins the
-business. Octopus Energy became the 15th UK tech ["unicorn"](https://en.wikipedia.org/wiki/Unicorn_(finance)) in May 2020, 
+business. Octopus Energy became the 15th UK tech ["unicorn"](https://en.wikipedia.org/wiki/Unicorn_(finance)) in May 2020,
 after [investment from Origin Energy](https://octopus.energy/blog/octopus-energy-achieves-unicorn-status-investment-origin-energy/).
 
 Previously I've worked as:
 
-- **Director of Engineering** at [Yoyo Wallet](http://yoyowallet.com/), a payments 
-and loyalty start-up; 
+- **Director of Engineering** at [Yoyo Wallet](http://yoyowallet.com/), a payments
+and loyalty start-up;
 - a **Technical Director** (and various other roles) at [Tangent Snowball](http://www.tangent.co.uk/), a digital agency;
 - an **Operational Researcher** at [HM Revenue and Customs](https://www.gov.uk/government/organisations/hm-revenue-customs).
 
@@ -29,13 +29,13 @@ One of my strengths is building and running teams that write high-quality, maint
 _Everything_ to do with software; but especially:
 
 - Design, patterns and architecture.
-- Tests, testing and TDD (I'm a keen advocate of [London-school TDD](https://github.com/testdouble/contributing-tests/wiki/London-school-TDD) 
+- Tests, testing and TDD (I'm a keen advocate of [London-school TDD](https://github.com/testdouble/contributing-tests/wiki/London-school-TDD)
  and [Discovery testing](https://github.com/testdouble/contributing-tests/wiki/Discovery-Testing)).
 - Unix, Bash and working at the command-line (I originally wrote the site
     [commandlinefu.com](http://www.commandlinefu.com)).
 - [Python](/tags/python/), [Javascript](/tags/javascript/), Golang.
 - [Vim](/tags/vim/), [Git](/tags/git/).
-- [AWS](/tags/aws/), the "Hashistack", infrastructure-as-code. 
+- [AWS](/tags/aws/), the "Hashistack", infrastructure-as-code.
 - The practices of effective teams: code review, continuous deployment, pairing etc
 
 ## Conference talks
@@ -72,8 +72,3 @@ few published papers:
     D.M. Winterbottom, S.M. Cox, P.C. Matthews
     </li>
 </ul>
-
-
-
-
-

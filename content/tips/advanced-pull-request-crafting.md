@@ -72,8 +72,8 @@ Codebases degrade over time; entropy increases. Thoughtful developers will look
 for opportunities to refactor or restructure components as they work on other
 things, keeping the codebase clean.
 
-A useful practice for this is to _begin_ your PR by cleaning up 
-the codebase to make it _easy_ to address the core purpose of your PR. 
+A useful practice for this is to _begin_ your PR by cleaning up
+the codebase to make it _easy_ to address the core purpose of your PR.
 
 For example, start by reviewing the tests for a component you're about to extend,
 reworking them to be as readable as possible.

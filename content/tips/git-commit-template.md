@@ -34,7 +34,7 @@ To do this in Git, save the above content in a file (eg
 `~/.git_commit_msg.txt`) and run:
 
 ``` bash
-$ git config --global commit.template ~/.git_commit_msg.txt
+git config --global commit.template ~/.git_commit_msg.txt
 ```
 
 Here's what this looks like in practice:
