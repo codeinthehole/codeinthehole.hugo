@@ -41,6 +41,13 @@ function verify_preconditions() {
         echo "Dirty tree - ensure all changes are committed before deploying"
         exit 1
     fi
+
+    # Check markdownlint passes
+    if ! markdownlint --check .
+    then
+        echo "Markdownlint is not passing"
+        exit 1
+    fi
 }
 
 function build_site() {
