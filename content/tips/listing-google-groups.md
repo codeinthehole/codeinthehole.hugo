@@ -5,11 +5,12 @@ description = "Using the API to pull simple reports."
 tags = ["gsuite"]
 +++
 
-Oddly, you can't pull a report of all groups from G-Suite like you can for users. The only option is to
-use the API. Here's how.
+Oddly, you can't pull a report of all groups from G-Suite like you can for
+users. The only option is to use the API. Here's how.
 
-Follow steps 1 and 2 from [the quickstart guide](https://developers.google.com/admin-sdk/directory/v1/quickstart/python) but
-instead of the sample Python script, use this:
+Follow steps 1 and 2 from
+[the quickstart guide](https://developers.google.com/admin-sdk/directory/v1/quickstart/python)
+but instead of the sample Python script, use this:
 
 ```python
 from httplib2 import Http

@@ -8,20 +8,20 @@ description = "This is really just a reference on how to combine JQ's select fil
 
 If your Consul key-value store is structured as:
 
-``` sh
+```sh
 /
     A/
         X = 1
         Z = 2
         Y = 3
-    C 
+    C
     D
 ```
 
-but you now realise you should have namespaced everything within `WEBSERVER/` (or
-something like that):
+but you now realise you should have namespaced everything within `WEBSERVER/`
+(or something like that):
 
-``` bash
+```bash
 /
     WEBSERVER/
         A/
@@ -46,12 +46,12 @@ keys_and_values() {
     # (b) those that start with WEBSERVER/ (as that's where we are migrating
     #     to).
     curl -s "localhost/v1/kv/?recurse" | jq -r '
-        .[] | 
+        .[] |
         select(
-            (.Key | endswith("/") | not) and 
+            (.Key | endswith("/") | not) and
             (.Key | startswith("WEBSERVER") | not)
-        ) | 
-        [.Key, " ", .Value] | 
+        ) |
+        [.Key, " ", .Value] |
         add' | while read key b64value
     do
         # Consul's REST API returns values base64-encoded so we decode here.
@@ -70,15 +70,17 @@ migrate_to_webserver_namespace() {
     keys_and_values | while read key value
     do
         set_key "WEBSERVER/$key" "$value"
-    done 
+    done
 }
 
 migrate_to_webserver_namespace
 ```
 
-This script uses [Consul's REST API](https://www.consul.io/docs/agent/http/kv.html) and filters the results using
-[`jq`](https://stedolan.github.io/jq/)[^1]. It's easily
+This script uses
+[Consul's REST API](https://www.consul.io/docs/agent/http/kv.html) and filters
+the results using [`jq`](https://stedolan.github.io/jq/)[^1]. It's easily
 adapted to migrate key-value pairs between different namespaces.
 
-[^1]: I can never remember jq's `select` syntax so this post is intended largely
-      as a personal reference on how to do this.
+[^1]:
+    I can never remember jq's `select` syntax so this post is intended largely
+    as a personal reference on how to do this.

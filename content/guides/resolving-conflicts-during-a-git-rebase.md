@@ -85,23 +85,25 @@ To abort and get back to the state before "git rebase", run "git rebase --abort"
 
 Conflicts? Conflicts!
 
-Often the conflicts are simple and easily resolved by eye-balling the
-files in question. If that's true, good for you: resolve the
-conflicts using your favourite editor and move on via:
+Often the conflicts are simple and easily resolved by eye-balling the files in
+question. If that's true, good for you: resolve the conflicts using your
+favourite editor and move on via:
 
 ```bash
 git rebase --continue
 ```
 
-However, if the conflicts are not trivially resolved, start by asking yourself this:
+However, if the conflicts are not trivially resolved, start by asking yourself
+this:
 
 ## Which commit of mine is conflicting?
 
 We can identify the conflicting commit in several ways:
 
-- Look for the `Patch failed at $NUMBER $SUBJECT` line in the rebase output. This prints the
-  subject of the commit that couldn't be applied. In the above example, the offending commit has
-  subject `Group tests into class for Account data-import serializer`.
+- Look for the `Patch failed at $NUMBER $SUBJECT` line in the rebase output.
+  This prints the subject of the commit that couldn't be applied. In the above
+  example, the offending commit has subject
+  `Group tests into class for Account data-import serializer`.
 
 - Alternatively, follow the advice in the rebase output and run:
 
@@ -117,8 +119,8 @@ We can identify the conflicting commit in several ways:
   git rebase --show-current-patch
   ```
 
-- Best of all, there is a `REBASE_HEAD` pseudo-ref that points to the conflicting commit,
-  so you can do:
+- Best of all, there is a `REBASE_HEAD` pseudo-ref that points to the
+  conflicting commit, so you can do:
 
   ```bash
   git show REBASE_HEAD
@@ -219,8 +221,8 @@ deeper.
 ### Examine the target branch changes in detail
 
 Sometimes the conflicted blocks are large and you can't understand at a glance
-what changes have been made in the target branch and why they were made.
-In this situation, we may need to examine the individual changes made to each conflicted
+what changes have been made in the target branch and why they were made. In this
+situation, we may need to examine the individual changes made to each conflicted
 `$FILEPATH` in order to understand how to resolve safely.
 
 We can examine the overall diff:
@@ -247,7 +249,8 @@ and review how each modified `$FILEPATH` with:
 git show $COMMIT_SHA -- $FILEPATH
 ```
 
-Note the `git diff` command uses three dots while the `git log` command uses two.
+Note the `git diff` command uses three dots while the `git log` command uses
+two.
 
 If there are lots of commits that modified `$FILEPATH`, it can be helpful to run
 `git blame` and see which commits updated the conflicting block and focus your
@@ -262,9 +265,9 @@ A couple of things:
 
 ### Apply your changes to the target branch code
 
-When manually editing conflicted files, always resolve conflicts by applying your
-changes to the target branch block (labelled `HEAD`) as you understand your changes better and are
-less likely to inadvertently break something.
+When manually editing conflicted files, always resolve conflicts by applying
+your changes to the target branch block (labelled `HEAD`) as you understand your
+changes better and are less likely to inadvertently break something.
 
 For example: in the following diff:
 
@@ -309,8 +312,8 @@ https://demisx.github.io/git/rebase/2015/07/02/git-rebase-keep-my-branch-changes
 -->
 
 Occassionally, you might know that the changes from one branch should be
-accepted. This can be done using `git checkout` with a merge
-"strategy-option". Beware that, when rebasing, the terminology is counter-intuitive.
+accepted. This can be done using `git checkout` with a merge "strategy-option".
+Beware that, when rebasing, the terminology is counter-intuitive.
 
 To accept the changes from the _target branch_, use:
 
@@ -324,9 +327,9 @@ To accept the changes made on your _working branch_, use:
 git checkout --theirs -- $FILEPATH
 ```
 
-As a rebase involves replaying your commits to the tip of the target branch, each
-replayed commit is treated as "theirs" (even though you are the author) while
-the existing target branch commits are "ours".
+As a rebase involves replaying your commits to the tip of the target branch,
+each replayed commit is treated as "theirs" (even though you are the author)
+while the existing target branch commits are "ours".
 
 Even more sweepingly, you can auto-resolve conflicts using a specified strategy
 when doing the rebase. Eg:
@@ -360,7 +363,8 @@ then Git will record how you resolve conflicts and, if it sees the same conflict
 during a future rebase (eg if you `--abort` then retry), it will automatically
 resolve the conflict for you.
 
-You can see evidence of `rerere` in action in the `git rebase` output. You'll see:
+You can see evidence of `rerere` in action in the `git rebase` output. You'll
+see:
 
 ```bash
 Recorded preimage for '...'
@@ -387,10 +391,11 @@ You should enable this -- there's no downside.
 Hopefully the above is useful.
 
 Resolving rebase conflicts is much easier if commits are "atomic", with each
-change motivated by a single reason (similar to the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)).
-For instance, never mix file-system changes (ie moving files
-around) with core logic changes. Such commits are likely to attract conflicts
-and are hard to resolve.
+change motivated by a single reason (similar to the
+[Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)).
+For instance, never mix file-system changes (ie moving files around) with core
+logic changes. Such commits are likely to attract conflicts and are hard to
+resolve.
 
 Don't worry if the rebase gets away from you; you can always abort with:
 
@@ -406,12 +411,14 @@ Here's some additional resources on the topic:
 
 - [Github: Resolving merge conflicts after a Git rebase](https://help.github.com/en/github/using-git/resolving-merge-conflicts-after-a-git-rebase)
 
-- [Github: Resolving a merge conflict using the command line](Resolving a merge conflict using the command line)
+- [Github: Resolving a merge conflict using the command line](Resolving a merge
+  conflict using the command line)
 
 - [`git-rebase` docs](https://git-scm.com/docs/git-rebase)
 
 - [Fix conflicts once with git rerere](https://medium.com/@porteneuve/fix-conflicts-only-once-with-git-rerere-7d116b2cec67)
-  by _Christophe Porteneuve_ (2014). Good detailed examination of how to use `git rerere`.
+  by _Christophe Porteneuve_ (2014). Good detailed examination of how to use
+  `git rerere`.
 
 <!-- General reserach on rebase conflicts
 

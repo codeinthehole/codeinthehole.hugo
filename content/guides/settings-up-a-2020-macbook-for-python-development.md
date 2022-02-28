@@ -23,9 +23,12 @@ them from the App Store or downloading `.dmg` files and dragging them into
 
 There's only a few of these that I use:
 
-- [Bear](https://apps.apple.com/gb/app/bear/id1016366447) --- my Bear notes are now my most valuable possession.
-- [Trello](https://apps.apple.com/gb/app/trello-organize-anything/id461504587) --- by far my favourite workflow management app.
-- [Microsoft To Do](https://apps.apple.com/gb/app/microsoft-to-do/id1212616790) --- successor to Wunderlist.
+- [Bear](https://apps.apple.com/gb/app/bear/id1016366447) --- my Bear notes are
+  now my most valuable possession.
+- [Trello](https://apps.apple.com/gb/app/trello-organize-anything/id461504587)
+  --- by far my favourite workflow management app.
+- [Microsoft To Do](https://apps.apple.com/gb/app/microsoft-to-do/id1212616790)
+  --- successor to Wunderlist.
 - [Slack](https://apps.apple.com/gb/app/slack/id618783545)
 - [Outline VPN client](https://apps.apple.com/us/app/outline-app/id1356177741)
 
@@ -33,13 +36,15 @@ There's only a few of these that I use:
 
 In rough order of usefulness:
 
-- [Alfred](https://www.alfredapp.com/) --- install this [Bear workflow](https://github.com/drgrib/alfred-bear) and ensure it's configured to
-  search Chrome bookmarks.
-- [MacVim](https://github.com/macvim-dev/macvim/releases/) --- install from Github to get the latest version.
+- [Alfred](https://www.alfredapp.com/) --- install this
+  [Bear workflow](https://github.com/drgrib/alfred-bear) and ensure it's
+  configured to search Chrome bookmarks.
+- [MacVim](https://github.com/macvim-dev/macvim/releases/) --- install from
+  Github to get the latest version.
 - [iTerm2](https://www.iterm2.com/)
 - [Chrome](https://www.google.co.uk/chrome/)
-- [1Password](https://1password.com/) (deliberately not from the App Store as such versions don't support the QR code reader
-  functionality)
+- [1Password](https://1password.com/) (deliberately not from the App Store as
+  such versions don't support the QR code reader functionality)
 - [Spectacle](https://www.spectacleapp.com/)
 - [Spotify](https://www.spotify.com/uk/download/other/)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
@@ -51,10 +56,9 @@ In rough order of usefulness:
 
 ## Homebrew formulae
 
-Homebrew is best reserved for core system packages, where running the
-latest version is desirable. It's less appropriate for project
-dependencies which require pinned versions --- Docker is a better for
-that.
+Homebrew is best reserved for core system packages, where running the latest
+version is desirable. It's less appropriate for project dependencies which
+require pinned versions --- Docker is a better for that.
 
 Start by installing Xcode's command-line tools:
 
@@ -110,8 +114,9 @@ function install_homebrew_tap_packages() {
 }
 ```
 
-Ensure your `~/.bash_profile` has shell completion enabled for
-Homebrew-installs packages by following the [documented instructions](https://docs.brew.sh/Shell-Completion).
+Ensure your `~/.bash_profile` has shell completion enabled for Homebrew-installs
+packages by following the
+[documented instructions](https://docs.brew.sh/Shell-Completion).
 
 ## MacOS configuration
 
@@ -119,8 +124,9 @@ It's too dull to go through everything. Here are few notable changes:
 
 ### Non-breaking spaces
 
-Unbind <span class="keys">⌥</span> + <span class="keys">SPACE</span> from inserting a non-breaking space by setting the contents
-of `~/Library/KeyBindings/DefaultKeyBinding.dict` to:
+Unbind <span class="keys">⌥</span> + <span class="keys">SPACE</span> from
+inserting a non-breaking space by setting the contents of
+`~/Library/KeyBindings/DefaultKeyBinding.dict` to:
 
 ```pl
 {
@@ -128,7 +134,8 @@ of `~/Library/KeyBindings/DefaultKeyBinding.dict` to:
 }
 ```
 
-This avoids a common annoyance when editing headers in markdown files (eg in Bear).
+This avoids a common annoyance when editing headers in markdown files (eg in
+Bear).
 
 ### System preferences
 
@@ -175,25 +182,27 @@ configure_all
 
 ### Further reading
 
-- [How to set up a new Mac for development](https://twitter.com/searls/status/1264547049032187910) - A 90 minute video walking through setting up a MacBook Pro.
+- [How to set up a new Mac for development](https://twitter.com/searls/status/1264547049032187910) -
+  A 90 minute video walking through setting up a MacBook Pro.
 - [`osx-for-hackers.sh`](https://gist.github.com/brandonb927/3195465) --- A
-  large shell script with a lot of configuration options. This is the Yosemite/El Capitan edition -- not everything works in Catalina. It's worth browsing though
-  to see if anything takes your fancy.
+  large shell script with a lot of configuration options. This is the
+  Yosemite/El Capitan edition -- not everything works in Catalina. It's worth
+  browsing though to see if anything takes your fancy.
 
 ## Python
 
 General principles:
 
-- Use `pyenv` to manage multiple versions of Python locally, and to stay out of the
-  way of the system Python.
+- Use `pyenv` to manage multiple versions of Python locally, and to stay out of
+  the way of the system Python.
 
 - Keep everything in virtualenvs.
 
 - Use `virtualenvwrapper` to provide convenience commands. Mainly as I like to
-  switch to a project with `workon`. Indeed, I often create virtualenvs for non-Python
-  projects just so I jump to them with `workon` and run some initialisation in
-  the `postactivate` script (like changing to the project directory and setting
-  the iTerm tab title).
+  switch to a project with `workon`. Indeed, I often create virtualenvs for
+  non-Python projects just so I jump to them with `workon` and run some
+  initialisation in the `postactivate` script (like changing to the project
+  directory and setting the iTerm tab title).
 
 - Use `pipx` to install command-line Python apps like `awscli` that I want
   available globally (i.e. can be run without activating a virtualenv first).
@@ -233,12 +242,12 @@ plus any other Python versions that projects require.
 
 ### Python projects
 
-For each Python project, create a virtualenv by selecting the appropriate
-Python version using `pyenv` then using `mkvirtualenv`:
+For each Python project, create a virtualenv by selecting the appropriate Python
+version using `pyenv` then using `mkvirtualenv`:
 
 ```sh
 cd $PATH_TO_PROJECT
-pyenv local 3.7.7  # for example  
+pyenv local 3.7.7  # for example
 mkvirtualenv $PROJECT_NAME
 ```
 
@@ -249,7 +258,8 @@ To avoid accidentally installing packages outside of a virtualenv, set:
 export PIP_REQUIRE_VIRTUALENV=true
 ```
 
-in `~/.bash_profile`. If you do want to run `pip` outside of a virtualenv, use something like:
+in `~/.bash_profile`. If you do want to run `pip` outside of a virtualenv, use
+something like:
 
 ```sh
 PIP_REQUIRE_VIRTUALENV=false pip list
@@ -273,5 +283,5 @@ pipx install awscli
 
 ### Further reading
 
-- [My Python Development Environment, 2020 Edition](https://jacobian.org/2019/nov/11/python-environment-2020/) by
-  Jacob Kaplan-Moss (2019).
+- [My Python Development Environment, 2020 Edition](https://jacobian.org/2019/nov/11/python-environment-2020/)
+  by Jacob Kaplan-Moss (2019).

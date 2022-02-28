@@ -41,14 +41,14 @@ This introspection is useful wherever you explain. Ask yourself:
 
 - Could an explanation in a comment be captured in code instead?
 
-- Could an explanation in a commit message be captured in comments or
-  in the code itself?
+- Could an explanation in a commit message be captured in comments or in the
+  code itself?
 
 - Could an explanation in a pull request description be captured in commit
   messages or code changes?
 
-- Could an explanation in a pull request comment be captured in commit
-  messages or code changes?
+- Could an explanation in a pull request comment be captured in commit messages
+  or code changes?
 
 - Could an explanation in a Slack thread be captured in your documentation?
 

@@ -7,19 +7,19 @@ tags = ["terraform"]
 
 ## Problem
 
-Your Terraform config requires managing many CIDRs that control firewall ingress rules.
-You've been storing these in a CSV string:
+Your Terraform config requires managing many CIDRs that control firewall ingress
+rules. You've been storing these in a CSV string:
 
 ```terraform
 variable "client_cidrs" {
-    default="50.1.1.1/32,44.2.1.0/32", 
+    default="50.1.1.1/32,44.2.1.0/32",
 }
 ```
 
 which is fed to a `aws_security_group` somewhere in your configuration.
 
-The CIDRs change frequently and maintaining this variable is difficult
-as it's hard to track where each individual CIDR came from.
+The CIDRs change frequently and maintaining this variable is difficult as it's
+hard to track where each individual CIDR came from.
 
 ## Solution
 

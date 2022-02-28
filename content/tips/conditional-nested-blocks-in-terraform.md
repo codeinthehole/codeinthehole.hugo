@@ -7,16 +7,16 @@ tags = ["terraform"]
 
 <!-- INTRODUCTION -->
 
-Here's a useful technique for using Terraform's [`dynamic` blocks](https://www.terraform.io/docs/configuration/expressions.html#dynamic-blocks) to create
-conditional nested blocks.
+Here's a useful technique for using Terraform's
+[`dynamic` blocks](https://www.terraform.io/docs/configuration/expressions.html#dynamic-blocks)
+to create conditional nested blocks.
 
 <!-- CONTENT -->
 
 ## Maintenance mode
 
 As an example, let's create a "maintenance mode" for a service which allows a
-"under maintenance" holding page to be served when a Terraform variable
-is set.
+"under maintenance" holding page to be served when a Terraform variable is set.
 
 This is useful if you need to stop all traffic to a RDS database server so it
 can be upgraded.
@@ -33,7 +33,7 @@ variable "maintenance_mode" {
 ```
 
 and use it to create conditional `default_action` blocks in an `aws_lb_listener`
-resource.  
+resource.
 
 ```terraform
 # main.tf
@@ -76,8 +76,9 @@ page, which gives you time to perform whatever maintenance you need to do.
 Only downside is the `message_body` attribute must be 1024 bytes or fewer, so
 you need quite a minimal "under maintenance" page.
 
-Idea from [this comment](https://github.com/hashicorp/terraform/issues/19853#issuecomment-589988711) from
-the Terraform Github repository.
+Idea from
+[this comment](https://github.com/hashicorp/terraform/issues/19853#issuecomment-589988711)
+from the Terraform Github repository.
 
 Further reading:
 

@@ -7,14 +7,14 @@ tags = ["github", "vim"]
 
 URLs are great aren't they?
 
-You include them in your Slack messages and your
-co-workers can see _exactly_ what you're talking about in a single click. I wish
-people would use them more (and design apps that support them properly).
+You include them in your Slack messages and your co-workers can see _exactly_
+what you're talking about in a single click. I wish people would use them more
+(and design apps that support them properly).
 
 Anyway, a super-useful Vim mapping I use is:
 
 ```vim
-vnoremap <leader>gb :GBrowse! master:%<cr> 
+vnoremap <leader>gb :GBrowse! master:%<cr>
 ```
 
 which, after visually selecting a block of code, grabs its Github URL from the
@@ -29,9 +29,11 @@ If you want the URL for the code block from your _current branch_, use:
 
 although you have to have pushed your branch for the URL to resolve.
 
-Various other "fugitive-objects" can be passed to `:GBrowse` to
-open or copy URLs for other objects -- see the [help file](https://github.com/tpope/vim-fugitive/blob/27a5c3abd211c2784513dab4db082fa414ad0967/doc/fugitive.txt#L212-L235)
+Various other "fugitive-objects" can be passed to `:GBrowse` to open or copy
+URLs for other objects -- see the
+[help file](https://github.com/tpope/vim-fugitive/blob/27a5c3abd211c2784513dab4db082fa414ad0967/doc/fugitive.txt#L212-L235)
 for more details.
 
-The `:Gbrowse` function is provided by the excellent [`vim-fugitive`](https://github.com/tpope/vim-fugitive) and requires the
+The `:Gbrowse` function is provided by the excellent
+[`vim-fugitive`](https://github.com/tpope/vim-fugitive) and requires the
 [`vim-rhubarb`](https://github.com/tpope/vim-rhubarb) plugin for Github support.

@@ -25,8 +25,8 @@ A _global_ list of locations populated via one of these commands:
 - `:gr[ep]` --- search via an external program specified by the `grepprg`
   setting.
 - `:helpgr[ep]` --- search help text files.
-- `:mak[e]` --- call the program specified by
-  the `makeprg` setting (which defaults to `make`).
+- `:mak[e]` --- call the program specified by the `makeprg` setting (which
+  defaults to `make`).
 - `:cex[pr] {expression}` --- use `{expression}` to populate to list. This can
   be used to clear the quickfix list via `:cex []`.
 
@@ -58,8 +58,9 @@ provides a slew of useful mapping pairs starting with `[` or `]`. E.g.
 - `[Q`, `]Q` — `:cfirst`, `:clast`
 - `[<C-Q>`, `]<C-Q>` — `:cpfile`, `:cnfile`
 
-There's a pair of [`tpope/vim-unimpaired`](https://github.com/tpope/vim-unimpaired)
-mappings for each list described in this post.
+There's a pair of
+[`tpope/vim-unimpaired`](https://github.com/tpope/vim-unimpaired) mappings for
+each list described in this post.
 
 ### Tip: Define a mapping to `:grep` for the word under the cursor
 
@@ -77,7 +78,8 @@ although this does clobber a built-in formatting operator.
 
 ### Tip: Custom `grepprg` programs
 
-Use [`ripgrep`](https://github.com/BurntSushi/ripgrep) as your default search program:
+Use [`ripgrep`](https://github.com/BurntSushi/ripgrep) as your default search
+program:
 
 ```viml
 if executable('rg')
@@ -86,8 +88,8 @@ if executable('rg')
 endif
 ```
 
-Keep your `ripgrep` configuration in a global `~/.ripgreprc` file so
-`:grep` behaves the same as `rg` at the command-line. Recommended settings:
+Keep your `ripgrep` configuration in a global `~/.ripgreprc` file so `:grep`
+behaves the same as `rg` at the command-line. Recommended settings:
 
 ```ini
 # ~/.ripgreprc
@@ -99,11 +101,11 @@ Keep your `ripgrep` configuration in a global `~/.ripgreprc` file so
 
 ### Tip: Custom `makeprg` programs
 
-The default `makeprg` is `make` but any command that prints locations to
-STDOUT can be used — most static analysis tools are viable candidates.
+The default `makeprg` is `make` but any command that prints locations to STDOUT
+can be used — most static analysis tools are viable candidates.
 
-For instance, I occasionally use it for [Bandit](https://pypi.org/project/bandit/) security
-analysis via:
+For instance, I occasionally use it for
+[Bandit](https://pypi.org/project/bandit/) security analysis via:
 
 ```vim
 set makeprg=bandit\ -r\ -f\ custom
@@ -179,10 +181,12 @@ When running `:grep` or `:make`, Vim executes the program in Vim's parent shell.
 This suspends Vim while results are printed then requires you to hit enter to
 return.
 
-There's [a brilliant gist from Romain Lafourcade](https://gist.github.com/romainl/56f0c28ef953ffc157f36cc495947ab3)
-that shows how to avoid this woes by using `:cgetexpr` (or `:cexpr`) to populate the quickfix list in a subshell.
-There's a few variants you can use depending on whether you regularly search for
-multi-word queries. I do, so I use this version:
+There's
+[a brilliant gist from Romain Lafourcade](https://gist.github.com/romainl/56f0c28ef953ffc157f36cc495947ab3)
+that shows how to avoid this woes by using `:cgetexpr` (or `:cexpr`) to populate
+the quickfix list in a subshell. There's a few variants you can use depending on
+whether you regularly search for multi-word queries. I do, so I use this
+version:
 
 ```vim
 function! Grep(...)
@@ -193,8 +197,8 @@ endfunction
 command! -nargs=+ -complete=file_in_path Grep cexpr Grep(<f-args>)
 ```
 
-To complement this, you can use a command-line abbreviation to automatically switch `:grep` to
-`:Grep`:
+To complement this, you can use a command-line abbreviation to automatically
+switch `:grep` to `:Grep`:
 
 ```vim
 cnoreabbrev <expr> grep (getcmdtype() ==# ':' && getcmdline() ==# 'grep') ? 'Grep' : 'grep'
@@ -253,19 +257,21 @@ https://github.com/tpope/vim-unimpaired
 
 <!-- Summary of stdlib quickfix features -->
 
-A _window-local_ equivalent of the quickfix list — a similar set of commands exists but now
-prefixed `:l` (e.g. `:lwindow` to open the location list if it has entries).
+A _window-local_ equivalent of the quickfix list — a similar set of commands
+exists but now prefixed `:l` (e.g. `:lwindow` to open the location list if it
+has entries).
 
 <!-- Tips -->
 
 <!-- Personal take -->
 
-Personally, I don't use it much directly but it's good to be aware of. Popular plugins
-like [Ale](https://github.com/dense-analysis/ale) and
+Personally, I don't use it much directly but it's good to be aware of. Popular
+plugins like [Ale](https://github.com/dense-analysis/ale) and
 [Syntastic](https://github.com/vim-syntastic/syntastic) populate the location
 list.
 
-More at [`:help location-list`](https://vimhelp.org/quickfix.txt.html#location-list).
+More at
+[`:help location-list`](https://vimhelp.org/quickfix.txt.html#location-list).
 
 ---
 
@@ -303,7 +309,8 @@ jump list:
 - `(`, `)` --- Jump backward/forward a sentence;
 - `{`, `}` --- Jump backward/forward a paragraph;
 - `/`, `?` --- Search forward/backward in current buffer;
-- `n`, `N` --- Repeat the last `/` or `?` jump in conventional/opposite direction;
+- `n`, `N` --- Repeat the last `/` or `?` jump in conventional/opposite
+  direction;
 - `:s` --- Substitution;
 - `G` --- Go to line;
 - `%` --- Jump to matching parenthesis/bracket/brace/...
@@ -311,11 +318,13 @@ jump list:
 - `H`, `M`, `L` --- Jump to the top/middle/bottom of the current window
   (adjusting for `scrolloff` offset).
 - `:tag`, `^]` --- Jump to tag definition;
-- `[[`, `]]` --- Move one "section" backward/forward, or to the previous `{` in the first
-  column. Note "sections" in Vim [come from Nroff files](https://learnvimscriptthehardway.stevelosh.com/chapters/50.html) and are generally not that
-  useful.
+- `[[`, `]]` --- Move one "section" backward/forward, or to the previous `{` in
+  the first column. Note "sections" in Vim
+  [come from Nroff files](https://learnvimscriptthehardway.stevelosh.com/chapters/50.html)
+  and are generally not that useful.
 
-Further, commands that start editing files like `:edit` append to the `jumplist`.
+Further, commands that start editing files like `:edit` append to the
+`jumplist`.
 
 When you split a window, its jump list is duplicated and jump lists are saved
 between sessions (in the `viminfo` file) if the `'viminfo'` option includes a
@@ -328,10 +337,10 @@ More at:
 ### Tip: Use jump commands to navigate
 
 The motions `j`, `k`, `CTRL-U`, `CTRL-D` are not counted as jumps and so don't
-create an entry in the jump list. Hence it's preferable to navigate
-within a buffer using the above jump commands as this builds a history that you
-can walk back through (see [this Reddit
-comment](https://www.reddit.com/r/vim/comments/72481y/learning_vim_what_i_wish_i_knew/dnfyahf/)).
+create an entry in the jump list. Hence it's preferable to navigate within a
+buffer using the above jump commands as this builds a history that you can walk
+back through (see
+[this Reddit comment](https://www.reddit.com/r/vim/comments/72481y/learning_vim_what_i_wish_i_knew/dnfyahf/)).
 
 ---
 
@@ -339,14 +348,14 @@ comment](https://www.reddit.com/r/vim/comments/72481y/learning_vim_what_i_wish_i
 
 A _buffer-local_ list of the last one hundred _undo-able_ changes:
 
-- `g;`, `g,`  --- Jump to the previous/next change. These can be prefixed with a
+- `g;`, `g,` --- Jump to the previous/next change. These can be prefixed with a
   count to determine which change to jump back/forward to.
 
 - `:changes` --- View the change list. The output enumerates each change making
   it easy to determine the `count` value to use with `g;` or `g,`.
 
-Like the `jumplist`, the `changelist` is persisted for each file if your `viminfo`
-setting contains a `'`.
+Like the `jumplist`, the `changelist` is persisted for each file if your
+`viminfo` setting contains a `'`.
 
 More at:
 
@@ -357,9 +366,9 @@ More at:
 
 Not strictly to do with the change list but the `gi` command is similar to `g;`.
 It will enter insert mode in the current buffer in the last insert mode
-location. If you made a change when last in insert mode, this will be
-equivalent to `g;` but will also put you into
-insert mode. The same effect can be achieved with marks via `'^`.
+location. If you made a change when last in insert mode, this will be equivalent
+to `g;` but will also put you into insert mode. The same effect can be achieved
+with marks via `'^`.
 
 ---
 
@@ -368,13 +377,14 @@ insert mode. The same effect can be achieved with marks via `'^`.
 <!-- Summary of stdlib quickfix features -->
 
 A _global_, append-only list of buffers (including cursor location and state)
-for the current editing session. Each opened file will be appended to the
-list which can be viewed with any of `:buffers`, `:files` or most succinctly `:ls`.
+for the current editing session. Each opened file will be appended to the list
+which can be viewed with any of `:buffers`, `:files` or most succinctly `:ls`.
 
 There are many ways to navigate the buffer list, including:
 
 - `:b[uffer] {number}` --- Jump to buffer by number.
-- `:bp[rev]`, `:bn[ext]` --- Jump to previous/next buffer (will wrap at end of list).
+- `:bp[rev]`, `:bn[ext]` --- Jump to previous/next buffer (will wrap at end of
+  list).
 - `:bf[irst]`, `:br[ewind]` --- Jump to first/last buffer.
 
 or from [`tpope/vim-unimpaired`](https://github.com/tpope/vim-unimpaired):
@@ -384,7 +394,8 @@ or from [`tpope/vim-unimpaired`](https://github.com/tpope/vim-unimpaired):
 
 Some other useful buffer list commands to know:
 
-- `:ba[ll]` --- Rearrange windows to show a window for each buffer in the buffer list.
+- `:ba[ll]` --- Rearrange windows to show a window for each buffer in the buffer
+  list.
 - `:bufdo {cmd}` --- Execute `{cmd}` in each buffer in the list. For example,
   apply macro `q` to each buffer with `:bufdo normal @q`.
 
@@ -419,20 +430,20 @@ https://www.reddit.com/r/vim/comments/u3nv6/buffer_list_vs_arguments_list/c4s6gm
 ## Argument list
 
 The buffer list tends to become cluttered over time, making it awkward to use
-`:bufdo`. This is where the argument list comes in --- it allows you to _curate_ a
-list of files to act on with the equivalent `:argdo`.
+`:bufdo`. This is where the argument list comes in --- it allows you to _curate_
+a list of files to act on with the equivalent `:argdo`.
 
-The name is misleading: the argument list is not simply the list of files that Vim
-was opened with. It's a global, _mutable_ list that can be edited within your Vim
-session to select exactly the files that you want to operate on.
+The name is misleading: the argument list is not simply the list of files that
+Vim was opened with. It's a global, _mutable_ list that can be edited within
+your Vim session to select exactly the files that you want to operate on.
 
 <!-- Ways of populating the argument list -->
 
-There are several ways of populating the argument list, listed here in
-order of increasing usefulness:
+There are several ways of populating the argument list, listed here in order of
+increasing usefulness:
 
-1. Manually add and remove files from the argument list with
-   `:arga[dd]` and `:argd[elete]`.
+1. Manually add and remove files from the argument list with `:arga[dd]` and
+   `:argd[elete]`.
 
 2. Pass files as arguments when opening Vim:
 
@@ -452,8 +463,9 @@ order of increasing usefulness:
    fd -e py | xargs -o vim
    ```
 
-   The `-o` option for `xargs` re-opens `stdin` for the Vim process
-   — without this, Vim can [break your terminal](https://superuser.com/questions/336016/invoking-vi-through-find-xargs-breaks-my-terminal-why).
+   The `-o` option for `xargs` re-opens `stdin` for the Vim process — without
+   this, Vim can
+   [break your terminal](https://superuser.com/questions/336016/invoking-vi-through-find-xargs-breaks-my-terminal-why).
 
 4. Within a Vim session, use the `:args` command:
 
@@ -473,14 +485,16 @@ order of increasing usefulness:
    :args `fd -e py`
    ```
 
-   [`fd`](https://github.com/sharkdp/fd) is a particularly good tool to use to populate the argument list.
+   [`fd`](https://github.com/sharkdp/fd) is a particularly good tool to use to
+   populate the argument list.
 
 <!-- Navigating the argument list -->
 
-You can check the contents of the argument list with `:ar[gs]` and traverse with:
+You can check the contents of the argument list with `:ar[gs]` and traverse
+with:
 
-- `:p[revious]`, `:n[ext]`  — Edit the previous/next file in the argument list.
-- `:fir[st]`, `:la[st]`  — Edit the first/last file in the argument list.
+- `:p[revious]`, `:n[ext]` — Edit the previous/next file in the argument list.
+- `:fir[st]`, `:la[st]` — Edit the first/last file in the argument list.
 
 Or via [`tpope/vim-unimpaired`](https://github.com/tpope/vim-unimpaired):
 
@@ -516,9 +530,8 @@ More at:
 <!-- What are tags? -->
 
 A "tag" is an identifier --- like a function, class or variable name --- that
-appears in a "tags file" generated by an external program like
-`ctags`. The tags file is effectively an index mapping identifiers to
-locations in your codebase.
+appears in a "tags file" generated by an external program like `ctags`. The tags
+file is effectively an index mapping identifiers to locations in your codebase.
 
 <!-- How Vim finds your tag files -->
 
@@ -544,8 +557,8 @@ You can jump to a tag definition with:
 - `CTRL-]` --- Look-up the keyword under the cursor. Useful for jumping to a
   function's definition.
 - `:ta[g] {query}` --- Find the tag(s) matching `{query}`. This command also
-  supports command-line completion and regular expression queries like `:tag
-  /foobar/`.
+  supports command-line completion and regular expression queries like
+  `:tag /foobar/`.
 
 If you want to open the tag in a split or the preview window, there are
 analogues of the above commands starting `:s` and `:p`.
@@ -553,25 +566,25 @@ analogues of the above commands starting `:s` and `:p`.
 <!-- When there are multiple matches -->
 
 If there are multiple tag matches, `CTRL-]` and `:tag` will jump to the first
-one. The "tag match list" can be opened with
-`:ts[elect]` and traversed via `:tf[irst]`, `:tn[ext]`, `:tp[rev]`, `:tl[ast]`.
+one. The "tag match list" can be opened with `:ts[elect]` and traversed via
+`:tf[irst]`, `:tn[ext]`, `:tp[rev]`, `:tl[ast]`.
 
-As ever, there are useful bindings from [`tpope/vim-unimpaired`](https://github.com/tpope/vim-unimpaired):
+As ever, there are useful bindings from
+[`tpope/vim-unimpaired`](https://github.com/tpope/vim-unimpaired):
 
 - `[t`, `]t` — `:tprevious`, `:tnext`
 - `[T`, `]T` — `:tfirst`, `:tlast`
 
-If you want to show the tag match list when there are multiple
-matches but jump straight to the tag if a single match, use `:tj[ump]` or `g
-CTRL-]`.
+If you want to show the tag match list when there are multiple matches but jump
+straight to the tag if a single match, use `:tj[ump]` or `g CTRL-]`.
 
 <!-- Tag stack -->
 
-Vim stores the twenty most recent tag match lists in a stack which you can view with
-`:tags`. This allows you to descend into a call graph by repeatedly jumping to
-function definitions then popping the stack to return to the previous location
-with `CTRL-T` or `:po[p]`. This is analogous to the nested quickfix lists we saw
-earlier and is a powerful code exploration technique.
+Vim stores the twenty most recent tag match lists in a stack which you can view
+with `:tags`. This allows you to descend into a call graph by repeatedly jumping
+to function definitions then popping the stack to return to the previous
+location with `CTRL-T` or `:po[p]`. This is analogous to the nested quickfix
+lists we saw earlier and is a powerful code exploration technique.
 
 More at:
 
@@ -591,8 +604,8 @@ for your projects.
 ### Tip: Use `:tjump` as your default "jump to tag" command
 
 If it's common for your codebase to have multiple matches for identifiers (which
-is true of Python), consider using `:tjump` (`g CTRL-]`) instead of `CTRL-]` as your
-default "jump to tag" command".
+is true of Python), consider using `:tjump` (`g CTRL-]`) instead of `CTRL-]` as
+your default "jump to tag" command".
 
 I swap the meanings of `CTRL-]` and `g CTRL-]`:
 
@@ -606,7 +619,8 @@ vnoremap g<c-]> <c-]>
 ### Tip: FZF also has a tag searching functionality
 
 The [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim) plugin provides two
-commands for quickly finding tags using the [`fzf`](https://github.com/junegunn/fzf) fuzzy file finder:
+commands for quickly finding tags using the
+[`fzf`](https://github.com/junegunn/fzf) fuzzy file finder:
 
 - `:Tags` --- List tags in project.
 - `:BTags` --- List tags in current buffer.
@@ -639,8 +653,8 @@ There are a couple of other lesser-known lists from Vim's C-language heritage.
 The include file list is populated by commands that look for a keyword in the
 current buffer and all "included" files. Which files are searched depends on:
 
-- The `'include'` option, which identifies lines that include another file — this
-  defaults to `^\s*#\s*include`.
+- The `'include'` option, which identifies lines that include another file —
+  this defaults to `^\s*#\s*include`.
 
 - The `'path'` option which tells Vim where to find said included files.
 
@@ -653,11 +667,12 @@ There's also the definition list.
 - `:dl[ist] {pattern}` --- search in [range] or file for `pattern`.
 
 Since I primarily program in Python, this isn't that useful; I use tag search
-(and the tag match list) to jump to symbol definitions. However I've learnt over time to
-never write-off Vim's features — I'm sure this could be useful as a more
+(and the tag match list) to jump to symbol definitions. However I've learnt over
+time to never write-off Vim's features — I'm sure this could be useful as a more
 focussed tag search when working in languages that use filepath includes.
 
-More at [`:help include-search`](https://vimhelp.org/tagsrch.txt.html#include-search)
+More at
+[`:help include-search`](https://vimhelp.org/tagsrch.txt.html#include-search)
 
 <!-- Research on other lists
 
@@ -681,6 +696,7 @@ to others. The act of compiling this post has been incredibly useful; I've
 learnt many new things[^tils] just fleshing out each section.
 
 [^tils]: Here are _some_ of the things learnt while researching this post:
+
     - [TIL how to use custom functions with `:cdo`](https://til.codeinthehole.com/posts/how-to-use-custom-functions-with-cdo/)
     - [TIL how to add project-specific Vim settings](https://til.codeinthehole.com/posts/how-to-add-project-specific-vim-settings/)
     - [TIL Universal Ctags can index more things than I realised](https://til.codeinthehole.com/posts/universal-ctags-can-index-more-things-than-i-realised/)
@@ -695,11 +711,12 @@ There's a couple of key usage patterns that are worth calling out:
 
 When editing code, you often need to jump to another location.
 
-- To jump to _the definition of a function or class_, use the tag list
-  via `:tag`, `:tjump` or `g CTRL-]`.
+- To jump to _the definition of a function or class_, use the tag list via
+  `:tag`, `:tjump` or `g CTRL-]`.
 
-- To examine _everywhere that a function or class is being called_ or _everywhere that matches a regex_ use
-  the quickfix list via `:grep` (or, better, `:Grep`).
+- To examine _everywhere that a function or class is being called_ or
+  _everywhere that matches a regex_ use the quickfix list via `:grep` (or,
+  better, `:Grep`).
 
 - To jump to _where you last were_, use the jump list via `CTRL-O`.
 
@@ -709,23 +726,26 @@ When editing code, you often need to jump to another location.
 
 ### I need to apply the same transformation in lots of places
 
-A powerful editing pattern comprises building a list of files or locations
-then applying the same editing operation to each entry. This is great for
-applying refactorings across a large codebase.
+A powerful editing pattern comprises building a list of files or locations then
+applying the same editing operation to each entry. This is great for applying
+refactorings across a large codebase.
 
 The best approach depends on how you want to build your list of files or
 locations:
 
-- If you want to select _code locations_, populate the quickfix list with `:grep` and apply the batch changes with `:cdo`.
+- If you want to select _code locations_, populate the quickfix list with
+  `:grep` and apply the batch changes with `:cdo`.
 
 - If you want to select _files by their content_, populate the quickfix list
   with `:grep` and apply the batch changes with `:cfdo`.
 
-- If you want to select _files by their filepath_, populate the argument list with ``:args `fd $PATTERN` `` and apply the batch changes with `:argdo`.
+- If you want to select _files by their filepath_, populate the argument list
+  with `` :args `fd $PATTERN`  `` and apply the batch changes with `:argdo`.
 
 - If you want to select _files manually_, use `:argadd` and `:argdelete` to
-  populate the argument list then use `:argdo` (this is generally preferable to using
-  the buffer list and `:bufdo`, although that might suffice in some situations).
+  populate the argument list then use `:argdo` (this is generally preferable to
+  using the buffer list and `:bufdo`, although that might suffice in some
+  situations).
 
 The editing operation could be an Ex command (e.g. `%s/foo/bar/g | update`),
 applying a macro (e.g. `normal @q`) or calling a bespoke Vimscript function

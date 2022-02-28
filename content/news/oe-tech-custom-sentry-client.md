@@ -5,4 +5,5 @@ description = "A Sentry tip from the Octopus Energy tech blog."
 tags = ["django", "octopus energy"]
 +++
 
-I wrote up a short tip on using [a custom Sentry client](http://tech.octopus.energy/news/2017/10/13/custom-sentry-client.html).
+I wrote up a short tip on using
+[a custom Sentry client](http://tech.octopus.energy/news/2017/10/13/custom-sentry-client.html).

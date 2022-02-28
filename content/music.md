@@ -14,4 +14,5 @@ Some curated content can be found at:
 Other good sources for stuff to code to:
 
 - [WeFunk radio](http://www.wefunkradio.com/)
-- [rain.today](https://rain.today/) (also try [Piano jazz and rain](http://jazzandrain.com/piano_jazz.html))
+- [rain.today](https://rain.today/) (also try
+  [Piano jazz and rain](http://jazzandrain.com/piano_jazz.html))

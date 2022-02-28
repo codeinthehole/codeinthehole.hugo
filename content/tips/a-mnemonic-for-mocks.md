@@ -6,8 +6,9 @@ description = "An easy way to remember the order arguments get injected."
 
 +++
 
-Using both `@mock.patch` decorators and [py.test fixtures](https://docs.pytest.org/en/latest/fixture.html) can be confusing as it's not
-always clear what order arguments are being injected.
+Using both `@mock.patch` decorators and
+[py.test fixtures](https://docs.pytest.org/en/latest/fixture.html) can be
+confusing as it's not always clear what order arguments are being injected.
 
 For instance, which of these is right? This:
 
@@ -56,7 +57,8 @@ def test_something_in_module(collaborator_1, collaborator_2, collaborator_3):
     pass
 ```
 
-The things to remember is that it's a _symmetrical_ arrangement with the test function or method in the centre.
+The things to remember is that it's a _symmetrical_ arrangement with the test
+function or method in the centre.
 
 So the correct arrangement above is:
 

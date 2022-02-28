@@ -6,20 +6,21 @@ tags = ["AWS", "postgres"]
 +++
 
 There's two non-obvious things to know when starting to use
-[pgbadger](http://dalibo.github.io/pgbadger/) with AWS
-RDS.
+[pgbadger](http://dalibo.github.io/pgbadger/) with AWS RDS.
 
 First, set:
 
 ```ini
-log_statement = None 
+log_statement = None
 ```
 
-Don't set this to _all_ as the [AWS docs](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.Concepts.PostgreSQL.html) suggest.
+Don't set this to _all_ as the
+[AWS docs](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.Concepts.PostgreSQL.html)
+suggest.
 
-Further, don't waste your time trying to add a DB parameter to set `log_line_prefix`
-to pgbadger's recommended value: it's not possible[^1]. Instead tell
-pgbadger about the log format that RDS insists on:
+Further, don't waste your time trying to add a DB parameter to set
+`log_line_prefix` to pgbadger's recommended value: it's not possible[^1].
+Instead tell pgbadger about the log format that RDS insists on:
 
 ```bash
 pgbadger -f stderr -p '%t:%r:%u@%d:[%p]:' postgres.log
