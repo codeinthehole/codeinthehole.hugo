@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/the-road-to-oscar-10"],
+    "aliases": [
+        "/writing/the-road-to-oscar-10"
+    ],
     "title": "The road to Oscar 1.0",
     "slug": "the-road-to-oscar-10",
     "description": "A plan for 2014",
@@ -9,6 +12,8 @@
         "django"
     ]
 }
+---
+
 
 <img src="/images/oscar.png" class="noborder align-right" />
 

@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/integrating-django-application-metrics-into-zabbix"],
+    "aliases": [
+        "/writing/integrating-django-application-metrics-into-zabbix"
+    ],
     "description": "A simple how-to for feeding Django metrics into Zabbix",
     "date": "2014-10-22",
     "tags": [
@@ -9,6 +12,8 @@
     "title": "Integrating Django application metrics into Zabbix",
     "slug": "integrating-django-application-metrics-into-zabbix"
 }
+---
+
 
 At [Tangent](http://www.tangentsnowball.com), we use
 [Zabbix](http://www.zabbix.com/) for monitoring and alerting. This is a

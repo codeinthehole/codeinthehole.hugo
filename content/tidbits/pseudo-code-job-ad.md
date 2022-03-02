@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/a-pseudo-code-job-advert-and-its-discontents"],
+    "aliases": [
+        "/writing/a-pseudo-code-job-advert-and-its-discontents"
+    ],
     "date": "2009-07-09",
     "slug": "a-pseudo-code-job-advert-and-its-discontents",
     "tags": [
@@ -9,6 +12,8 @@
     "title": "A pseudo-code job advert and its discontents",
     "description": "A cringe-worth and divisive recruitment technique"
 }
+---
+
 
 Based on the success of a highly tongue-in-cheek ad for a project
 manager, we recently experimented with a similar approach for finding

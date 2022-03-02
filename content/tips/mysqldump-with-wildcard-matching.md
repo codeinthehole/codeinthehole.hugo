@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/mysqldump-with-wildcard-table-matching"],
+    "aliases": [
+        "/writing/mysqldump-with-wildcard-table-matching"
+    ],
     "description": "Using the fu to enhance mysqldump",
     "date": "2010-11-05",
     "tags": [
@@ -9,6 +12,8 @@
     "title": "mysqldump with wildcard table matching",
     "slug": "mysqldump-with-wildcard-table-matching"
 }
+---
+
 
 Ever wanted to use `mysqldump` to dump tables that match a wildcard
 pattern? I have. It's not currently supported as an option but can be

@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/avoiding-clashing-django-migrations"],
+    "aliases": [
+        "/writing/avoiding-clashing-django-migrations"
+    ],
     "tags": [
         "django",
         "testing"
@@ -9,6 +12,8 @@
     "slug": "avoiding-clashing-django-migrations",
     "description": "A simple Travis test to avoid frustration"
 }
+---
+
 
 Managing South migrations on a multi-developer Django project can be
 painful. Developers working on separate branches will often create

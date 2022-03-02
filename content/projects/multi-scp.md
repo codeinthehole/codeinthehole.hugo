@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/multi-scp-copying-a-file-to-all-hosts-in-your-ssh-config"],
+    "aliases": [
+        "/writing/multi-scp-copying-a-file-to-all-hosts-in-your-ssh-config"
+    ],
     "date": "2011-05-22",
     "description": "Using node.js to copy a file to multiple remote hosts",
     "tags": [
@@ -8,6 +11,8 @@
     "slug": "multi-scp-copying-a-file-to-all-hosts-in-your-ssh-config",
     "title": "Multi-scp: copying a file to all hosts in your SSH config"
 }
+---
+
 
 I am totally reliant on my bash aliases and readline configuration. When
 working on a new server, the first thing I do is copy over my local Bash

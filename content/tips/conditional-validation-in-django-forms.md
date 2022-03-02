@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/conditional-logic-in-django-forms"],
+    "aliases": [
+        "/writing/conditional-logic-in-django-forms"
+    ],
     "tags": [
         "django",
         "python"
@@ -9,6 +12,8 @@
     "date": "2013-06-01",
     "description": "Radio buttons can be tamed"
 }
+---
+
 
 ### The problem
 

@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/commandlinefu-presentation-at-confoo-2011"],
+    "aliases": [
+        "/writing/commandlinefu-presentation-at-confoo-2011"
+    ],
     "tags": [
         "commandlinefu",
         "presentations"
@@ -9,6 +12,8 @@
     "date": "2011-03-12",
     "slug": "commandlinefu-presentation-at-confoo-2011"
 }
+---
+
 
 The presentation I gave at [Confoo 2011](http://confoo.ca/en) is now
 [available online](http://presentations.codeinthehole.com/confoo2011/),

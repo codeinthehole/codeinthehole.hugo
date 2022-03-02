@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/validating-international-postcodes-in-django"],
+    "aliases": [
+        "/writing/validating-international-postcodes-in-django"
+    ],
     "slug": "validating-international-postcodes-in-django",
     "tags": [
         "django",
@@ -9,6 +12,8 @@
     "date": "2012-03-13",
     "description": "Using dynamic imports to leverage Django's localflavor"
 }
+---
+
 
 ### Problem
 

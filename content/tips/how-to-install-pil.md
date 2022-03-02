@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/how-to-install-pil-on-64-bit-ubuntu-1204"],
+    "aliases": [
+        "/writing/how-to-install-pil-on-64-bit-ubuntu-1204"
+    ],
     "date": "2013-04-18",
     "tags": [
         "python",
@@ -10,6 +13,8 @@
     "title": "How to install PIL on 64-bit Ubuntu 12.04",
     "description": "Because I have to look this up every time"
 }
+---
+
 
 ### Problem
 

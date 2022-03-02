@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/dumping-and-restoring-a-postgis-database"],
+    "aliases": [
+        "/writing/dumping-and-restoring-a-postgis-database"
+    ],
     "slug": "dumping-and-restoring-a-postgis-database",
     "title": "Dumping and restoring a PostGIS database",
     "date": "2013-07-28",
@@ -9,6 +12,8 @@
     ],
     "description": "Harder than it should be"
 }
+---
+
 
 I wasted at least twenty minutes getting this to work. These are my
 notes.

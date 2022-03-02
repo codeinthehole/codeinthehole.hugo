@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/checking-all-mysql-tables"],
+    "aliases": [
+        "/writing/checking-all-mysql-tables"
+    ],
     "slug": "checking-all-mysql-tables",
     "title": "Checking all MySQL tables",
     "description": "Using the commandline to build a string of CHECK commands",
@@ -9,6 +12,8 @@
         "mysql"
     ]
 }
+---
+
 
 It's well known that MyISAM tables are prone to corruption and need to
 be regularly checked and repaired. Moreover, in a production

@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/csvfilter-a-python-command-line-tool-for-manipulating-csv-data"],
+    "aliases": [
+        "/writing/csvfilter-a-python-command-line-tool-for-manipulating-csv-data"
+    ],
     "description": "Scratching a CSV itch",
     "date": "2012-04-01",
     "tags": [
@@ -9,6 +12,8 @@
     "slug": "csvfilter-a-python-command-line-tool-for-manipulating-csv-data",
     "title": "csvfilter - a Python command-line tool for manipulating CSV data"
 }
+---
+
 
 ### Problem
 

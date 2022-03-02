@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/running-django-cronjobs-within-a-virtualenv"],
+    "aliases": [
+        "/writing/running-django-cronjobs-within-a-virtualenv"
+    ],
     "tags": [
         "python",
         "django"
@@ -9,6 +12,8 @@
     "description": "Use the source",
     "slug": "running-django-cronjobs-within-a-virtualenv"
 }
+---
+
 
 If you use virtual environments on your django servers, then getting
 manage.py commands to run from cron is a little tricky. You need to

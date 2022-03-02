@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/use-models-for-uploads"],
+    "aliases": [
+        "/writing/use-models-for-uploads"
+    ],
     "slug": "use-models-for-uploads",
     "tags": [
         "django",
@@ -9,6 +12,8 @@
     "date": "2012-07-19",
     "description": "Using models for audit and clarity"
 }
+---
+
 
 All Django developers will deal with file uploads at some point. I
 contend that it's a good practice to use models to capture the upload

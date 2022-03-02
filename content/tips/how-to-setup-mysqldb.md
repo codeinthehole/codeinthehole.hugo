@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/how-to-set-up-mysql-for-python-on-ubuntu"],
+    "aliases": [
+        "/writing/how-to-set-up-mysql-for-python-on-ubuntu"
+    ],
     "slug": "how-to-set-up-mysql-for-python-on-ubuntu",
     "tags": [
         "python",
@@ -10,6 +13,8 @@
     "title": "How to set-up MySQL for Python on Ubuntu",
     "date": "2012-01-05"
 }
+---
+
 
 This is just for my own reference as I always forget the dependencies
 for setting up MySQL on a new machine.

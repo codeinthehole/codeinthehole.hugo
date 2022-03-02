@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/deploying-cron-jobs-using-phing"],
+    "aliases": [
+        "/writing/deploying-cron-jobs-using-phing"
+    ],
     "description": "A phing pattern for deploying cron scripts",
     "tags": [
         "phing",
@@ -9,6 +12,8 @@
     "date": "2009-05-31",
     "slug": "deploying-cron-jobs-using-phing"
 }
+---
+
 
 Deploying applications that depend on cron-jobs can be a pain. However,
 Phing can be used to make such deployments easy - here's how...

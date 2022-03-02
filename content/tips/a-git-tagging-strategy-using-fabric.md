@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/a-fabric-function-for-git-tagging"],
+    "aliases": [
+        "/writing/a-fabric-function-for-git-tagging"
+    ],
     "title": "A Fabric function for git tagging",
     "slug": "a-fabric-function-for-git-tagging",
     "tags": [
@@ -11,6 +14,8 @@
     "date": "2012-02-09",
     "description": "Using Fabric with git-flow"
 }
+---
+
 
 Listed below is a [Fabric](http://docs.fabfile.org/en/1.3.4/index.html)
 function for determining the appropriate git reference to deploy during

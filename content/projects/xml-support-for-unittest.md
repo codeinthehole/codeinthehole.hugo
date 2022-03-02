@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/introducing-unittest-xml-testing-xml-in-python"],
+    "aliases": [
+        "/writing/introducing-unittest-xml-testing-xml-in-python"
+    ],
     "slug": "introducing-unittest-xml-testing-xml-in-python",
     "title": "Introducing unittest-xml: testing XML in Python",
     "description": "A simple module for making XPath assertions",
@@ -9,6 +12,8 @@
         "testing"
     ]
 }
+---
+
 
 For some reason, I keep finding myself writing unit tests that need to
 make assertions about an XML document. To keep things DRY, I've packaged

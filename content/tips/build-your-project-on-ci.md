@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/continuously-re-build-your-project"],
+    "aliases": [
+        "/writing/continuously-re-build-your-project"
+    ],
     "slug": "continuously-re-build-your-project",
     "description": "Using CI to avoid pain for new team members",
     "tags": [
@@ -8,6 +11,8 @@
     "title": "Continuously rebuild your project",
     "date": "2014-06-18"
 }
+---
+
 
 New developers joining a project will often find that the project won't
 build cleanly on their machine, and hours of time will be sunk into

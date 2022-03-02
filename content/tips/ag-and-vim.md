@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/using-the-silver-searcher-with-vim"],
+    "aliases": [
+        "/writing/using-the-silver-searcher-with-vim"
+    ],
     "date": "2014-06-17",
     "description": "Lightning-fast :grep searching in Vim",
     "slug": "using-the-silver-searcher-with-vim",
@@ -8,6 +11,8 @@
     ],
     "title": "Using the silver searcher with Vim"
 }
+---
+
 
 If you're not doing this already, then you should use the [Silver
 Searcher](http://geoff.greer.fm/2011/12/27/the-silver-searcher-better-than-ack/)

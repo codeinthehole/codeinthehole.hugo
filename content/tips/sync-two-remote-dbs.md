@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/how-to-sync-a-mysql-table-between-two-remote-databases"],
+    "aliases": [
+        "/writing/how-to-sync-a-mysql-table-between-two-remote-databases"
+    ],
     "tags": [
         "mysql"
     ],
@@ -8,6 +11,8 @@
     "slug": "how-to-sync-a-mysql-table-between-two-remote-databases",
     "description": "Trickier than you might think"
 }
+---
+
 
 Definitely tricker than you might think.
 

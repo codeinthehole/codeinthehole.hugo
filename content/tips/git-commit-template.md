@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/a-useful-template-for-commit-messages"],
+    "aliases": [
+        "/writing/a-useful-template-for-commit-messages"
+    ],
     "slug": "a-useful-template-for-commit-messages",
     "tags": [
         "git"
@@ -8,6 +11,8 @@
     "title": "A useful template for commit messages",
     "description": "A simple heuristic for preferring the imperative mood"
 }
+---
+
 
 Here's a useful heuristic for writing better commit messages. Set your
 commit message template to:

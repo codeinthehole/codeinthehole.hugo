@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/javascript-refactoring-for-customising-shared-libraries"],
+    "aliases": [
+        "/writing/javascript-refactoring-for-customising-shared-libraries"
+    ],
     "slug": "javascript-refactoring-for-customising-shared-libraries",
     "tags": [
         "javascript"
@@ -8,6 +11,8 @@
     "description": "Structuring a javascript file for repeating use and customisation",
     "title": "Javascript refactoring for customising shared libraries"
 }
+---
+
 
 One difficulty working with a shared in-house framework is it is
 difficult to maintain a common javascript file that is valid across

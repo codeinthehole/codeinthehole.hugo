@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/coloured-output-while-doing-tdd-with-django-and-fabric"],
+    "aliases": [
+        "/writing/coloured-output-while-doing-tdd-with-django-and-fabric"
+    ],
     "title": "Coloured output while doing TDD with Django and Fabric",
     "description": "Providing simple coloured feedback",
     "tags": [
@@ -9,6 +12,8 @@
     "date": "2011-04-20",
     "slug": "coloured-output-while-doing-tdd-with-django-and-fabric"
 }
+---
+
 
 I'm a big fan of using PHPUnit with console colours turned on (using the
 `--colors` option). Eg:

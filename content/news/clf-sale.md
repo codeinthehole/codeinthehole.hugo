@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/commandlinefucom-is-in-new-hands"],
+    "aliases": [
+        "/writing/commandlinefucom-is-in-new-hands"
+    ],
     "date": "2015-04-04",
     "slug": "commandlinefucom-is-in-new-hands",
     "description": "A new owner",
@@ -8,6 +11,8 @@
         "commandlinefu"
     ]
 }
+---
+
 
 For the record, I no longer maintain
 [commandlinefu.com](http://www.commandlinefu.com/). I've handed over the

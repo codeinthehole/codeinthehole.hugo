@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/how-to-chroot-a-user-in-ubuntu-1204"],
+    "aliases": [
+        "/writing/how-to-chroot-a-user-in-ubuntu-1204"
+    ],
     "slug": "how-to-chroot-a-user-in-ubuntu-1204",
     "date": "2012-10-16",
     "title": "How to chroot a user in Ubuntu 12.04",
@@ -8,6 +11,8 @@
         "ubuntu"
     ]
 }
+---
+
 
 External parties often need to upload data to your application. Sadly,
 most ask for a FTP server. Push back against this and suggest they use

@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/configuring-logging-for-postgresapp"],
+    "aliases": [
+        "/writing/configuring-logging-for-postgresapp"
+    ],
     "tags": [
         "postgres"
     ],
@@ -8,6 +11,8 @@
     "title": "Configuring logging for Postgres.app",
     "description": "The recommended way of debugging SQL problems"
 }
+---
+
 
 ### Problem
 

@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/prefer-data-migrations-to-initial-data"],
+    "aliases": [
+        "/writing/prefer-data-migrations-to-initial-data"
+    ],
     "description": "South provides a better way",
     "tags": [
         "django",
@@ -10,6 +13,8 @@
     "slug": "prefer-data-migrations-to-initial-data",
     "date": "2012-02-25"
 }
+---
+
 
 Django provides several mechanisms for [loading initial data for
 models](https://docs.djangoproject.com/en/dev/howto/initial-data/), such

@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/rewriting-codeintheholecom"],
+    "aliases": [
+        "/writing/rewriting-codeintheholecom"
+    ],
     "title": "Rewriting codeinthehole.com",
     "tags": [
         "django"
@@ -8,6 +11,8 @@
     "description": "Yet another RST blog",
     "slug": "rewriting-codeintheholecom"
 }
+---
+
 
 I rewrote this blog recently with the following aims:
 

@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/a-deferred-logging-file-handler-for-django"],
+    "aliases": [
+        "/writing/a-deferred-logging-file-handler-for-django"
+    ],
     "tags": [
         "django",
         "python"
@@ -9,6 +12,8 @@
     "date": "2013-06-12",
     "slug": "a-deferred-logging-file-handler-for-django"
 }
+---
+
 
 At Tangent we handle environment-specific configuration of Django
 projects using [the method outlined by David

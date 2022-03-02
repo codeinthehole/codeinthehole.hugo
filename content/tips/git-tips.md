@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/pull-requests-and-other-good-practices-for-teams-using-github"],
+    "aliases": [
+        "/writing/pull-requests-and-other-good-practices-for-teams-using-github"
+    ],
     "description": "Notes from an internal git workshop",
     "tags": [
         "git",
@@ -9,6 +12,8 @@
     "title": "Effective pull requests and other good practices for teams using github",
     "date": "2012-10-20"
 }
+---
+
 
 I work at [an agency](http://www.tangentlabs.co.uk) where we pay $200 a
 month to Github for their [platinum plan](https://github.com/plans).

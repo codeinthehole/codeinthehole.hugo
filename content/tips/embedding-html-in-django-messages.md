@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/embedding-html-in-django-messages"],
+    "aliases": [
+        "/writing/embedding-html-in-django-messages"
+    ],
     "title": "Embedding HTML in Django messages",
     "slug": "embedding-html-in-django-messages",
     "description": "Using 'extra_tags' to flag up HTML-safe messages",
@@ -9,6 +12,8 @@
     ],
     "date": "2012-04-12"
 }
+---
+
 
 ### Problem
 

@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/disable-database-access-when-writing-unit-tests-in-django"],
+    "aliases": [
+        "/writing/disable-database-access-when-writing-unit-tests-in-django"
+    ],
     "date": "2013-04-22",
     "description": "A decorator for the testing puritan",
     "tags": [
@@ -10,6 +13,8 @@
     "slug": "disable-database-access-when-writing-unit-tests-in-django",
     "title": "Disable database access when writing unit tests in Django"
 }
+---
+
 
 Consider this curio:
 

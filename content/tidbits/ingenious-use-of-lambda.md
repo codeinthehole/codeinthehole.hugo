@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/ingenious-use-of-an-anonymous-function"],
+    "aliases": [
+        "/writing/ingenious-use-of-an-anonymous-function"
+    ],
     "slug": "ingenious-use-of-an-anonymous-function",
     "title": "Ingenious use of an anonymous function",
     "tags": [
@@ -8,6 +11,8 @@
     "date": "2009-04-15",
     "description": "An element Lambda employment"
 }
+---
+
 
 Just stumbled across a gem of a question whilst idly browsing [Stack
 Overflow](http://stackoverflow.com/):

@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/the-british-way-of-dealing-with-foreign-apis"],
+    "aliases": [
+        "/writing/the-british-way-of-dealing-with-foreign-apis"
+    ],
     "slug": "the-british-way-of-dealing-with-foreign-apis",
     "date": "2011-02-04",
     "tags": [
@@ -8,6 +11,8 @@
     "title": "The British way of dealing with foreign APIs.",
     "description": "A bad joke told in Python"
 }
+---
+
 
 A bad joke told in Python:
 

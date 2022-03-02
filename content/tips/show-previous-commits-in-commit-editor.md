@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/enhancing-your-git-commit-editor"],
+    "aliases": [
+        "/writing/enhancing-your-git-commit-editor"
+    ],
     "slug": "enhancing-your-git-commit-editor",
     "title": "Enhancing your Git commit editor",
     "description": "Commit message pedantry taken to a new level",
@@ -8,6 +11,8 @@
     ],
     "date": "2013-08-08"
 }
+---
+
 
 Confession: I am a pedant, especially around commit messages.
 

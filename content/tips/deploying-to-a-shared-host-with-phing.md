@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/deploying-to-a-shared-hosting-environment-using-phing"],
+    "aliases": [
+        "/writing/deploying-to-a-shared-hosting-environment-using-phing"
+    ],
     "tags": [
         "deployment",
         "phing"
@@ -9,6 +12,8 @@
     "slug": "deploying-to-a-shared-hosting-environment-using-phing",
     "date": "2009-01-04"
 }
+---
+
 
 Deploying applications to shared hosting environments can be a pain when
 no SSH access is provided. Consequently, it's hard to avoid using FTP to

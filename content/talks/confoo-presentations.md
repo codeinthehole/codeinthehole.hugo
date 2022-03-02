@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/confoo-2012-presentations"],
+    "aliases": [
+        "/writing/confoo-2012-presentations"
+    ],
     "description": "Two talks from the Python stream",
     "date": "2012-03-03",
     "tags": [
@@ -11,6 +14,8 @@
     "slug": "confoo-2012-presentations",
     "title": "Confoo 2012 presentations"
 }
+---
+
 
 ![image](/images/confoo2012.gif)
 

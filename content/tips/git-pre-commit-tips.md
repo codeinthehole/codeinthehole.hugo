@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/tips-for-using-a-git-pre-commit-hook"],
+    "aliases": [
+        "/writing/tips-for-using-a-git-pre-commit-hook"
+    ],
     "slug": "tips-for-using-a-git-pre-commit-hook",
     "tags": [
         "git"
@@ -8,6 +11,8 @@
     "date": "2012-03-05",
     "title": "Tips for using a git pre-commit hook"
 }
+---
+
 
 Here's a few tips for using a [Git pre-commit
 hook](http://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks).

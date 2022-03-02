@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/return-false-with-prudence"],
+    "aliases": [
+        "/writing/return-false-with-prudence"
+    ],
     "description": "Returning false to indicate an error is wrong",
     "title": "Return false with prudence",
     "tags": [
@@ -8,6 +11,8 @@
     "date": "2010-01-28",
     "slug": "return-false-with-prudence"
 }
+---
+
 
 From "Javascript: the good parts":
 

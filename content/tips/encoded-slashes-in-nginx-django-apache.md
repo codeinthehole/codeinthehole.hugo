@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/django-nginx-wsgi-and-encoded-slashes"],
+    "aliases": [
+        "/writing/django-nginx-wsgi-and-encoded-slashes"
+    ],
     "title": "Django, Nginx, WSGI and encoded slashes",
     "description": "Encoded slashes have a hard time getting through to Django",
     "date": "2012-05-05",
@@ -10,6 +13,8 @@
         "nginx"
     ]
 }
+---
+
 
 ### Problem
 

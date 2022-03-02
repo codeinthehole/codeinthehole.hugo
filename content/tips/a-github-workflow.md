@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/converting-github-issues-into-pull-requests"],
+    "aliases": [
+        "/writing/converting-github-issues-into-pull-requests"
+    ],
     "description": "A better workflow using Hub",
     "title": "Converting Github issues into pull requests",
     "slug": "converting-github-issues-into-pull-requests",
@@ -8,6 +11,8 @@
     ],
     "date": "2013-03-04"
 }
+---
+
 
 Using the [Hub](http://defunkt.io/hub/) library, it's possible to
 convert Github issues into pull requests. This gives rise to a useful

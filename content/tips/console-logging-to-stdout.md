@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/console-logging-to-stdout-in-django"],
+    "aliases": [
+        "/writing/console-logging-to-stdout-in-django"
+    ],
     "tags": [
         "django",
         "python"
@@ -9,6 +12,8 @@
     "title": "Console logging to STDOUT in Django",
     "description": "Undocumented option required to avoid STDERR"
 }
+---
+
 
 ### Problem
 

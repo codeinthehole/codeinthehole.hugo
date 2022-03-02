@@ -1,10 +1,15 @@
+---
 {
-    "aliases": ["/writing/a-useful-git-post-checkout-hook-for-python-repos"],
+    "aliases": [
+        "/writing/a-useful-git-post-checkout-hook-for-python-repos"
+    ],
     "description": "Cleaning up after yourself",
     "slug": "a-useful-git-post-checkout-hook-for-python-repos",
     "date": "2013-04-23",
     "title": "A useful Git post-checkout hook for Python repos"
 }
+---
+
 
 Every now and again, an innocent python developer checks out a new git
 branch then proceeds to bang their head against a bug caused by an

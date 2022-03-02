@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/monitoring-mysql-with-ganglia-and-gmetric"],
+    "aliases": [
+        "/writing/monitoring-mysql-with-ganglia-and-gmetric"
+    ],
     "title": "Monitoring MySQL with Ganglia and gmetric",
     "date": "2008-12-14",
     "tags": [
@@ -10,6 +13,8 @@
     "description": "A simple bash script for pushing MySQL stats in Ganglia",
     "slug": "monitoring-mysql-with-ganglia-and-gmetric"
 }
+---
+
 
 <img src="/images/bookcovers/9780596102357.jpg" class="align-right" />
 

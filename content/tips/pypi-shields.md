@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/pypi-readme-badges"],
+    "aliases": [
+        "/writing/pypi-readme-badges"
+    ],
     "description": "Shiny badges using crate.io",
     "slug": "pypi-readme-badges",
     "title": "PyPI README badges",
@@ -8,6 +11,8 @@
     ],
     "date": "2013-05-03"
 }
+---
+
 
 Thanks to [@kuramanga](https://twitter.com/kuramanga), it's now possible
 to add shiny PyPi badges to your Python project READMEs that indicate

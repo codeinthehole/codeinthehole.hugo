@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/command-line-tips-for-effective-release-announcements"],
+    "aliases": [
+        "/writing/command-line-tips-for-effective-release-announcements"
+    ],
     "date": "2014-01-16",
     "title": "Command-line tips for effective release announcements",
     "tags": [
@@ -11,6 +14,8 @@
     "slug": "command-line-tips-for-effective-release-announcements",
     "description": "Git tips for writing release notes"
 }
+---
+
 
 We finally [released Oscar
 0.6](http://django-oscar.readthedocs.org/en/latest/releases/v0.6.html)

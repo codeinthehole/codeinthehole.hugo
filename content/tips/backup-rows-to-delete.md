@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/backing-up-database-rows-in-postgres-before-deleting-them"],
+    "aliases": [
+        "/writing/backing-up-database-rows-in-postgres-before-deleting-them"
+    ],
     "slug": "backing-up-database-rows-in-postgres-before-deleting-them",
     "date": "2015-03-19",
     "tags": [
@@ -8,6 +11,8 @@
     "title": "Backing up Postgres database rows before deleting them",
     "description": "Quick tip on avoiding accidental data loss"
 }
+---
+
 
 > Hmmm, this delete statement is taking longer than I thought it
 > would...

@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/copying-postgres-output-into-a-spreadsheet"],
+    "aliases": [
+        "/writing/copying-postgres-output-into-a-spreadsheet"
+    ],
     "title": "Copying Postgres output into a spreadsheet",
     "slug": "copying-postgres-output-into-a-spreadsheet",
     "description": "Quick tip on tweaking the output of psql",
@@ -8,6 +11,8 @@
         "postgres"
     ]
 }
+---
+
 
 I often need to grab information from a Postgres database and paste it
 into a spreadsheet for sharing with others. Google Sheets needs the

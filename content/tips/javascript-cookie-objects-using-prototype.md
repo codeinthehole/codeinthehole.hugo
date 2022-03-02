@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/javascript-cookie-objects-using-prototype-and-json"],
+    "aliases": [
+        "/writing/javascript-cookie-objects-using-prototype-and-json"
+    ],
     "tags": [
         "javascript",
         "prototype"
@@ -9,6 +12,8 @@
     "date": "2008-11-08",
     "title": "Javascript cookie objects using Prototype and JSON"
 }
+---
+
 
 It's sometime useful to interact with cookies directly on the
 client-side using javascript. This can be useful for a variety of

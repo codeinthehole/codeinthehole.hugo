@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/inspecting-javascript-objects"],
+    "aliases": [
+        "/writing/inspecting-javascript-objects"
+    ],
     "title": "Inspecting Javascript objects",
     "description": "Simple introspection methods",
     "slug": "inspecting-javascript-objects",
@@ -8,6 +11,8 @@
     ],
     "date": "2009-05-24"
 }
+---
+
 
 Learning Ruby or Python from the command-line prompt is greatly enhanced
 by the built-in inspection methods these languages provide. These allow

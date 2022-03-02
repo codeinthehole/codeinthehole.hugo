@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/auto-generating-an-faq-with-prototype"],
+    "aliases": [
+        "/writing/auto-generating-an-faq-with-prototype"
+    ],
     "date": "2009-05-25",
     "tags": [
         "javascript"
@@ -8,6 +11,8 @@
     "slug": "auto-generating-an-faq-with-prototype",
     "description": "A lazy way of generating an FAQ"
 }
+---
+
 
 Have just been writing an FAQ page for commandlinefu.com. Documenting is
 always tiresome, but FAQs particularly so when hand-coding the HTML

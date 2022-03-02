@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/phing-task-to-update-twitter-status"],
+    "aliases": [
+        "/writing/phing-task-to-update-twitter-status"
+    ],
     "date": "2009-01-10",
     "slug": "phing-task-to-update-twitter-status",
     "tags": [
@@ -10,6 +13,8 @@
     "description": "Simple PHP extension to Phing for Tweeting",
     "title": "Phing task to update Twitter status"
 }
+---
+
 
 At Tangent Labs, we're currently experimenting with integrating Twitter
 into our project workflow to provide a latest activity feed in a easily

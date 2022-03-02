@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/how-to-install-postgis-and-geodjango-on-ubuntu"],
+    "aliases": [
+        "/writing/how-to-install-postgis-and-geodjango-on-ubuntu"
+    ],
     "title": "How to install PostGIS and GeoDjango on Ubuntu",
     "date": "2013-10-04",
     "slug": "how-to-install-postgis-and-geodjango-on-ubuntu",
@@ -9,6 +12,8 @@
     ],
     "description": "Another note-to-self"
 }
+---
+
 
 Despite its [extensive
 documentation](https://docs.djangoproject.com/en/dev/ref/contrib/gis/install/),

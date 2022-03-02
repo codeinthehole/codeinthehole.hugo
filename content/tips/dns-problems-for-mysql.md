@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/solving-mysql-connection-problems-caused-by-a-dead-name-server"],
+    "aliases": [
+        "/writing/solving-mysql-connection-problems-caused-by-a-dead-name-server"
+    ],
     "slug": "solving-mysql-connection-problems-caused-by-a-dead-name-server",
     "title": "Solving MySQL connection problems caused by a dead name server",
     "description": "MySQL's DNS lookups can cause serious problems",
@@ -8,6 +11,8 @@
     ],
     "date": "2012-02-02"
 }
+---
+
 
 A client site went down today. This is what happened and how it was
 fixed.

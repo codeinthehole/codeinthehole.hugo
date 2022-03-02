@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/mathematics-and-engineering"],
+    "aliases": [
+        "/writing/mathematics-and-engineering"
+    ],
     "title": "Mathematics and engineering",
     "tags": [
         "quotes"
@@ -8,6 +11,8 @@
     "date": "2012-12-14",
     "slug": "mathematics-and-engineering"
 }
+---
+
 
 <img src="/images/bookcovers/9780262510875.jpg" class="align-right" />
 

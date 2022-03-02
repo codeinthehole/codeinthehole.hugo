@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/current-pet-project-command-line-fu"],
+    "aliases": [
+        "/writing/current-pet-project-command-line-fu"
+    ],
     "date": "2009-01-22",
     "title": "Current pet project: Command-Line-Fu",
     "description": "Creating a site for sharing commands",
@@ -8,6 +11,8 @@
         "commandlinefu"
     ]
 }
+---
+
 
 <img src="/images/screenshots/tomboy-commands-small.jpg" class="align-right" />
 

@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/bootstrapped-virtualenvs"],
+    "aliases": [
+        "/writing/bootstrapped-virtualenvs"
+    ],
     "tags": [
         "python"
     ],
@@ -8,6 +11,8 @@
     "date": "2014-10-24",
     "title": "Bootstrapped virtualenvs"
 }
+---
+
 
 The excellent
 [virtualenvwrapper](https://bitbucket.org/dhellmann/virtualenvwrapper..)

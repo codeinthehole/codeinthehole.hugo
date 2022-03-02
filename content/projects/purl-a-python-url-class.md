@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/purl-immutable-url-objects-for-python"],
+    "aliases": [
+        "/writing/purl-immutable-url-objects-for-python"
+    ],
     "slug": "purl-immutable-url-objects-for-python",
     "description": "An immutable URL class designed for easy inspection and manipulation",
     "tags": [
@@ -8,6 +11,8 @@
     "title": "purl - immutable URL objects for Python",
     "date": "2012-04-19"
 }
+---
+
 
 Working with URLs in Python feels clunky when it should be pleasant. In
 [urlparse](http://docs.python.org/library/urlparse.html) and

@@ -1,39 +1,37 @@
+---
 {
-    "aliases": ["/writing/phing-task-to-create-an-unfuddle-message"],
-    "tags": [
-        "phing"
-    ],
-    "description": "Sending messages",
-    "date": "2009-01-11",
-    "title": "Phing task to create an Unfuddle message",
-    "slug": "phing-task-to-create-an-unfuddle-message"
+  "aliases": ["/writing/phing-task-to-create-an-unfuddle-message"],
+  "tags": ["phing"],
+  "description": "Sending messages",
+  "date": "2009-01-11",
+  "title": "Phing task to create an Unfuddle message",
+  "slug": "phing-task-to-create-an-unfuddle-message",
 }
+---
 
-Another day, another new Phing task; again integrating with project
-management software - this time the excellent
-[Unfuddle](http://unfuddle.com/).
+Another day, another new Phing task; again integrating with project management
+software - this time the excellent [Unfuddle](http://unfuddle.com/).
 
-I've been playing with Unfuddle for a few days now and it's very
-impressive. You get SVN and git hosting as well as superb issue
-tracking. It also supports simple project messages (which are displayed
-on the project dashboard) and so-called notebooks which are essentially
-project wikis that can be used to house documentation and manuals. One
-great feature of integrated project management software is the ability
-to merge news from a variety of sources (SVN commits, changes in ticket
-status, changes to notebooks) onto a single page that provides a
-snapshot of the latest activity on a project. Unfuddle does this on each
-project dashboard, where the latest messages are displayed along side
-news of the latest SVN and issue activity. The task detailed below
-provides a means for Phing to automatically add information to this
-dashboard page by creating a new message.
+I've been playing with Unfuddle for a few days now and it's very impressive. You
+get SVN and git hosting as well as superb issue tracking. It also supports
+simple project messages (which are displayed on the project dashboard) and
+so-called notebooks which are essentially project wikis that can be used to
+house documentation and manuals. One great feature of integrated project
+management software is the ability to merge news from a variety of sources (SVN
+commits, changes in ticket status, changes to notebooks) onto a single page that
+provides a snapshot of the latest activity on a project. Unfuddle does this on
+each project dashboard, where the latest messages are displayed along side news
+of the latest SVN and issue activity. The task detailed below provides a means
+for Phing to automatically add information to this dashboard page by creating a
+new message.
 
-This extension is very similar to my previous Phing task (for updating a
-Twitter status), making use of the [cURL
-library](http://uk2.php.net/curl) to POST XML to Unfuddle. In this case
-though, the Unfuddle API for creating a message offers a few extra
-options such as categorising your messages. The task supports the
+This extension is very similar to my previous Phing task (for updating a Twitter
+status), making use of the [cURL library](http://uk2.php.net/curl) to POST XML
+to Unfuddle. In this case though, the Unfuddle API for creating a message offers
+a few extra options such as categorising your messages. The task supports the
 following attributes:
 
+```txt
   Unfuddle Name   Message   Description                                           Default   Required
   --------------- --------- ----------------------------------------------------- --------- ----------
   subdomain       String    Subdomain of Unfuddle account
@@ -48,14 +46,15 @@ following attributes:
   categoryids     String    A comma-separated list of category ids (eg. 1,2,3).   ''        No
   checkreturn     Boolean   Whether to check the return code of the request,
                             throws a BuildException the update files.             false     No
+```
 
-The only thing to note here is that you can choose whether you specify a
-single category id or a collection - it wouldn't make sense to specify
-both these attributes.
+The only thing to note here is that you can choose whether you specify a single
+category id or a collection - it wouldn't make sense to specify both these
+attributes.
 
 An example build.xml using this task would be:
 
-``` xml
+```xml
 <?xml version="1.0" ?>
 <project name="Example Unfuddle update" basedir="." default="message">
     <tstamp>
@@ -63,34 +62,34 @@ An example build.xml using this task would be:
     </tstamp>
     <taskdef name="unfuddlemessage" classname="phing.tasks.my.UnfuddleMessageTask" />
     <target name="message">
-        <unfuddlemessage 
-            subdomain="example" 
-            projectid="12345" 
-            username="exampleuser" 
-            password="password" 
-            title="Deploying to live site at ${build.time}" 
-            body="" 
+        <unfuddlemessage
+            subdomain="example"
+            projectid="12345"
+            username="exampleuser"
+            password="password"
+            title="Deploying to live site at ${build.time}"
+            body=""
             categoryid="4" />
     </target>
 </project>
 ```
 
-This simply creates a new Unfuddle message with the time of the last
-build. This is an overly simplified example - see my previous post for a
-sample parameterised deployment target that would allow a dynamic
-message to be created by different targets within the deployment file.
+This simply creates a new Unfuddle message with the time of the last build. This
+is an overly simplified example - see my previous post for a sample
+parameterised deployment target that would allow a dynamic message to be created
+by different targets within the deployment file.
 
-The source code for TwitterUpdateTask.php is as follows (with docblocks
-stripped out for brevity):
+The source code for TwitterUpdateTask.php is as follows (with docblocks stripped
+out for brevity):
 
-``` php
+```php
 <?php
 require_once "phing/Task.php";
-class UnfuddleMessageTask extends Task 
+class UnfuddleMessageTask extends Task
 {
-    const URL_TEMPLATE_UPDATE = 'http://%s.unfuddle.com/api/v1/projects/%d/messages'; 
+    const URL_TEMPLATE_UPDATE = 'http://%s.unfuddle.com/api/v1/projects/%d/messages';
 
-    // Twitter response codes 
+    // Twitter response codes
     const HTTP_RESPONSE_OK                  = 200;
     const HTTP_RESPONSE_CREATED             = 201;
     const HTTP_RESPONSE_BAD_REQUEST         = 400;
@@ -117,38 +116,38 @@ class UnfuddleMessageTask extends Task
     private $password;
     private $title;
     private $body;
-    private $categoryIds;  
+    private $categoryIds;
     private $checkReturn = false;
 
-    public function setSubdomain($subdomain) 
+    public function setSubdomain($subdomain)
     {
         $this->subdomain = $subdomain;
     }
-    public function setProjectId($projectId) 
+    public function setProjectId($projectId)
     {
         $this->projectId = (int)$projectId;
     }
-    public function setUsername($username) 
+    public function setUsername($username)
     {
         $this->username = $username;
     }
-    public function setPassword($password) 
+    public function setPassword($password)
     {
         $this->password = $password;
     }
-    public function setTitle($title) 
+    public function setTitle($title)
     {
         $this->title = $title;
     }
-    public function setBody($body) 
+    public function setBody($body)
     {
         $this->body = $body;
     }
-    public function setCategoryId($categoryId) 
+    public function setCategoryId($categoryId)
     {
         $this->categoryIds = array((int)$categoryId);
     }
-    public function setCategoryIds($categoryIdList) 
+    public function setCategoryIds($categoryIdList)
     {
         $this->categoryIds = explode(",", $categoryIdList);
     }
@@ -157,13 +156,13 @@ class UnfuddleMessageTask extends Task
         $this->checkReturn = (boolean)$checkReturn;
     }
 
-    public function init() 
+    public function init()
     {
         if (!extension_loaded('curl')) {
             throw new BuildException("Cannot update Unfuddle", "The cURL extension is not installed");
         }
     }
-    public function main() 
+    public function main()
     {
         $this->validateProperties();
 
@@ -241,11 +240,11 @@ class UnfuddleMessageTask extends Task
         if (true === $this->checkReturn) {
             throw new BuildException($failureMessage);
         }
-        $this->log("New Unfuddle message unsuccessful: $failureMessage", Project::MSG_WARN);   
+        $this->log("New Unfuddle message unsuccessful: $failureMessage", Project::MSG_WARN);
     }
 }
 ```
 
-The fully documented source and associated example build.xml file are
-available to download: [UnfuddleMessageTask.zip
-(2.6kb)](/downloads/UnfuddleMessageTask.zip)
+The fully documented source and associated example build.xml file are available
+to download:
+[UnfuddleMessageTask.zip (2.6kb)](/downloads/UnfuddleMessageTask.zip)

@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/altering-postgres-table-columns-with-south"],
+    "aliases": [
+        "/writing/altering-postgres-table-columns-with-south"
+    ],
     "tags": [
         "postgres",
         "django"
@@ -9,6 +12,8 @@
     "description": "Using 'USING' to cast correctly",
     "date": "2013-02-19"
 }
+---
+
 
 ### Problem
 

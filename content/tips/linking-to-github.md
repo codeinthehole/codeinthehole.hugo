@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/linking-to-github"],
+    "aliases": [
+        "/writing/linking-to-github"
+    ],
     "title": "Linking to Github",
     "tags": [
         "git",
@@ -9,6 +12,8 @@
     "slug": "linking-to-github",
     "description": "Git aliases for grabbing Github links"
 }
+---
+
 
 It was rightly [pointed out
 yesterday](http://andrew.yurisich.com/work/2014/07/16/dont-link-that-line-number/)

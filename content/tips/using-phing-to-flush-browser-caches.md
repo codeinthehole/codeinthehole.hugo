@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/using-a-phing-filter-to-flush-browser-caches"],
+    "aliases": [
+        "/writing/using-a-phing-filter-to-flush-browser-caches"
+    ],
     "tags": [
         "phing"
     ],
@@ -8,6 +11,8 @@
     "title": "Using a Phing filter to flush browser caches",
     "slug": "using-a-phing-filter-to-flush-browser-caches"
 }
+---
+
 
 A quick [Phing](http://phing.info/trac/) tip that's made my life easier
 when deploying new versions of

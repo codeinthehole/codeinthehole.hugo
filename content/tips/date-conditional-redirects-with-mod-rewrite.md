@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/date-conditional-redirects-with-mod_rewrite"],
+    "aliases": [
+        "/writing/date-conditional-redirects-with-mod_rewrite"
+    ],
     "description": "Using mod_rewrite to redirect based on the date",
     "date": "2008-11-07",
     "slug": "date-conditional-redirects-with-mod_rewrite",
@@ -8,6 +11,8 @@
     ],
     "title": "Date conditional redirects with mod_rewrite"
 }
+---
+
 
 The Apache module mod\_rewite is capable of some very cool stuff. One
 neat trick is to use the time and date variables to control redirects

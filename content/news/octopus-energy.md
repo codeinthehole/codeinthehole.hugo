@@ -1,3 +1,4 @@
+---
 {
     "date": "2015-11-23",
     "description": "A modern, high-tech energy supplier",
@@ -11,6 +12,8 @@
         "/writing/octopus-energy/"
     ]
 }
+---
+
 
 Last Wednesday was my last day at Yoyo Wallet. Thursday marked my first
 day at Octopus Energy.

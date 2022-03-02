@@ -1,3 +1,4 @@
+---
 {
     "aliases": [
         "/writing/following-log-files-with-tt-classdocutils-literaltail-span-classpre-fspantt/",
@@ -11,6 +12,8 @@
     ],
     "description": "Simple trick to watch progressive updates to a file"
 }
+---
+
 
 UNIX is a majestic onion of discovery. Every day a new layer of
 understanding can be peeled away to give some new pungent goodness.

@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/auto-setting-terminal-titles-for-python-virtual-environments"],
+    "aliases": [
+        "/writing/auto-setting-terminal-titles-for-python-virtual-environments"
+    ],
     "title": "Auto-setting terminal titles for python virtual environments",
     "tags": [
         "python",
@@ -9,6 +12,8 @@
     "date": "2012-01-23",
     "slug": "auto-setting-terminal-titles-for-python-virtual-environments"
 }
+---
+
 
 ### Problem
 

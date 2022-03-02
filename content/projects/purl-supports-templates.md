@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/purl-uri-templates-and-generated-tests"],
+    "aliases": [
+        "/writing/purl-uri-templates-and-generated-tests"
+    ],
     "description": "Matching the RFC using Nose's test generators",
     "title": "purl, URI templates and generated tests",
     "tags": [
@@ -9,6 +12,8 @@
     "slug": "purl-uri-templates-and-generated-tests",
     "date": "2013-07-09"
 }
+---
+
 
 *TLDR*: Parameterised tests are a useful testing technique. Both Nose
 and py.test support them.

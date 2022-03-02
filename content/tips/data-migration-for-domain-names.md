@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/a-data-migration-for-every-django-project"],
+    "aliases": [
+        "/writing/a-data-migration-for-every-django-project"
+    ],
     "title": "A data migration for every Django project",
     "description": "No more embarassing emails from example.com",
     "tags": [
@@ -9,6 +12,8 @@
     "slug": "a-data-migration-for-every-django-project",
     "date": "2012-06-16"
 }
+---
+
 
 How to use a South data migration to avoid accidentally sending emails
 from example.com.

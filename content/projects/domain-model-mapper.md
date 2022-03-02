@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/domain-model-mapper-a-php-data-mapper-implementation"],
+    "aliases": [
+        "/writing/domain-model-mapper-a-php-data-mapper-implementation"
+    ],
     "tags": [
         "php",
         "design patterns"
@@ -9,6 +12,8 @@
     "title": "Domain-model-mapper - A PHP Data Mapper implementation",
     "date": "2011-03-13"
 }
+---
+
 
 At various PHP conferences and meetups over the last few weeks, I've
 seen attention drawn to the [Data Mapper design

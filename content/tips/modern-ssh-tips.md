@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/an-ssh-tip-for-modern-aws-patrons"],
+    "aliases": [
+        "/writing/an-ssh-tip-for-modern-aws-patrons"
+    ],
     "description": "Slightly useful tip for SSHing onto EC2 instances",
     "tags": [
         "aws"
@@ -8,6 +11,8 @@
     "title": "An SSH tip for modern AWS patrons",
     "slug": "an-ssh-tip-for-modern-aws-patrons"
 }
+---
+
 
 Cloud computing and immutable infrastructure deployments have changed
 the way I use SSH. I miss the days when I could run:

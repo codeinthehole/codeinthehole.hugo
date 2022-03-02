@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/creating-large-xml-files-with-php"],
+    "aliases": [
+        "/writing/creating-large-xml-files-with-php"
+    ],
     "slug": "creating-large-xml-files-with-php",
     "date": "2008-10-31",
     "title": "Creating large XML files with PHP",
@@ -8,6 +11,8 @@
     ],
     "description": "Using PHP's DomDocument to create large XML files"
 }
+---
+
 
 When creating large XML files with PHP, there are some important
 considerations to bear in mind with regards to scalability. There are

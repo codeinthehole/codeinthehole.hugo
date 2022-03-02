@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/monitoring-mysql"],
+    "aliases": [
+        "/writing/monitoring-mysql"
+    ],
     "title": "Monitoring MySQL",
     "description": "watching mysqladmin ftw",
     "tags": [
@@ -9,6 +12,8 @@
     "slug": "monitoring-mysql",
     "date": "2008-10-26"
 }
+---
+
 
 Just a quick tip on monitoring the queries that mysql is handling on a
 production site. You can use the mysqladmin tool to return a list of the

@@ -1,5 +1,8 @@
+---
 {
-    "aliases": ["/writing/nurl-an-immutable-url-object-for-nodejs"],
+    "aliases": [
+        "/writing/nurl-an-immutable-url-object-for-nodejs"
+    ],
     "description": "A URL value object for node.js",
     "title": "nurl - an immutable URL object for node.js",
     "slug": "nurl-an-immutable-url-object-for-nodejs",
@@ -9,6 +12,8 @@
         "javascript"
     ]
 }
+---
+
 
 I'm a big fan of [Value Objects](http://c2.com/cgi/wiki?ValueObject) -
 some of the most useful classes I've ever written have been lightweight
