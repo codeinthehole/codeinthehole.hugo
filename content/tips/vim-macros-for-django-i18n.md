@@ -1,19 +1,14 @@
 ---
 {
-    "aliases": [
-        "/writing/vim-macros-for-adding-i18n-support-to-django-templates"
-    ],
-    "date": "2012-07-06",
-    "title": "Vim macros for adding i18n support to Django templates",
-    "tags": [
-        "vim",
-        "django"
-    ],
-    "description": "Using macros to automate the boring stuff",
-    "slug": "vim-macros-for-adding-i18n-support-to-django-templates"
+  "aliases":
+    ["/writing/vim-macros-for-adding-i18n-support-to-django-templates"],
+  "date": "2012-07-06",
+  "title": "Vim macros for adding i18n support to Django templates",
+  "tags": ["vim", "django"],
+  "description": "Using macros to automate the boring stuff",
+  "slug": "vim-macros-for-adding-i18n-support-to-django-templates",
 }
 ---
-
 
 ### Problem
 
@@ -31,57 +26,56 @@ Use Vim macros!
 
 To convert
 
-``` html
+```html
 <h1>Welcome to my site</h1>
 ```
 
 to
 
-``` html
+```html
 <h1>{% trans "Welcome to my site" %}</h1>
 ```
 
 use the macro
 
-``` vim
+```vim
 vitc{% trans "" %}<ESC>4hp
 ```
 
 which breaks down as:
 
 - `vit` - select content inside the tag;
-- `c{% trans "" %}` - change tag content to be `{% trans "" %}` while
-    saving the original tag content to the anonymous register;
-- `<ESC>4hp` - move the cursor to the first speech mark and paste the
-    original tag contents. Note that `<ESC>` is one key-stroke, not
-    five.
+- `c{% trans "" %}` - change tag content to be `{% trans "" %}` while saving the
+  original tag content to the anonymous register;
+- `<ESC>4hp` - move the cursor to the first speech mark and paste the original
+  tag contents. Note that `<ESC>` is one key-stroke, not five.
 
-To record the macro, locate the cursor over a tag that you want to
-convert then start recording by pressing `q` twice (to record the macro
-to the named register `q`). Then type the characters detailed above and
-press `q` again to stop recording.
+To record the macro, locate the cursor over a tag that you want to convert then
+start recording by pressing `q` twice (to record the macro to the named register
+`q`). Then type the characters detailed above and press `q` again to stop
+recording.
 
-To apply the macro, again locate the cursor over a tag, or the text it
-contains, and type `@q`. This will save you a lot of key-strokes.
+To apply the macro, again locate the cursor over a tag, or the text it contains,
+and type `@q`. This will save you a lot of key-strokes.
 
 #### Macro 2 - Convert selected text
 
 To convert
 
-``` html
-<p>See this image: <img src="/images/1.jpg" /> </p>
+```html
+<p>See this image: <img src="/images/1.jpg" /></p>
 ```
 
 to
 
-``` html
-<p>{% trans "See this image:" %} <img src="/images/1.jpg" /> </p>
+```html
+<p>{% trans "See this image:" %} <img src="/images/1.jpg" /></p>
 ```
 
-enter visual mode and select the text to convert (eg "See this image:")
-then use the macro
+enter visual mode and select the text to convert (eg "See this image:") then use
+the macro
 
-``` vim
+```vim
 c{% trans "" %}<ESC>4hp
 ```
 

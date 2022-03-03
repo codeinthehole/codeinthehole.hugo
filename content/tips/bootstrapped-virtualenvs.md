@@ -1,25 +1,20 @@
 ---
 {
-    "aliases": [
-        "/writing/bootstrapped-virtualenvs"
-    ],
-    "tags": [
-        "python"
-    ],
-    "slug": "bootstrapped-virtualenvs",
-    "description": "Using postmkvirtualenv to prime postactivate",
-    "date": "2014-10-24",
-    "title": "Bootstrapped virtualenvs"
+  "aliases": ["/writing/bootstrapped-virtualenvs"],
+  "tags": ["python"],
+  "slug": "bootstrapped-virtualenvs",
+  "description": "Using postmkvirtualenv to prime postactivate",
+  "date": "2014-10-24",
+  "title": "Bootstrapped virtualenvs",
 }
 ---
 
-
 The excellent
 [virtualenvwrapper](https://bitbucket.org/dhellmann/virtualenvwrapper..)
-supports a `postmkvirtualenv` script to bootstrap your virtual
-environments. Here's a useful implementation:
+supports a `postmkvirtualenv` script to bootstrap your virtual environments.
+Here's a useful implementation:
 
-``` bash
+```bash
 #!/usr/bin/env bash
 
 # Grab project name from virtualenv name
@@ -29,7 +24,7 @@ NAME=$(basename $VIRTUAL_ENV)
 echo "title $NAME" > $VIRTUAL_ENV/bin/postactivate
 
 # Change directory to root of project on postactivate. We assume the
-# mkvirtualenv is being run from the root of the project. This line 
+# mkvirtualenv is being run from the root of the project. This line
 # will need to edited later if not.
 echo "cd $PWD" >> $VIRTUAL_ENV/bin/postactivate
 
@@ -46,17 +41,17 @@ By convention, such a script lives in `~/.virtualenvs/postmkvirtualenv`.
 
 Note that the `title` function is defined in my `~/.bashrc` as:
 
-``` bash
+```bash
 function title() {
     echo -ne "\033]0;$1\007"
 }
 ```
 
-As someone who develops in iTerm and Terminal, automatically setting the
-tab titles is a useful navigation aid.
+As someone who develops in iTerm and Terminal, automatically setting the tab
+titles is a useful navigation aid.
 
 ![image](/images/screenshots/terminal-titles.png)
 
-There are more [tips and
-tricks](http://virtualenvwrapper.readthedocs.org/en/latest/tips.html)
+There are more
+[tips and tricks](http://virtualenvwrapper.readthedocs.org/en/latest/tips.html)
 available in the virtualenvwrapper docs.

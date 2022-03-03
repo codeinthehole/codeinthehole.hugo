@@ -1,28 +1,21 @@
 ---
 {
-    "aliases": [
-        "/writing/altering-postgres-table-columns-with-south"
-    ],
-    "tags": [
-        "postgres",
-        "django"
-    ],
-    "title": "Altering Postgres table columns with South",
-    "slug": "altering-postgres-table-columns-with-south",
-    "description": "Using 'USING' to cast correctly",
-    "date": "2013-02-19"
+  "aliases": ["/writing/altering-postgres-table-columns-with-south"],
+  "tags": ["postgres", "django"],
+  "title": "Altering Postgres table columns with South",
+  "slug": "altering-postgres-table-columns-with-south",
+  "description": "Using 'USING' to cast correctly",
+  "date": "2013-02-19",
 }
 ---
-
 
 ### Problem
 
 You're using Postgres with Django.
 
-You change a field type of one of your models, generate an `--auto`
-South migration and attempt to run it. However, South chokes on the new
-migration complaining that the data in the column cannot be cast to the
-new type.
+You change a field type of one of your models, generate an `--auto` South
+migration and attempt to run it. However, South chokes on the new migration
+complaining that the data in the column cannot be cast to the new type.
 
 For instance, I recently changed a `CharField` to a `TimeField` but the
 corresponding migration lead to:
@@ -40,29 +33,28 @@ Postgres did not know how to convert my text data to times.
 
 ### Solution
 
-Write the `ALTER TABLE` SQL by hand, making use of the `USING` clause to
-specify how to compute the new value from the old.
+Write the `ALTER TABLE` SQL by hand, making use of the `USING` clause to specify
+how to compute the new value from the old.
 
 For the above example, the correct SQL to use is:
 
-``` sql
-ALTER TABLE "stores_openingperiod" 
-    ALTER COLUMN "end" DROP DEFAULT, 
-    ALTER COLUMN "end" DROP NOT NULL, 
+```sql
+ALTER TABLE "stores_openingperiod"
+    ALTER COLUMN "end" DROP DEFAULT,
+    ALTER COLUMN "end" DROP NOT NULL,
     ALTER COLUMN "end" TYPE time USING to_timestamp("end", 'HHam')
 ```
 
-We need to modify the migration file to execute raw SQL with
-`db.execute` instead of using `db.alter_table` to generate the SQL. So
-we change:
+We need to modify the migration file to execute raw SQL with `db.execute`
+instead of using `db.alter_table` to generate the SQL. So we change:
 
-``` python
+```python
 db.alter_column('stores_openingperiod', 'end', self.gf('django.db.models.fields.TimeField')(null=True))
 ```
 
 to:
 
-``` python
+```python
 db.execute(
     'ALTER TABLE "stores_openingperiod" '
     'ALTER COLUMN "end" DROP DEFAULT, '
@@ -73,7 +65,7 @@ db.execute(
 
 and all is well.
 
-A similar technique can be used wherever Postgres refuses to run a
-migration due to casting issues. See the [Postgres
-documentation](http://www.postgresql.org/docs/9.1/static/sql-altertable.html)
+A similar technique can be used wherever Postgres refuses to run a migration due
+to casting issues. See the
+[Postgres documentation](http://www.postgresql.org/docs/9.1/static/sql-altertable.html)
 for more examples of the `USING` clause.

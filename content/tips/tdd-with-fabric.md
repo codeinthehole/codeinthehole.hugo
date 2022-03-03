@@ -1,19 +1,14 @@
 ---
 {
-    "aliases": [
-        "/writing/coloured-output-while-doing-tdd-with-django-and-fabric"
-    ],
-    "title": "Coloured output while doing TDD with Django and Fabric",
-    "description": "Providing simple coloured feedback",
-    "tags": [
-        "python",
-        "testing"
-    ],
-    "date": "2011-04-20",
-    "slug": "coloured-output-while-doing-tdd-with-django-and-fabric"
+  "aliases":
+    ["/writing/coloured-output-while-doing-tdd-with-django-and-fabric"],
+  "title": "Coloured output while doing TDD with Django and Fabric",
+  "description": "Providing simple coloured feedback",
+  "tags": ["python", "testing"],
+  "date": "2011-04-20",
+  "slug": "coloured-output-while-doing-tdd-with-django-and-fabric",
 }
 ---
-
 
 I'm a big fan of using PHPUnit with console colours turned on (using the
 `--colors` option). Eg:
@@ -22,12 +17,12 @@ I'm a big fan of using PHPUnit with console colours turned on (using the
 
 It helps gets into the natural "red, green, refactor" rhythm.
 
-I'm currently totally immersed in Django, and greatly miss the lack of
-colour support within the "test" management command. A simple workaround
-for this is to use Fabric with a few modified color commands. Your
-fabric file should include the following:
+I'm currently totally immersed in Django, and greatly miss the lack of colour
+support within the "test" management command. A simple workaround for this is to
+use Fabric with a few modified color commands. Your fabric file should include
+the following:
 
-``` python
+```python
 from fabric.colors import _wrap_with
 
 green_bg = _wrap_with('42')

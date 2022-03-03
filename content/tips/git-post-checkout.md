@@ -1,28 +1,24 @@
 ---
 {
-    "aliases": [
-        "/writing/a-useful-git-post-checkout-hook-for-python-repos"
-    ],
-    "description": "Cleaning up after yourself",
-    "slug": "a-useful-git-post-checkout-hook-for-python-repos",
-    "date": "2013-04-23",
-    "title": "A useful Git post-checkout hook for Python repos"
+  "aliases": ["/writing/a-useful-git-post-checkout-hook-for-python-repos"],
+  "description": "Cleaning up after yourself",
+  "slug": "a-useful-git-post-checkout-hook-for-python-repos",
+  "date": "2013-04-23",
+  "title": "A useful Git post-checkout hook for Python repos",
 }
 ---
 
+Every now and again, an innocent python developer checks out a new git branch
+then proceeds to bang their head against a bug caused by an orphaned `.pyc` file
+from the previous branch. Since `*.pyc` files are typically in the repo's
+`.gitignore` file, they are not removed when switching branches and can cause
+issues if the corresponding `.py` is removed.
 
-Every now and again, an innocent python developer checks out a new git
-branch then proceeds to bang their head against a bug caused by an
-orphaned `.pyc` file from the previous branch. Since `*.pyc` files are
-typically in the repo's `.gitignore` file, they are not removed when
-switching branches and can cause issues if the corresponding `.py` is
-removed.
+This can be neatly addressed through a 'post checkout' hook which deletes all
+such files. Here is such a script, which also removes empty folders and prints a
+summary:
 
-This can be neatly addressed through a 'post checkout' hook which
-deletes all such files. Here is such a script, which also removes empty
-folders and prints a summary:
-
-``` bash
+```bash
 #!/usr/bin/env bash
 
 # Delete .pyc files and empty directories from root of project

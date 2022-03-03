@@ -1,25 +1,20 @@
 ---
 {
-    "aliases": [
-        "/writing/converting-github-issues-into-pull-requests"
-    ],
-    "description": "A better workflow using Hub",
-    "title": "Converting Github issues into pull requests",
-    "slug": "converting-github-issues-into-pull-requests",
-    "tags": [
-        "git"
-    ],
-    "date": "2013-03-04"
+  "aliases": ["/writing/converting-github-issues-into-pull-requests"],
+  "description": "A better workflow using Hub",
+  "title": "Converting Github issues into pull requests",
+  "slug": "converting-github-issues-into-pull-requests",
+  "tags": ["git"],
+  "date": "2013-03-04",
 }
 ---
 
+Using the [Hub](http://defunkt.io/hub/) library, it's possible to convert Github
+issues into pull requests. This gives rise to a useful Github workflow which
+this article describes.
 
-Using the [Hub](http://defunkt.io/hub/) library, it's possible to
-convert Github issues into pull requests. This gives rise to a useful
-Github workflow which this article describes.
-
-This is nothing new; it's been [written about
-before](http://www.topbug.net/blog/2012/03/25/attach-a-pull-request-to-an-existing-github-issue/).
+This is nothing new; it's been
+[written about before](http://www.topbug.net/blog/2012/03/25/attach-a-pull-request-to-an-existing-github-issue/).
 However, this is something I do all the time whilst developing
 [Oscar](https://github.com/tangentlabs/django-oscar) and I'm fed up with
 explaining it. This article is a reference I can point people at.
@@ -28,29 +23,28 @@ explaining it. This article is a reference I can point people at.
 
 #### Discuss
 
-Discuss an idea for a new feature on the project mailing list. Agree on
-what needs to be done.
+Discuss an idea for a new feature on the project mailing list. Agree on what
+needs to be done.
 
 #### Specify
 
 Create a Github issue for the feature.
 
-It's often useful to write the ticket as a brief functional spec,
-documenting the requirements as user stories. Github's [support for
-checkboxes in
-markdown](https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments)
+It's often useful to write the ticket as a brief functional spec, documenting
+the requirements as user stories. Github's
+[support for checkboxes in markdown](https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments)
 is useful here:
 
 #### Work
 
 Create a feature branch to work on this issue:
 
-``` bash
+```bash
 (master) $ git checkout -b issue/472/django1.5
 ```
 
-I find it helpful to include the issue number in the branch name but
-that might not be to your taste.
+I find it helpful to include the issue number in the branch name but that might
+not be to your taste.
 
 Work and commit onto your branch as normal.
 
@@ -58,35 +52,32 @@ Work and commit onto your branch as normal.
 
 Now push to the remote:
 
-``` bash
+```bash
 (issue/472/django1.5) $ git push -u origin issue/472/django1.5
 ```
 
-and attach your commits to the original issue, thereby converting it
-into a pull request.
+and attach your commits to the original issue, thereby converting it into a pull
+request.
 
-``` bash
+```bash
 (issue/472/django1.5) $ hub pull-request -i 472 -h tangentlabs:issue/472/django1.5
 ```
 
-where `tangentlabs` is the Github username of the owner of the `origin`
-remote.
+where `tangentlabs` is the Github username of the owner of the `origin` remote.
 
-Note the issue branch was pushed to the `origin` remote rather than a
-fork. This is convenient as it lets other developers add commits to the
-pull request.
+Note the issue branch was pushed to the `origin` remote rather than a fork. This
+is convenient as it lets other developers add commits to the pull request.
 
 #### Iterate
 
-The pull request can now be code-reviewed and further commits added.
-This process continues until the issue is resolved and can be merged
-into `master`.
+The pull request can now be code-reviewed and further commits added. This
+process continues until the issue is resolved and can be merged into `master`.
 
 ### Notes
 
-Hub's `pull-request` command is useful yet relatively unknown. The `-i`
-flag indicates the Github issue number while `-h` specifies the source
-branch for the pull request. Here's the relevant help snippet:
+Hub's `pull-request` command is useful yet relatively unknown. The `-i` flag
+indicates the Github issue number while `-h` specifies the source branch for the
+pull request. Here's the relevant help snippet:
 
 ```txt
 git pull-request [-f] [TITLE|-i ISSUE|ISSUE-URL] [-b BASE] [-h HEAD]
@@ -109,8 +100,8 @@ git pull-request [-f] [TITLE|-i ISSUE|ISSUE-URL] [-b BASE] [-h HEAD]
         issue on GitHub.
 ```
 
-Without this command, you would end up creating a separate pull-request
-and issue for the same piece of work.
+Without this command, you would end up creating a separate pull-request and
+issue for the same piece of work.
 
-You can see this workflow in action via [Oscar's pull
-requests](https://github.com/tangentlabs/django-oscar/pulls).
+You can see this workflow in action via
+[Oscar's pull requests](https://github.com/tangentlabs/django-oscar/pulls).

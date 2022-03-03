@@ -1,12 +1,14 @@
 # codeinthehole.com
 
-This repo contains the source for <https://codeinthehole.com>, a Hugo-powered blog.
+This repo contains the source for <https://codeinthehole.com>, a Hugo-powered
+blog.
 
 ## Local development
 
 ### Install
 
-Clone the repo then clone the Github Pages repo that contains compiled static files:
+Clone the repo then clone the Github Pages repo that contains compiled static
+files:
 
 ```sh
 git clone https://github.com/codeinthehole/codeinthehole.hugo.git blog

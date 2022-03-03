@@ -1,19 +1,13 @@
 ---
 {
-    "aliases": [
-        "/writing/integrating-django-application-metrics-into-zabbix"
-    ],
-    "description": "A simple how-to for feeding Django metrics into Zabbix",
-    "date": "2014-10-22",
-    "tags": [
-        "django",
-        "monitoring"
-    ],
-    "title": "Integrating Django application metrics into Zabbix",
-    "slug": "integrating-django-application-metrics-into-zabbix"
+  "aliases": ["/writing/integrating-django-application-metrics-into-zabbix"],
+  "description": "A simple how-to for feeding Django metrics into Zabbix",
+  "date": "2014-10-22",
+  "tags": ["django", "monitoring"],
+  "title": "Integrating Django application metrics into Zabbix",
+  "slug": "integrating-django-application-metrics-into-zabbix",
 }
 ---
-
 
 At [Tangent](http://www.tangentsnowball.com), we use
 [Zabbix](http://www.zabbix.com/) for monitoring and alerting. This is a
@@ -21,10 +15,10 @@ note-to-self on how to configure application monitoring.
 
 ### Management command
 
-You need a script that prints out a value to STDOUT. A simple management
-command suffices:
+You need a script that prints out a value to STDOUT. A simple management command
+suffices:
 
-``` python
+```python
 from django.core.management.base import BaseCommand, CommandError
 
 class Command(BaseCommand):
@@ -52,11 +46,10 @@ class Command(BaseCommand):
         return "Available fetchers:\n%s" % "\n".join(descriptions)
 ```
 
-This uses dynamic dispatch to call "fetcher" methods with name
-`fetch_%s` where the first argument defines the format variable. Eg, a
-method:
+This uses dynamic dispatch to call "fetcher" methods with name `fetch_%s` where
+the first argument defines the format variable. Eg, a method:
 
-``` python
+```python
 def fetch_num_users(self):
     """
     Fetch number of users
@@ -66,13 +59,13 @@ def fetch_num_users(self):
 
 is called via:
 
-``` bash
+```bash
 ./manage.py application_metric num_users
 ```
 
 Without arguments, a list of fetchers is shown:
 
-``` bash
+```bash
 $ ./manage.py application_metric
 Available fetchers:
  - num_users : Fetch number of users
@@ -85,39 +78,38 @@ It's trivial to add more `fetch__*` methods to emit additional metrics.
 Hook this up to Zabbix by first creating a plugin script which calls the
 management command, passing on an arg:
 
-``` bash
+```bash
 $ cat /etc/zabbix/plugins/application
 #!/bin/bash
 
 source /path/to/virtualenv/bin/activate && /path/to/project/manage.py application_metric $1
 ```
 
-then create the Zabbix "UserParameter" declaration which calls the
-plugin script:
+then create the Zabbix "UserParameter" declaration which calls the plugin
+script:
 
-``` bash
+```bash
 $ cat /etc/zabbix/zabbix_agentd.conf.d/application.conf
 UserParameter=application[*],/etc/zabbix/plugins/application $1
 ```
 
-The `application[*]` syntax means that you can configure various "Items"
-in Zabbix like `application[num_orders]` and `application[num_users]`
-and the bracketed string will get passed all the way through to the
-management command.
+The `application[*]` syntax means that you can configure various "Items" in
+Zabbix like `application[num_orders]` and `application[num_users]` and the
+bracketed string will get passed all the way through to the management command.
 
 Now restart Zabbix to pick up the new conf file:
 
-``` bash
+```bash
 /etc/init.d/zabbix-agent restart
 ```
 
 ### Zabbix dashboard
 
-In the Zabbix web dashboard add new "Items" that use this new
-"UserParameter". Add a new "Item" by navigating through
-`Configuration > Hosts > Items > Create item`. In the resulting form,
-set the "Key" to, say, `application[num_users]` to pass `num_users` as
-the first argument through to the management command.
+In the Zabbix web dashboard add new "Items" that use this new "UserParameter".
+Add a new "Item" by navigating through
+`Configuration > Hosts > Items > Create item`. In the resulting form, set the
+"Key" to, say, `application[num_users]` to pass `num_users` as the first
+argument through to the management command.
 
-And that's it: this metric will now be collected by Zabbix and can be
-used for graphing and alerting.
+And that's it: this metric will now be collected by Zabbix and can be used for
+graphing and alerting.

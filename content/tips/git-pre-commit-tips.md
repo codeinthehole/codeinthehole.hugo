@@ -1,44 +1,39 @@
 ---
 {
-    "aliases": [
-        "/writing/tips-for-using-a-git-pre-commit-hook"
-    ],
-    "slug": "tips-for-using-a-git-pre-commit-hook",
-    "tags": [
-        "git"
-    ],
-    "description": "Yet another git tips article",
-    "date": "2012-03-05",
-    "title": "Tips for using a git pre-commit hook"
+  "aliases": ["/writing/tips-for-using-a-git-pre-commit-hook"],
+  "slug": "tips-for-using-a-git-pre-commit-hook",
+  "tags": ["git"],
+  "description": "Yet another git tips article",
+  "date": "2012-03-05",
+  "title": "Tips for using a git pre-commit hook",
 }
 ---
 
-
-Here's a few tips for using a [Git pre-commit
-hook](http://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks).
+Here's a few tips for using a
+[Git pre-commit hook](http://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks).
 
 ### Keep your hook script in source control
 
-Commit your hook script (say `pre-commit.sh`) at the root of your
-project and include the installation instructions in your
-README/documentation to encourage all developers use it.
+Commit your hook script (say `pre-commit.sh`) at the root of your project and
+include the installation instructions in your README/documentation to encourage
+all developers use it.
 
 Installation is nothing more than:
 
-``` bash
+```bash
 ln -s ../../pre-commit.sh .git/hooks/pre-commit
 ```
 
-Then everyone benefits from running the same set of tests before
-committing and updates are picked up automatically.
+Then everyone benefits from running the same set of tests before committing and
+updates are picked up automatically.
 
 ### Stash unstaged changes before running tests
 
-Ensure that code that isn't part of the prospective commit isn't tested
-within your pre-commit script. This is missed by many sample pre-commit
-scripts but is easily achieved with `git stash`:
+Ensure that code that isn't part of the prospective commit isn't tested within
+your pre-commit script. This is missed by many sample pre-commit scripts but is
+easily achieved with `git stash`:
 
-``` bash
+```bash
 # pre-commit.sh
 STASH_NAME="pre-commit-$(date +%s)"
 git stash save -q --keep-index $STASH_NAME
@@ -58,11 +53,11 @@ The `-q` flags specify quiet mode.
 
 Obviously.
 
-It's best to have a script (say `run_tests.sh`) that encapsulates the
-standard arguments to your test runner so your pre-commit script doesn't
-fall out of date. Something like:
+It's best to have a script (say `run_tests.sh`) that encapsulates the standard
+arguments to your test runner so your pre-commit script doesn't fall out of
+date. Something like:
 
-``` bash
+```bash
 # pre-commit.sh
 git stash -q --keep-index
 ./run_tests.sh
@@ -72,10 +67,9 @@ git stash pop -q
 exit 0
 ```
 
-where a sample `run_tests.sh` implementation for a Django project may
-look like:
+where a sample `run_tests.sh` implementation for a Django project may look like:
 
-``` python
+```python
 # run_tests.sh
 ./manage.py test --settings=settings_test -v 2
 ```
@@ -83,13 +77,12 @@ look like:
 ### Skip the pre-commit hook sometimes
 
 Be aware of the `--no-verify` option to `git commit`. This bypasses the
-pre-commit hook when committing, which is useful if you have just
-manually run your test suite and don't need to see it run again when
-committing.
+pre-commit hook when committing, which is useful if you have just manually run
+your test suite and don't need to see it run again when committing.
 
 I use git aliases to make this easy:
 
-``` bash
+```bash
 # ~/.bash_aliases
 alias gc='git commit'
 alias gcv='git commit --no-verify'
@@ -99,7 +92,7 @@ alias gcv='git commit --no-verify'
 
 At some point, someone will try and commit a file containing
 
-``` bash
+```bash
 import pdb; pdb.set_trace()
 ```
 
@@ -109,7 +102,7 @@ forbidden strings are found.
 
 Here's an example that looks for `console.log`:
 
-``` bash
+```bash
 FILES_PATTERN='\.(js|coffee)(\..+)?$'
 FORBIDDEN='console.log'
 git diff --cached --name-only | \
@@ -117,5 +110,4 @@ git diff --cached --name-only | \
     GREP_COLOR='4;5;37;41' xargs grep --color --with-filename -n $FORBIDDEN && echo 'COMMIT REJECTED Found "$FORBIDDEN" references. Please remove them before commiting' && exit 1
 ```
 
-It's straightforward to extend this code block to search for other
-terms.
+It's straightforward to extend this code block to search for other terms.

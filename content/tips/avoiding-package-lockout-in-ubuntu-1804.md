@@ -9,8 +9,8 @@ When provisioning a virtual machine running Ubuntu 16.04 or later, a common
 problem if being unable to install packages since another process is holding a
 lock (eg on `/var/lib/dpkg/lock-frontend`).
 
-This happens as Ubuntu VMs typically start several package-management programs
----
+## This happens as Ubuntu VMs typically start several package-management programs
+
 [unattended-upgrades](https://help.ubuntu.com/lts/serverguide/automatic-updates.html.en)
 and its associated `apt.daily` service --- on boot, and these will block your
 provisioning scripts.

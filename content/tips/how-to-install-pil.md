@@ -1,20 +1,13 @@
 ---
 {
-    "aliases": [
-        "/writing/how-to-install-pil-on-64-bit-ubuntu-1204"
-    ],
-    "date": "2013-04-18",
-    "tags": [
-        "python",
-        "pil",
-        "ubuntu"
-    ],
-    "slug": "how-to-install-pil-on-64-bit-ubuntu-1204",
-    "title": "How to install PIL on 64-bit Ubuntu 12.04",
-    "description": "Because I have to look this up every time"
+  "aliases": ["/writing/how-to-install-pil-on-64-bit-ubuntu-1204"],
+  "date": "2013-04-18",
+  "tags": ["python", "pil", "ubuntu"],
+  "slug": "how-to-install-pil-on-64-bit-ubuntu-1204",
+  "title": "How to install PIL on 64-bit Ubuntu 12.04",
+  "description": "Because I have to look this up every time",
 }
 ---
-
 
 ### Problem
 
@@ -24,22 +17,22 @@ You want to install PIL on 64-bit Ubuntu 12.04 (Precise Pangolin).
 
 With pip already installed, install the required development packages:
 
-``` bash
+```bash
 sudo apt-get install python-dev libjpeg-dev libfreetype6-dev zlib1g-dev
 ```
 
 and symlink the three image libraries into `/usr/lib`:
 
-``` bash
+```bash
 sudo ln -s /usr/lib/`uname -i`-linux-gnu/libfreetype.so /usr/lib/
 sudo ln -s /usr/lib/`uname -i`-linux-gnu/libjpeg.so /usr/lib/
 sudo ln -s /usr/lib/`uname -i`-linux-gnu/libz.so /usr/lib/
 ```
 
-PIL should now install with support for JPEGs, PNGs and FreeType, as
-indicated by the compilation output:
+PIL should now install with support for JPEGs, PNGs and FreeType, as indicated
+by the compilation output:
 
-``` bash
+```bash
 --------------------------------------------------------------------
 PIL 1.1.7 SETUP SUMMARY
 --------------------------------------------------------------------
@@ -59,10 +52,10 @@ platform      linux2 2.7.3 (default, Apr 20 2012, 22:39:59)
 
 #### Missing image libraries
 
-If the image libraries are not installed and available in `/usr/lib`,
-you'll see something like this:
+If the image libraries are not installed and available in `/usr/lib`, you'll see
+something like this:
 
-``` bash
+```bash
 --------------------------------------------------------------------
 PIL 1.1.7 SETUP SUMMARY
 --------------------------------------------------------------------
@@ -85,7 +78,7 @@ setup.py script.
 
 Without `python-dev`, you'll see something that ends with the following:
 
-``` bash
+```bash
 ...
 
 running build_ext
@@ -107,13 +100,10 @@ error: command 'gcc' failed with exit status 1
 
 ### Discussion
 
-Yes, this has been written about before. This is just my note-to-self
-that I can refer others to - I also wanted to include the common error
-messages that people will search for.
+Yes, this has been written about before. This is just my note-to-self that I can
+refer others to - I also wanted to include the common error messages that people
+will search for.
 
-- [Installing PIL in a virtualenv on Ubuntu 12.04 Precise
-    Pangolin](http://www.sandersnewmedia.com/why/2012/04/16/installing-pil-virtualenv-ubuntu-1204-precise-pangolin/)
-- [Install PIL with JPEG support on Ubuntu Oneric
-    64bit](http://jj.isgeek.net/2011/09/install-pil-with-jpeg-support-on-ubuntu-oneiric-64bits/)
-- [How to install PIL on
-    Ubuntu](http://www.saltycrane.com/blog/2010/10/how-install-pil-ubuntu/)
+- [Installing PIL in a virtualenv on Ubuntu 12.04 Precise Pangolin](http://www.sandersnewmedia.com/why/2012/04/16/installing-pil-virtualenv-ubuntu-1204-precise-pangolin/)
+- [Install PIL with JPEG support on Ubuntu Oneric 64bit](http://jj.isgeek.net/2011/09/install-pil-with-jpeg-support-on-ubuntu-oneiric-64bits/)
+- [How to install PIL on Ubuntu](http://www.saltycrane.com/blog/2010/10/how-install-pil-ubuntu/)

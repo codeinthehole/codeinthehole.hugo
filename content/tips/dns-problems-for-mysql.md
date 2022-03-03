@@ -1,33 +1,28 @@
 ---
 {
-    "aliases": [
-        "/writing/solving-mysql-connection-problems-caused-by-a-dead-name-server"
-    ],
-    "slug": "solving-mysql-connection-problems-caused-by-a-dead-name-server",
-    "title": "Solving MySQL connection problems caused by a dead name server",
-    "description": "MySQL's DNS lookups can cause serious problems",
-    "tags": [
-        "mysql"
-    ],
-    "date": "2012-02-02"
+  "aliases":
+    ["/writing/solving-mysql-connection-problems-caused-by-a-dead-name-server"],
+  "slug": "solving-mysql-connection-problems-caused-by-a-dead-name-server",
+  "title": "Solving MySQL connection problems caused by a dead name server",
+  "description": "MySQL's DNS lookups can cause serious problems",
+  "tags": ["mysql"],
+  "date": "2012-02-02",
 }
 ---
 
-
-A client site went down today. This is what happened and how it was
-fixed.
+A client site went down today. This is what happened and how it was fixed.
 
 ### Symptoms
 
-The immediate symptom is that your application servers can't connect to
-your database servers. Attempted connections get an error message:
+The immediate symptom is that your application servers can't connect to your
+database servers. Attempted connections get an error message:
 
 > Can't connect to MySQL server on '10.10.110.11' (111)
 
-The relevant MySQL process list reveals a long list of attempted
-connections in state `login`:
+The relevant MySQL process list reveals a long list of attempted connections in
+state `login`:
 
-``` bash
+```bash
 root@server-db1:~ $ mysqladmin processlist
 +-----+----------------------+--------------------+----+---------+------+-------+
 | Id  | User                 | Host               | db | Command | Time | State |
@@ -41,24 +36,24 @@ root@server-db1:~ $ mysqladmin processlist
 ...
 ```
 
-Your site is probably down as no request can connect to the database -
-people are starting to get upset.
+Your site is probably down as no request can connect to the database - people
+are starting to get upset.
 
 ### Problem
 
-When a client connects to MySQL, the newly spawned thread attempts to
-resolve the host name (see [MySQL's documentation on
-DNS](http://dev.mysql.com/doc/refman/5.0/en/dns.html)). This problem is
-caused by the first name server in `/etc/resolv.conf` being down,
-causing the DNS request to time-out. Hence, every connection to MySQL
-sits for a minute waiting for the timeout to occur. Within a few
-seconds, no client will be able to connect.
+When a client connects to MySQL, the newly spawned thread attempts to resolve
+the host name (see
+[MySQL's documentation on DNS](http://dev.mysql.com/doc/refman/5.0/en/dns.html)).
+This problem is caused by the first name server in `/etc/resolv.conf` being
+down, causing the DNS request to time-out. Hence, every connection to MySQL sits
+for a minute waiting for the timeout to occur. Within a few seconds, no client
+will be able to connect.
 
-You can verify this using the `dig` command to exercise the name servers
-in `/etc/resolv.conf`. Here's the broken one (you'll have to wait for
-the time-out):
+You can verify this using the `dig` command to exercise the name servers in
+`/etc/resolv.conf`. Here's the broken one (you'll have to wait for the
+time-out):
 
-``` bash
+```bash
 dig @180.179.39.80 www.google.com
 
 ; <<>> DiG 9.7.0-P1 <<>> @180.179.39.80 www.google.com
@@ -69,7 +64,7 @@ dig @180.179.39.80 www.google.com
 
 A working name server would return something like:
 
-``` bash
+```bash
 dig @180.179.39.81 www.google.com
 
 ; <<>> DiG 9.7.0-P1 <<>> @180.179.39.81 www.google.com
@@ -110,24 +105,24 @@ ns1.google.com.com      76667   IN  A       216.239.38.10
 
 ### Solution
 
-The root solution is to fix the name server, but sometimes that isn't in
-your control.
+The root solution is to fix the name server, but sometimes that isn't in your
+control.
 
 You can work around the borked name server by restarting MySQL with the
-`--skip-name-resolve` option. This prevents MySQL trying to resolve the
-host name for each thread, bypassing the name server problem.
+`--skip-name-resolve` option. This prevents MySQL trying to resolve the host
+name for each thread, bypassing the name server problem.
 
 Alternatively, you can remove the broken DNS server from your
 `/etc/resolv.conf`.
 
 ### Discussion
 
-Note that running MySQL with `--skip-name-resolve` means you can't use
-hostnames in your privileges table. Thus, you may have to reconfigure
-your client users to get your site back up. You can verify this by using
-the following SQL to inspect your configured users and hosts:
+Note that running MySQL with `--skip-name-resolve` means you can't use hostnames
+in your privileges table. Thus, you may have to reconfigure your client users to
+get your site back up. You can verify this by using the following SQL to inspect
+your configured users and hosts:
 
-``` sql
+```sql
 mysql> SELECT user, host FROM mysql.user;
 ```
 
@@ -137,5 +132,5 @@ Check to see if the `host` column uses domain names.
 
 Thanks to Tangent's operations team
 [@timbobsteve](https://twitter.com/#!/timbobsteve) and
-[@kuramanga](https://twitter.com/#!/kuramanga) for their help in
-debugging and fixing this.
+[@kuramanga](https://twitter.com/#!/kuramanga) for their help in debugging and
+fixing this.

@@ -1,30 +1,23 @@
 ---
 {
-    "aliases": [
-        "/writing/use-models-for-uploads"
-    ],
-    "slug": "use-models-for-uploads",
-    "tags": [
-        "django",
-        "python"
-    ],
-    "title": "Use models for uploads",
-    "date": "2012-07-19",
-    "description": "Using models for audit and clarity"
+  "aliases": ["/writing/use-models-for-uploads"],
+  "slug": "use-models-for-uploads",
+  "tags": ["django", "python"],
+  "title": "Use models for uploads",
+  "date": "2012-07-19",
+  "description": "Using models for audit and clarity",
 }
 ---
 
-
-All Django developers will deal with file uploads at some point. I
-contend that it's a good practice to use models to capture the upload
-metadata and to track processing status. This article explains how and
-why.
+All Django developers will deal with file uploads at some point. I contend that
+it's a good practice to use models to capture the upload metadata and to track
+processing status. This article explains how and why.
 
 ### An e-commerce example
 
-Suppose your e-commerce application allows admins to upload CSV files to
-update product stock levels (a common requirement). A typical file may
-comprise a SKU and a stock level:
+Suppose your e-commerce application allows admins to upload CSV files to update
+product stock levels (a common requirement). A typical file may comprise a SKU
+and a stock level:
 
 ```txt
     9781231231999,0
@@ -33,10 +26,9 @@ comprise a SKU and a stock level:
     ...
 ```
 
-[Django's
-docs](https://docs.djangoproject.com/en/dev/topics/http/file-uploads/?from=olddocs)
-detail a common pattern for dealing with file uploads such as this. The
-steps are generally:
+[Django's docs](https://docs.djangoproject.com/en/dev/topics/http/file-uploads/?from=olddocs)
+detail a common pattern for dealing with file uploads such as this. The steps
+are generally:
 
 1. Validate the form submission;
 2. Write upload data to permanent storage;
@@ -69,11 +61,11 @@ def process_file(filepath):
 
 This works fine.
 
-However, it's often desirable to collect audit information about which
-files have been processed, how long processing took and who uploaded
-them. Of course, this can be addressed by logging but a more elegant
-solution to use a simple audit model as well. Consider an alternative
-implementation of `handle_uploaded_file`:
+However, it's often desirable to collect audit information about which files
+have been processed, how long processing took and who uploaded them. Of course,
+this can be addressed by logging but a more elegant solution to use a simple
+audit model as well. Consider an alternative implementation of
+`handle_uploaded_file`:
 
 ```python
 def handle_uploaded_file(user, f):
@@ -120,7 +112,7 @@ class StockUpload(models.Model):
     def process(self):
         self.date_start_processing = datetime.datetime.now()
         try:
-            # process upload data, 
+            # process upload data,
             ...
         except Exception, e:
             self._mark_failed(unicode(e))
@@ -147,8 +139,8 @@ class StockUpload(models.Model):
         return self.status == self.PROCESSED
 ```
 
-You can go further and push the file creation into a manager method so
-the filepath generation is removed from the view:
+You can go further and push the file creation into a manager method so the
+filepath generation is removed from the view:
 
 ```python
 def handle_uploaded_file(f):
@@ -198,13 +190,13 @@ def process_upload(upload_id):
     upload.process()
     if upload.was_processing_successful():
         message_user(
-            upload.uploaded_by, 
+            upload.uploaded_by,
             "Your upload %s was processed successfully, %d records imported" % (
                 upload.filename,
                 upload.num_records))
     else:
         message_user(
-            upload.uploaded_by, 
+            upload.uploaded_by,
             "Your upload %s could not be processed, error message: %s" % (
                 upload.filename,
                 upload.processing_description,))
@@ -222,7 +214,7 @@ def handle_upload(request):
     else:
         form = UploadFileForm()
     return render_to_response(
-        'upload.html', {'form': form}, 
+        'upload.html', {'form': form},
         context_instance=RequestContext(request))
 ```
 
@@ -231,16 +223,16 @@ def handle_upload(request):
 The advantages of using a model are:
 
 - It keeps your view simple - all processing logic is extracted away.
-- The file processing logic is re-usable. You could use a management
-    command to process files specified at the commandline.
+- The file processing logic is re-usable. You could use a management command to
+  process files specified at the commandline.
 - It's easy to defer processing to a Celery worker.
-- You can gather metrics on processing speed and keep audit
-    information on who is uploading what.
-- You can write a simple `ListView` to show the audit information of
-    uploaded files to admins.
+- You can gather metrics on processing speed and keep audit information on who
+  is uploading what.
+- You can write a simple `ListView` to show the audit information of uploaded
+  files to admins.
 
-The above is just a toy example - there are lots of variations that can
-be used. For instance, you may not want to keep the processing logic on
-the model itself, it may make sense to have a separate function for
-this. However the general notion of using a model to represent an
-uploaded file and to track its state is a useful one.
+The above is just a toy example - there are lots of variations that can be used.
+For instance, you may not want to keep the processing logic on the model itself,
+it may make sense to have a separate function for this. However the general
+notion of using a model to represent an uploaded file and to track its state is
+a useful one.

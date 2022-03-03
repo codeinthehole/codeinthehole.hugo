@@ -1,29 +1,25 @@
 ---
 {
-    "aliases": [
-        "/writing/purl-immutable-url-objects-for-python"
-    ],
-    "slug": "purl-immutable-url-objects-for-python",
-    "description": "An immutable URL class designed for easy inspection and manipulation",
-    "tags": [
-        "python"
-    ],
-    "title": "purl - immutable URL objects for Python",
-    "date": "2012-04-19"
+  "aliases": ["/writing/purl-immutable-url-objects-for-python"],
+  "slug": "purl-immutable-url-objects-for-python",
+  "description":
+    "An immutable URL class designed for easy inspection and manipulation",
+  "tags": ["python"],
+  "title": "purl - immutable URL objects for Python",
+  "date": "2012-04-19",
 }
 ---
 
-
 Working with URLs in Python feels clunky when it should be pleasant. In
 [urlparse](http://docs.python.org/library/urlparse.html) and
-[urllib](http://docs.python.org/library/urllib.html), the standard
-library has all the functionality you need, but the code you have to
-write is often cumbersome and unclear.
+[urllib](http://docs.python.org/library/urllib.html), the standard library has
+all the functionality you need, but the code you have to write is often
+cumbersome and unclear.
 
-For instance, here's a typical test method that makes an assertion about
-a query parameter:
+For instance, here's a typical test method that makes an assertion about a query
+parameter:
 
-``` python
+```python
 import urlparse
 
 def test_url_has_correct_query_parameter(self):
@@ -35,7 +31,7 @@ def test_url_has_correct_query_parameter(self):
 
 Not terrible, but could be more concise. I would prefer something like:
 
-``` python
+```python
 from somelibrary import URL
 
 def test_url_has_correct_query_parameter(self):
@@ -44,29 +40,29 @@ def test_url_has_correct_query_parameter(self):
 ```
 
 Further, when working with webservices, you often need to build URLs
-programmatically but it just isn't easy enough in python. You often end
-up using string formatting:
+programmatically but it just isn't easy enough in python. You often end up using
+string formatting:
 
-``` python
+```python
 import urllib
 
-URL_TEMPLATE = 'https://github.com/%s?w=%s' 
+URL_TEMPLATE = 'https://github.com/%s?w=%s'
 def get_github_url(username):
     return URL_TEMPLATE % (urllib.quote(username), '0')
 ```
 
 A preferable API might look something like:
 
-``` python
+```python
 from somelibrary import URL
 
-BASE_URL = URL.from_string('https://github.com/') 
+BASE_URL = URL.from_string('https://github.com/')
 def get_github_url(username):
     return BASE_URL.path_segment(0, username).query_param('w', 0)
 ```
 
-This is a toy example, the problem is much worse when building more
-complicated URLs.
+This is a toy example, the problem is much worse when building more complicated
+URLs.
 
 ### purl
 
@@ -76,19 +72,19 @@ complicated URLs.
     reference.
 </div>
 
-So I wrote a utility class to scratch this itch. It's a simple immutable
-`URL` class that uses jQuery-style overloading of the attribute methods
-to be both accessors and mutators.
+So I wrote a utility class to scratch this itch. It's a simple immutable `URL`
+class that uses jQuery-style overloading of the attribute methods to be both
+accessors and mutators.
 
 Install with:
 
-``` python
+```python
 pip install purl
 ```
 
 Construct URL instances as follows:
 
-``` python
+```python
 from purl import URL
 
 # Explicit constructor
@@ -107,10 +103,10 @@ u = URL.from_string('https://www.google.com').path('search') \
 
 There's a full range of inspection methods:
 
-``` python
+```python
 # Simple attributes
 u.scheme()      # 'https'
-u.host()        # 'www.google.com' 
+u.host()        # 'www.google.com'
 u.domain()      # 'www.google.com' - alias of host
 u.port()        # None (only returns something if explicitly set)
 u.path()        # '/search'
@@ -129,11 +125,11 @@ u.subdomains()                       # ['www', 'google', 'com']
 u.subdomain(0)                       # 'www'
 ```
 
-Each accessor method is overloaded to be a mutator method too, similar
-to the jQuery API. Since the URL class is immutable, any mutation will
-return a new URL instance.
+Each accessor method is overloaded to be a mutator method too, similar to the
+jQuery API. Since the URL class is immutable, any mutation will return a new URL
+instance.
 
-``` python
+```python
 u = URL.from_string('https://github.com/codeinthehole')
 
 # Access
@@ -145,7 +141,7 @@ new_url = u.path_segment(0, 'tangentlabs') # returns new URL object
 
 Here's a fancier example of building a URL:
 
-``` python
+```python
 u = URL().scheme('https')\
          .host('github.com')`\
          .path_segment(0, 'codeinthehole')\
@@ -155,25 +151,22 @@ print u.as_string()
 # returns 'https://github.com/codeinthehole/purl'
 ```
 
-[Source and further details on
-Github](https://github.com/codeinthehole/purl).
+[Source and further details on Github](https://github.com/codeinthehole/purl).
 
 ### Alternatives
 
-There are a couple of URL classes already for python - however neither
-had the exact API I was looking for.
+There are a couple of URL classes already for python - however neither had the
+exact API I was looking for.
 
-- [mxURL](http://www.egenix.com/products/python/mxBase/mxURL/) - Part
-    of the 'eGenix.com mx Base Distribution', this has quite a
-    comprehensie API. It comes bundles with other utility modules with
-    the 'egenix-mx-base' package.
-- [URLObject](https://github.com/zacharyvoase/urlobject/) - There's
-    nothing wrong with this implementation - it's very similar to my one
-    above. The API's not quite to my tastes but that's purely subjective
-    thing.
+- [mxURL](http://www.egenix.com/products/python/mxBase/mxURL/) - Part of the
+  'eGenix.com mx Base Distribution', this has quite a comprehensie API. It comes
+  bundles with other utility modules with the 'egenix-mx-base' package.
+- [URLObject](https://github.com/zacharyvoase/urlobject/) - There's nothing
+  wrong with this implementation - it's very similar to my one above. The API's
+  not quite to my tastes but that's purely subjective thing.
 
 ### Discussion
 
-There is a [discussion of this
-post](http://www.reddit.com/r/Python/comments/sjkab/purl_an_immutable_url_class/)
+There is a
+[discussion of this post](http://www.reddit.com/r/Python/comments/sjkab/purl_an_immutable_url_class/)
 on [/r/Python](http://www.reddit.com/r/Python/).

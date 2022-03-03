@@ -1,43 +1,36 @@
 ---
 {
-    "aliases": [
-        "/writing/a-deferred-logging-file-handler-for-django"
-    ],
-    "tags": [
-        "django",
-        "python"
-    ],
-    "title": "A deferred logging file handler for Django",
-    "description": "Using a setting to control where file logs go",
-    "date": "2013-06-12",
-    "slug": "a-deferred-logging-file-handler-for-django"
+  "aliases": ["/writing/a-deferred-logging-file-handler-for-django"],
+  "tags": ["django", "python"],
+  "title": "A deferred logging file handler for Django",
+  "description": "Using a setting to control where file logs go",
+  "date": "2013-06-12",
+  "slug": "a-deferred-logging-file-handler-for-django",
 }
 ---
 
-
-At Tangent we handle environment-specific configuration of Django
-projects using [the method outlined by David
-Cramer](http://justcramer.com/2011/01/13/settings-in-django/). This
-involves distinguishing between core settings (which we keep in
-`core/default.py`) and environment specific settings (eg
-`core/stage.py`, `core/test.py`). The standard `settings.py` module
-imports all defaults and then uses a enviromental shell variable to
-determine which environment settings module to import.
+At Tangent we handle environment-specific configuration of Django projects using
+[the method outlined by David Cramer](http://justcramer.com/2011/01/13/settings-in-django/).
+This involves distinguishing between core settings (which we keep in
+`core/default.py`) and environment specific settings (eg `core/stage.py`,
+`core/test.py`). The standard `settings.py` module imports all defaults and then
+uses a enviromental shell variable to determine which environment settings
+module to import.
 
 ### A problem
 
-One tricky issue with this arrangement is logging to file. Ideally, we
-want to define a single `LOGGING` dict in the default settings but have
-file logging use an environment-specific folder. For example, logging to
-file in the test environment goes to `/var/log/project/test/` while
-stage goes to a file in `/var/log/project/stage`.
+One tricky issue with this arrangement is logging to file. Ideally, we want to
+define a single `LOGGING` dict in the default settings but have file logging use
+an environment-specific folder. For example, logging to file in the test
+environment goes to `/var/log/project/test/` while stage goes to a file in
+`/var/log/project/stage`.
 
 ### One solution
 
-This can be solved by using a string template for the `filename`
-argument to each `FileHandler` in the `LOGGING` setting:
+This can be solved by using a string template for the `filename` argument to
+each `FileHandler` in the `LOGGING` setting:
 
-``` python
+```python
 # conf/default.py
 
 LOGGING = {
@@ -64,7 +57,7 @@ LOGGING = {
 then importing the default `LOGGING` dict into your environment-specific
 settings and formatting each filename with the correct path:
 
-``` python
+```python
 # conf/test.py
 
 from conf.default import LOGGING
@@ -75,16 +68,15 @@ for handler in LOGGING['handlers'].values():
         handler['filename'] = handler['filename'].format(log_root=LOG_ROOT)
 ```
 
-This works but is rather clunky. For instance, the default `LOGGING`
-setting (without an environmental override) will lead to an error .
+This works but is rather clunky. For instance, the default `LOGGING` setting
+(without an environmental override) will lead to an error .
 
 ### Another solution
 
-Another, possibly more elegant, solution is to use a specialisd logging
-handler that defers evaluation of the filepath until it tries to log a
-record.
+Another, possibly more elegant, solution is to use a specialisd logging handler
+that defers evaluation of the filepath until it tries to log a record.
 
-``` python
+```python
 from logging import FileHandler as BaseFileHandler
 import os
 
@@ -106,7 +98,7 @@ class DeferredFileHandler(BaseFileHandler):
 
 Now, all we need to do is use the new handler in our `LOGGING` dict:
 
-``` python
+```python
 # conf/default.py
 
 LOGGING = {
@@ -132,7 +124,7 @@ LOGGING = {
 
 and specify a `LOG_ROOT` setting for each environment:
 
-``` python
+```python
 # conf/test.py
 
 LOG_ROOT = '/var/log/project/test/'
@@ -140,11 +132,11 @@ LOG_ROOT = '/var/log/project/test/'
 
 Such a logger is part of
 [django-oscar](https://github.com/tangentlabs/django-oscar/blob/master/oscar/core/logging/handlers.py),
-but I've packaged it up separately so it can be used in non-Oscar
-projects. The package is called
+but I've packaged it up separately so it can be used in non-Oscar projects. The
+package is called
 [django-deferred-filelogger](https://github.com/codeinthehole/django-deferred-filelogger)
 and can be installed from PyPI using:
 
-``` bash
+```bash
 pip install django-deferred-filelogger
 ```

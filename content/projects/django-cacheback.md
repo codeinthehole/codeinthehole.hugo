@@ -1,65 +1,59 @@
 ---
 {
-    "aliases": [
-        "/writing/cacheback-asynchronous-cache-refreshing-for-django"
-    ],
-    "description": "A simple caching library that uses Celery to refresh stage cache items",
-    "date": "2012-09-02",
-    "title": "Cacheback - asynchronous cache refreshing for Django",
-    "tags": [
-        "django",
-        "python"
-    ],
-    "slug": "cacheback-asynchronous-cache-refreshing-for-django"
+  "aliases": ["/writing/cacheback-asynchronous-cache-refreshing-for-django"],
+  "description":
+    "A simple caching library that uses Celery to refresh stage cache items",
+  "date": "2012-09-02",
+  "title": "Cacheback - asynchronous cache refreshing for Django",
+  "tags": ["django", "python"],
+  "slug": "cacheback-asynchronous-cache-refreshing-for-django",
 }
 ---
 
-
 Inspired by [Jacob Kaplan-Moss](http://jacobian.org/)'s excellent talk
-"[Django doesn't scale](http://www.oscon.com/oscon2012/public/schedule/detail/24030)" at
-this year's OSCon, I've put together a Django package for re-populating
+"[Django doesn't scale](http://www.oscon.com/oscon2012/public/schedule/detail/24030)"
+at this year's OSCon, I've put together a Django package for re-populating
 caches asynchronously.
 
-It provides a simple API for wrapping expensive read operations that
-caches results and uses [Celery](http://celeryproject.org/) to
-repopulate items when they become stale. It can be used as a decorator
-for simple cases but provides an extensible class for more fine-grained
-control. It also provides helper classes for working with querysets.
+It provides a simple API for wrapping expensive read operations that caches
+results and uses [Celery](http://celeryproject.org/) to repopulate items when
+they become stale. It can be used as a decorator for simple cases but provides
+an extensible class for more fine-grained control. It also provides helper
+classes for working with querysets.
 
 The package is MIT-licensed, published to
-[PyPI](http://pypi.python.org/pypi/django-cacheback) and the source is
-available on
-[Github](https://github.com/codeinthehole/django-cacheback). It's best
+[PyPI](http://pypi.python.org/pypi/django-cacheback) and the source is available
+on [Github](https://github.com/codeinthehole/django-cacheback). It's best
 explained with an ...
 
 ### Example
 
 Consider a view that renders a user's tweets:
 
-``` python
+```python
 from django.shortcuts import render
 from myproject.twitter import fetch_tweets
 
 def show_tweets(request, username):
-    return render(request, 'tweets.html', 
+    return render(request, 'tweets.html',
                   {'tweets': fetch_tweets(username)})
 ```
 
-This works fine but the `fetch_tweets` function involves a HTTP
-round-trip and is slow. Enter caching.
+This works fine but the `fetch_tweets` function involves a HTTP round-trip and
+is slow. Enter caching.
 
 #### Basic caching
 
-Performance can be improved using Django's [low-level cache
-API](https://docs.djangoproject.com/en/dev/topics/cache/?from=olddocs#the-low-level-cache-api):
+Performance can be improved using Django's
+[low-level cache API](https://docs.djangoproject.com/en/dev/topics/cache/?from=olddocs#the-low-level-cache-api):
 
-``` python
+```python
 from django.shortcuts import render
 from django.cache import cache
 from myproject.twitter import fetch_tweets
 
 def show_tweets(request, username):
-    return render(request, 'tweets.html', 
+    return render(request, 'tweets.html',
                   {'tweets': fetch_cached_tweets(username)})
 
 def fetch_cached_tweets(username):
@@ -70,39 +64,38 @@ def fetch_cached_tweets(username):
     return tweets
 ```
 
-Now tweets are cached for 15 minutes after they are first fetched, using
-the twitter username as a key. This is obviously a performance
-improvement but the shortcomings of this approach are:
+Now tweets are cached for 15 minutes after they are first fetched, using the
+twitter username as a key. This is obviously a performance improvement but the
+shortcomings of this approach are:
 
-- For a cache miss, the tweets are fetched synchronously, blocking
-    code execution and leading to a slow response time.
-- This in turn exposes exposes the view to a '[cache
-    stampede](http://en.wikipedia.org/wiki/Cache_stampede)' where
-    multiple expensive reads run simultaneously when the cached item
-    expires. Under heavy load, this can bring your site down.
+- For a cache miss, the tweets are fetched synchronously, blocking code
+  execution and leading to a slow response time.
+- This in turn exposes exposes the view to a
+  '[cache stampede](http://en.wikipedia.org/wiki/Cache_stampede)' where multiple
+  expensive reads run simultaneously when the cached item expires. Under heavy
+  load, this can bring your site down.
 
 #### Procrastinate instead
 
-For most applications, it's not actually essential that the cache is
-refreshed immediately - it's acceptable to return stale results and
-update the cache asynchronously (so-called ['Eventual
-Consistency'](http://en.wikipedia.org/wiki/Eventual_consistency)). This
-is desirable as it means all reads are fast and prevents cache
-stampedes.
+For most applications, it's not actually essential that the cache is refreshed
+immediately - it's acceptable to return stale results and update the cache
+asynchronously (so-called
+['Eventual Consistency'](http://en.wikipedia.org/wiki/Eventual_consistency)).
+This is desirable as it means all reads are fast and prevents cache stampedes.
 
 #### Using Celery
 
-Consider an alternative implementation that uses a Celery task to
-repopulate the cache.
+Consider an alternative implementation that uses a Celery task to repopulate the
+cache.
 
-``` python
+```python
 import datetime
 from django.shortcuts import render
 from django.cache import cache
 from myproject.tasks import update_tweets
 
 def show_tweets(request, username):
-    return render(request, 'tweets.html', 
+    return render(request, 'tweets.html',
                   {'tweets': fetch_cached_tweets(username)})
 
 def fetch_cached_tweets(username, lifetime=60*15):
@@ -121,7 +114,7 @@ def fetch_cached_tweets(username, lifetime=60*15):
 
 where the `myproject.tasks.update_tweets` task is implemented as:
 
-``` python
+```python
 import datetime
 from celery import task
 from django.cache import cache
@@ -131,33 +124,30 @@ from myproject.twitter import fetch_tweets
 def update_tweets(username, ttl):
     tweets = fetch_tweets(username)
     now = datetime.datetime.now()
-    cache.set(username, (tweets, now+ttl), 2592000) 
+    cache.set(username, (tweets, now+ttl), 2592000)
 ```
 
 Some things to note:
 
-- Items are stored in the cache as tuples `(data, expiry_timestamp)`
-    using Memcache's maximum expiry setting (2592000 seconds). By using
-    this value, we are effectively bypassing memcache's replacement
-    policy in favour of our own.
-- As the comments indicate, there are two replacements scenarios to
-    consider:
-    1. Cache miss. In this case, we don't have any data (stale or
-        otherwise) to return. In the example above, we trigger an
-        asynchronous refresh and return an empty result set. In other
-        scenarios, it may make sense to perform a synchronous refresh.
-    2. Cache hit but with stale data. Here we return the stale data but
-        trigger a Celery task to refresh the cached item.
+- Items are stored in the cache as tuples `(data, expiry_timestamp)` using
+  Memcache's maximum expiry setting (2592000 seconds). By using this value, we
+  are effectively bypassing memcache's replacement policy in favour of our own.
+- As the comments indicate, there are two replacements scenarios to consider:
+  1. Cache miss. In this case, we don't have any data (stale or otherwise) to
+     return. In the example above, we trigger an asynchronous refresh and return
+     an empty result set. In other scenarios, it may make sense to perform a
+     synchronous refresh.
+  2. Cache hit but with stale data. Here we return the stale data but trigger a
+     Celery task to refresh the cached item.
 
-This pattern of re-populating the cache asynchronously works well.
-Indeed it is the basic of the Cacheback package.
+This pattern of re-populating the cache asynchronously works well. Indeed it is
+the basic of the Cacheback package.
 
 #### Using Cacheback
 
-Here's the same functionality implemented using the `cacheback`
-function:
+Here's the same functionality implemented using the `cacheback` function:
 
-``` python
+```python
 from django.shortcuts import render
 from django.cache import cache
 from myproject.twitter import fetch_tweets
@@ -165,20 +155,19 @@ from cacheback.decorators import cacheback
 
 def show_tweets(request, username):
     fetch_cached_tweets = cacheback(60*15, fetch_on_miss=False)(fetch_tweets)
-    return render(request, 'tweets.html', 
+    return render(request, 'tweets.html',
                   {'tweets': fetch_cached_tweets(username)})
 ```
 
-The `cacheback` function provides a wrapper function for the
-`fetch_tweets` function. When called, the wrapper will generate a cache
-key based on the module path of the wrapped function and the passed args
-and kwargs. It then checks the cache and if there isn't a valid result
-it will serialise the function and its args so it can be executed
-asynchronously by a Celery task.
+The `cacheback` function provides a wrapper function for the `fetch_tweets`
+function. When called, the wrapper will generate a cache key based on the module
+path of the wrapped function and the passed args and kwargs. It then checks the
+cache and if there isn't a valid result it will serialise the function and its
+args so it can be executed asynchronously by a Celery task.
 
 The `cacheback` function can also be used as a decorator:
 
-``` python
+```python
 from cacheback.decorators import cacheback
 
 @cacheback(15*60)
@@ -186,17 +175,16 @@ def fetch_tweets(username):
     ...
 ```
 
-Or for more fine-grained control: using a subclass of
-`cacheback.base.Job`:
+Or for more fine-grained control: using a subclass of `cacheback.base.Job`:
 
-``` python
+```python
 from django.shortcuts import render
 from django.cache import cache
 from myproject.twitter import fetch_tweets
 from cacheback.base import Job
 
 def show_tweets(request, username):
-    return render(request, 'tweets.html', 
+    return render(request, 'tweets.html',
                   {'tweets': FetchTweets().get(username)})
 
 class FetchTweets(Job):
@@ -206,12 +194,12 @@ class FetchTweets(Job):
         return fetch_tweets(username)
 ```
 
-While only the `fetch` method must be implemented, the `cacheback.Job`
-class provides several other overridable methods that provide
-fine-grained control of the caching process.
+While only the `fetch` method must be implemented, the `cacheback.Job` class
+provides several other overridable methods that provide fine-grained control of
+the caching process.
 
 ### Interested?
 
 Check-out the
-[documentation](http://django-cacheback.readthedocs.org/en/latest/) for
-more information. Comments and feedback welcome.
+[documentation](http://django-cacheback.readthedocs.org/en/latest/) for more
+information. Comments and feedback welcome.

@@ -5,8 +5,8 @@ description: "Write-up of a painful morning."
 tags: ["puppet", "rabbitmq", "ubuntu"]
 ---
 
-I wasted a morning trying to install RabbitMQ v3.7.12 (the latest version as of Feb
-2019) on an Ubuntu 18.04 machine using Puppet. This as tricky as:
+I wasted a morning trying to install RabbitMQ v3.7.12 (the latest version as of
+Feb 2019) on an Ubuntu 18.04 machine using Puppet. This as tricky as:
 
 1. Only RabbitMQ version 3.6.10 is available from the default repositories;
 2. Getting Puppet to install packages from custom locations can be painful.

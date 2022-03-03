@@ -1,32 +1,25 @@
 ---
 {
-    "aliases": [
-        "/writing/creating-large-xml-files-with-php"
-    ],
-    "slug": "creating-large-xml-files-with-php",
-    "date": "2008-10-31",
-    "title": "Creating large XML files with PHP",
-    "tags": [
-        "PHP"
-    ],
-    "description": "Using PHP's DomDocument to create large XML files"
+  "aliases": ["/writing/creating-large-xml-files-with-php"],
+  "slug": "creating-large-xml-files-with-php",
+  "date": "2008-10-31",
+  "title": "Creating large XML files with PHP",
+  "tags": ["PHP"],
+  "description": "Using PHP's DomDocument to create large XML files",
 }
 ---
 
+When creating large XML files with PHP, there are some important considerations
+to bear in mind with regards to scalability. There are several libraries
+available for writing XML files of small to intermediate size (such as
+DOMDocument), but when dealing with very large files (eg. &gt; 500Mb, or several
+million elements), these libraries are no longer useful as the size of the file
+then can create is memory-bound.
 
-When creating large XML files with PHP, there are some important
-considerations to bear in mind with regards to scalability. There are
-several libraries available for writing XML files of small to
-intermediate size (such as DOMDocument), but when dealing with very
-large files (eg. &gt; 500Mb, or several million elements), these
-libraries are no longer useful as the size of the file then can create
-is memory-bound.
+For example, DOMDocument stores the XML tree in memory while it is being built -
+you then flush it out to file after all elements have been created:
 
-For example, DOMDocument stores the XML tree in memory while it is being
-built - you then flush it out to file after all elements have been
-created:
-
-``` php
+```php
 <?php
 $dom = new DOMDocument('1.0');
 for ($i=0; $i<=10000; ++$i) {
@@ -40,14 +33,14 @@ for ($i=0; $i<=10000; ++$i) {
 file_put_contents('example.xml', $dom->saveXML());
 ```
 
-However, this doesn't scale once your feed size starts exceeding the
-available memory (teaking memory settings in php.ini is only a
-short-term fix). A good solution to this is to use the XMLWriter library
-as this provides the ability to periodically flush the XML in memory out
-to file. By doing so, you reclaim the memory so you can keep building
-the XML tree without exceeding memory limitations.
+However, this doesn't scale once your feed size starts exceeding the available
+memory (teaking memory settings in php.ini is only a short-term fix). A good
+solution to this is to use the XMLWriter library as this provides the ability to
+periodically flush the XML in memory out to file. By doing so, you reclaim the
+memory so you can keep building the XML tree without exceeding memory
+limitations.
 
-``` php
+```php
 <?php
 $xmlWriter = new XMLWriter();
 $xmlWriter->openMemory();
@@ -65,6 +58,6 @@ for ($i=0; $i<=10000000; ++$i) {
 file_put_contents('example.xml', $xmlWriter->flush(true), FILE_APPEND);
 ```
 
-Here we flush the XML in memory to file every 1000 iterations. This
-ensures that memory usage is capped and opens up the possiblity of
-creating very large XML files.
+Here we flush the XML in memory to file every 1000 iterations. This ensures that
+memory usage is capped and opens up the possiblity of creating very large XML
+files.

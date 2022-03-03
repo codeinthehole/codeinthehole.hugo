@@ -1,75 +1,64 @@
 ---
 {
-    "aliases": [
-        "/writing/command-line-tips-for-effective-release-announcements"
-    ],
-    "date": "2014-01-16",
-    "title": "Command-line tips for effective release announcements",
-    "tags": [
-        "git",
-        "commandlinefu",
-        "django",
-        "django-oscar"
-    ],
-    "slug": "command-line-tips-for-effective-release-announcements",
-    "description": "Git tips for writing release notes"
+  "aliases": ["/writing/command-line-tips-for-effective-release-announcements"],
+  "date": "2014-01-16",
+  "title": "Command-line tips for effective release announcements",
+  "tags": ["git", "commandlinefu", "django", "django-oscar"],
+  "slug": "command-line-tips-for-effective-release-announcements",
+  "description": "Git tips for writing release notes",
 }
 ---
 
+We finally
+[released Oscar 0.6](http://django-oscar.readthedocs.org/en/latest/releases/v0.6.html)
+last week. The process brought home the importance of writing your release notes
+as you go rather than at the end. It's a real pain to extract the key changes
+from 1200 commits spread over the last 8 months. Lesson learnt.
 
-We finally [released Oscar
-0.6](http://django-oscar.readthedocs.org/en/latest/releases/v0.6.html)
-last week. The process brought home the importance of writing your
-release notes as you go rather than at the end. It's a real pain to
-extract the key changes from 1200 commits spread over the last 8 months.
-Lesson learnt.
-
-This article is largely a note-to-self in case I have to repeat the
-process. However, if you do find yourself in a similar position, here
-are a few command-line tricks for analysing your git history.
+This article is largely a note-to-self in case I have to repeat the process.
+However, if you do find yourself in a similar position, here are a few
+command-line tricks for analysing your git history.
 
 ### Analysing codebase changes since a tag
 
 Basics: browse commits since the last tagged release
 
-``` bash
+```bash
 git log 0.5..0.6
 ```
 
-The `--name-status` option for `git diff` is useful for analysing
-codebase changes between two commits. For instance, you can view changes
-to a particular directory:
+The `--name-status` option for `git diff` is useful for analysing codebase
+changes between two commits. For instance, you can view changes to a particular
+directory:
 
-``` bash
+```bash
 git diff --name-status 0.5..0.6 oscar/apps/address
 ```
 
-which can be useful if thousands of files have changed and you want to
-review each package individually.
+which can be useful if thousands of files have changed and you want to review
+each package individually.
 
 Extensions include finding deleted files:
 
-``` bash
+```bash
 git diff --name-status 0.5..0.6 | grep "^D"
 ```
 
 or all new migration files:
 
-``` bash
+```bash
 git diff --name-status 0.5..0.6 | grep "^A.*migrations/[0-9]"
 ```
 
-which is important for projects like Oscar which ship with database
-migrations.
+which is important for projects like Oscar which ship with database migrations.
 
 ### Determine changes template block names
 
-Since Oscar allows customisation of templates and overriding template
-blocks, we try and document any changes to template block names. The
-process here is more involved and requires two temporary files generated
-with this command:
+Since Oscar allows customisation of templates and overriding template blocks, we
+try and document any changes to template block names. The process here is more
+involved and requires two temporary files generated with this command:
 
-``` bash
+```bash
 $ grep -or "{% block .* %}" oscar/templates/oscar | \
     awk 'BEGIN {FS=":"} {split($2, parts, " "); print $1, parts[3]}'
 ```
@@ -86,10 +75,10 @@ oscar/templates/oscar/404.html error_message
 ...
 ```
 
-To compare the template blocks from each release, we create two
-temporary files and analyse the diff:
+To compare the template blocks from each release, we create two temporary files
+and analyse the diff:
 
-``` bash
+```bash
 $ git checkout 0.5
 $ grep -or "{% block .* %}" oscar/templates/oscar | \
     awk 'BEGIN {FS=":"} {split($2, parts, " "); print $1, parts[3]}' >
@@ -110,12 +99,12 @@ I imagine there's a better way to do this but I couldn't find one.
 
 ### Updating an `AUTHORS` files
 
-Oscar's `AUTHORS` file contains all contributors with 15 or more commits
-in the master branch. We generate this file automatically.
+Oscar's `AUTHORS` file contains all contributors with 15 or more commits in the
+master branch. We generate this file automatically.
 
 You can sort authors by number of commits:
 
-``` bash
+```bash
 $ git shortlog -sn master | head
   2992  David Winterbottom
    355  Maik Hoepfel
@@ -128,73 +117,69 @@ $ git shortlog -sn master | head
   ...
 ```
 
-and extend this to find authors with more than a certain number of
-commits
+and extend this to find authors with more than a certain number of commits
 
-``` bash
+```bash
 THRESHOLD=15
 git shortlog -sn master | awk '$1 >= $THRESHOLD {$1="";print $0}' | cut -d" " -f2-
 ```
 
-Note, `git shortlog` uses a `.mailmap` file to aggregate commits from
-the same committer where their name or email were different in the
-commit history.
+Note, `git shortlog` uses a `.mailmap` file to aggregate commits from the same
+committer where their name or email were different in the commit history.
 
 Using this command, we can create a new `AUTHORS` file containing all
 contributors with greater than 15 commits on the master branch:
 
-``` bash
+```bash
 $ git shortlog -ns master | awk '$1 >= $THRESHOLD {$1="";print $0}' | \
     cut -d" " -f2- > AUTHORS
 ```
 
 ### Notifying contributors
 
-If you have a patch accepted into a project, it's useful to know when a
-formal release has been cut that includes said patch. Before then, you
-might be linking your project to a fork and maintaining a work-around
-within your codebase.
+If you have a patch accepted into a project, it's useful to know when a formal
+release has been cut that includes said patch. Before then, you might be linking
+your project to a fork and maintaining a work-around within your codebase.
 
 As the project maintainer, you might assume that such people are already
-subscribed to your project mailing list, or following your project
-Twitter stream. However, there's a more thorough way to notify
-contributors that their patch is in a release: you can email them.
+subscribed to your project mailing list, or following your project Twitter
+stream. However, there's a more thorough way to notify contributors that their
+patch is in a release: you can email them.
 
-To do this, extract the email addresses of committers whose patches are
-in the new release:
+To do this, extract the email addresses of committers whose patches are in the
+new release:
 
-``` bash
+```bash
 git log 0.5..0.6 --format='%aE' | sort | uniq
 ```
 
 and CC these addresses in your mailing list release announcement.
 
-Even better, you can only grab the addresses of *new* contributors to
-the project, where the release is the first to contain one of their
-commits. We do this by extracting two lists of email addresses and
-employing the lovely but neglected `comm` command to pluck the email
-addresses that only exist in the latest release:
+Even better, you can only grab the addresses of _new_ contributors to the
+project, where the release is the first to contain one of their commits. We do
+this by extracting two lists of email addresses and employing the lovely but
+neglected `comm` command to pluck the email addresses that only exist in the
+latest release:
 
-``` bash
+```bash
 $ comm -13 <(git log 0.5 --format='%aE' | sort | uniq) \
     <(git log 0.5..0.6 --format='%aE' | sort | uniq)
 ```
 
-Note the first input is all contributors up to release 0.5, while the
-second is contributors to the 0.6 release only.
+Note the first input is all contributors up to release 0.5, while the second is
+contributors to the 0.6 release only.
 
-`comm` is an extremely useful command for selecting lines common between
-two files, or exclusive to one. The `-13` options indicate to exclude
-lines exclusive to the first file (`-1`) and lines common to both
-(`-3`).
+`comm` is an extremely useful command for selecting lines common between two
+files, or exclusive to one. The `-13` options indicate to exclude lines
+exclusive to the first file (`-1`) and lines common to both (`-3`).
 
 ### Summarising changes
 
-If your release isn't large, your release notes could include a summary
-of the contained commits; this is useful for minor point releases. You
-can use `git shortlog` to do this:
+If your release isn't large, your release notes could include a summary of the
+contained commits; this is useful for minor point releases. You can use
+`git shortlog` to do this:
 
-``` bash
+```bash
 $ git shortlog 0.5..0.6 --no-merges
 David Winterbottom (661):
       Add defaults to the counts on the product summary dashboard page
@@ -207,9 +192,9 @@ David Winterbottom (661):
 
 You can even use `--format` to provide links to Github commits:
 
-``` bash
+```bash
 git shortlog 0.3.4..0.4 --no-merges --format="%s (https://github.com/tangentlabs/django-oscar-stores/commit/%h)"
 ```
 
-This won't always be appropriate if your release if there are thousands
-of commits.
+This won't always be appropriate if your release if there are thousands of
+commits.

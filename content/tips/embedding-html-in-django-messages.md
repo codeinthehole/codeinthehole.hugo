@@ -1,54 +1,48 @@
 ---
 {
-    "aliases": [
-        "/writing/embedding-html-in-django-messages"
-    ],
-    "title": "Embedding HTML in Django messages",
-    "slug": "embedding-html-in-django-messages",
-    "description": "Using 'extra_tags' to flag up HTML-safe messages",
-    "tags": [
-        "django",
-        "python"
-    ],
-    "date": "2012-04-12"
+  "aliases": ["/writing/embedding-html-in-django-messages"],
+  "title": "Embedding HTML in Django messages",
+  "slug": "embedding-html-in-django-messages",
+  "description": "Using 'extra_tags' to flag up HTML-safe messages",
+  "tags": ["django", "python"],
+  "date": "2012-04-12",
 }
 ---
 
-
 ### Problem
 
-You want to embed HTML within a message using [Django's messages
-framework](https://docs.djangoproject.com/en/dev/ref/contrib/messages/).
+You want to embed HTML within a message using
+[Django's messages framework](https://docs.djangoproject.com/en/dev/ref/contrib/messages/).
 
-This is a reasonably common requirement - for instance, it's common to
-want to include a link within the message, perhaps pointing the user
-towards a sign-in or registration page.
+This is a reasonably common requirement - for instance, it's common to want to
+include a link within the message, perhaps pointing the user towards a sign-in
+or registration page.
 
-This problem exists as of Django 1.4 but may be solved within the
-framework in later versions.
+This problem exists as of Django 1.4 but may be solved within the framework in
+later versions.
 
 ### Solution
 
-Use the `extra_tags` [keyword
-argument](https://code.djangoproject.com/browser/django/branches/releases/1.4.X/django/contrib/messages/api.py#L15)
+Use the `extra_tags`
+[keyword argument](https://code.djangoproject.com/browser/django/branches/releases/1.4.X/django/contrib/messages/api.py#L15)
 to pass a flag indicating that the message is safe for rendering without
 escaping. For example:
 
-``` python
+```python
 from django.contrib import messages
 
 def some_view(request):
     ...
-    messages.success(request, 
+    messages.success(request,
                      'Here is a <a href="/">link</a>.',
                      extra_tags='safe')
     ...
 ```
 
-Then use some simple template logic to determine whether to use the
-`safe` filter:
+Then use some simple template logic to determine whether to use the `safe`
+filter:
 
-``` html+django
+```html+django
 <ul>
     {% for message in messages %}
     <li class="{{ message.tags }}">
@@ -64,11 +58,11 @@ Then use some simple template logic to determine whether to use the
 
 ### Discussion
 
-It's tempting to use the `safe` filter for all messages but this opens
-up a XSS security hole if you are not careful as it's easy to include
-user input verbatim in the message. For instance:
+It's tempting to use the `safe` filter for all messages but this opens up a XSS
+security hole if you are not careful as it's easy to include user input verbatim
+in the message. For instance:
 
-``` python
+```python
 from django.contrib import messages
 
 def some_view(request):
@@ -78,9 +72,8 @@ def some_view(request):
 ```
 
 leads to an XSS hole if the `safe` filter is used on all messages as the
-contents of `request.GET['code']` cannot be trusted. It's better to
-explicitly indicate which messages can be safely rendered without
-escaping.
+contents of `request.GET['code']` cannot be trusted. It's better to explicitly
+indicate which messages can be safely rendered without escaping.
 
-Taken from a [Stack Overflow
-answer](http://stackoverflow.com/questions/2053258/how-do-i-output-html-in-a-message-in-the-new-django-messages-framework).
+Taken from a
+[Stack Overflow answer](http://stackoverflow.com/questions/2053258/how-do-i-output-html-in-a-message-in-the-new-django-messages-framework).

@@ -1,43 +1,36 @@
 ---
 {
-    "aliases": [
-        "/writing/how-to-set-up-mysql-for-python-on-ubuntu"
-    ],
-    "slug": "how-to-set-up-mysql-for-python-on-ubuntu",
-    "tags": [
-        "python",
-        "mysql",
-        "ubuntu"
-    ],
-    "description": "This doesn't stick in my head",
-    "title": "How to set-up MySQL for Python on Ubuntu",
-    "date": "2012-01-05"
+  "aliases": ["/writing/how-to-set-up-mysql-for-python-on-ubuntu"],
+  "slug": "how-to-set-up-mysql-for-python-on-ubuntu",
+  "tags": ["python", "mysql", "ubuntu"],
+  "description": "This doesn't stick in my head",
+  "title": "How to set-up MySQL for Python on Ubuntu",
+  "date": "2012-01-05",
 }
 ---
 
-
-This is just for my own reference as I always forget the dependencies
-for setting up MySQL on a new machine.
+This is just for my own reference as I always forget the dependencies for
+setting up MySQL on a new machine.
 
 ### Installation
 
-Starting with a vanilla Lucid install[^1], install pip and upgrade to
-the latest version:
+Starting with a vanilla Lucid install[^1], install pip and upgrade to the latest
+version:
 
-``` bash
+```bash
 apt-get install python-pip
 pip install -U pip
 ```
 
 Next, install the required development packages:
 
-``` bash
+```bash
 apt-get install python-dev libmysqlclient-dev
 ```
 
 then
 
-``` bash
+```bash
 pip install MySQL-python
 ```
 
@@ -47,7 +40,7 @@ should complete successfully.
 
 Without `libmysqlclient-dev`, you'll see something like this:
 
-``` bash
+```bash
 Downloading/unpacking MySQL-python
 Running setup.py egg_info for package MySQL-python
     sh: mysql_config: not found
@@ -84,7 +77,7 @@ EnvironmentError: mysql_config not found
 
 Without `python-dev`, you'll see something that ends with the following:
 
-``` bash
+```bash
 ...
 
     _mysql.c:2620: error: expected '=', ',', ';', 'asm' or '__attribute__' before '_mysql_ResultObject_Type'
@@ -108,5 +101,6 @@ Command /usr/bin/python -c "import setuptools;__file__='/home/vagrant/build/MySQ
 Storing complete log in /home/vagrant/.pip/pip.log
 ```
 
-[^1]: Tested using the Lucid32 Vagrant box:
+[^1]:
+    Tested using the Lucid32 Vagrant box:
     <http://files.vagrantup.com/lucid32.box>
