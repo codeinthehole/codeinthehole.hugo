@@ -48,6 +48,13 @@ function verify_preconditions() {
         echo "Markdownlint is not passing"
         exit 1
     fi
+
+    # Check Prettier passes
+    if ! prettier --check content/ README.md
+    then
+        echo "Markdownlint is not passing"
+        exit 1
+    fi
 }
 
 function build_site() {
