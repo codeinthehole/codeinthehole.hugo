@@ -4,3 +4,11 @@ run:
 
 deploy:
 	./deploy.sh
+
+lint: markdownlint prettier
+
+markdownlint:
+	markdownlint .
+
+prettier:
+	prettier --check content/ README.md
