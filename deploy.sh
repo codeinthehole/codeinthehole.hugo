@@ -43,7 +43,7 @@ function verify_preconditions() {
     fi
 
     # Check markdownlint passes
-    if ! markdownlint --check .
+    if ! markdownlint .
     then
         echo "Markdownlint is not passing"
         exit 1
