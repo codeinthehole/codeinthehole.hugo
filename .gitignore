@@ -1,2 +1,8 @@
+# Where static site is published to
 public
+
+# Ctags
 /tags
+
+# Hugo temp files
+.hugo_build.lock
