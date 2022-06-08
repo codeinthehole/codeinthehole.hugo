@@ -7,8 +7,8 @@ blog.
 
 ### Install
 
-Clone the repo then clone the Github Pages repo that contains compiled static
-files:
+Clone this repo, then clone the repo that contains compiled static files into
+the `public` folder:
 
 ```sh
 git clone https://github.com/codeinthehole/codeinthehole.hugo.git blog
@@ -22,11 +22,18 @@ Install Hugo via HomeBrew:
 brew install hugo
 ```
 
-Last time I checked, I was using Hugo v0.75.1.
+Last time I checked, I was using Hugo v0.100.
 
-Run the local HTTP server with `make run`.
+Check everything is working by running a local HTTP server with `make run`.
 
-The `makefile` contains targets for running a local server (`make run`).
+### Linting
+
+The `makefile` contains targets for linting markdown files with `markdownlint`
+and `prettier`:
+
+```sh
+make lint
+```
 
 ### Create a blog post
 
