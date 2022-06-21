@@ -1,8 +1,12 @@
 # Where static site is published to
-public
+/public
+
+# The staging area for CSS and images
+/resources
+
+# Temp files
+.hugo_build.lock
 
 # Ctags
 /tags
 
-# Hugo temp files
-.hugo_build.lock
