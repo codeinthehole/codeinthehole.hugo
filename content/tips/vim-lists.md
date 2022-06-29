@@ -261,8 +261,6 @@ A _window-local_ equivalent of the quickfix list — a similar set of commands
 exists but now prefixed `:l` (e.g. `:lwindow` to open the location list if it
 has entries).
 
-<!-- Tips -->
-
 <!-- Personal take -->
 
 Personally, I don't use it much directly but it's good to be aware of. Popular
