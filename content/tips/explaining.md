@@ -1,7 +1,7 @@
 +++
 title = "Explaining"
 date = 2021-10-14T16:29:42+01:00
-description = "Record your explanations somewhere permanent"
+description = "Record your explanations somewhere permanent."
 tags = ["writing"]
 +++
 
