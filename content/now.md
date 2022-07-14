@@ -4,6 +4,34 @@ type = "info"
 hidefromhome = true
 +++
 
+## July 2022
+
+Culture:
+
+- Read so far this year:
+
+  - _The Sellout_ by Paul Beatty
+  - _Maus_ by Art Siegelman
+  - _Girl, Woman, Other_ by Bernardine Evaristo
+  - _Masters of Doom_ by David Kushner
+  - _How to be a woman_ by Caitlin Moran
+  - _The Colour_ by Rose Tremain
+  - _Bring up the Bodies_ by Hilary Mantel
+
+  Reading Booker prize winners is still paying dividends.
+
+- Recently finished the first season of _Gomorrah_ plus the accompanying
+  _L'Immortal._ — really enjoyed it all. Nothing beats _Better Call Saul_
+  though.
+
+- Have stumbled upon some good French music on Spotify. Artists like _Lewis
+  OfMan_, _Blue Toucan_, _Papooz_, _Polo and Pan_ — always good when you find a
+  rich vein of new music.
+
+Life:
+
+- Surprising broke my 5k PB the other day by running 21:31 in a local Park Run.
+
 ## September 2021
 
 Culture:
@@ -28,10 +56,6 @@ Life:
 
 - Am training for the [Triffic Trail 10k run](https://www.triffictrail.com/)
   later this month.
-
-New (good) recipes discovered:
-
--
 
 ## May 2021
 
