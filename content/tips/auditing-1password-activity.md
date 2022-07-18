@@ -157,7 +157,7 @@ main "$@"
 
 ## This is harder than it should be
 
-To any 1Password employees, this is a harder than it should be. Please consider
+To any 1Password employees, this is harder than it should be. Please consider
 making these questions easier to answer.
 
 One suggestion: these questions would be easier to answer with more advanced
