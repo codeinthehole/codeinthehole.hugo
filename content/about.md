@@ -6,14 +6,18 @@ hidefromhome = true
 +++
 
 <img id="about-photo" src="https://gravatar.com/avatar/52d39c7b27386ca98bc016119d95b8b8?s=180" />
+
 Hello, I'm **David**, a software engineer.
 
 ## Employment
 
-I'm **Head of Engineering** at [Octopus Energy](https://octopus.energy), a
-tech-focussed UK energy supplier. I help run a
-[team of engineers](https://tech.octopus.energy) building the "Kraken" software
-platform that underpins the business. Octopus Energy became the 15th UK tech
+I'm **Head of Software Engineering** at
+[Kraken Technologies](https://kraken.tech/), the technology part of
+[Octopus Energy Group](https://octopusenergy.group/). I help run a
+[department of engineers](https://tech.octopus.energy) building the "Kraken"
+software platform that underpins the business.
+
+Octopus Energy became the 15th UK tech
 ["unicorn"](<https://en.wikipedia.org/wiki/Unicorn_(finance)>) in May 2020,
 after
 [investment from Origin Energy](https://octopus.energy/blog/octopus-energy-achieves-unicorn-status-investment-origin-energy/).
@@ -39,10 +43,9 @@ _Everything_ to do with software; but especially:
   [London-school TDD](https://github.com/testdouble/contributing-tests/wiki/London-school-TDD)
   and
   [Discovery testing](https://github.com/testdouble/contributing-tests/wiki/Discovery-Testing)).
-- Unix, Bash and working at the command-line (I originally wrote the site
-  [commandlinefu.com](http://www.commandlinefu.com)).
+- [Vim](/tags/vim/), [Git](/tags/git/), and working at the command-line (I
+  originally wrote the site [commandlinefu.com](http://www.commandlinefu.com)).
 - [Python](/tags/python/), [Javascript](/tags/javascript/), Golang.
-- [Vim](/tags/vim/), [Git](/tags/git/).
 - [AWS](/tags/aws/), the "Hashistack", infrastructure-as-code.
 - The practices of effective teams: code review, continuous deployment, pairing
   etc
