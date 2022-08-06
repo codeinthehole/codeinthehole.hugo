@@ -29,25 +29,23 @@ updates are picked up automatically.
 
 ### Stash unstaged changes before running tests
 
-Ensure that code that isn't part of the prospective commit isn't tested within
-your pre-commit script. This is missed by many sample pre-commit scripts but is
-easily achieved with `git stash`:
+Ensure that unstaged code isn't tested within your pre-commit script. This is
+missed by many sample pre-commit scripts but is easily achieved with
+`git stash`:
 
 ```bash
 # pre-commit.sh
 STASH_NAME="pre-commit-$(date +%s)"
-git stash save -q --keep-index $STASH_NAME
+git stash save --quiet --keep-index --include-untracked $STASH_NAME
 
 # Test prospective commit
 ...
 
 STASHES=$(git stash list)
-if [[ $STASHES == "$STASH_NAME" ]]; then
-  git stash pop -q
+if [[ $STASHES == *"$STASH_NAME" ]]; then
+  git stash pop --quiet
 fi
 ```
-
-The `-q` flags specify quiet mode.
 
 ### Run your test suite before each commit
 
