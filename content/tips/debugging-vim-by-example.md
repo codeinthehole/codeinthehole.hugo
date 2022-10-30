@@ -23,7 +23,7 @@ most annoyances.
 Contents:
 
 - ["Why isn't it working?"](#why-isnt-it-working)
-- ["Why isn't my option working?"](#why-isn-t-my-option-working)
+- ["Why isn't my option working?"](#why-isnt-my-option-working)
 - ["Why isn't syntax highlighting working as I want?"](#why-isnt-syntax-highlighting-working-as-i-want)
 - ["Why is Vim slow to start up?"](#why-is-vim-slow-to-start-up)
 - ["Why is {ACTION} slow?"](#why-is-action-slow)
