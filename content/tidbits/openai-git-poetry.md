@@ -18,7 +18,7 @@ $ echo '{"model": "text-davinci-002", "prompt": "Write a poem about cheese"}' \
     | jq -r '.choices[0].text
 
 There's nothing quite like cheese
-It's rich, creamy,
+It's rich, creamy, and delicious.
 ```
 
 Quite.
@@ -44,8 +44,13 @@ Putting that together with some additional tuning parameters in the JSON
 payload, we get:
 
 ```sh
-$ echo '{"model": "text-davinci-002", "temperature": 0.7, "max_tokens": 256, "prompt": "Write a poem about these commit messages:\n ' $(git log -10 --format="%s%b" --no-merges | tr -d '"') '"}' \
-    | http https://api.openai.com/v1/completions Authorization:"Bearer $OPENAI_API_KEY" \
+$ jq -n \
+    --arg prompt "$(
+        echo "Write a haiku about these commits";
+        git log -20 --format="%s%b" --no-merges
+    )" \
+    '{model: "text-davinci-002", temperature: 1, max_tokens: 512, prompt: $prompt}' \
+    | http https://api.openai.com/v1/completions Authorization:"Bearer $OPENAI_API_KEY"
     | jq -r '.choices[0].text'
 ```
 
