@@ -50,7 +50,7 @@ $ jq -n \
         git log -20 --format="%s%b" --no-merges
     )" \
     '{model: "text-davinci-002", temperature: 1, max_tokens: 512, prompt: $prompt}' \
-    | http https://api.openai.com/v1/completions Authorization:"Bearer $OPENAI_API_KEY"
+    | http https://api.openai.com/v1/completions Authorization:"Bearer $OPENAI_API_KEY" \
     | jq -r '.choices[0].text'
 ```
 
