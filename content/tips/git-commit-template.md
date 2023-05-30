@@ -12,7 +12,7 @@
 Here's a useful heuristic for writing better commit messages. Set your commit
 message template to:
 
-```text
+```dosini
 # If applied, this commit will...
 
 # Why is this change needed?
@@ -24,8 +24,10 @@ This change
 # Provide links to any relevant tickets, articles or other resources
 ```
 
-and you'll be guided into writing concise commit subjects in the imperative
-mood - a good practice. See rule 5 of Chris Beam's
+and you'll be guided into writing concise commit subjects in the imperative mood
+— a good practice.
+
+See rule 5 of Chris Beam's
 ["How to write a commit message"](http://chris.beams.io/posts/git-commit/) for
 the inspiration of this tip and more reasoning on the use of the imperative
 mood.
@@ -41,4 +43,4 @@ Here's what this looks like in practice:
 
 <img src="/images/git-commit-snap.png" width="800px" />
 
-Try it - it's genuinely useful.
+Try it! It's genuinely useful.

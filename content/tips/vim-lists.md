@@ -738,7 +738,7 @@ locations:
   with `:grep` and apply the batch changes with `:cfdo`.
 
 - If you want to select _files by their filepath_, populate the argument list
-  with `` :args `fd $PATTERN`  `` and apply the batch changes with `:argdo`.
+  with ``:args `fd $PATTERN` `` and apply the batch changes with `:argdo`.
 
 - If you want to select _files manually_, use `:argadd` and `:argdelete` to
   populate the argument list then use `:argdo` (this is generally preferable to

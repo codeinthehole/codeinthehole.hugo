@@ -76,7 +76,7 @@ var Cookies = Class.create({
       .each(
         function (key) {
           this.clear(key);
-        }.bind(this)
+        }.bind(this),
       );
   },
 });
@@ -176,7 +176,7 @@ function testClearAll() {
   assertFalse("Check cookie has been cleared for myKey", myCookies.get(myKey));
   assertFalse(
     "Check cookie has been cleared for myNewKey",
-    myCookies.get(myNewValue)
+    myCookies.get(myNewValue),
   );
 }
 function testArrayInJsonCookies() {
@@ -187,12 +187,12 @@ function testArrayInJsonCookies() {
   var testReturn = jar.get(testKey);
   assertTrue(
     "Check length of array is the same",
-    testValue.length == testReturn.length
+    testValue.length == testReturn.length,
   );
   assertEquals(
     "Checking arrays are the same",
     $A(testValue).toJSON(),
-    $A(testReturn).toJSON()
+    $A(testReturn).toJSON(),
   );
 }
 function testObjectInJsonCookies() {
@@ -203,12 +203,12 @@ function testObjectInJsonCookies() {
   var testReturn = jar.get(testKey);
   assertTrue(
     "Check length of array is the same",
-    testValue.length == testReturn.length
+    testValue.length == testReturn.length,
   );
   assertEquals(
     "Checking objects are the same",
     $A(testValue).toJSON(),
-    $A(testReturn).toJSON()
+    $A(testReturn).toJSON(),
   );
 }
 ```

@@ -14,7 +14,7 @@
 }
 ---
 
-Getting www.commandlinefu.com off the ground has renewed my interest in Bash,
+Getting <www.commandlinefu.com> off the ground has renewed my interest in Bash,
 UNIX and all things command-line. Powerful one-liners are things of beauty and
 are worth collecting; however what I consider to be the most influential
 command-line tip I know covers four:
