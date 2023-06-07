@@ -1,6 +1,6 @@
 +++
 title = "Writing Markdown in Vim"
-date = 2023-05-18T15:27:57+01:00
+date = 2023-06-06
 description = "A reference of how I have things configured."
 tags = ["Vim", "Markdown"]
 +++
