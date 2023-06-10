@@ -293,7 +293,7 @@ I love apples
 >>>>>>> working-branch
 ```
 
-then remove the superceded lines and merge conflict markers to give:
+then remove the superseded lines and merge conflict markers to give:
 
 ```diff
 I love apples and pears
@@ -311,7 +311,7 @@ https://demisx.github.io/git/rebase/2015/07/02/git-rebase-keep-my-branch-changes
 
 -->
 
-Occassionally, you might know that the changes from one branch should be
+Occasionally, you might know that the changes from one branch should be
 accepted. This can be done using `git checkout` with a merge "strategy-option".
 Beware that, when rebasing, the terminology is counter-intuitive.
 
@@ -420,7 +420,7 @@ Here's some additional resources on the topic:
   by _Christophe Porteneuve_ (2014). Good detailed examination of how to use
   `git rerere`.
 
-<!-- General reserach on rebase conflicts
+<!-- General research on rebase conflicts
 
 Note on rebase options:
 

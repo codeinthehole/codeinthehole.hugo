@@ -120,7 +120,7 @@ of:
 - Make sure the destination branch is correct, it may not always be 'master'. If
   you're using git-flow or similar, the appropriate destination branch may be
   'develop' or a release branch.
-- Use Github's preview facilties to ensure the pull request is well structured
+- Use Github's preview facilities to ensure the pull request is well structured
   and clear. The description should explain what the pull request contains as
   well as the thinking behind it. For reference, have a look at this
   [excellent pull request](https://github.com/bitly/dablooms/pull/19).
@@ -249,7 +249,7 @@ Further reading:
 Strive for a clean, coherent history. Write
 [good commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html),
 adhering to the 50 char summary followed by a longer description. Avoid
-unneccessary merge commits as they clutter up your history.
+unnecessary merge commits as they clutter up your history.
 
 As we saw above, if you haven't pushed your branch to a stable remote branch,
 you can rewrite it:

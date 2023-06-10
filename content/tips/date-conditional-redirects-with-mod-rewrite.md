@@ -9,7 +9,7 @@
 }
 ---
 
-The Apache module mod_rewite is capable of some very cool stuff. One neat trick
+The Apache module mod_rewrite is capable of some very cool stuff. One neat trick
 is to use the time and date variables to control redirects and URL rewriting.
 This is useful if you have a URL that you don't want to be exposed to the world
 until a certain date has passed - this could be the case with special offers and

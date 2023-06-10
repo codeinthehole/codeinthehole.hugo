@@ -121,7 +121,7 @@ JsonCookies.addMethods({
     }
     $super(key, Object.toJSON(value), days);
   },
-  // Overriden get method to JSON-decode the value
+  // Overridden get method to JSON-decode the value
   get: function ($super, key) {
     var value = $super(key);
     return value ? value.evalJSON() : false;

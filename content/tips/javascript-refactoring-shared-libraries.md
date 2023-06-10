@@ -19,12 +19,12 @@ e-commerce applications have a javascript-rich checkout page whose functionality
 differs in small yet significant ways such as the required and optional fields
 within a delivery address, or the range of delivery options available. Ideally,
 you would have a single javascript file to work for all these checkouts, but
-these differences make such a file impracticle due to the changes in DOM
+these differences make such a file impractical due to the changes in DOM
 structure and business logic between applications.
 
 For instance, one problem that arose recently was a requirement to remove the
 javascript messaging from within certain parts of the checkout for one
-appliation. The shared checkout.js file features a method which reloads the
+application. The shared checkout.js file features a method which reloads the
 order totals within the page after a new delivery option has been chosen and
 displays a message to notify the user:
 

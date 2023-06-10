@@ -98,7 +98,7 @@ if (/[?&]debug_mode(&.*)?$/.test(document.location.search)) {
 }
 ```
 
-Then you can inspect an object without refering to the Inspect object (namespace
+Then you can inspect an object without referring to the Inspect object (namespace
 really):
 
 ```javascript

@@ -31,7 +31,7 @@ mysql -D database_name -e "SELECT ... " > /path/to/file.txt
 This works but has two downsides:
 
 1. First, running a shell command forces you to step outside the MySQL adapter
-   of your progamming language which means it is a new place where the database
+   of your programming language which means it is a new place where the database
    credentials need to be passed. Shelling out commands always feels like you've
    failed.
 2. Further, as far as I can tell, you can't control the field separator or line

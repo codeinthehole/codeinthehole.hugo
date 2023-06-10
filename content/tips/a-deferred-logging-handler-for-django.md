@@ -14,7 +14,7 @@ At Tangent we handle environment-specific configuration of Django projects using
 This involves distinguishing between core settings (which we keep in
 `core/default.py`) and environment specific settings (eg `core/stage.py`,
 `core/test.py`). The standard `settings.py` module imports all defaults and then
-uses a enviromental shell variable to determine which environment settings
+uses a environmental shell variable to determine which environment settings
 module to import.
 
 ### A problem

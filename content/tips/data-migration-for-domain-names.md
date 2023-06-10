@@ -2,7 +2,7 @@
 {
   "aliases": ["/writing/a-data-migration-for-every-django-project"],
   "title": "A data migration for every Django project",
-  "description": "No more embarassing emails from example.com",
+  "description": "No more embarrassing emails from example.com",
   "tags": ["django", "python"],
   "slug": "a-data-migration-for-every-django-project",
   "date": "2012-06-16",
@@ -41,7 +41,7 @@ By default, a `Site` instance is created with domain and display name
 using the admin suite.
 
 However, as with any manual change, it's easy to forget and you'll often find
-Django projects sending email from `editor@example.com`. Highly embarassing.
+Django projects sending email from `editor@example.com`. Highly embarrassing.
 
 ### Solution
 

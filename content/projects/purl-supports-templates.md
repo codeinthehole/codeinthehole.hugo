@@ -62,7 +62,7 @@ test such examples is using parameterised tests.
 
 #### PHPUnit
 
-PHP's dominant testing libary,
+PHP's dominant testing library,
 [PHPUnit](http://phpunit.de/manual/current/en/index.html), support
 [data providers](http://phpunit.de/manual/current/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.data-providers)
 that can used to solve this problem (in a slightly clunky way).

@@ -11,7 +11,7 @@
 
 From "Javascript: the good parts":
 
-> It is rarely possible for standards comittees to remove imperfections from a
+> It is rarely possible for standards committees to remove imperfections from a
 > language because doing so would cause the breakdage of all of the bad programs
 > that depend on those bad parts. They are usually powerless to do anything
 > except heap more features on top of the existing pile of imperfections.

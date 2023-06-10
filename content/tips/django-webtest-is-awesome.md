@@ -30,7 +30,7 @@ Several reasons - here's a few:
 - A corollary to the last point is that writing functional tests with WebTest is
   both easier and quicker than using Django's test client. It's much simpler to
   fill in forms that construct complicated arrays of POST data - this is
-  particularly noticable with formsets.
+  particularly noticeable with formsets.
 - The WebTest response object supports
   [several ways of parsing the response HTML](http://webtest.pythonpaste.org/en/latest/index.html#parsing-the-body),
   making it easy to make complicated assertions about the response.

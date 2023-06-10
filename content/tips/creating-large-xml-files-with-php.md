@@ -59,5 +59,5 @@ file_put_contents('example.xml', $xmlWriter->flush(true), FILE_APPEND);
 ```
 
 Here we flush the XML in memory to file every 1000 iterations. This ensures that
-memory usage is capped and opens up the possiblity of creating very large XML
+memory usage is capped and opens up the possibility of creating very large XML
 files.

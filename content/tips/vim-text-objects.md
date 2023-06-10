@@ -49,7 +49,7 @@ From the (highly recommended)
 - <span class="keys">a</span> → a function argument.
 
 Furthermore [`wellle/targets.vim`](https://github.com/wellle/targets.vim)
-overrides the built-in text objects to _seek to the next occurence_ of the
+overrides the built-in text objects to _seek to the next occurrence_ of the
 text-object if the cursor isn't already within one. This is useful.
 
 From other language-agnostic, third-party text objects:

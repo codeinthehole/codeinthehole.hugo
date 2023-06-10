@@ -194,7 +194,7 @@ command.
 Markdownlint will look for a `.markdownlint.yaml` configuration file in the
 current folder and all parents. For any project that uses Markdown, it's best to
 keep a `.markdownlint.yaml` committed to the repo root so it's shared between
-comitters. But it's also useful to keep a fallback file in your home directory
+committers. But it's also useful to keep a fallback file in your home directory
 for ad-hoc Markdown editing:
 
 ```yaml

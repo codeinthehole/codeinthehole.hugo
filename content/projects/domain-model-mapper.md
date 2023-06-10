@@ -27,7 +27,7 @@ with persistence. This can make a big difference in terms of testability as
 using a Data Mapper decouples the database from your domain models, making it
 easy to write unit tests. This has been something I've found slightly difficult
 with Django where the emphasis is more on writing integration tests that use
-fixtures to set up the test environmentl; writing unit tests without using a
+fixtures to set up the test environmentally; writing unit tests without using a
 database is hard when foreign key constraints are involved.
 
 Anyhow, it's a favourite pattern of mine and I've recently pushed to Github a

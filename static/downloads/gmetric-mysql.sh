@@ -20,7 +20,7 @@ if test -z "$GMETRIC" ; then
     exit 192
 fi
 
-# Function for submiting metrics
+# Function for submitting metrics
 function record_value
 {
     if [ $# -lt 1 ]; then
