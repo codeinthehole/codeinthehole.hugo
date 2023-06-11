@@ -1,0 +1,16 @@
+[files]
+extend-exclude = ["assets/*", "static/*"]
+
+[default.extend-words]
+ons = "ons"
+
+# Names
+ned = "ned"
+
+# CLI flags
+ND = "ND"
+
+# Vim patterns
+ist = "ist"
+ba = "ba"
+mak = "mak"
