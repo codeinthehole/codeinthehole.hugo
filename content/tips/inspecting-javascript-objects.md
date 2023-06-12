@@ -98,8 +98,8 @@ if (/[?&]debug_mode(&.*)?$/.test(document.location.search)) {
 }
 ```
 
-Then you can inspect an object without referring to the Inspect object (namespace
-really):
+Then you can inspect an object without referring to the Inspect object
+(namespace really):
 
 ```javascript
 var my_hash = new Hash();
