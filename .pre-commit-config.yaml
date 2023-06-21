@@ -4,3 +4,8 @@ repos:
     rev: v1.13.10
     hooks:
       - id: typos
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.0.0-alpha.4
+    hooks:
+      - id: prettier

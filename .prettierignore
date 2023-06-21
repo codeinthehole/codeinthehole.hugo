@@ -1,0 +1,10 @@
+# Don't format HTML files as stand-alone Prettier doesn't handle Go templates
+# very well, and I don't want to install a plugin for this.
+*.html
+
+# Also don't format CSS. Keep Prettier for Markdown files only.
+*.css
+
+# Ignore these files which are effectively vendored in.
+assets/css/_html5boilerplate.scss
+assets/css/_pygments.scss
