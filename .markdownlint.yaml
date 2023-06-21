@@ -1,0 +1,20 @@
+# Enforce rules by default.
+default: true
+
+# Don't enforce these...
+# ----------------------
+
+# Top heading should be a H1
+MD002: false
+
+# Line length
+MD013: false
+
+# Multiple headings with same content (e.g. "Further reading")
+MD024: false
+
+# Inline HTML
+MD033: false
+
+# Code block style (which is confused by footnotes)
+MD046: false
