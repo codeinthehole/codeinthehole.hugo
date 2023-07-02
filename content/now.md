@@ -4,6 +4,40 @@ type = "info"
 hidefromhome = true
 +++
 
+## July 2023
+
+Culture:
+
+- Books I've enjoyed since last update:
+
+  - _Brief History of Seven Killings_ by Marlon James
+  - _The Book of Night Women_ by Marlon James
+  - _The God of Small Things_ by Arundhati Roy
+  - _The GoldFinch_ by Donna Tartt
+  - _The Grapes of Wrath_ by John Steinbeck
+  - _Down and Out in Paris and London_ by George Orwell
+  - _The Passenger_ by Cormac McCarthy
+  - _The State of the Art_ by Iain M. Banks
+  - _The Life of Pi_ by Yann Martel
+  - _The Promise_ by Damon Galgut
+  - _Birdsong_ by Sebastian Faulks
+  - _White Tiger_ by Aravind Adiga
+  - _The Day of the Flood_ by Margaret Atwood
+  - _The Bone Clocks_ by David Mitchell
+
+  Also enjoyed _Python Architecture Patterns_ by Harry Percival and Bob Gregory.
+  Need to get back into reading more non-fiction.
+
+- Seen lot of series over recent months but only _Severance_ and _The
+  Underground Railroad_ stand out.
+
+- Am working my way through the entire back catalogue of _The Rest is History_
+  podcast. Have listened back to around episode 180 so still quite a few to go.
+
+Life:
+
+- 5k PB now down to 20:57.
+
 ## July 2022
 
 Culture:
