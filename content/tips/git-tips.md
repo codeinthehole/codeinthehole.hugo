@@ -89,7 +89,7 @@ to the branch, or a compare view URL. You can use the excellent
 [hub](http://defunkt.io/hub/) to easily generate compare URLs for sharing:
 
 ```bash
-(master) $ git compare master..feature/masquerading
+(master) $ hub compare master..feature/masquerading
 ```
 
 This will open your default browser on the compare URL, which you can then copy
