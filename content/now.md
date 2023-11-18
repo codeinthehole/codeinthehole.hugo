@@ -4,6 +4,27 @@ type = "info"
 hidefromhome = true
 +++
 
+## November 2023
+
+Culture:
+
+- Books I've enjoyed since July:
+
+  - _The Escape Artist_ by Jonathan Freedland
+  - _Quicksilver_ by Neal Stephenson
+  - _A Game of Thrones_ by George R. R. Martin
+  - _Being Mungo_ by Douglas Stuart
+  - _Lincoln in the Bardo_ by George Saunders
+
+- _Beef_ is the only notably good TV series I've seen recently.
+
+- Still working my way through _The Rest is History_ podcast - almost listened
+  to the whole back catalogue now.
+
+Sport:
+
+- 5k PB now down to 20:32 from a July Park run.
+
 ## July 2023
 
 Culture:
@@ -34,7 +55,7 @@ Culture:
 - Am working my way through the entire back catalogue of _The Rest is History_
   podcast. Have listened back to around episode 180 so still quite a few to go.
 
-Life:
+Sport:
 
 - 5k PB now down to 20:57.
 
