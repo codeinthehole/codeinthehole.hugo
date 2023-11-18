@@ -278,8 +278,8 @@ More at
 <!-- Useful to for quick jumping but sometimes confusing — best to use change
 list when jumping back to previous edit locations.
 
-Relevant literature:
---------------------
+Relevant literature
+-------------------
 
 https://medium.com/breathe-publication/understanding-vims-jump-list-7e1bfc72cdf0
 https://kadekillary.work/post/vim-jumplist/ (dupe?)
