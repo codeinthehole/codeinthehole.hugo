@@ -31,6 +31,8 @@ Because:
 - Are you even allowed to put application logic anywhere but a
   `models.py`?[^permission]
 
+<!-- markdownlint-disable MD007 -->
+
 [^fatmodels]: For example:
 
     - [Fat Models - A Django Code Organization Strategy](https://hackerfall.com/story/fat-models--a-django-code-organization-strategy)
@@ -38,6 +40,8 @@ Because:
     - [Ultimate Django: Adding Business Logic to Models](https://ultimatedjango.com/learn-django/lessons/adding-business-logic-to-models/)
       However, in practice, they're a bad idea (although this sometimes takes a
       few months to become apparent).
+
+<!-- markdownlint-enable MD007 -->
 
 [^scared]:
     A legitimate problem with a liberal language like Python where it's hard to

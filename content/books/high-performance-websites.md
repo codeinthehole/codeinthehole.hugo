@@ -9,7 +9,7 @@
 }
 ---
 
-<img src="/images/bookcovers/9780596529307.jpg" class="align-right" />
+<img src="/images/bookcovers/9780596529307.jpg" class="align-right" alt="Book cover" />
 
 High Performance Web Sites (HPWS) is essentially a book-length exposition of the
 [YSlow extension to Firebug](http://developer.yahoo.com/yslow/) augmented with

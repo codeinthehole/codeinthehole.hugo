@@ -68,7 +68,7 @@ management command to create the article in the production database.
 
 ### Design
 
-<img src="/images/bookcovers/9781119998952.jpg" class="align-right" />
+<img src="/images/bookcovers/9781119998952.jpg" class="align-right" alt="Book cover" />
 
 I recently read the excellent "Design for Hackers" by David Kadavy. Duly
 inspired, I attempted to rework the design to be clean and pleasing on the eye.

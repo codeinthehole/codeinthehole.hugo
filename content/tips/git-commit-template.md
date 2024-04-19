@@ -41,6 +41,6 @@ git config --global commit.template ~/.git_commit_msg.txt
 
 Here's what this looks like in practice:
 
-<img src="/images/git-commit-snap.png" width="800px" />
+<img src="/images/git-commit-snap.png" width="800px" alt="Screenshot of git message editor" />
 
 Try it! It's genuinely useful.

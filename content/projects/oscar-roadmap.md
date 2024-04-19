@@ -9,7 +9,7 @@
 }
 ---
 
-<img src="/images/oscar.png" class="noborder align-right" />
+<img src="/images/oscar.png" class="noborder align-right" alt="Oscar logo" />
 
 Oscar 0.7 was
 [released this week](http://django-oscar.readthedocs.org/en/latest/releases/v0.7.html),

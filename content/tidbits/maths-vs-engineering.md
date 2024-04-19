@@ -9,7 +9,7 @@
 }
 ---
 
-<img src="/images/bookcovers/9780262510875.jpg" class="align-right" />
+<img src="/images/bookcovers/9780262510875.jpg" class="align-right" alt="Book cover" />
 
 [Structure and Interpretation of Computer Programs](http://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs)
 is full of interesting footnotes. Here's a good one about the Fermat test for

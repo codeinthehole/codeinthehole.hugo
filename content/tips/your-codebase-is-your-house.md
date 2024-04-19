@@ -16,17 +16,17 @@ easily-visualised analogues from construction and house maintenance.
 
 For instance, I'm sure you've seen these pull requests before[^1]:
 
-<img src="/images/bricks.jpg" class="photo" />
-<img src="/images/fan.jpg" class="photo" />
+<img src="/images/bricks.jpg" class="photo" alt="Bricks" />
+<img src="/images/fan.jpg" class="photo" alt="Fan" />
 
 Furthermore, the episode
 ["Hurrican Neddy"](https://en.wikipedia.org/wiki/Hurricane_Neddy) from season 8
 of The Simpsons is a parable of a failed software project, where feature
 delivery is prioritised at the expense of maintainability.
 
-<img src="/images/hurricane-neddy1.jpg" class="photo" />
-<img src="/images/hurricane-neddy2.jpg" class="photo" />
-<img src="/images/hurricane-neddy3.jpg" class="photo" />
+<img src="/images/hurricane-neddy1.jpg" class="photo" alt="Hurricane Neddy" />
+<img src="/images/hurricane-neddy2.jpg" class="photo" alt="Hurricane Neddy" />
+<img src="/images/hurricane-neddy3.jpg" class="photo" alt="Hurricane Neddy" />
 
 > Homer: Your beautiful kitchen, Ned, just as you remember it.
 >
@@ -38,7 +38,7 @@ issue is addressed by shoving code into a place where it really doesn't belong.
 It's a useful metaphor - it will serve you well in the struggle to keep a large
 codebase maintainable[^2].
 
-<img src="/images/this-is-fine.jpg" style="width:100%"/>
+<img src="/images/this-is-fine.jpg" style="width:100%" alt="This is fine" />
 
 [^1]:
     I first saw the fan image in a

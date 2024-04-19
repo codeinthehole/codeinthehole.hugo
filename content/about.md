@@ -5,7 +5,7 @@ type = "info"
 hidefromhome = true
 +++
 
-<img id="about-photo" src="https://gravatar.com/avatar/52d39c7b27386ca98bc016119d95b8b8?s=180" />
+<img id="about-photo" src="https://gravatar.com/avatar/52d39c7b27386ca98bc016119d95b8b8?s=180" alt="My image" />
 
 Hello, I'm **David**, a software engineer.
 

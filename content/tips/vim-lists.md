@@ -693,6 +693,8 @@ The above is intended as a reference for myself, but hopefully it will be useful
 to others. The act of compiling this post has been incredibly useful; I've
 learnt many new things[^tils] just fleshing out each section.
 
+<!-- markdownlint-disable MD007 -->
+
 [^tils]: Here are _some_ of the things learnt while researching this post:
 
     - [TIL how to use custom functions with `:cdo`](https://til.codeinthehole.com/posts/how-to-use-custom-functions-with-cdo/)
@@ -702,6 +704,8 @@ learnt many new things[^tils] just fleshing out each section.
     - [TIL you can run `:grep` without using the parent shell process](https://til.codeinthehole.com/posts/you-can-run-grep-without-using-parent-shell-process/)
     - [TIL there’s a `QuickFixCmdPost` event in Vim](https://til.codeinthehole.com/posts/theres-a-quickfixcmdpost-event-in-vim/)
     - [TIL you can jump to previous quickfix lists in Vim](https://til.codeinthehole.com/posts/you-can-jump-to-previous-quickfix-lists-in-vim/)
+
+<!-- markdownlint-enable MD007 -->
 
 There's a couple of key usage patterns that are worth calling out:
 

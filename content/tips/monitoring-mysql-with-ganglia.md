@@ -9,7 +9,7 @@
 }
 ---
 
-<img src="/images/bookcovers/9780596102357.jpg" class="align-right" />
+<img src="/images/bookcovers/9780596102357.jpg" class="align-right" alt="Book cover" />
 
 Following some server monitoring advice from the excellent 'Building Scalable
 Web Sites' by Cal Henderson, I've recently been experimenting with

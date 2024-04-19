@@ -9,7 +9,7 @@
 }
 ---
 
-<img src="/images/screenshots/tomboy-commands-small.jpg" class="align-right" />
+<img src="/images/screenshots/tomboy-commands-small.jpg" class="align-right" alt="Tomboy commands" />
 
 If you're anything like me, you spend a lot of time at the UNIX command-line
 manipulating the filesystem, configuring Linux, playing with services and so
@@ -32,7 +32,7 @@ reading ([Hacker News](http://news.ycombinator.com/),
 together a lightweight web-app for cataloguing and ranking notable UNIX one
 liners.
 
-<img src="/images/screenshots/clf-small.jpg" class="align-right" />
+<img src="/images/screenshots/clf-small.jpg" class="align-right" alt="CLF screenshot" />
 
 The basic idea is for users to be able to store their useful one liners on the
 site for (a) retrieval in the future and (b) sharing with others who undoubtedly
