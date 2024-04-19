@@ -52,7 +52,7 @@ function verify_preconditions() {
     # Check Prettier passes
     if ! prettier --check content/ README.md
     then
-        echo "Markdownlint is not passing"
+        echo "Prettier is not passing"
         exit 1
     fi
 }
