@@ -2,8 +2,7 @@
 {
   "aliases": ["/writing/how-to-sync-pycon-videos-to-your-iphone"],
   "title": "How to sync PyCon videos to your iPhone",
-  "description":
-    "Using Python to fetch and convert YouTube videos for syncing to iPhone",
+  "description": "Using Python to fetch and convert YouTube videos for syncing to iPhone",
   "tags": ["python"],
   "slug": "how-to-sync-pycon-videos-to-your-iphone",
   "date": "2012-03-11",

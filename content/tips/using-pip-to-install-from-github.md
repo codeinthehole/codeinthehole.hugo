@@ -6,8 +6,7 @@
     ],
   "slug": "using-pip-and-requirementstxt-to-install-from-the-head-of-a-github-branch",
   "description": "Always get the latest version",
-  "title":
-    "Using pip and requirements.txt to install from the HEAD of a Github branch",
+  "title": "Using pip and requirements.txt to install from the HEAD of a Github branch",
   "date": "2011-08-20",
   "tags": ["python"],
 }

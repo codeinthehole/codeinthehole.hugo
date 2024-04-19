@@ -37,5 +37,4 @@ simple scheduler project that doesn't require a database and runs for free on
 Github.
 
 [repo_food_scraper]: https://github.com/codeinthehole/food-scraper
-[overview_file]:
-  https://github.com/codeinthehole/food-scraper/tree/master/overview.md
+[overview_file]: https://github.com/codeinthehole/food-scraper/tree/master/overview.md

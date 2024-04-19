@@ -2,8 +2,7 @@
 {
   "aliases": ["/writing/purl-immutable-url-objects-for-python"],
   "slug": "purl-immutable-url-objects-for-python",
-  "description":
-    "An immutable URL class designed for easy inspection and manipulation",
+  "description": "An immutable URL class designed for easy inspection and manipulation",
   "tags": ["python"],
   "title": "purl - immutable URL objects for Python",
   "date": "2012-04-19",

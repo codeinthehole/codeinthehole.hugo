@@ -1,8 +1,7 @@
 ---
 {
   "aliases": ["/writing/cacheback-asynchronous-cache-refreshing-for-django"],
-  "description":
-    "A simple caching library that uses Celery to refresh stage cache items",
+  "description": "A simple caching library that uses Celery to refresh stage cache items",
   "date": "2012-09-02",
   "title": "Cacheback - asynchronous cache refreshing for Django",
   "tags": ["django", "python"],

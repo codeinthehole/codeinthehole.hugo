@@ -1,8 +1,7 @@
 ---
 {
   "aliases": ["/writing/phing-trick-for-avoiding-deploying-debug-code"],
-  "description":
-    "Using the fu with with phing to prevent further embarassments",
+  "description": "Using the fu with with phing to prevent further embarassments",
   "tags": ["commandlinefu", "phing"],
   "title": "Phing trick for avoiding deploying debug code",
   "slug": "phing-trick-for-avoiding-deploying-debug-code",

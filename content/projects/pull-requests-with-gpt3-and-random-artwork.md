@@ -68,8 +68,6 @@ This works nicely — the painting images even unfurl elegantly in Slack.
 <!-- Links -->
 
 [hub]: https://hub.github.com/
-[gist_pr_title]:
-  https://gist.github.com/codeinthehole/d6a496b5a11e7500b7dd0c20f3e5b48c
-[gist_pr_body]:
-  https://gist.github.com/codeinthehole/3fc29fc6f1d9e0d9224e97762ff3537a
+[gist_pr_title]: https://gist.github.com/codeinthehole/d6a496b5a11e7500b7dd0c20f3e5b48c
+[gist_pr_body]: https://gist.github.com/codeinthehole/3fc29fc6f1d9e0d9224e97762ff3537a
 [repo_random_picture]: https://github.com/codeinthehole/random-picture

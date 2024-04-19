@@ -541,8 +541,7 @@ setting[^markdown]:
 let g:vim_markdown_folding_disabled = 1
 ```
 
-[^markdown]:
-    It's a [known issue](https://github.com/plasticboy/vim-markdown/issues/162).
+[^markdown]: It's a [known issue](https://github.com/plasticboy/vim-markdown/issues/162).
 
 Profiling the same actions including this change gave a great improvement:
 

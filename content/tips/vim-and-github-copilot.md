@@ -41,8 +41,6 @@ following:
    my [related TIL post][til_disable] for more details on this.
 
 [vim_copilot]: https://github.com/github/copilot.vim
-[til_disable]:
-  https://til.codeinthehole.com/posts/how-to-automatically-disable-github-copilot-in-vim-when-editing-large-files/
-[copilot_disabled_filetypes]:
-  https://github.com/github/copilot.vim/blob/324ec9eb69e20971b58340d0096c3caac7bc2089/autoload/copilot.vim#L123-L132
+[til_disable]: https://til.codeinthehole.com/posts/how-to-automatically-disable-github-copilot-in-vim-when-editing-large-files/
+[copilot_disabled_filetypes]: https://github.com/github/copilot.vim/blob/324ec9eb69e20971b58340d0096c3caac7bc2089/autoload/copilot.vim#L123-L132
 [autocmd]: https://learnvimscriptthehardway.stevelosh.com/chapters/12.html

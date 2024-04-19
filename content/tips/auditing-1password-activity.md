@@ -167,8 +167,7 @@ query.
 
 [op_cli]: https://developer.1password.com/docs/cli/v1/get-started/
 [jq]: https://stedolan.github.io/jq/
-[gist_1pw_item_users]:
-  https://gist.github.com/codeinthehole/d6b35b56ad17d9f165f86d102caf0cd7
+[gist_1pw_item_users]: https://gist.github.com/codeinthehole/d6b35b56ad17d9f165f86d102caf0cd7
 
 <!-- LITERATURE REVIEW
 

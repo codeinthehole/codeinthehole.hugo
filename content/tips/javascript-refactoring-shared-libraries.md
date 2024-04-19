@@ -5,8 +5,7 @@
   "slug": "javascript-refactoring-for-customising-shared-libraries",
   "tags": ["javascript"],
   "date": "2009-10-13",
-  "description":
-    "Structuring a javascript file for repeating use and customisation",
+  "description": "Structuring a javascript file for repeating use and customisation",
   "title": "Javascript refactoring for customising shared libraries",
 }
 ---

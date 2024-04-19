@@ -32,5 +32,4 @@ echo -ne "\033]0;$TITLE\007"
 Then whenever you start working on a project (using `workon`), your tab title
 will be labelled correctly.
 
-[^1]:
-    which will be somewhere like `~/.virtualenvs/yourproject/bin/postactivate`.
+[^1]: which will be somewhere like `~/.virtualenvs/yourproject/bin/postactivate`.
