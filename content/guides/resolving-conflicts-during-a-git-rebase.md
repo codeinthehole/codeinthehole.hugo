@@ -411,9 +411,6 @@ Here's some additional resources on the topic:
 
 - [Github: Resolving merge conflicts after a Git rebase](https://help.github.com/en/github/using-git/resolving-merge-conflicts-after-a-git-rebase)
 
-- [Github: Resolving a merge conflict using the command line](Resolving a merge
-  conflict using the command line)
-
 - [`git-rebase` docs](https://git-scm.com/docs/git-rebase)
 
 - [Fix conflicts once with git rerere](https://medium.com/@porteneuve/fix-conflicts-only-once-with-git-rerere-7d116b2cec67)
