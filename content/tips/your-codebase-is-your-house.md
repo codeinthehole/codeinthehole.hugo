@@ -7,7 +7,7 @@ slug = "your-codebase-is-your-🏠"
 
 +++
 
-{{< tweet CodeWisdom 854726796172034049 >}}
+{{< tweet user="CodeWisdom" id="854726796172034049" >}}
 
 This is the best metaphor I know for promoting or defending software quality.
 

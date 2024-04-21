@@ -10,7 +10,7 @@ tags = ["Github", "OpenAI"]
 A friend of mine has been retweeting great paintings from Twitter accounts like
 [`@HenryRothwell`][twitter_rothwell], which I've greatly enjoyed. E.g.
 
-{{< tweet 1604358648800616448  >}}
+{{< tweet user="HenryRothwell" id="1604358648800616448" >}}
 
 [twitter_rothwell]: https://twitter.com/HenryRothwell
 

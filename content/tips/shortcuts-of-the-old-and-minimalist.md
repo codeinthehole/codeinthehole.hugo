@@ -104,7 +104,7 @@ applications open[^applications] and, within a browser, the number of open tabs.
 
 [^applications]:
     This is a minimal set from those unenlightened days before I realised you
-    could quit Finder: {{< tweet codeinthehole 914965638321405952 >}}
+    could quit Finder: {{< tweet user="codeinthehole" id="914965638321405952" >}}
 
 For the latter, there's a
 [useful Chrome extension](https://chrome.google.com/webstore/detail/keyboard-shortcuts-to-clo/dkoadhojigekhckndaehenfbhcgfeepl/reviews?hl=en)

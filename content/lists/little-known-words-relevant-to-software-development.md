@@ -11,23 +11,23 @@ A curated[^curated] collection of words-of-the-day from
 
 <!-- ARSLE - to move backwards. -->
 
-{{< tweet qikipedia 863774656444088321 >}}
+{{< tweet user="qikipedia" id="863774656444088321" >}}
 
 <!-- VERSCHLIMMBESSERN - (German) - to make something worse while attempting to make it better -->
 
-{{< tweet qikipedia 881905381278175238 >}}
+{{< tweet user="qikipedia" id="881905381278175238" >}}
 
-{{< tweet qikipedia 921779362868838402 >}}
+{{< tweet user="qikipedia" id="921779362868838402" >}}
 
-{{< tweet qikipedia 900776995646308352 >}}
+{{< tweet user="qikipedia" id="900776995646308352" >}}
 
-{{< tweet qikipedia 910403224292745216 >}}
+{{< tweet user="qikipedia" id="910403224292745216" >}}
 
-{{< tweet qikipedia 885185351211511809 >}}
+{{< tweet user="qikipedia" id="885185351211511809" >}}
 
 <!-- QUANKED - overcome with fatigue. -->
 
-{{< tweet qikipedia 927939482774589443 >}}
+{{< tweet user="qikipedia" id="927939482774589443" >}}
 
 There are many more.
 

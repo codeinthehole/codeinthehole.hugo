@@ -6,6 +6,6 @@ type = "info"
 
 I have only ever said two funny things on Twitter:
 
-`{{< tweet codeinthehole 540117725604216832 >}}`
+`{{< tweet user="codeinthehole" id="540117725604216832" >}}`
 
-`{{< tweet codeinthehole 1029682224713617408 >}}`
+`{{< tweet user="codeinthehole" id="1029682224713617408" >}}`
