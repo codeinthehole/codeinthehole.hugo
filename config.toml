@@ -4,7 +4,9 @@ languageCode = "en-us"
 
 PygmentsCodeFences = true
 
-googleAnalytics = "UA-3494213-5"
+[services]
+    [services.googleAnalytics]
+        ID = 'G-5TB73Q80KQ'
 
 [params]
     author = "David Winterbottom"
