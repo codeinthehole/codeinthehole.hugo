@@ -10,3 +10,6 @@
 # Ctags
 /tags
 
+# Something pre-commit seems to create
+node_modules
+
