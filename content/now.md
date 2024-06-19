@@ -4,6 +4,41 @@ type = "info"
 hidefromhome = true
 +++
 
+## June 2024
+
+Culture:
+
+<!-- Books -->
+
+- Books I've enjoyed since November:
+
+  - _The Mating Season_ by P.G. Wodehouse
+  - _Clash of Kings_ by George R. R. Martin
+  - _Storm of Swords_ by George R. R. Martin
+  - _His Bloody Project_ by Graeme Macrae Burnet
+  - _Demon Copperhead_ by Barbara Kingsolver
+  - _The Finckler Question_ by Howard Jacobson
+  - _Dune_ by Frank Herbert
+  - _The Sense of an Ending_ by Julian Barnes
+  - _The Narrow Road to the Deep North_ by Richard Flanagan
+  - _The Blind Assassin_ by Margaret Atwood
+  - _The Bee Sting_ by Paul Murray
+
+<!-- Film -->
+
+<!-- TV -->
+
+<!-- Podcasts -->
+
+- Have finished listening to the entire back catalogue of _The Rest is History_
+  podcast, which I highly recommend. Have finally broadened the range of
+  podcasts I listen to.
+
+Sport:
+
+- 5k PB now down to 20:16 from a recent Park Run - sub 20:00 is a possibility
+  for this year.
+
 ## November 2023
 
 Culture:

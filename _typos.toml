@@ -6,6 +6,7 @@ ons = "ons"
 
 # Names
 ned = "ned"
+damon = "damon"
 
 # CLI flags
 ND = "ND"
