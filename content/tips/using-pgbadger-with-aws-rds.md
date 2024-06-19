@@ -30,4 +30,5 @@ Hope that saves you some time. Note that the `-f stderr` is required for
 pgbadger v10 and above[^2]:
 
 [^1]: See <https://forums.aws.amazon.com/thread.jspa?threadID=145342>
+
 [^2]: See <https://github.com/darold/pgbadger/issues/443>

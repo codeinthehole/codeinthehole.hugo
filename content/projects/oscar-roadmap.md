@@ -110,6 +110,7 @@ If you'd like to get involved, please see our
 [contributing guidelines](http://django-oscar.readthedocs.org/en/latest/internals/contributing/index.html).
 
 [^1]: We're using [semantic versioning](http://semver.org/).
+
 [^2]:
     This is driven in part by the fact that Tangent haven't had to build a
     large-scale clothing site yet.
