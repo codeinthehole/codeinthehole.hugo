@@ -34,10 +34,20 @@ Culture:
   podcast, which I highly recommend. Have finally broadened the range of
   podcasts I listen to.
 
+<!-- Sport -->
+
 Sport:
 
 - 5k PB now down to 20:16 from a recent Park Run - sub 20:00 is a possibility
   for this year.
+
+<!-- Misc -->
+
+Misc:
+
+- Am learning French. Am doing the DuoLingo streak thing but it's not that
+  effective. Can recommend the [Language Transfer app](https://www.languagetransfer.org/app) and the [Coffee Break -
+  French](https://coffeebreaklanguages.com/coffeebreakfrench/) podcasts though.
 
 ## November 2023
 
