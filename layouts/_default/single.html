@@ -41,11 +41,11 @@
             </p>
 
             <p>
-            {{ if .PrevPage }}
-                Previous: <a href="{{ .PrevPage.RelPermalink }}">{{ .PrevPage.Title }}</a><br/>
+            {{ if .Prev }}
+                Previous: <a href="{{ .Prev.RelPermalink }}">{{ .Prev.Title }}</a><br/>
             {{ end }}
-            {{ if .NextPage }}
-                Next: <a href="{{ .NextPage.RelPermalink }}">{{ .NextPage.Title }}</a>
+            {{ if .Next }}
+                Next: <a href="{{ .Next.RelPermalink }}">{{ .Next.Title }}</a>
             {{ end }}
             </p>
 
@@ -60,12 +60,12 @@
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
 <script>
-    {{ if .PrevPage }}
-        Mousetrap.bind("left", function() { window.location.replace("{{ .PrevPage.RelPermalink }}"); })
+    {{ if .Prev }}
+        Mousetrap.bind("left", function() { window.location.replace("{{ .Prev.RelPermalink }}"); })
     {{ end }}
 
-    {{ if .NextPage }}
-        Mousetrap.bind("right", function() { window.location.replace("{{ .NextPage.RelPermalink }}"); })
+    {{ if .Next }}
+        Mousetrap.bind("right", function() { window.location.replace("{{ .Next.RelPermalink }}"); })
     {{ end }}
 </script>
 
