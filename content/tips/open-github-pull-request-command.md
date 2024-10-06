@@ -99,7 +99,7 @@ Works a treat.
     command:
 
     ```bash
-    $ git compare
+    git compare
     ```
 
     which opens a page with a link to the pull request detail page, if one
