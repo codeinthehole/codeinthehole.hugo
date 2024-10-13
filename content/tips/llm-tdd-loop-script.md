@@ -169,6 +169,10 @@ This is just a fun proof-of-concept; I'm not going to start developing
 production code like this any time soon. But it is interesting and poses
 questions about what software development might look like in the future.
 
+Hat-tip to [David Seddon][david_seddon] for suggesting the idea.
+
+[david_seddon]: https://twitter.com/seddonym
+
 <!-- markdownlint-disable MD007 -->
 
 [^prior_art]: Related posts:
