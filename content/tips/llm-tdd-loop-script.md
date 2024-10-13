@@ -78,7 +78,7 @@ function main {
     code_file=$2
 
     # Create a temporary file to hold the test output.
-    test_code_file=$(mktemp)
+    test_output_file=$(mktemp)
 
     # Print the tests file.
     printf "Making these tests (in %s) pass\n\n" "$tests_file" >&2
@@ -92,7 +92,7 @@ function main {
     # Loop until tests pass or we reach the maximum number of attempts.
     for i in $(seq 2 $ATTEMPTS)
     do
-        # Print output file.
+        # Print generated code file for review.
         bat "$code_file" >&2
 
         # Pause - otherwise everything flies past too quickly. It's useful
@@ -101,18 +101,18 @@ function main {
         read -n 1 -s -r -p "Press any key to run tests..." >&2
 
         # Run tests and capture output.
-        if pytest "$tests_file" > "$test_code_file"; then
+        if pytest "$tests_file" > "$test_output_file"; then
             # Tests passed - we're done.
             echo "✅ " >&2
             exit 0
         else
             # Tests failed - print test output...
             printf "❌\n\n" >&2
-            bat "$test_code_file" >&2
+            bat "$test_output_file" >&2
 
             # ...and create a new version of the application file.
             printf "\nGenerating v%s of %s\n\n" "$i" "$code_file" >&2
-            files-to-prompt "$tests_file" conventions.txt "$test_code_file" | \
+            files-to-prompt "$tests_file" conventions.txt "$test_output_file" | \
                 llm prompt --continue --system "$RETRY_PROMPT" > "$code_file"
         fi
     done
