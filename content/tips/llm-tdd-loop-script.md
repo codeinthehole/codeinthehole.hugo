@@ -156,8 +156,11 @@ contradictory set of tests:
 
 ![Unholy adding function](/images/screenshots/test_impossible_add.png)
 
-As you can see, the LLM makes the tests pass on the third attempt, converging a
-ridiculous solution. Still, it's quite impressive in its own right.
+As you can see, the LLM makes the tests pass on the third attempt, converging on a
+ridiculous solution. There still needs to be a human involved in the
+"refactor" phase of the red-green-refactor cycle.
+
+Still, it's quite impressive in its own right.
 
 [^gist]: Also available in [this Gist][gist_link]
 
@@ -168,6 +171,8 @@ ridiculous solution. Still, it's quite impressive in its own right.
 This is just a fun proof-of-concept; I'm not going to start developing
 production code like this any time soon. But it is interesting and poses
 questions about what software development might look like in the future.
+Will we still care about clean, easy-to-change application code if it passes all
+the tests?
 
 Hat-tip to [David Seddon][david_seddon] for suggesting the idea.
 
