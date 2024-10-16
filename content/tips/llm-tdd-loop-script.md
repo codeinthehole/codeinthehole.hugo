@@ -24,10 +24,10 @@ The script uses two commands from [Simon Willison](https://github.com/simonw):
 
 as well as [`bat`] for syntax highlighting and [`pytest`] for running tests.
 
-[`llm`]: https://github/llm
-[`files-to-prompt`]: https://github/files-
-[`bat`]: https://github/files-
-[`pytest`]: https://github/files-
+[`llm`]: https://github.com/simonw/llm
+[`files-to-prompt`]: https://github.com/simonw/files-to-prompt
+[`bat`]: https://github.com/sharkdp/bat
+[`pytest`]: https://github.com/pytest-dev/pytest
 [automated_tdd_with_llms]: https://medium.com/@benjamin22-314/automating-test-driven-development-with-llms-c05e7a3cdfe1
 [arxiv_paper]: https://arxiv.org/pdf/2312.04687
 
